@@ -1,5 +1,8 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +33,7 @@ header .yglogo {
     margin: 0 auto;
 }
 header p{
-    background-image: url(../project/이미지/YG_symbol_W.png);
+    background-image: url(이미지/YG_symbol_W.png);
     background-size: 134px 86.94px;
     width: 134px;
     height: 86.94px;
@@ -111,7 +114,7 @@ header div > span{
     width: 100%;
     height: 855px;
     position: relative;
-    background-image: url(../project/이미지/배경\ 작업-\ 별2.png) ;
+    background-image: url(이미지/배경\ 작업-\ 별2.png) ;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
@@ -126,7 +129,7 @@ header div > span{
 
 }
 .sec1_2 .proflie .photo {
-    background-image: url(../project/이미지/블랙핑크_1.jpg);
+    background-image: url(이미지/블랙핑크_1.jpg);
     background-size: cover;
     width: 1026px;
     height: 855px;
@@ -154,28 +157,66 @@ header div > span{
     font-size: 12px;
     color: #fff;
 }
-.sec1_2 .text_box2 .box2{
-    width: 300px;
+.sec1_2 .text_box2{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+}
+/* ==================프로필 아이콘============= */
+/* .sec1_2 .proflie .box2 .o_icon{
+    background-image: url(/아이콘/radio_button_checked_FILL0_wght400_GRAD0_opsz48.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+} */
+.sec1_2 .proflie .box2 {
+    background-image: url(/아이콘/radio_button_checked_FILL0_wght400_GRAD0_opsz48.svg);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    height: 95%;
     color: #fff;
     font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
 }
-.sec1_2 .text_box2 .box2 > span{
-    font-size: 25px;
+/* ----------------프로필 아이콘---------- */
+.sec1_2 .proflie .box2:nth-child(1){
+    background-position: 44% 40.2%;
+    width: 20%;
+    margin: 0 0 0 8%;
 }
-.sec1_2 .text_box2 .box2 > p{
-    width: 1px;
-    height: 30px;
-    background-color: #fff;
-    transform: rotate(10deg);
-    transform: translate(12px, 0);
+.sec1_2 .proflie .box2:nth-child(2){
+    background-position: 22% 40.5%;
+    width: 18%;
 }
+.sec1_2 .proflie .box2:nth-child(3){
+    background-position: 28% 45%;
+    width: 17%;
+}
+.sec1_2 .proflie .box2:nth-child(4){
+    background-position: 8% 40.8%;
+    width: 20%;
+}
+/* ----------------프로필 내용---------- */
+.sec1_2 .proflie .f_LISA .name{
+    padding: 185% 0 0 11%;
+}
+.sec1_2 .proflie .f_JISOO .name{
+    padding: 208% 0 0 5%;
+}
+.sec1_2 .proflie .f_JENNIE .name{
+    padding: 233% 0 0 12%;
+}
+.sec1_2 .proflie .f_ROSE .name{
+    padding: 187% 0 0 6%;
+}
+
 .sec1_2 .text_box2 .name{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    position: relative;
 }
 .sec1_2 .text_box2 .name > p{
     width: 54px;
@@ -185,24 +226,54 @@ header div > span{
 .sec1_2 .text_box2 .name .info p{
     font-size: 12px;
 }
-.sec1_2 .text_box2 .f_JENNIE{
+.sec1_2 .text_box2 .name .in_sns{
+    font-size: 15px;
+}
+/* .sec1_2 .text_box2 .f_JENNIE{
     position: absolute;
     top: 43%;
     left: 52%;
 }
 .sec1_2 .text_box2 .f_ROSE{
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 60%;
-}
-.hdd{
-    width: 0;
-    height: 0;
-    font-size: 0;
-    line-height: 0;
-    text-indent: -9999px;
-    overflow: hidden;
+} */
+/* ------------------프로필 숨기기 */
+/* .f_ROSE{
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    vertical-align: top;
+} */
+
+/* ---------------------가상요소 만들기--------- */
+
+.sec1_2 .proflie .box2 .name::before {
+    content: "";
+    width: 1px;
+    height: 50px;
+    background: #fff;
+    display: inline-block;
     position: absolute;
-    left: -9999px;
+}
+.sec1_2 .proflie .box2:nth-child(1) .name::before{
+    top: 39%;
+    left: 22%;
+    transform: rotate(0deg);
+}
+.sec1_2 .proflie .box2:nth-child(2) .name::before{
+    top: 40%;
+    left: 35.5%;
+    transform: rotate(15deg);
+}
+.sec1_2 .proflie .box2:nth-child(3) .name::before{
+    top: 44%;
+    left: 51%;
+    transform: rotate(-1deg);
+}
+.sec1_2 .proflie .box2:nth-child(4) .name::before{
+    top: 40%;
+    left: 63%;
+    transform: rotate(-14deg);
 }
 
