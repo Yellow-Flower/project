@@ -30,7 +30,7 @@ header .yglogo {
     margin: 0 auto;
 }
 header p{
-    background-image: url(/YG_symbol_W.png);
+    background-image: url(../project/이미지/YG_symbol_W.png);
     background-size: 134px 86.94px;
     width: 134px;
     height: 86.94px;
@@ -111,7 +111,7 @@ header div > span{
     width: 100%;
     height: 855px;
     position: relative;
-    background-image: url(/배경\ 작업-\ 별2.png) ;
+    background-image: url(../project/이미지/배경\ 작업-\ 별2.png) ;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
@@ -126,7 +126,7 @@ header div > span{
 
 }
 .sec1_2 .proflie .photo {
-    background-image: url(/블랙핑크_1.jpg);
+    background-image: url(../project/이미지/블랙핑크_1.jpg);
     background-size: cover;
     width: 1026px;
     height: 855px;
