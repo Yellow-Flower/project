@@ -375,7 +375,7 @@ header div > span{
     display: flex;
     flex-direction: column;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .list_1:nth-child(2) > section > div:last-child{
+.sec1_2 .proflie .photo .text_box3 .album_list .album > .t_m > section > div:last-child{
     margin: 93px 0 0 0;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .album > div > section > div > h1{
@@ -395,4 +395,15 @@ header div > span{
     cursor: pointer;
     position: absolute;
     bottom: 1%;
+}
+/* ------------------------스와이퍼 수정하기--------------------- */
+.swiper-button-next:after{
+    color: #fff;
+}
+/* ------------------------블랙핑크 프로필 숨기기------------------- */
+.list_1{
+    display: none;
+}
+.list_2{
+    display: none;
 }
