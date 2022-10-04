@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 
 
@@ -46,6 +47,7 @@ header div > span{
     cursor: pointer;
     color: #fff;
     font-size: 20px;
+    font-family: 'Kanit', sans-serif;
 }
 .top {
     width: 100%;
@@ -163,42 +165,50 @@ header div > span{
     height: 100%;
 
 }
-/* ==================프로필 아이콘============= */
-/* .sec1_2 .proflie .box2 .o_icon{
-    background-image: url(/아이콘/radio_button_checked_FILL0_wght400_GRAD0_opsz48.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    width: 25px;
-    height: 25px;
-} */
+/* ==================프로필 동그라미 아이콘============= */
 .sec1_2 .proflie .box2 {
-    background-image: url(/아이콘/radio_button_checked_FILL0_wght400_GRAD0_opsz48.svg);
+    background-image: url(/project/아이콘/radio_button_checked_FILL0_wght400_GRAD0_opsz48.svg);
     background-repeat: no-repeat;
     background-size: 25px 25px;
     height: 95%;
     color: #fff;
     font-size: 15px;
+    opacity: 0.3;
 }
-/* ----------------프로필 아이콘---------- */
+/* ----------------프로필 동그라미 아이콘 위치---------- */
 .sec1_2 .proflie .box2:nth-child(1){
-    background-position: 44% 40.2%;
+    background-position: 41% 41.2%;
     width: 20%;
     margin: 0 0 0 8%;
 }
 .sec1_2 .proflie .box2:nth-child(2){
-    background-position: 22% 40.5%;
+    background-position: 28% 41%;
     width: 18%;
 }
 .sec1_2 .proflie .box2:nth-child(3){
-    background-position: 28% 45%;
+    background-position: 28% 43.5%;
     width: 17%;
 }
 .sec1_2 .proflie .box2:nth-child(4){
-    background-position: 8% 40.8%;
+    background-position: 7% 40.7%;
     width: 20%;
 }
-/* ----------------프로필 내용---------- */
+/* ----------------프로필 동그라미 아이콘 호버시---------- */
+.sec1_2 .proflie .box2:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+/* ------------------프로필 숨기기 */
+.sec1_2 .proflie .box2 .name{
+    opacity: 0;
+    transition: all 1s ease;
+    vertical-align: top;
+    /* display: none; */
+}
+.sec1_2 .proflie .box2 .name.on{
+    opacity: 1;
+}
+/* ----------------프로필 텍스트---------- */
 .sec1_2 .proflie .f_LISA .name{
     padding: 185% 0 0 11%;
 }
@@ -223,57 +233,166 @@ header div > span{
     height: 2px;
     background-color: #fff;
 }
-.sec1_2 .text_box2 .name .info p{
+.sec1_2 .text_box2 .name .info{
     font-size: 12px;
 }
-.sec1_2 .text_box2 .name .in_sns{
+/* -----------sns 주소 연결 ------------- */
+.sec1_2 .proflie .box2 .name .in_sns > a{
     font-size: 15px;
-}
-/* .sec1_2 .text_box2 .f_JENNIE{
-    position: absolute;
-    top: 43%;
-    left: 52%;
-}
-.sec1_2 .text_box2 .f_ROSE{
-    position: absolute;
-    top: 40%;
-    left: 60%;
-} */
-/* ------------------프로필 숨기기 */
-/* .f_ROSE{
-    transform: translateX(-100%);
-    transition: all 0.5s ease;
-    vertical-align: top;
-} */
+    color: #fff;
 
-/* ---------------------가상요소 만들기--------- */
+}
+
+
+
+/* ---------------------가상요소 만들기(막대줄)--------- */
 
 .sec1_2 .proflie .box2 .name::before {
     content: "";
     width: 1px;
-    height: 50px;
+    height: 40px;
     background: #fff;
     display: inline-block;
     position: absolute;
 }
 .sec1_2 .proflie .box2:nth-child(1) .name::before{
-    top: 39%;
-    left: 22%;
-    transform: rotate(0deg);
+    top: 67.5%;
+    left: 33%;
+    transform: rotate(30deg);
 }
 .sec1_2 .proflie .box2:nth-child(2) .name::before{
-    top: 40%;
-    left: 35.5%;
+    top: 65.5%;
+    left: 25.5%;
     transform: rotate(15deg);
 }
 .sec1_2 .proflie .box2:nth-child(3) .name::before{
-    top: 44%;
-    left: 51%;
+    top: 66.5%;
+    left: 31%;
     transform: rotate(-1deg);
 }
 .sec1_2 .proflie .box2:nth-child(4) .name::before{
-    top: 40%;
-    left: 63%;
+    top: 67%;
+    left: 16%;
     transform: rotate(-14deg);
 }
+/* ---------------------가상요소 만들기(프로필 속 | 표시)--------- */
+.sec1_2 .proflie .box2 .name .info .line{
+    margin: 0 5px;
+}
 
+.sec1_2 .proflie .box2 .name .info .line::before{
+    content: "";
+    width: 1px;
+    height: 11px;
+    background: #fff;
+    display: block;
+    position: absolute;
+}
+.sec1_2 .proflie .box2:nth-child(1) .line::before{
+    top: 92.8%;
+    left: 49%;
+}
+.sec1_2 .proflie .box2:nth-child(2) .line::before{
+    top: 93%;
+    left: 42%;
+}
+.sec1_2 .proflie .box2:nth-child(3) .line::before{
+    top: 93%;
+    left: 51.5%;
+}
+.sec1_2 .proflie .box2:nth-child(4) .line::before{
+    top: 92.8%;
+    left: 44%;
+}
+.sec1_2 .proflie .box2 .name .info .line_rose{
+    padding:0 7px;
+}
+.sec1_2 .proflie .box2 .name .info .line_rose::before{
+    content: "";
+    width: 1px;
+    height: 11px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    top: 83.3%;
+    left: 39%;
+}
+/* --------------------------------------------- */
+
+.sec1_2 .proflie .photo .text_box3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    width: 452px;
+    height: 800px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(172, 0, 0, 0.25);
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    padding: 19px 0 0 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+.sec1_2 .proflie .photo .text_box3 > p:first-child{
+    background-image: url(/project/이미지/블랙핑크\ 로고.png);
+    background-size: 199px 88px;
+    background-position: center center;
+    width: 211px;
+    height: 61px;
+    background-color: black;
+}
+.sec1_2 .proflie .photo .text_box3 .album_list{
+    width: 400px;
+    height: 220px;
+}
+.sec1_2 .proflie .photo .text_box3 .album_list .album{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+    /* background-color: rgba(255, 255, 255, 0.3); */
+}
+.sec1_2 .proflie .photo .text_box3 .album_list .album > div{
+    display: flex;
+    gap: 8px;
+    border: 1px solid black;
+}
+.sec1_2 .proflie .photo .text_box3 .album_list .album > div > img{
+    width: 50%;
+    height: 189px;
+    border-right: 1px solid black;
+}
+.sec1_2 .proflie .photo .text_box3 .album_list .album > div > section{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 50%;
+    padding: 10px;
+}
+.sec1_2 .proflie .photo .text_box3 .album_list .album > div > section > div{
+    display: flex;
+    flex-direction: column;
+}
+.sec1_2 .proflie .photo .text_box3 .album_list .list_1:nth-child(2) > section > div:last-child{
+    margin: 93px 0 0 0;
+}
+.sec1_2 .proflie .photo .text_box3 .album_list .album > div > section > div > h1{
+    font-size: 12px;
+}
+.sec1_2 .proflie .photo .text_box3 .album_list .album > div > section > div > h2{
+    font-size: 10px;
+}
+.sec1_2 .proflie .photo .text_box3 .album_list .album > div > section > div > p{
+    font-size: 10.5px;
+}
+
+.sec1_2 .proflie .photo .text_box3 > div:last-child{
+    background-image: url(/project/아이콘/expand_more_FILL0_wght200_GRAD0_opsz48.svg);
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 1%;
+}

@@ -1,5 +1,7 @@
-$(document).ready(function(){
-    $(".o_ROSE").hover(function() {
-      $(".f_ROSE").toggleClass("on");
-    })
-});
+ $(document).ready(function() {
+    $(".box2").hover(function(){
+      $(this).children(".name").toggleClass("on");
+    });
+  });
+
+
