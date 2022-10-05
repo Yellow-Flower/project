@@ -10,10 +10,10 @@
     box-sizing: border-box;
     /* border: 1px solid red; */
 }
-.mainfont1{
+.mainfont1 {
     font-family: 'Fugaz One', cursive;
 }
-header{
+header {
     background-color: black;
     width: 100%;
     height: 100px;
@@ -23,7 +23,7 @@ header{
     padding: 0 25px;
 
 }
-header > span.material-symbols-outlined{
+header > span.material-symbols-outlined {
     font-size: 57.6px;
     color: #fff;
     cursor: pointer;
@@ -33,7 +33,7 @@ header .yglogo {
     height: 110.3px;
     margin: 0 auto;
 }
-header p{
+header p {
     background-image: url(이미지/YG_symbol_W.png);
     background-size: 134px 86.94px;
     width: 134px;
@@ -43,7 +43,7 @@ header p{
     left: 1.5rem;
     cursor: pointer;
 }
-header div > span{
+header div > span {
     cursor: pointer;
     color: #fff;
     font-size: 20px;
@@ -55,28 +55,28 @@ header div > span{
     background-color: #fff;
     z-index: 2;
 }
-.top h1{
+.top h1 {
     color: black;
-    height: 100px;  
+    height: 100px;
     font-size: 75px;
     text-align: center;
 }
-.sec1_1{
+.sec1_1 {
     background-color: black;
 }
-/* --------------------sec2_MV---------------------------- */ 
-.body > .MV{
+/* --------------------sec2_MV---------------------------- */
+.body > .MV {
     width: 100%;
     height: 855px;
     position: relative;
 }
-.body .MV video{
+.body .MV video {
     width: 100%;
-    height: 855px; 
+    height: 855px;
     position: relative;
     z-index: 1;
 }
-.body .material-symbols-outlined{
+.body .material-symbols-outlined {
     font-size: 57px;
     color: #fff;
     position: absolute;
@@ -85,9 +85,9 @@ header div > span{
     transform: translate(-50%, 0);
     right: 20px;
     cursor: pointer;
-    
+
 }
-.body .dot{
+.body .dot {
     width: 60px;
     height: 22px;
     position: absolute;
@@ -97,7 +97,7 @@ header div > span{
     display: flex;
     gap: 15px;
 }
-.body .dot > p{
+.body .dot > p {
     background-color: #fff;
     width: 20px;
     height: 20px;
@@ -108,15 +108,15 @@ header div > span{
     left: 0px;
     cursor: pointer;
 }
-.body .dot > p:last-child{
+.body .dot > p:last-child {
     background-color: rgba(255, 255, 255, 0.5);
 }
 /* --------------------sec2_proflie---------------------------- */
-.sec1_2 .proflie{
+.sec1_2 .proflie {
     width: 100%;
     height: 855px;
     position: relative;
-    background-image: url(이미지/배경\ 작업-\ 별2.png) ;
+    background-image: url(이미지/배경\ 작업-\ 별2.png);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
@@ -125,7 +125,7 @@ header div > span{
     width: 100%;
     height: 855px;
     position: relative;
-    background-color: rgba( 231, 144, 238, 0.7);
+    background-color: rgba(231, 144, 238, 0.7);
     display: flex;
     flex-direction: column;
 
@@ -136,8 +136,8 @@ header div > span{
     width: 1026px;
     height: 855px;
     margin: 0 auto;
-}  
-.sec1_2 .text_box1{
+}
+.sec1_2 .text_box1 {
     width: 434px;
     height: 200px;
     border: 1px solid #fff;
@@ -150,16 +150,16 @@ header div > span{
     left: 5%;
     bottom: 10%;
 }
-.sec1_2 .text_box1 h5{
+.sec1_2 .text_box1 h5 {
     font-size: 30px;
     text-align: center;
     color: #fff;
 }
-.sec1_2 .text_box1 p{
+.sec1_2 .text_box1 p {
     font-size: 12px;
     color: #fff;
 }
-.sec1_2 .text_box2{
+.sec1_2 .text_box2 {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -176,68 +176,68 @@ header div > span{
     opacity: 0.3;
 }
 /* ----------------프로필 동그라미 아이콘 위치---------- */
-.sec1_2 .proflie .box2:nth-child(1){
+.sec1_2 .proflie .box2:nth-child(1) {
     background-position: 41% 41.2%;
     width: 20%;
     margin: 0 0 0 8%;
 }
-.sec1_2 .proflie .box2:nth-child(2){
+.sec1_2 .proflie .box2:nth-child(2) {
     background-position: 28% 41%;
     width: 18%;
 }
-.sec1_2 .proflie .box2:nth-child(3){
+.sec1_2 .proflie .box2:nth-child(3) {
     background-position: 28% 43.5%;
     width: 17%;
 }
-.sec1_2 .proflie .box2:nth-child(4){
+.sec1_2 .proflie .box2:nth-child(4) {
     background-position: 7% 40.7%;
     width: 20%;
 }
 /* ----------------프로필 동그라미 아이콘 호버시---------- */
-.sec1_2 .proflie .box2:hover{
+.sec1_2 .proflie .box2:hover {
     cursor: pointer;
     opacity: 1;
 }
 /* ------------------프로필 숨기기 */
-.sec1_2 .proflie .box2 .name{
+.sec1_2 .proflie .box2 .name {
     opacity: 0;
     transition: all 1s ease;
     vertical-align: top;
     /* display: none; */
 }
-.sec1_2 .proflie .box2 .name.on{
+.sec1_2 .proflie .box2 .name.on {
     opacity: 1;
 }
 /* ----------------프로필 텍스트---------- */
-.sec1_2 .proflie .f_LISA .name{
+.sec1_2 .proflie .f_LISA .name {
     padding: 185% 0 0 11%;
 }
-.sec1_2 .proflie .f_JISOO .name{
+.sec1_2 .proflie .f_JISOO .name {
     padding: 208% 0 0 5%;
 }
-.sec1_2 .proflie .f_JENNIE .name{
+.sec1_2 .proflie .f_JENNIE .name {
     padding: 233% 0 0 12%;
 }
-.sec1_2 .proflie .f_ROSE .name{
+.sec1_2 .proflie .f_ROSE .name {
     padding: 187% 0 0 6%;
 }
 
-.sec1_2 .text_box2 .name{
+.sec1_2 .text_box2 .name {
     display: flex;
     flex-direction: column;
     gap: 5px;
     position: relative;
 }
-.sec1_2 .text_box2 .name > p{
+.sec1_2 .text_box2 .name > p {
     width: 54px;
     height: 2px;
     background-color: #fff;
 }
-.sec1_2 .text_box2 .name .info{
+.sec1_2 .text_box2 .name .info {
     font-size: 12px;
 }
 /* -----------sns 주소 연결 ------------- */
-.sec1_2 .proflie .box2 .name .in_sns > a{
+.sec1_2 .proflie .box2 .name .in_sns > a {
     font-size: 15px;
     color: #fff;
 
@@ -255,32 +255,32 @@ header div > span{
     display: inline-block;
     position: absolute;
 }
-.sec1_2 .proflie .box2:nth-child(1) .name::before{
+.sec1_2 .proflie .box2:nth-child(1) .name::before {
     top: 67.5%;
     left: 33%;
     transform: rotate(30deg);
 }
-.sec1_2 .proflie .box2:nth-child(2) .name::before{
+.sec1_2 .proflie .box2:nth-child(2) .name::before {
     top: 65.5%;
     left: 25.5%;
     transform: rotate(15deg);
 }
-.sec1_2 .proflie .box2:nth-child(3) .name::before{
+.sec1_2 .proflie .box2:nth-child(3) .name::before {
     top: 66.5%;
     left: 31%;
     transform: rotate(-1deg);
 }
-.sec1_2 .proflie .box2:nth-child(4) .name::before{
+.sec1_2 .proflie .box2:nth-child(4) .name::before {
     top: 67%;
     left: 16%;
     transform: rotate(-14deg);
 }
 /* ---------------------가상요소 만들기(프로필 속 | 표시)--------- */
-.sec1_2 .proflie .box2 .name .info .line{
+.sec1_2 .proflie .box2 .name .info .line {
     margin: 0 5px;
 }
 
-.sec1_2 .proflie .box2 .name .info .line::before{
+.sec1_2 .proflie .box2 .name .info .line::before {
     content: "";
     width: 1px;
     height: 11px;
@@ -288,26 +288,26 @@ header div > span{
     display: block;
     position: absolute;
 }
-.sec1_2 .proflie .box2:nth-child(1) .line::before{
+.sec1_2 .proflie .box2:nth-child(1) .line::before {
     top: 92.8%;
     left: 49%;
 }
-.sec1_2 .proflie .box2:nth-child(2) .line::before{
+.sec1_2 .proflie .box2:nth-child(2) .line::before {
     top: 93%;
     left: 42%;
 }
-.sec1_2 .proflie .box2:nth-child(3) .line::before{
+.sec1_2 .proflie .box2:nth-child(3) .line::before {
     top: 93%;
     left: 51.5%;
 }
-.sec1_2 .proflie .box2:nth-child(4) .line::before{
+.sec1_2 .proflie .box2:nth-child(4) .line::before {
     top: 92.8%;
     left: 44%;
 }
-.sec1_2 .proflie .box2 .name .info .line_rose{
-    padding:0 7px;
+.sec1_2 .proflie .box2 .name .info .line_rose {
+    padding: 0 7px;
 }
-.sec1_2 .proflie .box2 .name .info .line_rose::before{
+.sec1_2 .proflie .box2 .name .info .line_rose::before {
     content: "";
     width: 1px;
     height: 11px;
@@ -319,7 +319,7 @@ header div > span{
 }
 /* --------------------------------------------- */
 
-.sec1_2 .proflie .photo .text_box3{
+.sec1_2 .proflie .photo .text_box3 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -335,7 +335,7 @@ header div > span{
     font-weight: bold;
     font-size: 15px;
 }
-.sec1_2 .proflie .photo .text_box3 > p:first-child{
+.sec1_2 .proflie .photo .text_box3 > p:first-child {
     background-image: url(/project/이미지/블랙핑크\ 로고.png);
     background-size: 199px 88px;
     background-position: center center;
@@ -343,52 +343,54 @@ header div > span{
     height: 61px;
     background-color: black;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list{
-    width: 400px;
-    height: 220px;
-}
-.sec1_2 .proflie .photo .text_box3 .album_list .album{
+.sec1_2 .proflie .photo .text_box3 .album_list {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    
-    /* background-color: rgba(255, 255, 255, 0.3); */
+    width: 400px;
+    height: 220px;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .album > div{
+.sec1_2 .proflie .photo .text_box3 .album_list > div {
     display: flex;
     gap: 8px;
     border: 1px solid black;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .album > div > img{
+.sec1_2 .proflie .photo .text_box3 .album_list > div > img {
     width: 50%;
     height: 189px;
     border-right: 1px solid black;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .album > div > section{
+.sec1_2 .proflie .photo .text_box3 .album_list > div > section {
     display: flex;
     flex-direction: column;
     gap: 14px;
     width: 50%;
     padding: 10px;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .album > div > section > div{
+.sec1_2 .proflie .photo .text_box3 .album_list > div > section > div {
     display: flex;
     flex-direction: column;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .album > .t_m > section > div:last-child{
+/* .sec1_2 .proflie .photo .text_box3 .album_list > div > section > .long{
+    margin: 82px 0 0 0;
+} */
+.sec1_2 .proflie .photo .text_box3 .album_list > div > section > div:last-child {
+    margin: 56px 0 0 0;
+}
+.sec1_2 .proflie .photo .text_box3 .album_list > .t_m > section > div:last-child {
     margin: 93px 0 0 0;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .album > div > section > div > h1{
+.sec1_2 .proflie .photo .text_box3 .album_list > div > section > div > h1 {
     font-size: 12px;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .album > div > section > div > h2{
+.sec1_2 .proflie .photo .text_box3 .album_list > div > section > div > h2 {
     font-size: 10px;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .album > div > section > div > p{
+.sec1_2 .proflie .photo .text_box3 .album_list > div > section > div > p {
     font-size: 10.5px;
 }
 
-.sec1_2 .proflie .photo .text_box3 > div:last-child{
+.sec1_2 .proflie .photo .text_box3 > div:last-child {
     background-image: url(/project/아이콘/expand_more_FILL0_wght200_GRAD0_opsz48.svg);
     width: 48px;
     height: 48px;
@@ -397,13 +399,123 @@ header div > span{
     bottom: 1%;
 }
 /* ------------------------스와이퍼 수정하기--------------------- */
-.swiper-button-next:after{
+.swiper-button-next:after {
+    color: #fff;
+}
+.swiper-button-prev:after {
     color: #fff;
 }
 /* ------------------------블랙핑크 프로필 숨기기------------------- */
-.list_1{
+.list_1 {
     display: none;
 }
-.list_2{
+.list_2 {
     display: none;
 }
+/* --------------------------------select------------------------------------- */
+.select {
+    width: 100%;
+    height: 1080px;
+    background-image: url(/project/이미지/배경\ 작업-\ 별3.png);
+    background-size: cover;
+}
+.select > div > div:nth-child(1) {
+    height: 100px;
+}
+.select > div > div:nth-child(2) {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select > div > div:nth-child(2) input{
+    width: 485px;
+    height: 30px;
+} 
+.select > div > div:nth-child(2) span{
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.select > div > ul:nth-child(3) {
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select > div > ul:nth-child(3) li{
+    color: black;
+    font-size: 29px;
+    font-weight: bold;
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.select > div > div:nth-child(4) .swiper-slide > div{
+    height: 620px;
+    display: flex;
+    font-family: 'Fugaz One', 'Kanit', sans-serif;
+    text-align: center;
+}
+.select > div > div:nth-child(4) .yg_goods{
+    background-color: #fff;
+    cursor: pointer;
+}
+.select > div > div:nth-child(4) .gleft > p:nth-child(1){
+    height: 536px;
+     width: 692px;
+     background-image: url(/project/이미지/와이지셀렉터-월간포카.jpg);
+     background-size: cover;
+}
+.select > div > div:nth-child(4) .yg_goods > p:nth-child(2){
+    font-size: 30px;
+    font-weight: bold;
+    padding: 7px 0 0 0 ;
+}
+.select > div > div:nth-child(4) .yg_goods > p:nth-child(3){
+    font-size: 16px; 
+}
+.select > div > div:nth-child(4) .slide > p{
+    height: 620px;
+    width: 30%;
+    background-color: black;
+    font-size: 80px;
+    color: #fff;
+    /* line-height: 620px; */
+    text-align: center;
+    padding: 185px 0 0 0;
+}
+.select > div > div:nth-child(4) .gright> p:nth-child(1){
+    height: 536px;
+     width: 692px;
+     background-image: url(/project/이미지/와이지셀렉터-리사.jpg);
+     background-size: cover;
+} 
+.select > div > div:nth-child(5) {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 10px 5px 10px;
+}
+.select > div > div:nth-child(5) p:first-child {
+    color: #fff;
+    font-size: 56px;
+    font-family: 'Fugaz One', 'Kanit', sans-serif;
+}
+.select > div > div:nth-child(5) p:last-child {
+    width: 150px;
+    height: 47px;
+    line-height: 39px;
+    padding: 5px;
+    background-color: black;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 50px;
+    font-family: 'Fugaz One', 'Kanit', sans-serif;
+    cursor: pointer;
+}
+
+   
