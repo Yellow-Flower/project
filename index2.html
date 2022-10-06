@@ -8,6 +8,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 
 
@@ -22,7 +23,7 @@
             <span>KOREAN</span>
         </div>
     </header>
-    <div class="swiper artist">
+    <div class="swiper artist w">
         <div class="swiper-wrapper">
             <div data-hash="slide1" class="swiper-slide">
                 <div class="sec1_1">
@@ -189,7 +190,7 @@
                                             </section>
                                         </div> -->
                                         <div>
-                                            <img src="/project/이미지/블랙핑크_Ice Cream (with Selena Gomez).png"
+                                            <img src="이미지/블랙핑크_Ice Cream (with Selena Gomez).png"
                                                 alt="BLACKPINK_Ice Cream">
                                             <section>
                                                 <div>
@@ -203,8 +204,7 @@
                                             </section>
                                         </div>
                                         <div class="t_m">
-                                            <img src="/project/이미지/블랙핑크_How You Like That.png"
-                                                alt="BLACKPINK_How You Like That">
+                                            <img src="이미지/블랙핑크_How You Like That.png" alt="BLACKPINK_How You Like That">
                                             <section>
                                                 <div>
                                                     <h1>How You Like That</h1>
@@ -217,7 +217,7 @@
                                             </section>
                                         </div>
                                         <div>
-                                            <img src="/project/이미지/블랙핑크_SQUARE UP.jpg" alt="BLACKPINK_SQUARE UP">
+                                            <img src="이미지/블랙핑크_SQUARE UP.jpg" alt="BLACKPINK_SQUARE UP">
                                             <section>
                                                 <div>
                                                     <h1>SQUARE UP</h1>
@@ -292,13 +292,16 @@
     </div>
 
     <div class="select">
-        <div>
-            <div></div>
+        <div></div>
+        <div class="inner_2">
             <div>
-                <div><input type="search"></div>
-                <span class="material-symbols-outlined" role="button">search</span>
+                <div>
+                    <input type="text">
+                    <span class="material-symbols-outlined" role="button">search</span>
+                </div>
             </div>
             <ul>
+                <li role="button">NEW</li>
                 <li role="button">TECH</li>
                 <li role="button">CHEERING</li>
                 <li role="button">MUSIC</li>
@@ -308,10 +311,10 @@
                 <li role="button">MAGAZINES</li>
                 <li role="button">ETC</li>
             </ul>
-            <div class="swiper goods">
+            <div class="swiper goods w">
                 <div class="swiper-wrapper">
-                    <div data-hash="slide1-2" class="swiper-slide">
-                        <div class="slide">
+                    <div data-hash="slide2-1" class="swiper-slide">
+                        <div class="slide s_one">
                             <div class="yg_goods gleft" role="button">
                                 <p></p>
                                 <p>모을수록 기쁨이 배가되는 월간포카</p>
@@ -324,31 +327,164 @@
                                 <p>F/W도 리사처럼 힙하게</p>
                             </div>
                         </div>
-                        <!-- <div data-hash="slide2-2" class="swiper-slide">
-                            <div class="slide">
-                                <div class="yg_goods gleft" role="button">
-                                    <p></p>
-                                    <p>모을수록 기쁨이 배가되는 월간포카</p>
-                                    <p>10월 월간포카의 주인공, 지금 공개합니다.</p>
-                                </div>
-                                <p>WHAT'S<br>HOT</p>
-                                <div class="yg_goods gright" role="button">
-                                    <p></p>
-                                    <p>리사가 추천하는 아크메드라비 어때요?</p>
-                                    <p>F/W도 리사처럼 힙하게</p>
-                                </div>
-                            </div> -->
-                        
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
+                    <div data-hash="slide2-2" class="swiper-slide">
+                        <div class="slide s_two">
+                            <div class="yg_goods gleft" role="button">
+                                <p></p>
+                                <p>BLACKPINK만의 독보적인 아이덴티티</p>
+                                <p>탑로더부터 4컷 포토까지 다양한 공식 MD를 확인해 보세요</p>
+                            </div>
+                            <p>WHAT'S<br>HOT</p>
+                            <div class="yg_goods gright" role="button">
+                                <p></p>
+                                <p>블랙핑크만의 매력에 풍덩 빠질 시간</p>
+                                <p>BLACKPINK 2nd ALBUM [BORN PINK] 발매기념 오프라인 팬사인회 응모</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-hash="slide2-3" class="swiper-slide">
+                        <div class="slide s_thr">
+                            <div class="yg_goods gleft" role="button">
+                                <p></p>
+                                <p>트레저와 함께 간식 타임 어때요?</p>
+                                <p>입맛대로 골라먹는 다양한 스낵을 구경해보세요</p>
+                            </div>
+                            <p>WHAT'S<br>HOT</p>
+                            <div class="yg_goods gright" role="button">
+                                <p></p>
+                                <p>트레저의 다음 도약을 함께 만들어가요</p>
+                                <p>트레저의 두 번째 미니 앨범 [THE SECOND STEP : CHAPTER TWO] 예약판매 오픈!</p>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
             <div>
                 <p>YG SELECT</p>
                 <p role="button">문의사항</p>
+            </div>
+            <div class="sel_menu">
+                <div>
+                    <div class="swiper goodsgrid b">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="g_pic">
+                                    <div><img src="/이미지/굿즈/SECHSKIES GRIP HOLDER.jpg" alt="SECHSKIES GRIP HOLDER"></div>
+                                    <p>[ALLFORYOU]<br> SECHSKIES GRIP HOLDER</p>
+                                    <p>10,000원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="g_pic">
+                                    <div><img src="/이미지/굿즈/KRUNK POWER BANK_10,000mA.jpg" alt="KRUNK POWER BANK_10,000mA"></div>
+                                    <p class="line-through">KRUNK POWER BANK_10,000mA</p>
+                                    <p>13,000원</p>
+                                    <div class="sale">
+                                        <span>20%</span>
+                                        <span>31,200원</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="g_pic">
+                                    <div><img src="/이미지/굿즈/EUNJIWON GRIP HOLDER.jpg" alt="EUNJIWON GRIP HOLDER"></div>
+                                    <p>[G1] EUNJIWON GRIP HOLDER</p>
+                                    <p>13,000원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="g_pic">
+                                    <div><img src="/이미지/굿즈/KRUNK POWER BANK_10,000mA.jpg" alt="KRUNK POWER BANK_10,000mA"></div>
+                                    <p class="line-through">KRUNK POWER BANK_10,000mA</p>
+                                    <p>13,000원</p>
+                                    <div class="sale">
+                                        <span>20%</span>
+                                        <span>31,200원</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="g_pic">
+                                    <div><img src="/이미지/굿즈/BIGBANG PORTABLE CHARGER VER 2..jpg" alt="BIGBANG PORTABLE CHARGER VER 2."></div>
+                                    <p>[0TO10] BIGBANG PORTABLE CHARGER VER 2.</p>
+                                    <p>28,000원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="g_pic">
+                                    <div><img src="/이미지/굿즈/[WOYC] BLACKPINK ANNIVERSARY PHONECASE_DESIGN 2.jpg" alt="[WOYC] BLACKPINK ANNIVERSARY PHONECASE_DESIGN 2"></div>
+                                    <p>[WOYC] BLACKPINK ANNIVERSARY PHONECASE_DESIGN 2</p>
+                                    <p>20,000원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="g_pic">
+                                    <div><img src="/이미지/굿즈/[G1] EUNJIWON HAND FAN.jpg" alt="[G1] EUNJIWON HAND FAN"></div>
+                                    <p>[G1] EUNJIWON HAND FAN</p>
+                                    <p>23,000원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="g_pic">
+                                    <div><img src="/이미지/굿즈/[WOYC] WINNER ANNIVERSARY PHONECASE_DESIGN 1.jpg" alt="[WOYC] WINNER ANNIVERSARY PHONECASE_DESIGN 1"></div>
+                                    <p>[WOYC] WINNER ANNIVERSARY PHONECASE_DESIGN 1</p>
+                                    <p>20,000원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="g_pic">
+                                    <div><img src="/이미지/굿즈/KRUNK HAND FAN.jpg" alt="KRUNK HAND FAN"></div>
+                                    <p class="line-through">KRUNK HAND FAN</p>
+                                    <p>19,000원</p>
+                                    <div class="sale">
+                                        <span>20%</span>
+                                        <span>15,200원</span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="g_pic">
+                                    <div><img src="/이미지/굿즈/[WOYC] WINNER ANNIVERSARY PHONECASE_DESIGN 1.jpg" alt="[WOYC] WINNER ANNIVERSARY PHONECASE_DESIGN 1"></div>
+                                    <p>[WOYC] WINNER ANNIVERSARY PHONECASE_DESIGN 1</p>
+                                    <p>20,000원</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="g_pic">
+                                    <div><img src="/이미지/굿즈/KRUNK AIR CLEANER.jpg" alt="KRUNK AIR CLEANER"></div>
+                                    <p class="line-through">KRUNK AIR CLEANER</p>
+                                    <p>13,000원</p>
+                                    <div class="sale">
+                                        <span>20%</span>
+                                        <span>39,200원</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <div class="g_pic">
+                                    <div><img src="/이미지/굿즈/[WOYC] BLACKPINK ANNIVERSARY PHONECASE_DESIGN 3.jpg" alt="[WOYC] BLACKPINK ANNIVERSARY PHONECASE_DESIGN 3"></div>
+                                    <p>[WOYC] BLACKPINK ANNIVERSARY PHONECASE_DESIGN 3</p>
+                                    <p>20,000원</p>
+                                </div>
+                            </div>
+                            
+                           
+                            
+                            
+                           
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -386,9 +522,23 @@
             },
         });
     </script>
+    <script>
+        var swiper = new Swiper(".goodsgrid", {
+            slidesPerView: 6,
+            grid: {
+                // column: 6,
+                rows: 2,
+            },
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="/project/포트폴리오_YG_P.js"></script>
+    <script src="/포트폴리오_YG_P.js"></script>
 </body>
 
 </html>
