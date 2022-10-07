@@ -460,7 +460,7 @@ header div > span {
     align-items: center;
 }
 .select .inner_2 > div:nth-child(1) > div{
-    width: 402px;
+    width: 352px;
     position: relative;
 }
 .select .inner_2 > div:nth-child(1) input{
@@ -478,7 +478,7 @@ header div > span {
 .select .inner_2 > div:nth-child(1) span{
     position: absolute;
     bottom: 10%;
-    right: 14%;
+    right: 1%;
     font-size: 30px;
     color: #fff;
     cursor: pointer;
@@ -695,7 +695,7 @@ header div > span {
     color: #fff;
     padding: 1px 5px;
     border-radius: 10px;
-    background-color: black;
+    background-color: black;.select .inner_2 > div:nth-child(1) > div
 
 }
 .select .inner_2 .sel_menu .g_pic > div span:last-child {
