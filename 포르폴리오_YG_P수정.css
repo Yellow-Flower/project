@@ -37,7 +37,7 @@ header .yglogo {
     height: 110.3px;
     margin: 0 auto;
 }
-header a{
+header p {
     background-image: url(이미지/YG_symbol_W.png);
     background-size: 134px 86.94px;
     width: 134px;
@@ -420,10 +420,6 @@ header div > span {
 .b .swiper-button-next:after {
     color: black;
 }
-
-/* .goodsgrid .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
-    display: none;
-} */
 /* ------------------------블랙핑크 프로필 숨기기------------------- */
 .list_1 {
     display: none;
@@ -527,9 +523,6 @@ header div > span {
     font-family: 'Fugaz One', 'Kanit', sans-serif;
     cursor: pointer;
     margin: 0 20px 20px 0;
-    position: absolute;
-    right: 0%;
-    z-index: 9999;
 }
 
 /* -----------------------------셀렉트 메뉴바------------------ */
@@ -549,12 +542,6 @@ header div > span {
     height: 62vh;
     width: 100%;
     background-color: #fff;
-}
-.select .inner_2 .sel_menu > .tech{
-    height: 74.4vh;
-    width: 100%;
-    background-color: #fff;
-    padding: 0 5%;
 }
 .select .inner_2 .sel_menu > .goods{
     height: 62vh;
@@ -611,7 +598,7 @@ header div > span {
 .select .sel_menu > div:nth-child(1) .yg_goods > p:nth-child(2){
     font-size: 30px;
     font-weight: bold;
-    padding: 15px 0 0 0 ;
+    padding: 7px 0 0 0 ;
 }
 .select .sel_menu > div:nth-child(1) .yg_goods > p:nth-child(3){
     font-size: 16px; 
@@ -689,13 +676,12 @@ header div > span {
 /* ----------------세일------------------ */
 .select .inner_2 .sel_menu .g_pic .line-through{
     text-decoration: line-through;
-    font-size: 7px;
 }
 .select .inner_2 .sel_menu .g_pic > div span:first-child {
     color: #fff;
-    padding: 1px 5px;
+    padding: 3px 5px;
     border-radius: 10px;
-    background-color: black;
+    background-color: red;
 
 }
 .select .inner_2 .sel_menu .g_pic > div span:last-child {
