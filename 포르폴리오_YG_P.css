@@ -417,7 +417,7 @@ header div > span {
 .b .swiper-button-prev:after {
     color: black;
 } 
-.b .swiper-button-prev:after {
+.b .swiper-button-next:after {
     color: black;
 }
 /* ------------------------블랙핑크 프로필 숨기기------------------- */
