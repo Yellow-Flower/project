@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red;/ */
 }
 .mainfont1 {
     font-family: 'Fugaz One', cursive;
@@ -353,59 +353,49 @@ header div > span {
     background-color: black;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    gap: 8px;
-    width: 400px;
-    height: 220px;
+    gap: 8px; */
+    width: 85%;
+    height: 630px;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list > div {
+.sec1_2 .proflie .photo .text_box3 .album_list .swiper{
+    width: 100%;
+    height: 100%;
+}
+.sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div {
     display: flex;
     gap: 8px;
     border: 1px solid black;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list > div > img {
+.sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide img {
     width: 50%;
     height: 189px;
     border-right: 1px solid black;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list > div > section {
+.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 14px;
     width: 50%;
     padding: 10px;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list > div > section > div {
+.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide section > div {
     display: flex;
     flex-direction: column;
 }
-/* .sec1_2 .proflie .photo .text_box3 .album_list > div > section > .long{
-    margin: 82px 0 0 0;
-} */
-.sec1_2 .proflie .photo .text_box3 .album_list > div > section > div:last-child {
-    margin: 56px 0 0 0;
-}
-.sec1_2 .proflie .photo .text_box3 .album_list > .t_m > section > div:last-child {
-    margin: 93px 0 0 0;
-}
-.sec1_2 .proflie .photo .text_box3 .album_list > div > section > div > h1 {
+.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section > div > h1 {
     font-size: 12px;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list > div > section > div > h2 {
+.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section > div > h2 {
     font-size: 10px;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list > div > section > div > p {
+.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section > div > p {
     font-size: 10.5px;
 }
-
-.sec1_2 .proflie .photo .text_box3 > div:last-child {
-    background-image: url(/아이콘/expand_more_FILL0_wght200_GRAD0_opsz48.svg);
-    width: 48px;
-    height: 48px;
-    cursor: pointer;
-    position: absolute;
-    bottom: 1%;
+.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section > div span {
+    font-size: 7px;
 }
 /* ------------------------스와이퍼 수정하기--------------------- */
 .swiper-button-next:after {
@@ -695,9 +685,10 @@ header div > span {
     color: #fff;
     padding: 1px 5px;
     border-radius: 10px;
-    background-color: black;.select .inner_2 > div:nth-child(1) > div
-
+    background-color: black;
 }
+.select .inner_2 > div:nth-child(1) > div
+
 .select .inner_2 .sel_menu .g_pic > div span:last-child {
     color: red;
 }
@@ -711,4 +702,25 @@ header div > span {
 .select .inner_2 > ul:nth-child(2) li.on{
     color: #fff;
     background-color: black;
+}
+/* ---------------문의사항 위 아이콘--------------- */
+.select .inner_2 .sel_menu .tech .shopping{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 9.5%;
+    right: 1.5%;
+    gap: 5px;
+    cursor: pointer;
+}
+.select .inner_2 .sel_menu .tech .shopping > span{
+    /* position: absolute; */
+    font-size: 38px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    background-color: black;
+    text-align: center;
 }
