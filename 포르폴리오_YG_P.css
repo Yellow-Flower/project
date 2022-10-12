@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red;/ */
+    /* border: 1px solid red; */
 }
 .mainfont1 {
     font-family: 'Fugaz One', cursive;
@@ -410,10 +410,23 @@ header div > span {
 .b .swiper-button-next:after {
     color: black;
 }
-
-/* .goodsgrid .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
-    display: none;
-} */
+.text_box3 .album_list{
+    position: relative;
+}
+.text_box3 .album_list .swiper-button-next:after{
+   transform: rotate(90deg)
+}
+.text_box3 .album_list .swiper-button-next{
+    right: 45%;
+    top: unset;
+    bottom: -37px;
+}
+.text_box3 .b{
+    position: relative;
+}
+.text_box3 .b .swiper-pagination{
+    bottom: 42px;
+}
 /* ------------------------블랙핑크 프로필 숨기기------------------- */
 .list_1 {
     display: none;
@@ -540,7 +553,7 @@ header div > span {
     width: 100%;
     background-color: #fff;
 }
-.select .inner_2 .sel_menu > .tech{
+.select .inner_2 .sel_menu > .b{
     height: 74.4vh;
     width: 100%;
     background-color: #fff;
@@ -641,6 +654,11 @@ header div > span {
 }
 
 /* =------------셀렉트 tech-------- */
+.select .inner_2 .sel_menu .b .g_pic a{
+   text-decoration: none;
+   cursor: pointer;
+   color: black;
+}
 .select .inner_2 .sel_menu .goodsgrid{
     width: 100%;
     height: 700px;
@@ -676,7 +694,7 @@ header div > span {
     width: 100%;
     /* margin: 0 auto; */
 }
-/* ----------------세일------------------ */
+/* ----------------세일 + 솔드아웃------------------ */
 .select .inner_2 .sel_menu .g_pic .line-through{
     text-decoration: line-through;
     font-size: 7px;
@@ -692,6 +710,21 @@ header div > span {
 .select .inner_2 .sel_menu .g_pic > div span:last-child {
     color: red;
 }
+.select .inner_2 .sel_menu .g_pic .sold_out{
+    background-color: black;
+    color: #fff;
+    padding: 0px 7px;
+    border-radius: 10px;
+    /* margin-top: 0px; */
+}
+.select .inner_2 .sel_menu .g_pic .set{
+    background-color: red;
+    color: #fff;
+    padding: 0px 7px;
+    border-radius: 10px;
+    /* margin-top: 0px; */
+}
+
 /* --------------------메뉴 감추기------------ */
 .sel_menu > div {
     position: absolute;
@@ -703,8 +736,12 @@ header div > span {
     color: #fff;
     background-color: black;
 }
+.select .inner_2 > ul:nth-child(2) li:hover{
+    color: #fff;
+    background-color: black;
+}
 /* ---------------문의사항 위 아이콘--------------- */
-.select .inner_2 .sel_menu .tech .shopping{
+.select .inner_2 .sel_menu .b .shopping{
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -713,7 +750,7 @@ header div > span {
     gap: 5px;
     cursor: pointer;
 }
-.select .inner_2 .sel_menu .tech .shopping > span{
+.select .inner_2 .sel_menu .b .shopping > span{
     /* position: absolute; */
     font-size: 38px;
     color: #fff;
