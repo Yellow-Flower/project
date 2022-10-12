@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red;/ */
+    border: 1px solid red;
 }
 .mainfont1 {
     font-family: 'Fugaz One', cursive;
@@ -37,7 +37,7 @@ header .yglogo {
     height: 110.3px;
     margin: 0 auto;
 }
-header a{
+header p {
     background-image: url(이미지/YG_symbol_W.png);
     background-size: 134px 86.94px;
     width: 134px;
@@ -353,49 +353,59 @@ header div > span {
     background-color: black;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list {
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    gap: 8px; */
-    width: 85%;
-    height: 630px;
+    gap: 8px;
+    width: 400px;
+    height: 220px;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .swiper{
-    width: 100%;
-    height: 100%;
-}
-.sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div {
+.sec1_2 .proflie .photo .text_box3 .album_list > div {
     display: flex;
     gap: 8px;
     border: 1px solid black;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide img {
+.sec1_2 .proflie .photo .text_box3 .album_list > div > img {
     width: 50%;
     height: 189px;
     border-right: 1px solid black;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section {
+.sec1_2 .proflie .photo .text_box3 .album_list > div > section {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 14px;
     width: 50%;
     padding: 10px;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide section > div {
+.sec1_2 .proflie .photo .text_box3 .album_list > div > section > div {
     display: flex;
     flex-direction: column;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section > div > h1 {
+/* .sec1_2 .proflie .photo .text_box3 .album_list > div > section > .long{
+    margin: 82px 0 0 0;
+} */
+.sec1_2 .proflie .photo .text_box3 .album_list > div > section > div:last-child {
+    margin: 56px 0 0 0;
+}
+.sec1_2 .proflie .photo .text_box3 .album_list > .t_m > section > div:last-child {
+    margin: 93px 0 0 0;
+}
+.sec1_2 .proflie .photo .text_box3 .album_list > div > section > div > h1 {
     font-size: 12px;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section > div > h2 {
+.sec1_2 .proflie .photo .text_box3 .album_list > div > section > div > h2 {
     font-size: 10px;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section > div > p {
+.sec1_2 .proflie .photo .text_box3 .album_list > div > section > div > p {
     font-size: 10.5px;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section > div span {
-    font-size: 7px;
+
+.sec1_2 .proflie .photo .text_box3 > div:last-child {
+    background-image: url(/아이콘/expand_more_FILL0_wght200_GRAD0_opsz48.svg);
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 1%;
 }
 /* ------------------------스와이퍼 수정하기--------------------- */
 .swiper-button-next:after {
@@ -410,10 +420,6 @@ header div > span {
 .b .swiper-button-next:after {
     color: black;
 }
-
-/* .goodsgrid .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
-    display: none;
-} */
 /* ------------------------블랙핑크 프로필 숨기기------------------- */
 .list_1 {
     display: none;
@@ -450,7 +456,7 @@ header div > span {
     align-items: center;
 }
 .select .inner_2 > div:nth-child(1) > div{
-    width: 352px;
+    width: 402px;
     position: relative;
 }
 .select .inner_2 > div:nth-child(1) input{
@@ -468,7 +474,7 @@ header div > span {
 .select .inner_2 > div:nth-child(1) span{
     position: absolute;
     bottom: 10%;
-    right: 1%;
+    right: 14%;
     font-size: 30px;
     color: #fff;
     cursor: pointer;
@@ -517,9 +523,6 @@ header div > span {
     font-family: 'Fugaz One', 'Kanit', sans-serif;
     cursor: pointer;
     margin: 0 20px 20px 0;
-    position: absolute;
-    right: 0%;
-    z-index: 9999;
 }
 
 /* -----------------------------셀렉트 메뉴바------------------ */
@@ -539,12 +542,6 @@ header div > span {
     height: 62vh;
     width: 100%;
     background-color: #fff;
-}
-.select .inner_2 .sel_menu > .tech{
-    height: 74.4vh;
-    width: 100%;
-    background-color: #fff;
-    padding: 0 5%;
 }
 .select .inner_2 .sel_menu > .goods{
     height: 62vh;
@@ -601,7 +598,7 @@ header div > span {
 .select .sel_menu > div:nth-child(1) .yg_goods > p:nth-child(2){
     font-size: 30px;
     font-weight: bold;
-    padding: 15px 0 0 0 ;
+    padding: 7px 0 0 0 ;
 }
 .select .sel_menu > div:nth-child(1) .yg_goods > p:nth-child(3){
     font-size: 16px; 
@@ -679,16 +676,14 @@ header div > span {
 /* ----------------세일------------------ */
 .select .inner_2 .sel_menu .g_pic .line-through{
     text-decoration: line-through;
-    font-size: 7px;
 }
 .select .inner_2 .sel_menu .g_pic > div span:first-child {
     color: #fff;
-    padding: 1px 5px;
+    padding: 3px 5px;
     border-radius: 10px;
-    background-color: black;
-}
-.select .inner_2 > div:nth-child(1) > div
+    background-color: red;
 
+}
 .select .inner_2 .sel_menu .g_pic > div span:last-child {
     color: red;
 }
@@ -702,25 +697,4 @@ header div > span {
 .select .inner_2 > ul:nth-child(2) li.on{
     color: #fff;
     background-color: black;
-}
-/* ---------------문의사항 위 아이콘--------------- */
-.select .inner_2 .sel_menu .tech .shopping{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 9.5%;
-    right: 1.5%;
-    gap: 5px;
-    cursor: pointer;
-}
-.select .inner_2 .sel_menu .tech .shopping > span{
-    /* position: absolute; */
-    font-size: 38px;
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 50px;
-    background-color: black;
-    text-align: center;
 }
