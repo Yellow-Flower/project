@@ -9,10 +9,6 @@ $(document).ready(function () {
       .eq(num).stop(true).fadeIn(350);
   });
   $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
-  
-  // $(".good_menu > li").hover(function(){
-  //   $(this).toggleClass("on");
-  // })
 
   // $(".sel_menu div:first").show();
   //   $(".select li").click(function(){
