@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .mainfont1 {
     font-family: 'Fugaz One', cursive;
@@ -202,11 +202,6 @@ header div > span {
     background-position: 7% 40.7%;
     width: 20%;
 }
-
-.actors .sec1_2 .proflie .box2{
-    background-position: 7% 40.7%;
-    width: 20%;
-}
 /* ----------------프로필 동그라미 아이콘 호버시---------- */
 .sec1_2 .proflie .box2:hover {
     cursor: pointer;
@@ -256,6 +251,11 @@ header div > span {
     color: #fff;
 
 }
+.sec1_2 .proflie .box2 .name .in_sns > a:hover {
+    font-size: 15px;
+    color: red;
+
+}
 
 
 
@@ -264,7 +264,7 @@ header div > span {
 .actors .sec1_2 .proflie .box2 .name::before {
     content: "";
     width: 1px;
-    height: 50px;
+    height: 130px;
     background: #fff;
     display: inline-block;
     position: absolute;
@@ -357,7 +357,7 @@ header div > span {
     font-weight: bold;
     font-size: 15px;
 }
-.sec1_2 .proflie .photo .text_box3 > p:first-child {
+.artist .sec1_2 .proflie .photo .text_box3 > p:first-child {
     background-image: url(/이미지/블랙핑크\ 로고.png);
     background-size: 199px 88px;
     background-position: center center;
@@ -410,6 +410,15 @@ header div > span {
 .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section > div span {
     font-size: 7px;
 }
+
+
+.actors .actors_left .proflie .photo {
+    background-image: url(이미지/배우/김희애_3.jpg);
+    background-size: cover;
+    width: 1026px;
+    height: 855px;
+    margin: 0 auto;
+}
 /* ---------------------------배우------------------------------------------------- */
 .actors .sec1_2 .proflie {
     width: 100%;
@@ -431,7 +440,7 @@ header div > span {
     flex-direction: column;
 
 }
-.actors .sec1_2 .proflie .photo {
+.actors .actors_right .proflie .photo {
     background-image: url(이미지/배우/김희애_2.jpg);
     background-size: cover;
     width: 1026px;
@@ -444,7 +453,7 @@ header div > span {
     align-items: center;
     gap: 18px;
     width: 452px;
-    height: 800px;
+    height: 770px;
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.5);
     position: absolute;
@@ -453,6 +462,11 @@ header div > span {
     padding: 19px 0 0 0;
     font-weight: bold;
     font-size: 15px;
+}
+.actors .sec1_2 .proflie .box2:nth-child(1) .name::before {
+    top: -36.5%;
+    left: 43%;;
+    transform: rotate(90deg);
 }
 .actors .text_box1 {
     width: 434px;
@@ -486,7 +500,6 @@ header div > span {
     width: 434px;
     height: 200px;
     border: 1px solid #fff;
-    filter: drop-shadow(0px 4px 4px rgba(172, 0, 0, 0.25));
     padding: 22px 15px;
     display: flex;
     flex-direction: column;
@@ -511,10 +524,53 @@ header div > span {
 
 }
 .actors .sec1_2 .proflie .box2:nth-child(1){
-    background-position: 41% 41.2%;
+    background-position: 59% 0.5%;
     width: 50%;
-    margin: 0 0 0 8%;
+    margin: 20% 0 0 8%;
 }
+
+.actors .sec1_2 .proflie .box2:nth-child(1) .line::before {
+    top: 70.8%;
+    left: 14%;
+}
+.actors .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div{
+    display: block;
+}
+.actors .sec1_2 .proflie .photo .text_box3 .album_list .swiper-wrapper > div:nth-child(3){
+   overflow-y: scroll;
+}
+/* ------------------배우 프로필 리스트-------- */
+.actors .sec1_2 .proflie .photo .text_box3{
+    font-family: Kanit, sans-serif;
+}
+
+.actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1) span:first-child {
+    font-size: 19px;
+    padding: 0 20px 0 0;
+}
+.actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1) span:last-child {
+    font-size: 16px;
+    padding: 0 100px 0 0;
+}
+.actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(2) .swiper-slide > div > p {
+    font-size: 19px;
+}
+.actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(2) .swiper-slide > div > div {
+    font-size: 16px;
+}
+.actors .sec1_2 .proflie .photo .text_box3 .album_list {
+    width: 85%;
+    height: 650px;
+}
+.actors .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide{
+    height: 30px;
+}
+.actors .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div {
+    display: flex;
+    gap: 20px;
+    border: none;
+}
+
 /* ------------------------스와이퍼 수정하기--------------------- */
 .swiper-button-next:after {
     color: #fff;
@@ -537,7 +593,12 @@ header div > span {
 .text_box3 .album_list .swiper-button-next{
     right: 45%;
     top: unset;
-    bottom: -37px;
+    bottom: -34px;
+}
+.actors .text_box3 .album_list .swiper-button-next {
+    right: 45%;
+    top: unset;
+    bottom: -55px;
 }
 .text_box3 .b{
     position: relative;
