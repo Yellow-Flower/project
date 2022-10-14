@@ -2,6 +2,7 @@ $(document).ready(function () {
   $(".box2").hover(function () {
     $(this).children(".name").toggleClass("on");
   });
+
   $(".select li").click(function () {
     var num = $(this).index();
     $(this).addClass("on").siblings().removeClass("on");
@@ -10,13 +11,24 @@ $(document).ready(function () {
   });
   $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
 
-  // $(".sel_menu div:first").show();
-  //   $(".select li").click(function(){
-  //       $(this).addClass("on").siblings().removeClass("on");
-  //       var imgIndex = $(this).index();
-  //       $(".select li").eq(imgIndex).stop(true).fadeIn(500).siblings().fadeOut(200);
-  //   })
-
+// ----------------------------------------메뉴 열고 닫기-------------------------------
+  // $(".gnb li").click(function(){
+  //   var num = $(this).index();
+  //   $(".snb > div").addClass("on").siblings().removeClass("on");
+  //   $(".snb > div").eq(num).toggle("fast", "swing");
+  // });
+  
+  $(".head_menu").click(function(){
+    $(".gnb").toggleClass("on").show();
+  });
+ 
+// -----------------닫기------------------------
+  $(".menu span").click(function(){
+    $(".menu").hide();
+  });
+  $(".snb_m span").click(function(){
+    $(".snb_m").hide();
+  });
 });
 
 // ---------------스와이퍼----------------------
