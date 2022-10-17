@@ -106,3 +106,25 @@ var swiper5 = new Swiper(".album", {
   observeParents: true,
 });
 
+var swiper6 = new Swiper(".about_audition", {
+  effect: "flip",
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+var swiper7 = new Swiper(".yg_slide", {
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
