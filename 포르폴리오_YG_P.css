@@ -70,7 +70,8 @@ header div > span {
     color: black;
     /* height: 100px; */
     height: 10vh;
-    font-size: 75px;
+    /* font-size: 75px; */
+    font-size: 3.5rem;;
     text-align: center;
 }
 .sec1_1 {
@@ -1291,7 +1292,7 @@ header .snb li:hover{
     height: 600px;
     outline: 1px solid #fff;
     display: flex;
-    margin: 150px auto;
+    /* margin: 150px auto; */
 }
 .aboutyg .ab_box > .yg_sym{
     width: 300px;
@@ -1399,6 +1400,7 @@ header .snb li:hover{
     padding: 20px;
     font-size: 24px;
     overflow: auto;
+    width: 700px;
 }
 .aboutyg .ab_box .history .sentence{
     display: flex;
@@ -1411,6 +1413,7 @@ header .snb li:hover{
 }
 .aboutyg .ab_box .history .sentence .text_small{
     font-size: 16px;
+    margin: 7px 0 0 0;
 }
 .aboutyg .ab_box .yg_history{
     /* width: 100%; */
