@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 /* ---------------홈페이지 전체 슬라이드------------- */
 .homepage{
@@ -1428,14 +1428,17 @@ header .snb li:hover{
     gap: 10px;
     font-family: 'Krub', sans-serif;
     border-right: 1px solid #fff;
+    padding: 10px;
 }
 .aboutyg .ab_box .j_left > div{
     display: flex;
+    gap: 10px;
 }
 .aboutyg .ab_box .j_left > div > p:first-child{
     width: 8px;
     height: 8px;
     background-color: #fff;
+    margin: 12px  0 0 0;
 
 }
 .aboutyg .ab_box .j_left > p{
@@ -1448,7 +1451,15 @@ header .snb li:hover{
     font-size: 13px;
     text-align: center;
     border-collapse: collapse;
-    /* border: 1px solid #fff; */
+    height: 250px
+}
+.aboutyg .ab_box .j_left > table thead{
+    height: 30px;
+    color: black;
+    background-color: #fff;
+}
+.aboutyg .ab_box .j_left > table tfoot{
+    height: 30px;
 }
 .aboutyg .ab_box .j_left > table td{
     border: 1px solid #fff;
@@ -1460,6 +1471,24 @@ header .snb li:hover{
 .aboutyg .ab_box .j_right{
     width: 60%;
     font-family: 'Krub', sans-serif;
+}
+.aboutyg .ab_box .j_right p:first-child{
+    font-size: 40px;
+}
+.aboutyg .ab_box .j_right div:nth-child(2){
+    display: flex;
+}
+.aboutyg .ab_box .j_right div:nth-child(2) > p:first-child{
+    font-size: 16px;
+    color: black;
+    background-color: #fff;
+    padding: 5px 10px;
+}
+.aboutyg .ab_box .j_right div:nth-child(2) > p:last-child{
+    font-size: 16px;
+    color: #fff;
+    background-color: black;
+    padding: 5px 10px;
 }
 
 
