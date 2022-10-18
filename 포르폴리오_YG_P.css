@@ -1490,11 +1490,81 @@ header .snb li:hover{
     background-color: black;
     padding: 5px 10px;
 }
-
-
-
-
-
+.aboutyg .ab_box .news{
+    width: 50%;
+    border-right: 1px solid #fff;
+    color: #fff;
+    padding: 20px;
+}
+.aboutyg .ab_box .news > p{
+    font-size: 40px;
+    margin: 0 0 10px 0;
+}
+.aboutyg .ab_box .news > div {
+    font-family: 'Krub', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+.aboutyg .ab_box .news .news_box{
+    display: flex;
+    border: 1px solid #fff;
+}
+.aboutyg .ab_box .news .news_box img{
+    width: 80px;
+    height: 80px;
+}
+.aboutyg .ab_box .news .news_box > div {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+}
+.aboutyg .ab_box .news .news_box > div > div{
+    display: flex;
+}
+.aboutyg .ab_box .news .news_box > div > div > p{
+    font-size: 12px;
+}
+.aboutyg .ab_box .yg_notice{
+    width: 50%;
+    color: #fff;
+    padding: 20px;
+}
+.aboutyg .ab_box .yg_notice > p{
+    font-size: 40px;
+    margin: 0 0 10px 0;
+}
+.aboutyg .ab_box .yg_notice > div{
+    font-family: 'Krub', sans-serif;
+}
+.aboutyg .ab_box .yg_notice > div > div:first-child{
+    display: flex;
+}
+.aboutyg .ab_box .yg_notice > div > div:first-child > p:first-child{
+    color: black;
+    background-color: #fff;
+    padding: 5px 10px;
+}
+.aboutyg .ab_box .yg_notice > div > div:first-child > p:last-child{
+    color: #fff;
+    background-color: black;
+    padding: 5px 10px;
+}
+.aboutyg .ab_box .yg_notice .notice_box{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.aboutyg .ab_box .yg_notice .notice_box p:first-child{
+    font-size: 10px;
+}
+.aboutyg .ab_box .yg_notice .notice_box p:last-child{
+    font-size: 6px;
+}
 footer{
     height: 5vh;
     line-height: 5vh;
