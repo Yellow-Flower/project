@@ -1270,6 +1270,7 @@ header .snb li:hover{
     
 }
 /* ----------------------어바웃 와이지----------------- */
+
 .aboutyg{
     width: 100%;
     height: 90vh;
@@ -1282,6 +1283,9 @@ header .snb li:hover{
 .aboutyg .yg_slide{
     height: 85vh;
 }
+.aboutyg .yg_slide .swiper-scrollbar.abo{
+    color: #fff;
+}
 .aboutyg .ab_box{
     width: 1300px;
     height: 600px;
@@ -1289,12 +1293,12 @@ header .snb li:hover{
     display: flex;
     margin: 150px auto;
 }
-.aboutyg .ab_box > div:first-child{
+.aboutyg .ab_box > .yg_sym{
     width: 300px;
     /* height: 600px; */
     background-color: #fff;
 }
-.aboutyg .ab_box > div > p:first-child{
+.aboutyg .ab_box > .yg_sym > p:first-child{
     background-image: url(/이미지/YG_Statement_B.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1302,7 +1306,7 @@ header .snb li:hover{
     height: 144px;
     margin: 50px auto;
 }
-.aboutyg .ab_box > div > p:last-child{ 
+.aboutyg .ab_box > .yg_sym > p:last-child{ 
     font-size: 16px;
     margin: -40px 0 0 19px;
     font-weight: bold;
@@ -1311,6 +1315,106 @@ header .snb li:hover{
     width: 1000px;
     display: flex;
     flex-direction: column;
+    color: #fff;
+    padding: 20px;
+}
+.aboutyg .ab_box .introduction > div:first-child{
+    display: flex;
+}
+.aboutyg .ab_box .introduction .shapes div:nth-child(1) img{
+    width: 200px;
+    height: 200px;
+    margin: 28px 44px;
+}
+.aboutyg .ab_box .introduction .shapes div:nth-child(1) span:first-child{
+    font-size: 20px;
+    font-weight: bold;
+}
+.aboutyg .ab_box .introduction .shapes div:nth-child(1) span:last-child{
+    font-size: 12px;
+}
+.aboutyg .ab_box .introduction .shapes .arrow_size{
+    margin: 128px 0 0;
+}
+.aboutyg .ab_box .introduction .shapes .arrow_size i{
+    font-size: 40px;
+    margin: 0 0 0 10px;
+}
+.aboutyg .ab_box .introduction .shapes .arrow_size p{
+    font-size: 15px;
+    text-align: center;
+}
+.aboutyg .ab_box .introduction .shapes .text_size p:first-child{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.aboutyg .ab_box .introduction .shapes .text_size p:last-child{
+    font-size: 12px;
+    text-align: center;
+}
+.aboutyg .ab_box .introduction .shapes div:nth-child(3) img{
+    width: 220px;
+    height: 200px;
+    margin: 17px 40px;
+}
+.aboutyg .ab_box .introduction .shapes div:nth-child(5) img{
+    height: 228px;
+    margin: 7px 6px 0;
+}
+.aboutyg .ab_box .introduction > div:last-child{
+    display: flex;
+}
+.aboutyg .ab_box .introduction .text_3{
+    height: 280px;
+    position: relative;
+    font-size: 15px;
+}
+.aboutyg .ab_box .introduction .text_3::after{
+    content: "";
+    width: 1px;
+    height: 280px;
+    background: rgb(255, 255, 255);
+    display: block;
+    position: absolute;
+    bottom: 18px;
+    left: 311px;
+}
+.aboutyg .ab_box .introduction .shapes > div:last-child >p::after{
+    display: none;
+}
+.aboutyg .ab_box .page2{
+    width: 300px;
+    color: #fff;    
+    padding: 40px 0 0 40px;
+}
+.aboutyg .ab_box .page2 > p:first-child{
+    font-size: 57px;
+}
+.aboutyg .ab_box .page2 > p:last-child{
+    font-size: 24px;
+}
+.aboutyg .ab_box .history{
+    color: #fff;    
+    padding: 20px;
+    font-size: 24px;
+    overflow: auto;
+}
+.aboutyg .ab_box .history .sentence{
+    display: flex;
+}
+.aboutyg .ab_box .history .sentence > p{
+    margin-right: 20px;
+}
+.aboutyg .ab_box .history .sentence .month{
+    display: flex;
+}
+.aboutyg .ab_box .history .sentence .text_small{
+    font-size: 16px;
+}
+.aboutyg .ab_box .yg_history{
+    /* width: 100%; */
+    height: 80%;
 }
 footer{
     height: 5vh;

@@ -10,6 +10,13 @@ $(document).ready(function () {
       .eq(num).stop(true).fadeIn(350);
   });
   $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
+  
+  $(".history").mCustomScrollbar({
+    theme:"minimal"
+  });
+  $(".ac_scr").mCustomScrollbar({
+    theme:"minimal"
+  });
 
 // ----------------------------------------메뉴 열고 닫기-------------------------------
   // $(".gnb li").click(function(){
@@ -120,17 +127,16 @@ var swiper6 = new Swiper(".about_audition", {
 
 var swiper7 = new Swiper(".yg_slide", {
   scrollbar: {
-    el: ".aboutyg .swiper-scrollbar",
+    el: ".aboutyg .abo.swiper-scrollbar",
     hide: true,
   },
   navigation: {
-    nextEl: ".aboutyg .swiper-button-next",
-    prevEl: ".aboutyg .swiper-button-prev",
+    nextEl: ".aboutyg swiper-button-next",
+    prevEl: ".aboutyg swiper-button-prev",
   },
 });
-
 // ----------------------홈페이지 전체 슬라이드-------------
-var swiper = new Swiper(".homepage", {
+var swiper9 = new Swiper(".homepage", {
   direction: "vertical",
   slidesPerView: 1,
   // spaceBetween: 30,
