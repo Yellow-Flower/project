@@ -1304,7 +1304,7 @@ header .snb li:hover{
     width: 260px;
     height: 144px;
 }
-.aboutyg .ab_box > div > p:last-child{
+.aboutyg .ab_box > div > p:last-child{ 
     font-size: 16px;
 }
 .aboutyg .ab_box .introduction{
