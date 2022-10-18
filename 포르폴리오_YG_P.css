@@ -8,8 +8,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
+/* ---------------홈페이지 전체 슬라이드------------- */
+.homepage{
+    width: 100%;
+    height: 100vh;
+}
+/* ------------------------------------------------- */
 .mainfont1 {
     font-family: 'Fugaz One', cursive;
 }
@@ -701,11 +707,7 @@ header .snb li:hover{
     background-size: cover;
     
 }
-.select > div:nth-child(1) {
-    /* height: 100px; */
-    height: 10vh;
-}
-.select > div:nth-child(2) {
+.select > div {
     /* height: 100px; */
     height: 90vh;
 }
@@ -1027,9 +1029,6 @@ header .snb li:hover{
     background-size: cover;
     font-family: 'Fugaz One', 'Kanit', sans-serif;
 }
-.audition > div:first-child{
-    height: 10vh;
-}
 .audition .inner_3 .apply{
     display: flex;
     justify-content: center;
@@ -1273,24 +1272,22 @@ header .snb li:hover{
 /* ----------------------어바웃 와이지----------------- */
 .aboutyg{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background-image: url(/이미지/배경작업3_수정4.png);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Fugaz One', 'Kanit', sans-serif;
 
 }
-.aboutyg > div:first-child{
-    height: 10vh;
-}
 .aboutyg .yg_slide{
-    height: 80vh;
+    height: 85vh;
 }
 .aboutyg .ab_box{
     width: 1300px;
     height: 600px;
     outline: 1px solid #fff;
     display: flex;
+    margin: 150px auto;
 }
 .aboutyg .ab_box > div:first-child{
     width: 300px;
@@ -1303,9 +1300,12 @@ header .snb li:hover{
     background-size: cover;
     width: 260px;
     height: 144px;
+    margin: 50px auto;
 }
 .aboutyg .ab_box > div > p:last-child{ 
     font-size: 16px;
+    margin: -40px 0 0 19px;
+    font-weight: bold;
 }
 .aboutyg .ab_box .introduction{
     width: 1000px;
@@ -1313,5 +1313,56 @@ header .snb li:hover{
     flex-direction: column;
 }
 footer{
-    height: 10vh;
+    height: 5vh;
+    line-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 0 40px 0 20px;
+    /* position: absolute; */
+}
+footer > div:first-child::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    margin-left: -20px;
+}
+/* footer span::after{
+    content: "";
+    width: 1px;
+    height: 10px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    bottom: 12%;
+    right: 64.8%;
+} */
+footer span:nth-child(2){
+    padding: 0 0 0 10px;
+}
+footer span:nth-child(3){
+    padding: 0 0 0 10px;
+}
+footer div:first-child{
+    font-size: 13px;
+}
+footer > p{
+    font-size: 16px;
+    padding: 0 0 0 600px;
+}
+footer div:last-child{
+    font-size: 24px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+footer div:last-child i{
+    color: #fff;
+}
+footer div:last-child i:hover{
+    color: red;
+    cursor: pointer;
 }

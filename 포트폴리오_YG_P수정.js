@@ -120,11 +120,25 @@ var swiper6 = new Swiper(".about_audition", {
 
 var swiper7 = new Swiper(".yg_slide", {
   scrollbar: {
-    el: ".swiper-scrollbar",
+    el: ".aboutyg .swiper-scrollbar",
     hide: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".aboutyg .swiper-button-next",
+    prevEl: ".aboutyg .swiper-button-prev",
   },
+});
+
+// ----------------------홈페이지 전체 슬라이드-------------
+var swiper = new Swiper(".homepage", {
+  direction: "vertical",
+  slidesPerView: 1,
+  // spaceBetween: 30,
+  mousewheel: true,
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true,
+  // },
+  observer: true,
+  observeParents: true,
 });
