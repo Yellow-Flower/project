@@ -1419,6 +1419,53 @@ header .snb li:hover{
     /* width: 100%; */
     height: 80%;
 }
+
+.aboutyg .ab_box .j_left{
+    width: 40%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Krub', sans-serif;
+    border-right: 1px solid #fff;
+}
+.aboutyg .ab_box .j_left > div{
+    display: flex;
+}
+.aboutyg .ab_box .j_left > div > p:first-child{
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+
+}
+.aboutyg .ab_box .j_left > p{
+    font-size: 40px;
+}
+.aboutyg .ab_box .j_left > div{
+    font-size: 24px;
+}
+.aboutyg .ab_box .j_left > table{
+    font-size: 13px;
+    text-align: center;
+    border-collapse: collapse;
+    /* border: 1px solid #fff; */
+}
+.aboutyg .ab_box .j_left > table td{
+    border: 1px solid #fff;
+}
+.aboutyg .ab_box .j_left > table th{
+    border: 1px solid #fff;
+}
+
+.aboutyg .ab_box .j_right{
+    width: 60%;
+    font-family: 'Krub', sans-serif;
+}
+
+
+
+
+
 footer{
     height: 5vh;
     line-height: 5vh;
