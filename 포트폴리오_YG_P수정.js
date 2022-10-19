@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $(".box2").hover(function () {
-    $(this).children(".name").toggleClass("on");
+    $(this).children(".name").toggleClass("on"); 
   });
 
   $(".select li").click(function () {

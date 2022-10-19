@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 /* ---------------홈페이지 전체 슬라이드------------- */
 .homepage{
@@ -73,6 +73,7 @@ header div > span {
     /* font-size: 75px; */
     font-size: 3.5rem;;
     text-align: center;
+    line-height: 10vh;
 }
 .sec1_1 {
     background-color: black;
@@ -1279,23 +1280,26 @@ header .snb li:hover{
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Fugaz One', 'Kanit', sans-serif;
-
 }
 .aboutyg .yg_slide{
     height: 85vh;
 }
 .aboutyg .yg_slide .swiper-scrollbar.abo{
     color: #fff;
+    opacity: 1;
 }
 .aboutyg .ab_box{
-    width: 1300px;
-    height: 600px;
+    /* width: 1300px; */
+    width: 80%;
+    /* height: 600px; */
+    height: 70%;
     outline: 1px solid #fff;
     display: flex;
-    /* margin: 150px auto; */
+    margin: 7% auto;
 }
 .aboutyg .ab_box > .yg_sym{
-    width: 300px;
+    /* width: 300px; */
+    width: 25%;
     /* height: 600px; */
     background-color: #fff;
 }
@@ -1303,17 +1307,20 @@ header .snb li:hover{
     background-image: url(/이미지/YG_Statement_B.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 260px;
-    height: 144px;
+    /* width: 260px;
+    height: 144px; */
+    width: 89%;
+    height: 21%;
     margin: 50px auto;
 }
 .aboutyg .ab_box > .yg_sym > p:last-child{ 
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 1.05rem;
     margin: -40px 0 0 19px;
     font-weight: bold;
 }
 .aboutyg .ab_box .introduction{
-    width: 1000px;
+    width: 75%;
     display: flex;
     flex-direction: column;
     color: #fff;
@@ -1322,10 +1329,15 @@ header .snb li:hover{
 .aboutyg .ab_box .introduction > div:first-child{
     display: flex;
 }
+.aboutyg .ab_box .introduction .shapes > div:nth-child(1){
+    width: 28%;
+}
 .aboutyg .ab_box .introduction .shapes div:nth-child(1) img{
-    width: 200px;
-    height: 200px;
-    margin: 28px 44px;
+    /* width: 200px; */
+    width: 100%;
+    height: 37%;
+    /* height: 200px; */
+    margin: 7px 0;
 }
 .aboutyg .ab_box .introduction .shapes div:nth-child(1) span:first-child{
     font-size: 20px;
@@ -1336,9 +1348,10 @@ header .snb li:hover{
 }
 .aboutyg .ab_box .introduction .shapes .arrow_size{
     margin: 128px 0 0;
+    width: 8%;
 }
 .aboutyg .ab_box .introduction .shapes .arrow_size i{
-    font-size: 40px;
+    font-size: 2.2rem;
     margin: 0 0 0 10px;
 }
 .aboutyg .ab_box .introduction .shapes .arrow_size p{
@@ -1354,14 +1367,24 @@ header .snb li:hover{
     font-size: 12px;
     text-align: center;
 }
+.aboutyg .ab_box .introduction .shapes > div:nth-child(3){
+    width: 28%;
+}
 .aboutyg .ab_box .introduction .shapes div:nth-child(3) img{
-    width: 220px;
-    height: 200px;
-    margin: 17px 40px;
+    /* width: 220px;
+    height: 200px; */
+    width: 103%;
+    height: 35%;
+    margin: 7px 0;
+}
+.aboutyg .ab_box .introduction .shapes > div:nth-child(5){
+    width: 28%;
 }
 .aboutyg .ab_box .introduction .shapes div:nth-child(5) img{
-    height: 228px;
-    margin: 7px 6px 0;
+    /* height: 228px; */
+    width: 110%;
+    height: 36%;
+    margin: 7px 0;
 }
 .aboutyg .ab_box .introduction > div:last-child{
     display: flex;
@@ -1369,7 +1392,7 @@ header .snb li:hover{
 .aboutyg .ab_box .introduction .text_3{
     height: 280px;
     position: relative;
-    font-size: 15px;
+    font-size: 0.9rem;
 }
 .aboutyg .ab_box .introduction .text_3::after{
     content: "";
@@ -1428,7 +1451,7 @@ header .snb li:hover{
     gap: 10px;
     font-family: 'Krub', sans-serif;
     border-right: 1px solid #fff;
-    padding: 10px;
+    padding: 40px;
 }
 .aboutyg .ab_box .j_left > div{
     display: flex;
@@ -1471,6 +1494,7 @@ header .snb li:hover{
 .aboutyg .ab_box .j_right{
     width: 60%;
     font-family: 'Krub', sans-serif;
+    padding: 40px;
 }
 .aboutyg .ab_box .j_right p:first-child{
     font-size: 40px;
@@ -1478,17 +1502,61 @@ header .snb li:hover{
 .aboutyg .ab_box .j_right div:nth-child(2){
     display: flex;
 }
-.aboutyg .ab_box .j_right div:nth-child(2) > p:first-child{
+.aboutyg .ab_box .j_right > div:nth-child(2) > p:first-child{
     font-size: 16px;
     color: black;
     background-color: #fff;
     padding: 5px 10px;
 }
-.aboutyg .ab_box .j_right div:nth-child(2) > p:last-child{
+.aboutyg .ab_box .j_right > div:nth-child(2) > p:last-child{
     font-size: 16px;
     color: #fff;
     background-color: black;
     padding: 5px 10px;
+}
+.aboutyg .ab_box .j_right .graph{
+    display: flex;
+    align-items: flex-end;
+    color: #FFFFFF;
+}
+.aboutyg .ab_box .j_right .graph > img{
+    width: 300px;
+    height: 300px;
+}
+.aboutyg .ab_box .j_right .graph > div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 40px;
+}
+.aboutyg .ab_box .j_right .graph > div img{
+    width: 270px;
+    height: 200px;
+}
+.aboutyg .ab_box .j_right .graph .graph_text{
+    display: flex;
+    font-size: 24px;
+}
+.aboutyg .ab_box .j_right .graph .graph_text div:nth-child(2){
+    font-size: 12px;
+    display: flex;
+}
+.aboutyg .ab_box .j_right .graph .graph_text div:nth-child(3){
+    font-size: 8px;
+    display: flex;
+}
+.aboutyg .ab_box .j_right .graph table thead{
+    font-size: 16px;
+    background-color: #fff;
+    color: black;
+    border-collapse: collapse;
+}
+.aboutyg .ab_box .j_right .graph table td{
+    text-align: center;
+    border: 1px solid #fff;
+}
+.aboutyg .ab_box .j_right .graph table td:nth-child(2){
+    color: red;
 }
 .aboutyg .ab_box .news{
     width: 50%;
@@ -1565,6 +1633,10 @@ header .snb li:hover{
 .aboutyg .ab_box .yg_notice .notice_box p:last-child{
     font-size: 6px;
 }
+
+
+
+
 footer{
     height: 5vh;
     line-height: 5vh;
