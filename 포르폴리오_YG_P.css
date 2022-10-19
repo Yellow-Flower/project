@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 body{
     height: 100vh;
@@ -640,8 +640,9 @@ header .snb li:hover {
     display: block;
 }
 .actors .sec1_2 .proflie .photo .text_box3 .album_list .ac_scroll{
-    overflow-y: scroll;
-    height: 30%;
+    overflow: auto;
+    height: 160px;
+    /* height: 30%; */
 }
 /* ------------------배우 프로필 리스트-------- */
 .actors .sec1_2 .proflie .photo .text_box3 {
@@ -655,7 +656,7 @@ header .snb li:hover {
 }
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1) span:last-child {
     font-size: 16px;
-    padding: 0 100px 0 0;
+    /* padding: 0 100px 0 0; */
 }
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(2) .swiper-slide > div > p {
     /* font-size: 19px; */
@@ -1312,7 +1313,7 @@ header .snb li:hover {
     font-family: 'Fugaz One', 'Kanit', sans-serif;
 }
 .aboutyg .yg_slide {
-    height: 85vh;
+    height: 75vh;
 }
 .aboutyg .yg_slide .swiper-scrollbar.abo {
     color: #fff;
@@ -1659,6 +1660,13 @@ header .snb li:hover {
 .aboutyg .ab_box .yg_notice .notice_box p:last-child {
     font-size: 6px;
 }
+.aboutyg > div:nth-child(2){
+    height: 10vh;
+    color: #fff;
+    font-size: 56px;
+    margin: 0 0 0 20px;
+    line-height: 10vh;
+}
 #up{
     font-size: 40px;
     color: #Fff;
@@ -1666,7 +1674,7 @@ header .snb li:hover {
     right: 2%;
     bottom: 7%;
     z-index: 5555;
-    opacity: 0;
+    /* opacity: 0; */
 }
 #up.on{
     opacity: 1;

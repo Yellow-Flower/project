@@ -14,6 +14,9 @@ $(document).ready(function () {
   $(".history").mCustomScrollbar({
     theme: "minimal"
   });
+  $(".ac_scroll").mCustomScrollbar({
+    theme: "dark-3"
+  });
   $('#up, header > a').click(function () {
     swiper9.slideTo(0);
     return flase;
