@@ -49,7 +49,7 @@ header .yglogo {
     margin: 0 auto;
 }
 header a {
-    background-image: url(이미지/YG_symbol_W.png);
+    background-image: url(/pp/이미지/YG_symbol_W.png);
     background-size: 134px 86.94px;
     width: 134px;
     height: 86.94px;
@@ -216,7 +216,7 @@ header .snb li:hover {
     /* height: 855px; */
     height: 80vh;
     position: relative;
-    background-image: url(이미지/배경\ 작업-\ 별2.png);
+    background-image: url(/pp/이미지/배경\ 작업-\ 별2.png);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
@@ -232,7 +232,7 @@ header .snb li:hover {
 
 }
 .sec1_2 .proflie .photo {
-    background-image: url(이미지/블랙핑크_1.jpg);
+    background-image: url(/pp/이미지/블랙핑크_1.jpg);
     background-size: cover;
     width: 1026px;
     height: 855px;
@@ -271,7 +271,7 @@ header .snb li:hover {
 }
 /* ==================프로필 동그라미 아이콘============= */
 .sec1_2 .proflie .box2 {
-    background-image: url(아이콘/radio_button_checked_FILL0_wght400_GRAD0_opsz48.svg);
+    background-image: url(/pp/아이콘//radio_button_checked_FILL0_wght400_GRAD0_opsz48.svg);
     background-repeat: no-repeat;
     background-size: 25px 25px;
     height: 95%;
@@ -455,7 +455,7 @@ header .snb li:hover {
     font-size: 15px;
 }
 .artist .sec1_2 .proflie .photo .text_box3 > p:first-child {
-    background-image: url(/이미지/블랙핑크\ 로고.png);
+    background-image: url(/pp/이미지/블랙핑크\ 로고.png);
     background-size: 199px 88px;
     background-position: center center;
     width: 211px;
@@ -511,7 +511,7 @@ header .snb li:hover {
 
 
 .actors .actors_left .proflie .photo {
-    background-image: url(이미지/배우/김희애_3.jpg);
+    background-image: url(/pp/이미지/배우/김희애_3.jpg);
     background-size: cover;
     width: 1026px;
     height: 855px;
@@ -523,7 +523,7 @@ header .snb li:hover {
     /* height: 855px; */
     height: 80vh;
     position: relative;
-    background-image: url(이미지/배경\ 작업-\ 별2.png);
+    background-image: url(/pp/이미지/배경\ 작업-\ 별2.png);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
@@ -539,7 +539,7 @@ header .snb li:hover {
 
 }
 .actors .actors_right .proflie .photo {
-    background-image: url(이미지/배우/김희애_2.jpg);
+    background-image: url(/pp/이미지/배우/김희애_2.jpg);
     background-size: cover;
     width: 1026px;
     height: 855px;
@@ -728,7 +728,7 @@ header .snb li:hover {
     width: 100%;
     /* height: 1080px; */
     height: 100vh;
-    background-image: url(/이미지/배경\ 작업-\ 별3.png);
+    background-image: url(/pp/이미지/배경\ 작업-\ 별3.png);
     background-size: cover;
 
 }
@@ -885,7 +885,7 @@ header .snb li:hover {
 .select .sel_menu > div:nth-child(1) .swiper-slide .s_one .gleft > p:nth-child(1) {
     height: 80%;
     width: 100%;
-    background-image: url(/이미지/와이지셀렉터-월간포카.jpg);
+    background-image: url(/pp/이미지/와이지셀렉터-월간포카.jpg);
     background-size: cover;
     /* background-repeat: no-repeat; */
     /* background-position: center center; */
@@ -894,13 +894,13 @@ header .snb li:hover {
     /* height: 536px; */
     width: 100%;
     height: 80%;
-    background-image: url(/이미지/와이지셀렉터-블랙핑크.jpg);
+    background-image: url(/pp/이미지/와이지셀렉터-블랙핑크.jpg);
     background-size: cover;
 }
 .select .sel_menu > div:nth-child(1) .swiper-slide .s_thr .gleft > p:nth-child(1) {
     height: 80%;
     width: 100%;
-    background-image: url(/이미지/와이지셀렉터-간식타임.jpg);
+    background-image: url(/pp/이미지/와이지셀렉터-간식타임.jpg);
     background-size: cover;
 }
 .select .sel_menu > div:nth-child(1) .yg_goods > p:nth-child(2) {
@@ -930,19 +930,19 @@ header .snb li:hover {
 .select .sel_menu > div:nth-child(1) .swiper-slide .s_one .gright > p:nth-child(1) {
     height: 80%;
     width: 100%;
-    background-image: url(/이미지/와이지셀렉터-리사.jpg);
+    background-image: url(/pp/이미지/와이지셀렉터-리사.jpg);
     background-size: cover;
 }
 .select .sel_menu > div:nth-child(1) .swiper-slide .s_two .gright > p:nth-child(1) {
     height: 80%;
     width: 100%;
-    background-image: url(/이미지/와이지셀렉터-블랙핑크2.jpg);
+    background-image: url(/pp/이미지/와이지셀렉터-블랙핑크2.jpg);
     background-size: cover;
 }
 .select .sel_menu > div:nth-child(1) .swiper-slide .s_thr .gright > p:nth-child(1) {
     height: 80%;
     width: 100%;
-    background-image: url(/이미지/와이지셀렉터-트레저.jpg);
+    background-image: url(/pp/이미지/와이지셀렉터-트레저.jpg);
     background-size: cover;
 }
 
@@ -1056,7 +1056,7 @@ header .snb li:hover {
 .audition {
     width: 100%;
     height: 100vh;
-    background-image: url(/이미지/배경작업3_수정1.png);
+    background-image: url(/pp/이미지/배경작업3_수정1.png);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Fugaz One', 'Kanit', sans-serif;
@@ -1084,7 +1084,7 @@ header .snb li:hover {
     margin: 0 0 50px 0;
 }
 .audition .inner_3 .ap_left1 p:first-child {
-    background-image: url(/이미지/YG_Statement_W.png);
+    background-image: url(/pp/이미지/YG_Statement_W.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 361px;
@@ -1140,7 +1140,7 @@ header .snb li:hover {
 }
 .audition .inner_3 .ap_right1 .ap_head > p:nth-child(1) {
     background-color: black;
-    background-image: url(/이미지/YG\ ENTERTAINMENT_logotype_W.png);
+    background-image: url(/pp/이미지/YG\ ENTERTAINMENT_logotype_W.png);
     background-repeat: no-repeat;
     background-size: 148px 19px;
     background-position: 6px 6px;
@@ -1159,7 +1159,7 @@ header .snb li:hover {
     height: 30px;
 }
 .audition .inner_3 .ap_right1 > div:first-child > p {
-    background-image: url(/이미지/빌보드_블랙핑크.jpg);
+    background-image: url(/pp/이미지/빌보드_블랙핑크.jpg);
     background-repeat: no-repeat;
     background-size: 430px 272px;
     width: 430px;
@@ -1265,7 +1265,7 @@ header .snb li:hover {
 
 }
 .audition .inner_3 .no_right1 > div > p:nth-child(1) {
-    background-image: url(/이미지/지구본.png);
+    background-image: url(/pp/이미지/지구본.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -1307,7 +1307,7 @@ header .snb li:hover {
 .aboutyg {
     width: 100%;
     height: 90vh;
-    background-image: url(/이미지/배경작업3_수정4.png);
+    background-image: url(/pp/이미지/배경작업3_수정4.png);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Fugaz One', 'Kanit', sans-serif;
@@ -1335,7 +1335,7 @@ header .snb li:hover {
     background-color: #fff;
 }
 .aboutyg .ab_box > .yg_sym > p:first-child {
-    background-image: url(/이미지/YG_Statement_B.png);
+    background-image: url(/pp/이미지/YG_Statement_B.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 220px;
