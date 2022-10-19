@@ -8,12 +8,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+}
+body{
+    height: 100vh;
+    overflow: hidden;
 }
 /* ---------------홈페이지 전체 슬라이드------------- */
 .homepage {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
+    
 }
 /* ------------------------------------------------- */
 .mainfont1 {
@@ -166,7 +171,7 @@ header .snb li:hover {
 }
 .body .MV video {
     width: 100%;
-    /* height: 855px; */
+    /* height: 80vh; */
     position: relative;
     z-index: 1;
 }
@@ -234,8 +239,10 @@ header .snb li:hover {
     margin: 0 auto;
 }
 .artist .sec1_2 .text_box1 {
-    width: 434px;
+    /* width: 434px; */
+    width: 25%;
     height: 200px;
+    /* height: 20%; */
     border: 1px solid #fff;
     filter: drop-shadow(0px 4px 4px rgba(172, 0, 0, 0.25));
     padding: 22px 15px;
@@ -252,7 +259,8 @@ header .snb li:hover {
     color: #fff;
 }
 .artist .sec1_2 .text_box1 p {
-    font-size: 12px;
+    /* font-size: 12px; */
+    font-size: 0.7rem;
     color: #fff;
 }
 .artist .sec1_2 .text_box2 {
@@ -433,8 +441,10 @@ header .snb li:hover {
     flex-direction: column;
     align-items: center;
     gap: 18px;
-    width: 452px;
-    height: 800px;
+    /* width: 452px; */
+    width: 25%;
+    /* height: 800px; */
+    height: 93%;
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(172, 0, 0, 0.25);
     position: absolute;
@@ -457,7 +467,7 @@ header .snb li:hover {
     flex-direction: column;
     gap: 8px; */
     width: 85%;
-    height: 630px;
+    height: 80%;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper {
     width: 100%;
@@ -470,7 +480,7 @@ header .snb li:hover {
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide img {
     width: 50%;
-    height: 189px;
+    height: 50%;
     border-right: 1px solid black;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section {
@@ -492,7 +502,8 @@ header .snb li:hover {
     font-size: 10px;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section > div > p {
-    font-size: 10.5px;
+    /* font-size: 10.5px; */
+    font-size: 0.5rem;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section > div span {
     font-size: 7px;
@@ -539,8 +550,10 @@ header .snb li:hover {
     flex-direction: column;
     align-items: center;
     gap: 18px;
-    width: 452px;
-    height: 770px;
+    /* width: 452px;
+    height: 770px; */
+    width: 25%;
+    height: 93%;
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.5);
     position: absolute;
@@ -585,8 +598,10 @@ header .snb li:hover {
 
 }
 .actors .text_box1 {
-    width: 434px;
-    height: 200px;
+    /* width: 434px;
+    height: 200px; */
+    width: 25%;
+    height: 220px;
     border: 1px solid #fff;
     padding: 22px 15px;
     display: flex;
@@ -624,8 +639,9 @@ header .snb li:hover {
 .actors .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div {
     display: block;
 }
-.actors .sec1_2 .proflie .photo .text_box3 .album_list .swiper-wrapper > div:nth-child(3) {
+.actors .sec1_2 .proflie .photo .text_box3 .album_list .ac_scroll{
     overflow-y: scroll;
+    height: 30%;
 }
 /* ------------------배우 프로필 리스트-------- */
 .actors .sec1_2 .proflie .photo .text_box3 {
@@ -633,7 +649,8 @@ header .snb li:hover {
 }
 
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1) span:first-child {
-    font-size: 19px;
+    /* font-size: 19px; */
+    font-size: 1.2rem;
     padding: 0 20px 0 0;
 }
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1) span:last-child {
@@ -641,10 +658,12 @@ header .snb li:hover {
     padding: 0 100px 0 0;
 }
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(2) .swiper-slide > div > p {
-    font-size: 19px;
+    /* font-size: 19px; */
+    font-size: 1.2rem;
 }
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(2) .swiper-slide > div > div {
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 0.9rem;
 }
 .actors .sec1_2 .proflie .photo .text_box3 .album_list {
     width: 85%;
@@ -655,7 +674,8 @@ header .snb li:hover {
 }
 .actors .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 15px;
     border: none;
 }
 
@@ -1377,10 +1397,8 @@ header .snb li:hover {
     width: 230px;
 }
 .aboutyg .ab_box .introduction .shapes div:nth-child(3) img {
-    /* width: 220px;
-    height: 200px; */
-    width: 103%;
-    height: 35%;
+    width: 200px;
+    height: 181px;
     margin: 7px 0;
 }
 .aboutyg .ab_box .introduction .shapes > div:nth-child(5) {
@@ -1414,7 +1432,8 @@ header .snb li:hover {
     display: none;
 }
 .aboutyg .ab_box .page2 {
-    width: 300px;
+    /* width: 300px; */
+    width: 30%;
     color: #fff;
     padding: 40px 0 0 40px;
 }
@@ -1429,7 +1448,8 @@ header .snb li:hover {
     padding: 20px;
     font-size: 24px;
     overflow: auto;
-    width: 700px;
+    /* width: 700px; */
+    width: 70%;
 }
 .aboutyg .ab_box .history .sentence {
     display: flex;
@@ -1639,15 +1659,18 @@ header .snb li:hover {
 .aboutyg .ab_box .yg_notice .notice_box p:last-child {
     font-size: 6px;
 }
-.aboutyg > i{
+#up{
     font-size: 40px;
     color: #Fff;
     position: absolute;
     right: 2%;
-    bottom: 17%;
+    bottom: 7%;
+    z-index: 5555;
+    opacity: 0;
 }
-
-
+#up.on{
+    opacity: 1;
+}
 footer {
     height: 5vh;
     line-height: 5vh;

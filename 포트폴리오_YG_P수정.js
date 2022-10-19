@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $(".box2").hover(function () {
-    $(this).children(".name").toggleClass("on"); 
+    $(this).children(".name").toggleClass("on");
   });
 
   $(".select li").click(function () {
@@ -10,47 +10,54 @@ $(document).ready(function () {
       .eq(num).stop(true).fadeIn(350);
   });
   $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
-  
+
   $(".history").mCustomScrollbar({
-    theme:"minimal"
+    theme: "minimal"
   });
-  $(".ac_scr").mCustomScrollbar({
-    theme:"minimal"
+  $('#up, header > a').click(function () {
+    swiper9.slideTo(0);
+    return flase;
+  });
+  $(window).scroll(function () {
+      $("#up").addClass("on");
+   
   });
 
-// ----------------------------------------메뉴 열고 닫기-------------------------------
+  // ----------------------------------------메뉴 열고 닫기-------------------------------
   // $(".gnb li").click(function(){
   //   var num = $(this).index();
   //   $(".snb > div").addClass("on").siblings().removeClass("on");
   //   $(".snb > div").eq(num).toggle("fast", "swing");
   // });
-  
-  $(".head_menu").click(function(){
+
+  $(".head_menu").click(function () {
     $(".gnb").toggleClass("on").show();
   });
- 
-// -----------------닫기------------------------
-  $(".menu span").click(function(){
+
+  // -----------------닫기------------------------
+  $(".menu span").click(function () {
     $(".menu").hide();
   });
-  $(".snb_m span").click(function(){
+  $(".snb_m span").click(function () {
     $(".snb_m").hide();
   });
 });
+
+
 
 // ---------------스와이퍼----------------------
 
 var swiper1 = new Swiper(".artist", {
   hashNavigation: {
-      watchState: true,
+    watchState: true,
   },
   pagination: {
-      el: ".artist_control.swiper-pagination",
-      clickable: true,
+    el: ".artist_control.swiper-pagination",
+    clickable: true,
   },
   navigation: {
-      nextEl: ".artist_control.swiper-button-next",
-      prevEl: ".artist_control.swiper-button-prev",
+    nextEl: ".artist_control.swiper-button-next",
+    prevEl: ".artist_control.swiper-button-prev",
   },
   observer: true,
   observeParents: true,
@@ -58,15 +65,15 @@ var swiper1 = new Swiper(".artist", {
 
 var swiper2 = new Swiper(".actors", {
   hashNavigation: {
-      watchState: true,
+    watchState: true,
   },
   pagination: {
-      el: ".actors_control.swiper-pagination",
-      clickable: true,
+    el: ".actors_control.swiper-pagination",
+    clickable: true,
   },
   navigation: {
-      nextEl: ".actors_control.swiper-button-next",
-      prevEl: ".actors_control.swiper-button-prev",
+    nextEl: ".actors_control.swiper-button-next",
+    prevEl: ".actors_control.swiper-button-prev",
   },
   observer: true,
   observeParents: true,
@@ -74,31 +81,31 @@ var swiper2 = new Swiper(".actors", {
 
 var swiper3 = new Swiper(".goods", {
   hashNavigation: {
-      watchState: true,
+    watchState: true,
   },
   pagination: {
-      el: ".goods .swiper-pagination",
-      clickable: true,
+    el: ".goods .swiper-pagination",
+    clickable: true,
   },
   navigation: {
-      nextEl: ".goods .swiper-button-next",
-      prevEl: ".goods .swiper-button-prev",
+    nextEl: ".goods .swiper-button-next",
+    prevEl: ".goods .swiper-button-prev",
   },
 });
 
 var swiper4 = new Swiper(".goodsgrid", {
   slidesPerView: 6,
   grid: {
-      rows: 2,
+    rows: 2,
   },
   spaceBetween: 30,
   pagination: {
-      el: ".b .swiper-pagination",
-      clickable: true,
+    el: ".b .swiper-pagination",
+    clickable: true,
   },
   navigation: {
-      nextEl: ".b .swiper-button-next",
-      prevEl: ".b .swiper-button-prev",
+    nextEl: ".b .swiper-button-next",
+    prevEl: ".b .swiper-button-prev",
   },
 });
 
@@ -107,7 +114,7 @@ var swiper5 = new Swiper(".album", {
   spaceBetween: 10,
   direction: "vertical",
   navigation: {
-      nextEl: ".album_list .swiper-button-next"
+    nextEl: ".album_list .swiper-button-next"
   },
   observer: true,
   observeParents: true,
