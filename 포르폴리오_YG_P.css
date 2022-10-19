@@ -49,7 +49,7 @@ header .yglogo {
     margin: 0 auto;
 }
 header a {
-    background-image: url(이미지/YG_symbol_W.png);
+    background-image: url(/pp/이미지/YG_symbol_W.png);
     background-size: 134px 86.94px;
     width: 134px;
     height: 86.94px;
@@ -216,7 +216,7 @@ header .snb li:hover {
     /* height: 855px; */
     height: 80vh;
     position: relative;
-    background-image: url(이미지/배경\ 작업-\ 별2.png);
+    background-image: url(/pp/이미지/배경\ 작업-\ 별2.png);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
