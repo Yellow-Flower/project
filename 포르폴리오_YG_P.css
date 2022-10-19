@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 body{
     height: 100vh;
@@ -1189,7 +1189,7 @@ header .snb li:hover {
     height: 80vh;
     position: absolute;
     width: 1000px;
-    left: 25%;
+    /* left: 25%; */
 }
 .audition .inner_3 .no_left1 {
     width: 500px;
