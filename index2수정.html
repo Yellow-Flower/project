@@ -29,18 +29,18 @@
         <div class="menu gnb">
             <span class="material-symbols-outlined" role="button">close</span>
             <ul>
-                <li>ARTIST</li>
-                <li>ACTORS</li>
-                <li>SELECT</li>
-                <li>AUDITION</li>
-                <li>ABOUT US</li>
+                <li class="more">ARTIST</li>
+                <li class="more">ACTORS</li>
+                <li class="more">SELECT</li>
+                <li class="more">AUDITION</li>
+                <li class="more">ABOUT US</li>
             </ul>
         </div>
         <div class="menu snb">
             <div class="snb_m">
                 <span class="material-symbols-outlined" role="button">close</span>
                 <ul>
-                    <li>BIGBANG</li>
+                    <li >BIGBANG</li>
                     <li>BLACKPINK</li>
                     <li>WINNER</li>
                     <li>iKON</li>
@@ -105,7 +105,7 @@
         <div class="swiper-wrapper">
             <div data-hash="slide0-1" class="swiper-slide">
                 <div class="swiper artist w">
-                    <div class="swiper-wrapper artist_sli">
+                    <div class="swiper-wrapper">
                         <div data-hash="slide1" class="swiper-slide">
                             <div class="sec1_1">
                                 <section class="top">
@@ -406,15 +406,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next artist_control"></div>
-                    <div class="swiper-button-prev artist_control"></div>
+                    <div class="artist_control swiper-button-next"></div>
+                    <div class="artist_control swiper-button-prev"></div>
                     <!-- <div class="swiper-pagination artist_control"></div> -->
                 </div>
             </div>
             <div data-hash="slide0-2" class="swiper-slide">
                 <div class="swiper actors w">
-                    <div class="swiper-wrapper actors_sli">
-                        <div data-hash="slide1" class="swiper-slide">
+                    <div class="swiper-wrapper">
+                        <div data-hash="slide1-1" class="swiper-slide">
                             <div class="sec1_2 actors_left">
                                 <div class="proflie">
                                     <div class="back">
@@ -428,7 +428,7 @@
                                                     시간이 지날수록 더욱더 짙어진 매력과 변치 않는 아름다움으로 시청자와 관객의 마음을 사로잡고 있다.</p>
                                             </section>
                                             <section class="text_box2">
-                                                <div class="box2 f_HEEAE">
+                                                <div class="box2 f_HEEAE hee_box_one">
                                                     <div class="name">
                                                         <h1>KIM HEE AE</h1>
                                                         <p></p>
@@ -525,7 +525,7 @@
                                 </section>
                             </div>
                         </div>
-                        <div data-hash="slide2" class="swiper-slide">
+                        <div data-hash="slide1-2" class="swiper-slide">
                             <div class="sec1_2 actors_right">
                                 <div class="proflie">
                                     <div class="back">
@@ -539,7 +539,7 @@
                                                     시간이 지날수록 더욱더 짙어진 매력과 변치 않는 아름다움으로 시청자와 관객의 마음을 사로잡고 있다.</p>
                                             </section>
                                             <section class="text_box2">
-                                                <div class="box2 f_HEEAE">
+                                                <div class="box2 f_HEEAE hee_box_two">
                                                     <div class="name">
                                                         <h1>KIM HEE AE</h1>
                                                         <p></p>
@@ -638,12 +638,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next actors_control"></div>
-                    <div class="swiper-button-prev actors_control"></div>
+                    <div class="actors_control swiper-button-next"></div>
+                    <div class="actors_control swiper-button-prev"></div>
                     <!-- <div class="swiper-pagination actors_control"></div> -->
                 </div>
             </div>
-            <div data-hash="slide0-3" class="swiper-slide home_siled">
+            <div data-hash="slide0-3" class="swiper-slide">
                 <div class="select">
                     <div class="inner_2">
                         <div>
@@ -697,7 +697,9 @@
                                                 <p>모을수록 기쁨이 배가되는 월간포카</p>
                                                 <p>10월 월간포카의 주인공, 지금 공개합니다.</p>
                                             </div>
-                                            <p>WHAT'S<br>HOT</p>
+                                            <div>
+                                                <p>WHAT'S<br>HOT</p>
+                                            </div>
                                             <div class="yg_goods gright" role="button">
                                                 <p></p>
                                                 <p>리사가 추천하는 아크메드라비 어때요?</p>
@@ -712,7 +714,9 @@
                                                 <p>BLACKPINK만의 독보적인 아이덴티티</p>
                                                 <p>탑로더부터 4컷 포토까지 다양한 공식 MD를 확인해 보세요</p>
                                             </div>
-                                            <p>WHAT'S<br>HOT</p>
+                                            <div>
+                                                <p>WHAT'S<br>HOT</p>
+                                            </div>
                                             <div class="yg_goods gright" role="button">
                                                 <p></p>
                                                 <p>블랙핑크만의 매력에 풍덩 빠질 시간</p>
@@ -727,7 +731,9 @@
                                                 <p>트레저와 함께 간식 타임 어때요?</p>
                                                 <p>입맛대로 골라먹는 다양한 스낵을 구경해보세요</p>
                                             </div>
-                                            <p>WHAT'S<br>HOT</p>
+                                            <div>
+                                                <p>WHAT'S<br>HOT</p>
+                                            </div>
                                             <div class="yg_goods gright" role="button">
                                                 <p></p>
                                                 <p>트레저의 다음 도약을 함께 만들어가요</p>
@@ -2667,7 +2673,7 @@
                     </div>
                 </div>
             </div>
-            <div data-hash="slide0-4" class="swiper-slide home_siled">
+            <div data-hash="slide0-4" class="swiper-slide">
                 <div class="audition">
                     <div class="inner_3">
                         <div class="swiper about_audition">
@@ -2758,7 +2764,7 @@
                     </div>
                 </div>
             </div>
-            <div data-hash="slide0-5" class="swiper-slide home_siled">
+            <div data-hash="slide0-5" class="swiper-slide">
                 <div class="aboutyg">
                     <div class="swiper yg_slide">
                         <div class="swiper-wrapper">

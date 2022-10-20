@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 
-
+ 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 body{
     height: 100vh;
@@ -145,7 +145,7 @@ header .gnb li:hover {
     -webkit-text-stroke: 1px #fff
 }
 
-header .snb_m {
+header .snb_m{
     width: 265px;
     height: 100vh;
     background-color: #fff;
@@ -153,9 +153,10 @@ header .snb_m {
     left: 265px;
     top: 0%;
     z-index: 999999;
+    /* display: none; */
     opacity: 0;
 }
-header .snb_m.on {
+header .snb_m.on{
     opacity: 1;
 }
 header .snb li:hover {
@@ -255,12 +256,14 @@ header .snb li:hover {
 }
 .artist .sec1_2 .text_box1 h5 {
     font-size: 30px;
+    /* font-size: 1.8em; */
     text-align: center;
     color: #fff;
 }
 .artist .sec1_2 .text_box1 p {
     /* font-size: 12px; */
     font-size: 0.7rem;
+    /* font-size: 0.688em; */
     color: #fff;
 }
 .artist .sec1_2 .text_box2 {
@@ -443,8 +446,7 @@ header .snb li:hover {
     gap: 18px;
     /* width: 452px; */
     width: 25%;
-    /* height: 800px; */
-    height: 93%;
+    height: 800px;
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(172, 0, 0, 0.25);
     position: absolute;
@@ -466,7 +468,7 @@ header .snb li:hover {
     /* display: flex;
     flex-direction: column;
     gap: 8px; */
-    width: 85%;
+    width: 80%;
     height: 80%;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper {
@@ -476,11 +478,12 @@ header .snb li:hover {
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div {
     display: flex;
     gap: 8px;
+    height: 90%;
     border: 1px solid black;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide img {
-    width: 50%;
-    height: 50%;
+    /* width: 50%;
+    height: 100%; */
     border-right: 1px solid black;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section {
@@ -489,6 +492,7 @@ header .snb li:hover {
     justify-content: space-between;
     gap: 14px;
     width: 50%;
+    height: 138px;
     padding: 10px;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide section > div {
@@ -566,7 +570,6 @@ header .snb li:hover {
 .actors .sec1_2 .proflie .box2:nth-child(1) .name::before {
     top: -36.5%;
     left: 43%;
-    ;
     transform: rotate(90deg);
 }
 .actors .text_box1 {
@@ -626,12 +629,16 @@ header .snb li:hover {
     height: 100%;
 
 }
-.actors .sec1_2 .proflie .box2:nth-child(1) {
+.actors .sec1_2 .proflie .hee_box_one:nth-child(1) {
+    background-position: 59% 0.5%;
+    width: 50%;
+    margin: 15% 0px 0 30%;
+}
+.actors .sec1_2 .proflie .hee_box_two:nth-child(1) {
     background-position: 59% 0.5%;
     width: 50%;
     margin: 20% 0 0 8%;
 }
-
 .actors .sec1_2 .proflie .box2:nth-child(1) .line::before {
     top: 70.8%;
     left: 14%;
@@ -912,17 +919,17 @@ header .snb li:hover {
 .select .sel_menu > div:nth-child(1) .yg_goods > p:nth-child(3) {
     font-size: 1.2rem;
 }
-.select .sel_menu > div:nth-child(1) .slide > p {
+.select .sel_menu > div:nth-child(1) .slide > div:nth-child(2){
     /* height: 620px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 64vh;
     width: 30%;
     background-color: black;
-    font-size: 80px;
+    /* font-size: 80px; */
+    font-size: 4rem;
     color: #fff;
-    /* line-height: 620px; */
-    text-align: center;
-    padding: 185px 0 0 0;
-
 }
 .select .sel_menu > div:nth-child(1) .swiper-slide .gright {
     width: 35%;
@@ -1074,8 +1081,10 @@ header .snb li:hover {
     margin: 0 0 10px 20px;
 }
 .audition .inner_3 .ap_left1 {
-    width: 500px;
-    height: 600px;
+    /* width: 500px;
+    height: 600px; */
+    width: 32%;
+    height: 70%;
     background: black;
     display: flex;
     flex-direction: column;
@@ -1101,8 +1110,10 @@ header .snb li:hover {
     margin: 150px 0 0 0;
 }
 .audition .inner_3 .ap_right1 {
-    width: 500px;
-    height: 600px;
+    /* width: 500px;
+    height: 600px; */
+    width: 32%;
+    height: 70%;
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -1111,10 +1122,13 @@ header .snb li:hover {
     gap: 40px;
     margin: 25px 0 0 0;
     border: 1.5px solid #000000;
+    padding: 50px;
 }
 .audition .inner_3 .ap_right1 > div:first-child {
     width: 430px;
     height: 400px;
+    /* width: 19rem; */
+    /* height: 23rem; */
     background-color: #fff;
     outline: 1.5px solid black;
     border-radius: 15px;
@@ -1161,9 +1175,12 @@ header .snb li:hover {
 .audition .inner_3 .ap_right1 > div:first-child > p {
     background-image: url(/pp/이미지/빌보드_블랙핑크.jpg);
     background-repeat: no-repeat;
-    background-size: 430px 272px;
+    /* background-size: 430px 272px; */
     width: 430px;
     height: 272px;
+    background-size: cover;
+    /* width: 19rem; */
+    /* height: 15rem; */
     margin: 0 0 0 -15px;
     border-top: 1.5px solid black;
     border-bottom: 1.5px solid black;
@@ -1599,15 +1616,19 @@ header .snb li:hover {
     font-family: 'Krub', sans-serif;
     display: flex;
     flex-direction: column;
-    gap: 10px
+    gap: 10px;
+    width: 100%;
+    height: 85%;
 }
 .aboutyg .ab_box .news .news_box {
     display: flex;
     border: 1px solid #fff;
 }
 .aboutyg .ab_box .news .news_box img {
-    width: 80px;
-    height: 80px;
+    /* width: 80px;
+    height: 80px; */
+    width: 15%;
+    height: 100%;
 }
 .aboutyg .ab_box .news .news_box > div {
     font-size: 15px;
@@ -1633,6 +1654,7 @@ header .snb li:hover {
 }
 .aboutyg .ab_box .yg_notice > div {
     font-family: 'Krub', sans-serif;
+    /* height: 50%; */
 }
 .aboutyg .ab_box .yg_notice > div > div:first-child {
     display: flex;
@@ -1674,10 +1696,13 @@ header .snb li:hover {
     right: 2%;
     bottom: 7%;
     z-index: 5555;
-    /* opacity: 0; */
+    opacity: 0;
+    transition: all 0.5s ease;
+    visibility: hidden;
 }
 #up.on{
     opacity: 1;
+    visibility: visible;
 }
 footer {
     height: 5vh;

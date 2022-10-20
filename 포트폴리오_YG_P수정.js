@@ -2,12 +2,12 @@ $(document).ready(function () {
   $(".box2").hover(function () {
     $(this).children(".name").toggleClass("on");
   });
-
+// -------------------전체메뉴-------------
   $(".select li").click(function () {
     var num = $(this).index();
     $(this).addClass("on").siblings().removeClass("on");
-    $(".sel_menu > div").filter(":visible").stop(true).fadeOut(350).end()
-      .eq(num).stop(true).fadeIn(350);
+    $(".sel_menu > div").filter(":visible").stop(true).end()
+      .eq(num).stop(true).show();
   });
   $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
 
@@ -21,24 +21,44 @@ $(document).ready(function () {
     swiper9.slideTo(0);
     return flase;
   });
-  $(window).scroll(function () {
-      $("#up").addClass("on");
-   
-  });
 
-  // ----------------------------------------메뉴 열고 닫기-------------------------------
-  // $(".gnb li").click(function(){
-  //   var num = $(this).index();
-  //   $(".snb > div").addClass("on").siblings().removeClass("on");
-  //   $(".snb > div").eq(num).toggle("fast", "swing");
-  // });
 
+
+  // ----------------------------------------메뉴 열기-------------------------------
   $(".head_menu").click(function () {
     $(".gnb").toggleClass("on").show();
   });
+  // $(".gnb li").click(function () {
+  //   var num2 = $(this).index();
+  //   $(this).addClass("on").siblings().removeClass("on");
+  //   $(".snb_m").addClass("on").siblings().removeClass("on");.eq(num2).show();
+  // });
+
+// 메뉴클릭시 하위메뉴 슬라이드 다운
+    // 하위메뉴가 열린상태에서 다른메뉴 클릭시 변경, 자기메뉴 클릭시 슬라이드 업
+  //   $(".head_menu").click(function() {
+  //     $('.gnb').children().removeClass('on');
+  //     if ($(this).hasClass('on')) {
+  //         $(this).removeClass('on');
+  //         $("nav").removeClass('on').children().removeClass('on');
+  //     } else {
+  //         $("nav").addClass('on');
+  //         $(this).addClass('on').siblings().removeClass('on');
+  //         $("#" + $(this).data('id')).addClass('on').siblings().removeClass('on');
+  //     }
+  // });
+  // 2차메뉴 클릭때마다 3차메뉴 출력
+  // $("li.more").each(function() {
+  //     let $2menuindex = $('snb_m').index();
+  //     $(this).click(function() {
+  //         $(this).addClass('on').siblings().removeClass('on');
+  //         $($2menuindex).addClass('on').siblings().removeClass('on');
+  //     });
+  // });
+
 
   // -----------------닫기------------------------
-  $(".menu span").click(function () {
+  $(".gnb span").click(function () {
     $(".menu").hide();
   });
   $(".snb_m span").click(function () {
@@ -55,12 +75,12 @@ var swiper1 = new Swiper(".artist", {
     watchState: true,
   },
   pagination: {
-    el: ".artist_control.swiper-pagination",
+    el: ".artist .swiper-pagination",
     clickable: true,
   },
   navigation: {
-    nextEl: ".artist_control.swiper-button-next",
-    prevEl: ".artist_control.swiper-button-prev",
+    nextEl: ".artist .artist_control.swiper-button-next",
+    prevEl: ".artist .artist_control.swiper-button-prev",
   },
   observer: true,
   observeParents: true,
@@ -71,12 +91,12 @@ var swiper2 = new Swiper(".actors", {
     watchState: true,
   },
   pagination: {
-    el: ".actors_control.swiper-pagination",
+    el: ".actors .actors_control.swiper-pagination",
     clickable: true,
   },
   navigation: {
-    nextEl: ".actors_control.swiper-button-next",
-    prevEl: ".actors_control.swiper-button-prev",
+    nextEl: ".actors .actors_control.swiper-button-next",
+    prevEl: ".actors .actors_control.swiper-button-prev",
   },
   observer: true,
   observeParents: true,
@@ -157,4 +177,13 @@ var swiper9 = new Swiper(".homepage", {
   // },
   observer: true,
   observeParents: true,
+  on: {
+    slideChange: function () {
+      if (this.realIndex >= 2) {
+        $("#up").addClass("on");
+      } else {
+        $("#up").removeClass("on");
+      }
+    },
+  }
 });
