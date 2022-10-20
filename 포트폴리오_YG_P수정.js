@@ -2,7 +2,7 @@ $(document).ready(function () {
   $(".box2").hover(function () {
     $(this).children(".name").toggleClass("on");
   });
-// -------------------전체메뉴-------------
+  // -------------------전체메뉴-------------
   $(".select li").click(function () {
     var num = $(this).index();
     $(this).addClass("on").siblings().removeClass("on");
@@ -21,21 +21,31 @@ $(document).ready(function () {
     swiper9.slideTo(0);
     return flase;
   });
-
-
-
   // ----------------------------------------메뉴 열기-------------------------------
   $(".head_menu").click(function () {
     $(".gnb").toggleClass("on").show();
   });
+  $(".gnb li").click(function () {
+    $(".snb_m").toggleClass("on").show();
+    if (".gnb")
+  });
+  // $(".gnb li").click(function(){
+  //   $(".snb_m").toggleClass("on").show();
+  // $(".gnb li").click(function () {
+  //   var num2 = $(this).index();
+  //   var num3 = $(".snb_m").index();
+  //   $(this).addClass("on").siblings().removeClass("on");
+  //   $(".snb_m").filter(":visible").stop(true).end()
+  //     .eq(num3).stop(true).show();
+  // });
   // $(".gnb li").click(function () {
   //   var num2 = $(this).index();
   //   $(this).addClass("on").siblings().removeClass("on");
   //   $(".snb_m").addClass("on").siblings().removeClass("on");.eq(num2).show();
   // });
 
-// 메뉴클릭시 하위메뉴 슬라이드 다운
-    // 하위메뉴가 열린상태에서 다른메뉴 클릭시 변경, 자기메뉴 클릭시 슬라이드 업
+  // 메뉴클릭시 하위메뉴 슬라이드 다운
+  // 하위메뉴가 열린상태에서 다른메뉴 클릭시 변경, 자기메뉴 클릭시 슬라이드 업
   //   $(".head_menu").click(function() {
   //     $('.gnb').children().removeClass('on');
   //     if ($(this).hasClass('on')) {
