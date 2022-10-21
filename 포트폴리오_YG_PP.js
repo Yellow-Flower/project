@@ -29,7 +29,7 @@ $(document).ready(function () {
   $(".gnb li").click(function () {
     var num2 = $(this).index();
     $(this).addClass("on").siblings().removeClass("on");
-    $(".snb_m").eq(num2).toggleClass("on");
+    $(".snb_m").eq(num2).addClass("on").siblings().removeClass("on");
   });
 
 
