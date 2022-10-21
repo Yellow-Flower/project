@@ -110,9 +110,12 @@ header .gnb {
     width: 265px;
     height: 100vh;
     background-color: black;
-    z-index: 999999;
-    
+    z-index: 999999;  
 } 
+header .gnb li.on{
+    color: black;
+    -webkit-text-stroke: 1px #fff
+}
 header .hide{
     transform: translateX(-100%);
 }
@@ -162,6 +165,10 @@ header .snb ul {
     flex-direction: column;
     gap: 5px;
     margin: 10px 0 0 15px;
+}
+header .snb .actor_menu{
+    overflow: scroll;
+    height: 95%;
 }
 header .gnb li::after {
     content: "";

@@ -17,6 +17,9 @@ $(document).ready(function () {
   $(".ac_scroll").mCustomScrollbar({
     theme: "dark-3"
   });
+  $(".actor_menu").mCustomScrollbar({
+    theme: "minimal-dark"
+  });
   $('#up, header > a').click(function () {
     swiper9.slideTo(0);
     return flase;
@@ -24,6 +27,7 @@ $(document).ready(function () {
   // ----------------------------------------메뉴 열기-------------------------------
   $(".head_menu").click(function () {
     $(".menu").addClass("on");
+    $(".gnb li").removeClass("on");
   });
 
   $(".gnb li").click(function () {
@@ -31,7 +35,7 @@ $(document).ready(function () {
     $(this).addClass("on").siblings().removeClass("on");
     $(".snb_m").eq(num2).addClass("on").siblings().removeClass("on");
   });
-
+  
 
   // $(".snb_m").toggleClass("on");
 
