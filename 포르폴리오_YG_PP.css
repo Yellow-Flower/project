@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 body{
     height: 100vh;
@@ -58,7 +58,29 @@ header a {
     left: 1.5rem;
     cursor: pointer;
 }
-header div:nth-child(3) > span {
+header .button{
+    display: flex;
+}
+header .button .language{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    /* width: 89px; */
+    height: 200px;
+    position: absolute;
+    right: 0.5%;
+    top: 29%;
+    z-index: 99999;
+    text-align: center;
+}
+header .button .language span{
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #fff;
+    color: black;
+    border: 2px solid black;
+}
+header .button span{
     display: inline-block;
     cursor: pointer;
     color: #fff;
@@ -66,7 +88,7 @@ header div:nth-child(3) > span {
     font-family: 'Kanit', sans-serif;
     padding: 5px;
 }
-header div:nth-child(3) > span:hover{
+header .button span:hover{
     color: black;
     background-color: #fff;
     border-radius: 15px;
@@ -167,7 +189,7 @@ header .snb ul {
     margin: 10px 0 0 15px;
 }
 header .snb .actor_menu{
-    overflow: scroll;
+    overflow-y: auto;
     height: 95%;
 }
 header .gnb li::after {

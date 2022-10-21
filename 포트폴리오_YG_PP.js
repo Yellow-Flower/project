@@ -18,7 +18,7 @@ $(document).ready(function () {
     theme: "dark-3"
   });
   $(".actor_menu").mCustomScrollbar({
-    theme: "minimal-dark"
+    theme: "dark-2"
   });
   $('#up, header > a').click(function () {
     swiper9.slideTo(0);
