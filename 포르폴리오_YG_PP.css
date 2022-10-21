@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 body{
     height: 100vh;
@@ -191,6 +191,10 @@ header .snb ul {
 header .snb .actor_menu{
     overflow-y: auto;
     height: 95%;
+    /* width: 100%; */
+}
+.mCSB_inside > .mCSB_container{
+    margin-right: 0;
 }
 header .gnb li::after {
     content: "";
