@@ -12,7 +12,7 @@ $(document).ready(function () {
   $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
 
   $(".history").mCustomScrollbar({
-    theme: "minimal"
+    theme: "rounded"
   });
   $(".ac_scroll").mCustomScrollbar({
     theme: "dark-3"
@@ -23,12 +23,12 @@ $(document).ready(function () {
   });
   // ----------------------------------------메뉴 열기-------------------------------
   $(".head_menu").click(function () {
-    $(".gnb").toggleClass("on").show();
+    $(".menu").addClass("on")
   });
   $(".gnb li").click(function () {
-    $(".snb_m").toggleClass("on").show();
-    if (".gnb")
+    $(".snb_m").toggleClass("on");
   });
+
   // $(".gnb li").click(function(){
   //   $(".snb_m").toggleClass("on").show();
   // $(".gnb li").click(function () {
@@ -69,10 +69,8 @@ $(document).ready(function () {
 
   // -----------------닫기------------------------
   $(".gnb span").click(function () {
-    $(".menu").hide();
-  });
-  $(".snb_m span").click(function () {
-    $(".snb_m").hide();
+    $(".menu").removeClass("on");
+    $(".hide").removeClass("on");
   });
 });
 
