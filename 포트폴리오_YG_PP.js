@@ -23,54 +23,22 @@ $(document).ready(function () {
   });
   // ----------------------------------------메뉴 열기-------------------------------
   $(".head_menu").click(function () {
-    $(".menu").addClass("on")
+    $(".menu").addClass("on");
   });
+
   $(".gnb li").click(function () {
-    $(".snb_m").toggleClass("on");
+    var num2 = $(this).index();
+    $(this).addClass("on").siblings().removeClass("on");
+    $(".snb_m").eq(num2).toggleClass("on");
   });
 
-  // $(".gnb li").click(function(){
-  //   $(".snb_m").toggleClass("on").show();
-  // $(".gnb li").click(function () {
-  //   var num2 = $(this).index();
-  //   var num3 = $(".snb_m").index();
-  //   $(this).addClass("on").siblings().removeClass("on");
-  //   $(".snb_m").filter(":visible").stop(true).end()
-  //     .eq(num3).stop(true).show();
-  // });
-  // $(".gnb li").click(function () {
-  //   var num2 = $(this).index();
-  //   $(this).addClass("on").siblings().removeClass("on");
-  //   $(".snb_m").addClass("on").siblings().removeClass("on");.eq(num2).show();
-  // });
 
-  // 메뉴클릭시 하위메뉴 슬라이드 다운
-  // 하위메뉴가 열린상태에서 다른메뉴 클릭시 변경, 자기메뉴 클릭시 슬라이드 업
-  //   $(".head_menu").click(function() {
-  //     $('.gnb').children().removeClass('on');
-  //     if ($(this).hasClass('on')) {
-  //         $(this).removeClass('on');
-  //         $("nav").removeClass('on').children().removeClass('on');
-  //     } else {
-  //         $("nav").addClass('on');
-  //         $(this).addClass('on').siblings().removeClass('on');
-  //         $("#" + $(this).data('id')).addClass('on').siblings().removeClass('on');
-  //     }
-  // });
-  // 2차메뉴 클릭때마다 3차메뉴 출력
-  // $("li.more").each(function() {
-  //     let $2menuindex = $('snb_m').index();
-  //     $(this).click(function() {
-  //         $(this).addClass('on').siblings().removeClass('on');
-  //         $($2menuindex).addClass('on').siblings().removeClass('on');
-  //     });
-  // });
-
+  // $(".snb_m").toggleClass("on");
 
   // -----------------닫기------------------------
   $(".gnb span").click(function () {
     $(".menu").removeClass("on");
-    $(".hide").removeClass("on");
+    $(".snb_m").removeClass("on");
   });
 });
 

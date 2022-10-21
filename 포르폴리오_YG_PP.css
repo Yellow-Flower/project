@@ -113,9 +113,11 @@ header .gnb {
     z-index: 999999;
     
 } 
-
-header .hide.on{
+header .hide{
     transform: translateX(-100%);
+}
+header .hide.on{
+    transform: translateX(0);
 }
 header .snb_m{
     width: 265px;
