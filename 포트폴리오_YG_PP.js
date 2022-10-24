@@ -23,6 +23,20 @@ $(document).ready(function () {
     swiper9.slideTo(0);
     return flase;
   });
+
+
+
+
+
+  // --------------------공지사항-----------------------------
+  $(".notice_but > p ").click(function () {
+    var num3 = $(this).index();
+    $(this).addClass("on").siblings().removeClass("on");
+    $(".notice_list > .notice_YG").eq(num3).stop(true).show().siblings().hide();
+  });
+  $(".notice_but > p:first").addClass("on").add(".notice_list > div:last").show();
+  $(".notice_list > div:last").hide();
+
   // ----------------------------------------메뉴 열기-------------------------------
   $(".head_menu").click(function () {
     $(".menu").addClass("on");
@@ -41,13 +55,20 @@ $(document).ready(function () {
     $(".snb_m").removeClass("on");
   });
 });
-  // --------------------------------------- 언어 열기-------------------------------
-  $(".but_lang").click(function () {
-    // $(this).css({"background-color": "black", "color": "white"});
-    $(".language").slideToggle("fast", "swing");
-  });
+// --------------------------------------- 로그인 열기-------------------------------
+$(".button > span:first").click(function () {
+  $(".login_page").addClass("on");
+});
+$(".log_close").click(function () {
+  $(".login_page").removeClass("on");
+});
+// --------------------------------------- 언어 열기-------------------------------
+$(".but_lang").click(function () {
+  // $(this).css({"background-color": "black", "color": "white"});
+  $(".language").slideToggle("fast", "swing");
+});
 
-  $(".language").hide();
+$(".language").hide();
 // ---------------스와이퍼----------------------
 
 var swiper1 = new Swiper(".artist", {
@@ -144,6 +165,15 @@ var swiper7 = new Swiper(".yg_slide", {
     nextEl: ".aboutyg swiper-button-next",
     prevEl: ".aboutyg swiper-button-prev",
   },
+});
+var swiper8 = new Swiper(".instagram", {
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  observer: true,
+  observeParents: true,
 });
 // ----------------------홈페이지 전체 슬라이드-------------
 var swiper9 = new Swiper(".homepage", {

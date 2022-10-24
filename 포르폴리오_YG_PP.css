@@ -131,8 +131,68 @@ header .button > span{
 .sec1_1 {
     background-color: black;
 }
-
-
+/* -----------------------------------login_page--------------------------------- */
+header .login_page{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99999999;
+    transform: translateY(-100%);
+    transition: 0.2s all;
+    background-color: black;
+    background-image: url(/pp/이미지/배경_패턴.jpg);
+    /* background-repeat: round; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* filter: blur(5px); */
+}
+header .login_page.on{
+    transform: translateY(0);
+}
+header .login_page > div{
+    /* background-color: #fff; */
+    color: #fff;
+    width: 350px;
+    height: 150px;
+    padding: 20px;
+    border: 2px solid #fff;
+    background-color: black;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    align-items: flex-end;
+}
+header .login_page > div > div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+header .login_page > div input{
+    border: 1px solid black;
+    width: 200px;
+    height: 30px;
+    margin-left: 5px;
+}
+header .login_page > div > p{
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    margin: 5px 0;
+    width: 277px;
+}
+header .login_page > div > p:hover{
+    background-color: black;
+    color: #fff;
+    border: 1px solid #fff;
+    
+}
 /* ----------------------------------menu 만들기------------------------------ */
 header .menu{
     display: flex;
@@ -332,6 +392,7 @@ header .snb li:hover {
     position: absolute;
     left: 5%;
     bottom: 10%;
+    font-family: 'IBM Plex Sans KR', sans-serif;
 }
 .artist .sec1_2 .text_box1 h5 {
     font-size: 30px;
@@ -534,6 +595,7 @@ header .snb li:hover {
     padding: 19px 0 0 0;
     font-weight: bold;
     font-size: 15px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
 }
 .artist .sec1_2 .proflie .photo .text_box3 > p:first-child {
     background-image: url(/pp/이미지/블랙핑크\ 로고.png);
@@ -666,6 +728,7 @@ header .snb li:hover {
     position: absolute;
     left: 5%;
     bottom: 10%;
+    font-family: 'IBM Plex Sans KR', sans-serif;
 }
 .actors .sec1_2 .text_box1 h5 {
     font-size: 30px;
@@ -695,6 +758,7 @@ header .snb li:hover {
     position: absolute;
     left: 5%;
     bottom: 10%;
+    font-family: 'IBM Plex Sans KR', sans-serif;
 }
 .actors .sec1_2 .text_box1 h5 {
     font-size: 30px;
@@ -735,7 +799,8 @@ header .snb li:hover {
 }
 /* ------------------배우 프로필 리스트-------- */
 .actors .sec1_2 .proflie .photo .text_box3 {
-    font-family: Kanit, sans-serif;
+    /* font-family: Kanit, sans-serif; */
+    font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1) span:first-child {
@@ -1206,7 +1271,7 @@ header .snb li:hover {
     border: 1.5px solid #000000;
     padding: 50px;
 }
-.audition .inner_3 .ap_right1 > div:first-child {
+.audition .inner_3 .ap_right1 .ins_page{
     width: 430px;
     height: 400px;
     /* width: 19rem; */
@@ -1217,7 +1282,7 @@ header .snb li:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     padding: 15px;
 }
-.audition .inner_3 .ap_right1 > div:last-child {
+.audition .inner_3 .ap_right1 > div:last-child p{
     width: 430px;
     height: 85px;
     line-height: 85px;
@@ -1254,7 +1319,7 @@ header .snb li:hover {
     width: 30px;
     height: 30px;
 }
-.audition .inner_3 .ap_right1 > div:first-child > p {
+.audition .inner_3 .ap_right1 .ins_page > p{
     background-image: url(/pp/이미지/빌보드_블랙핑크.jpg);
     background-repeat: no-repeat;
     /* background-size: 430px 272px; */
@@ -1267,16 +1332,16 @@ header .snb li:hover {
     border-top: 1.5px solid black;
     border-bottom: 1.5px solid black;
 }
-.audition .inner_3 .ap_right1 > div:first-child > div:nth-child(2) {
+.audition .inner_3 .ap_right1 .ins_page .ap_head {
     margin: 0 0 10px 0;
 }
-.audition .inner_3 .ap_right1 > div:first-child > div:last-child {
+.audition .inner_3 .ap_right1 .ins_page > div:last-child {
     display: flex;
     height: 10px;
     gap: 2px;
     margin: 7px 0 0 0;
 }
-.audition .inner_3 .ap_right1 > div:first-child > div:last-child > img {
+.audition .inner_3 .ap_right1 .ins_page > div:last-child > img {
     width: 20px;
     height: 20px;
     margin: 2px 2px 0 5px;
@@ -1331,6 +1396,7 @@ header .snb li:hover {
 }
 .audition .inner_3 .no_left1 .au_notice > div:first-child span {
     font-size: 24px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
 }
 .audition .inner_3 .no_left1 .au_notice > div:first-child i {
     font-size: 24px;
@@ -1348,6 +1414,9 @@ header .snb li:hover {
 .audition .inner_3 .no_left1 input {
     width: 400px;
     height: 200px;
+    font-size: 14px;
+    font-weight: bold;
+    /* margin: 0 0 0 50px; */
 }
 .audition .inner_3 .no_right1 {
     width: 500px;
@@ -1735,18 +1804,22 @@ header .snb li:hover {
     font-family: 'Krub', sans-serif;
     /* height: 50%; */
 }
-.aboutyg .ab_box .yg_notice > div > div:first-child {
+.aboutyg .ab_box .yg_notice > div > .notice_but {
     display: flex;
 }
-.aboutyg .ab_box .yg_notice > div > div:first-child > p:first-child {
+.aboutyg .ab_box .yg_notice > div > .notice_but > p{
     color: black;
     background-color: #fff;
     padding: 5px 10px;
 }
-.aboutyg .ab_box .yg_notice > div > div:first-child > p:last-child {
+.aboutyg .ab_box .yg_notice > div > .notice_but > p.on{
     color: #fff;
     background-color: black;
-    padding: 5px 10px;
+}
+.aboutyg .ab_box .yg_notice > div > .notice_but > p:hover {
+    color: #fff;
+    background-color: black;
+    cursor: pointer;
 }
 .aboutyg .ab_box .yg_notice .notice_box {
     display: flex;
@@ -1767,6 +1840,12 @@ header .snb li:hover {
     font-size: 56px;
     margin: 0 0 0 20px;
     line-height: 10vh;
+}
+.aboutyg .ab_box .yg_notice .notice_but .notice_YG{
+    opacity: 0;
+}
+.aboutyg .ab_box .yg_notice .notice_but .notice_YG.on{
+    opacity: 1;
 }
 #up{
     font-size: 40px;
