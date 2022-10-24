@@ -6,8 +6,7 @@ $(document).ready(function () {
   $(".select li").click(function () {
     var num = $(this).index();
     $(this).addClass("on").siblings().removeClass("on");
-    $(".sel_menu > div").filter(":visible").stop(true).end()
-      .eq(num).stop(true).show();
+    $(".sel_menu > div").eq(num).stop(true).show().siblings().hide();
   });
   $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
 
@@ -35,9 +34,6 @@ $(document).ready(function () {
     $(this).addClass("on").siblings().removeClass("on");
     $(".snb_m").eq(num2).addClass("on").siblings().removeClass("on");
   });
-  
-
-  // $(".snb_m").toggleClass("on");
 
   // -----------------닫기------------------------
   $(".gnb span").click(function () {
@@ -45,9 +41,13 @@ $(document).ready(function () {
     $(".snb_m").removeClass("on");
   });
 });
+  // --------------------------------------- 언어 열기-------------------------------
+  $(".but_lang").click(function () {
+    // $(this).css({"background-color": "black", "color": "white"});
+    $(".language").slideToggle("fast", "swing");
+  });
 
-
-
+  $(".language").hide();
 // ---------------스와이퍼----------------------
 
 var swiper1 = new Swiper(".artist", {
@@ -159,7 +159,7 @@ var swiper9 = new Swiper(".homepage", {
   observeParents: true,
   on: {
     slideChange: function () {
-      if (this.realIndex >= 2) {
+      if (this.realIndex >= 3) {
         $("#up").addClass("on");
       } else {
         $("#up").removeClass("on");

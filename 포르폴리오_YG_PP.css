@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 
-  
+   
 * {
     margin: 0;
     padding: 0;
@@ -68,18 +68,31 @@ header .button .language{
     /* width: 89px; */
     height: 200px;
     position: absolute;
-    right: 0.5%;
-    top: 29%;
+    /* right: 1.8%;
+    top: 73%; */
+    right: 25px;
+    top: 78px;
     z-index: 99999;
     text-align: center;
 }
 header .button .language span{
     display: inline-block;
     border-radius: 15px;
+    background-color: black;
+    color: #fff;
+    /* border: 2px solid #fff; */
+}
+header .button .language span:hover{
+    background-color: #fff;
+    color: black;
+}
+/* header .button .language .but_lang{
+    display: inline-block;
+    border-radius: 15px;
     background-color: #fff;
     color: black;
     border: 2px solid black;
-}
+} */
 header .button span{
     display: inline-block;
     cursor: pointer;
@@ -87,11 +100,16 @@ header .button span{
     font-size: 20px;
     font-family: 'Kanit', sans-serif;
     padding: 5px;
+    border: 2px solid black;
 }
 header .button span:hover{
     color: black;
     background-color: #fff;
     border-radius: 15px;
+    border: 2px solid black;
+}
+header .button > span{
+    padding: 5px 12px;
 }
 .top {
     width: 100%;
@@ -113,6 +131,8 @@ header .button span:hover{
 .sec1_1 {
     background-color: black;
 }
+
+
 /* ----------------------------------menu 만들기------------------------------ */
 header .menu{
     display: flex;
@@ -599,7 +619,9 @@ header .snb li:hover {
     background-color: rgba(177, 165, 151, 0.7);
     display: flex;
     flex-direction: column;
-
+}
+.actors .actors_left .proflie .back {
+    background-color: rgba(1, 2, 8, 0.5);
 }
 .actors .actors_right .proflie .photo {
     background-image: url(/pp/이미지/배우/김희애_2.jpg);
@@ -617,14 +639,15 @@ header .snb li:hover {
     height: 770px; */
     width: 25%;
     height: 93%;
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.5);
+    background-color: rgba(82, 80, 80, 0.3);
+    box-shadow: 0px 4px 4px rgba(26, 25, 25, 0.5);
     position: absolute;
     right: 5%;
     bottom: 5%;
     padding: 19px 0 0 0;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 15px;
+    color: #fff
 }
 .actors .sec1_2 .proflie .box2:nth-child(1) .name::before {
     top: -36.5%;
@@ -893,10 +916,9 @@ header .snb li:hover {
 }
 
 /* -----------------------------셀렉트 메뉴바------------------ */
-.select .inner_2 .sel_menu {
+.select .inner_2 .sel_menu{
     /* height: 75vh; */
     width: 100%;
-    /* background-color: #fff; */
     position: absolute;
     z-index: 100;
     top: 17%;
@@ -905,18 +927,19 @@ header .snb li:hover {
     font-family: 'Poppins', sans-serif;
     padding: 0 5%;
 }
-.select .inner_2 .sel_menu > .goods {
+.select .inner_2 .sel_menu > .goods{
     height: 62vh;
     width: 100%;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
-.select .inner_2 .sel_menu > .b {
+.select .inner_2 .sel_menu > .b{
     height: 74.4vh;
     width: 100%;
     background-color: #fff;
     padding: 0 5%;
+    /* position: relative; */
 }
-.select .inner_2 .sel_menu > .goods {
+.select .inner_2 .sel_menu .goods{
     height: 62vh;
     width: 100%;
     background-color: #fff;
