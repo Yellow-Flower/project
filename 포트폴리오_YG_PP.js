@@ -167,6 +167,7 @@ var swiper7 = new Swiper(".yg_slide", {
   },
 });
 var swiper8 = new Swiper(".instagram", {
+  spaceBetween: 100,
   centeredSlides: true,
   autoplay: {
     delay: 2500,

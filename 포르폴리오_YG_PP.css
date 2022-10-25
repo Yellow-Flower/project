@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
-
+ 
    
 * {
     margin: 0;
@@ -156,7 +156,7 @@ header .login_page > div{
     /* background-color: #fff; */
     color: #fff;
     width: 350px;
-    height: 150px;
+    height: 180px;
     padding: 20px;
     border: 2px solid #fff;
     background-color: black;
@@ -167,31 +167,42 @@ header .login_page > div{
     display: flex;
     flex-direction: column;
     font-family: 'IBM Plex Sans KR', sans-serif;
-    align-items: flex-end;
 }
 header .login_page > div > div{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    gap: 5px;
 }
 header .login_page > div input{
     border: 1px solid black;
-    width: 200px;
+    width: 100%;
     height: 30px;
-    margin-left: 5px;
+    border: 1px solid grey;
 }
 header .login_page > div > p{
-    background-color: #fff;
-    color: black;
-    cursor: pointer;
-    margin: 5px 0;
-    width: 277px;
-}
-header .login_page > div > p:hover{
     background-color: black;
     color: #fff;
-    border: 1px solid #fff;
-    
+    cursor: pointer;
+    margin: 5px 0;
+    width: 100%;
+    border: 1.5px solid grey;
+}
+header .login_page > div > p:hover{
+    background-color: #fff;
+    color: black;
+    border: 1px solid black;   
+}
+header .login_page > div > div:last-child{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    font-size: 15px;
+    margin: 10px -28px 0 0;
+
+}
+header .login_page > div > div:last-child p{
+    margin: 0 15px;
+    cursor: pointer;
 }
 /* ----------------------------------menu 만들기------------------------------ */
 header .menu{
@@ -869,6 +880,9 @@ header .snb li:hover {
 .text_box3 .b .swiper-pagination {
     bottom: 42px;
 }
+.audition .swiper-pagination-bullet{
+    color: #fff;
+}
 /* ------------------------블랙핑크 프로필 숨기기------------------- */
 .list_1 {
     display: none;
@@ -1270,21 +1284,42 @@ header .snb li:hover {
     margin: 25px 0 0 0;
     border: 1.5px solid #000000;
     padding: 50px;
+    font-size: 14px;
+}
+.audition .inner_3 .ap_right1 .swiper {
+    width: 100%;
+    height: 100%;
 }
 .audition .inner_3 .ap_right1 .ins_page{
-    width: 430px;
-    height: 400px;
+    /* width: 430px;
+    height: 400px; */
+    width: 100%;
+    height: 100%;
     /* width: 19rem; */
     /* height: 23rem; */
     background-color: #fff;
-    outline: 1.5px solid black;
+    /* outline: 1.5px solid black; */
+    border: 1.5px solid black;
     border-radius: 15px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 15px;
+    padding: 15px 0;
+}
+.audition .inner_3 .ap_right1 .ins_page div:nth-child(2){
+    padding: 0 15px;
+}
+.audition .inner_3 .ap_right1 .ins_page div:nth-child(4){
+    padding: 0 15px;
+}
+.audition .inner_3 .ap_right1 .ins_page div:nth-child(2) p:first-child{
+    margin-bottom: 5px;
+}
+.audition .inner_3 .ap_right1 > div:last-child{
+    width: 100%;
+    height: 85px;
 }
 .audition .inner_3 .ap_right1 > div:last-child p{
-    width: 430px;
-    height: 85px;
+    /* width: 430px;
+    height: 85px; */
     line-height: 85px;
     background-color: black;
     /* outline: 1px solid black; */
@@ -1298,6 +1333,7 @@ header .snb li:hover {
     display: flex;
     gap: 2px;
     height: 40px;
+    padding: 0 15px;
 }
 .audition .inner_3 .ap_right1 .ap_head > p:nth-child(1) {
     background-color: black;
@@ -1320,26 +1356,31 @@ header .snb li:hover {
     height: 30px;
 }
 .audition .inner_3 .ap_right1 .ins_page > p{
-    background-image: url(/pp/이미지/빌보드_블랙핑크.jpg);
     background-repeat: no-repeat;
-    /* background-size: 430px 272px; */
-    width: 430px;
-    height: 272px;
+    width: 100%;
+    height: 71%;
     background-size: cover;
-    /* width: 19rem; */
-    /* height: 15rem; */
-    margin: 0 0 0 -15px;
+    /* margin: 0 0 0 -16px; */
     border-top: 1.5px solid black;
     border-bottom: 1.5px solid black;
 }
+.audition .inner_3 .ap_right1 .instagram .swiper-wrapper > div:nth-child(1) .ins_page > p{
+    background-image: url(/pp/이미지/뉴스/인스타_블랙핑크_1.jpg);
+}
+.audition .inner_3 .ap_right1 .instagram .swiper-wrapper > div:nth-child(2) .ins_page > p{
+    background-image: url(/pp/이미지/뉴스/인스타_블랙핑크_2.jpg);
+}
+.audition .inner_3 .ap_right1 .instagram .swiper-wrapper > div:nth-child(3) .ins_page > p{
+    background-image: url(/pp/이미지/뉴스/인스타_블랙핑크_3.jpg);
+}
 .audition .inner_3 .ap_right1 .ins_page .ap_head {
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
 }
 .audition .inner_3 .ap_right1 .ins_page > div:last-child {
     display: flex;
     height: 10px;
     gap: 2px;
-    margin: 7px 0 0 0;
+    margin: 10px 0;
 }
 .audition .inner_3 .ap_right1 .ins_page > div:last-child > img {
     width: 20px;
@@ -1402,9 +1443,19 @@ header .snb li:hover {
     font-size: 24px;
     cursor: pointer;
 }
-.audition .inner_3 .no_left1 .au_notice ul {
+.audition .inner_3 .no_left1 .au_notice > div:first-child a{
+    color: black;
+}
+.audition .inner_3 .no_left1 .au_notice > div:last-child{
     padding: 15px 0 0 15px;
     border-top: 1px solid black;
+}
+.audition .inner_3 .no_left1 .au_notice > div:last-child a{
+    color: black;
+    text-decoration: none;
+}
+.audition .inner_3 .no_left1 .au_notice > div:last-child a:hover{
+    text-decoration:underline
 }
 .audition .inner_3 .no_left1 label {
     font-size: 32px;
@@ -1515,15 +1566,24 @@ header .snb li:hover {
 }
 .aboutyg .ab_box .introduction {
     width: 75%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    
     color: #fff;
     padding: 20px;
 }
-.aboutyg .ab_box .introduction > div:first-child {
+.aboutyg .ab_box .introduction .shapes {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 .aboutyg .ab_box .introduction .shapes > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
     width: 28%;
 }
 .aboutyg .ab_box .introduction .shapes div:nth-child(1) img {
@@ -1539,12 +1599,16 @@ header .snb li:hover {
     font-size: 12px;
 }
 .aboutyg .ab_box .introduction .shapes .arrow_size {
-    margin: 128px 0 0;
     width: 8%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
 .aboutyg .ab_box .introduction .shapes .arrow_size i {
     font-size: 2.2rem;
-    margin: 0 0 0 10px;
+    width: 37px;
+    /* margin: 0 0 0 10px; */
 }
 .aboutyg .ab_box .introduction .shapes .arrow_size p {
     font-size: 15px;
@@ -1560,7 +1624,11 @@ header .snb li:hover {
     text-align: center;
 }
 .aboutyg .ab_box .introduction .shapes > div:nth-child(3) {
-    width: 230px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 28%;
 }
 .aboutyg .ab_box .introduction .shapes div:nth-child(3) img {
     width: 200px;
@@ -1568,6 +1636,10 @@ header .snb li:hover {
     margin: 7px 0;
 }
 .aboutyg .ab_box .introduction .shapes > div:nth-child(5) {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
     width: 28%;
 }
 .aboutyg .ab_box .introduction .shapes div:nth-child(5) img {
@@ -1582,7 +1654,8 @@ header .snb li:hover {
 .aboutyg .ab_box .introduction .text_3 {
     height: 50%;
     position: relative;
-    font-size: 13.2px;
+    /* font-size: 13.2px; */
+    font-size: 0.7rem;
     /* border-right: 1px solid #fff; */
 }
 .aboutyg .ab_box .introduction .shapes > div:last-child > p::after {
@@ -1827,12 +1900,22 @@ header .snb li:hover {
     height: 40px;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
+    justify-content: space-between;
+}
+.aboutyg .ab_box .yg_notice .notice_box a{
+    /* cursor: pointer; */
+    text-decoration: none;
+    color: #fff;
+}
+.aboutyg .ab_box .yg_notice .notice_box a:hover{
+    text-decoration: underline;
 }
 .aboutyg .ab_box .yg_notice .notice_box p:first-child {
     font-size: 10px;
 }
 .aboutyg .ab_box .yg_notice .notice_box p:last-child {
     font-size: 6px;
+
 }
 .aboutyg > div:nth-child(2){
     height: 10vh;
@@ -1900,7 +1983,7 @@ footer div:first-child {
     font-size: 13px;
 }
 footer > p {
-    font-size: 16px;
+    font-size: 12px;
     /* padding: 0 0 0 600px; */
 }
 footer div:last-child {
