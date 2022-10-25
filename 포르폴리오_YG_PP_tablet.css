@@ -12,8 +12,14 @@ header .login_page > div > div:last-child{
 }
 /* ----------------------------------아티스트 페이지2--------------- */
 .sec1_2 .proflie .photo .text_box3{
-    font-size: 12px;
+    /* font-size: 12px; */
+    font-size: 0.7rem;
     height: 700px;
+}
+.artist .sec1_2 .proflie .photo .text_box3 > p:first-child{
+    background-size: 100% 145%;
+    width: 90%;
+    height: 61px;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div{
     /* flex-direction: column; */
@@ -34,7 +40,9 @@ header .login_page > div > div:last-child{
     height: 50%;
     background-color: transparent;
 }
-
+/* .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section{
+    height: 60%;
+} */
 /* ----------------------------------굿즈 페이지--------------- */
 .select .inner_2 > div:nth-child(3) p:last-child{
     width: 109px;

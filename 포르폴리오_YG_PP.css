@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 body{
     height: 100vh;
@@ -615,6 +615,7 @@ header .snb li:hover {
     width: 211px;
     height: 61px;
     background-color: black;
+    background-repeat: no-repeat;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list {
     /* display: flex;
