@@ -55,7 +55,7 @@ header a {
     height: 86.94px;
     margin: 0 auto;
     position: relative;
-    left: 1.5rem;
+    left: 4.5rem;
     cursor: pointer;
 }
 header .button{
@@ -392,7 +392,7 @@ header .snb li:hover {
 .artist .sec1_2 .text_box1 {
     /* width: 434px; */
     width: 25%;
-    height: 200px;
+    height: 220px;
     /* height: 20%; */
     border: 1px solid #fff;
     filter: drop-shadow(0px 4px 4px rgba(172, 0, 0, 0.25));
@@ -412,7 +412,7 @@ header .snb li:hover {
     color: #fff;
 }
 .artist .sec1_2 .text_box1 p {
-    /* font-size: 12px; */
+    /* font-size: 10px; */
     font-size: 0.7rem;
     /* font-size: 0.688em; */
     color: #fff;
@@ -629,23 +629,28 @@ header .snb li:hover {
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div {
     display: flex;
-    gap: 8px;
-    height: 90%;
+    /* gap: 8px; */
+    height: 100%;
     border: 1px solid black;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide img {
-    /* width: 50%;
-    height: 100%; */
+    /* width: 188px;
+    height: 188px; */
+    width: 50%;
+    /* height: 100%; */
     border-right: 1px solid black;
+    object-fit: contain;
+    /* background-color: #fff; */
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 14px;
+    gap: 5px;
     width: 50%;
-    height: 138px;
+    /* height: 190px; */
     padding: 10px;
+    flex-shrink: 0;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide section > div {
     display: flex;
@@ -862,12 +867,13 @@ header .snb li:hover {
     position: relative;
 }
 .text_box3 .album_list .swiper-button-next:after {
-    transform: rotate(90deg)
+    transform: rotate(90deg);
+    font-size: 31px;
 }
 .text_box3 .album_list .swiper-button-next {
     right: 45%;
     top: unset;
-    bottom: -34px;
+    bottom: -39px;
 }
 .actors .text_box3 .album_list .swiper-button-next {
     right: 45%;
@@ -978,7 +984,7 @@ header .snb li:hover {
 .select .inner_2 > div:nth-child(3) p:last-child {
     width: 150px;
     height: 47px;
-    line-height: 39px;
+    /* line-height: 47px; */
     padding: 5px;
     background-color: black;
     color: #fff;
@@ -993,7 +999,11 @@ header .snb li:hover {
     right: 0%;
     z-index: 9999;
 }
-
+.select .inner_2 > div:nth-child(3) p:last-child:hover {
+    background-color: rgb(19, 228, 243);
+    color: black;
+    border: 2px solid black;
+}
 /* -----------------------------셀렉트 메뉴바------------------ */
 .select .inner_2 .sel_menu{
     /* height: 75vh; */
@@ -1219,6 +1229,11 @@ header .snb li:hover {
     border-radius: 50px;
     background-color: black;
     text-align: center;
+}
+.select .inner_2 .sel_menu .b .shopping > span:hover{
+    background-color: rgb(19, 228, 243);
+    color: black;
+    border: 2px solid black;
 }
 /* ---------------------오디션---------------------------- */
 .audition {

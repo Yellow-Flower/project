@@ -90,7 +90,7 @@ var swiper1 = new Swiper(".artist", {
 var swiper2 = new Swiper(".actors", {
   hashNavigation: {
     watchState: true,
-  },
+  }, 
   pagination: {
     el: ".actors .actors_control.swiper-pagination",
     clickable: true,
@@ -134,7 +134,7 @@ var swiper4 = new Swiper(".goodsgrid", {
 });
 
 var swiper5 = new Swiper(".album", {
-  slidesPerView: 3,
+  slidesPerView: 2,
   spaceBetween: 10,
   direction: "vertical",
   navigation: {
@@ -142,6 +142,16 @@ var swiper5 = new Swiper(".album", {
   },
   observer: true,
   observeParents: true,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+  },
 });
 
 var swiper6 = new Swiper(".about_audition", {
