@@ -14,7 +14,7 @@ $(document).ready(function () {
     theme: "rounded"
   });
   $(".ac_scroll").mCustomScrollbar({
-    theme: "dark-3"
+    theme: "light-3"
   });
   $(".actor_menu").mCustomScrollbar({
     theme: "dark-2"

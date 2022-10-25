@@ -1252,6 +1252,8 @@ header .snb li:hover {
     /* align-items: center; */
     padding: 50px;
     margin: 0 0 50px 0;
+    font-family: 'Do Hyeon', sans-serif;
+
 }
 .audition .inner_3 .ap_left1 p:first-child {
     background-image: url(/pp/이미지/YG_Statement_W.png);
@@ -1301,7 +1303,7 @@ header .snb li:hover {
     /* outline: 1.5px solid black; */
     border: 1.5px solid black;
     border-radius: 15px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
     padding: 15px 0;
 }
 .audition .inner_3 .ap_right1 .ins_page div:nth-child(2){
@@ -1328,6 +1330,10 @@ header .snb li:hover {
     font-size: 24px;
     text-align: center;
     cursor: pointer;
+    font-family: 'Do Hyeon', sans-serif;
+}
+.audition .inner_3 .ap_right1 > div:last-child a{
+    text-decoration: none;
 }
 .audition .inner_3 .ap_right1 .ap_head {
     display: flex;
@@ -1408,6 +1414,8 @@ header .snb li:hover {
     border: 1.5px solid #000000;
     /* position: absolute; */
     /* left: 0%; */
+    font-family: 'Do Hyeon', sans-serif;
+
 }
 .audition .inner_3 .no_left1::after{
     content: "";
@@ -1433,11 +1441,13 @@ header .snb li:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 15px 0;
+    margin: 0 0 8px 0;
 }
 .audition .inner_3 .no_left1 .au_notice > div:first-child span {
     font-size: 24px;
-    font-family: 'IBM Plex Sans KR', sans-serif;
+    /* font-family: 'IBM Plex Sans KR', sans-serif; */
+    font-family: 'Do Hyeon', sans-serif;
+
 }
 .audition .inner_3 .no_left1 .au_notice > div:first-child i {
     font-size: 24px;
@@ -1447,7 +1457,7 @@ header .snb li:hover {
     color: black;
 }
 .audition .inner_3 .no_left1 .au_notice > div:last-child{
-    padding: 15px 0 0 15px;
+    padding: 8px 0 0 5px;
     border-top: 1px solid black;
 }
 .audition .inner_3 .no_left1 .au_notice > div:last-child a{
@@ -1465,9 +1475,11 @@ header .snb li:hover {
 .audition .inner_3 .no_left1 input {
     width: 400px;
     height: 200px;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 16px;
+    /* font-weight: bold; */
     /* margin: 0 0 0 50px; */
+    font-family: 'Do Hyeon', sans-serif;
+
 }
 .audition .inner_3 .no_right1 {
     width: 500px;
@@ -1559,10 +1571,11 @@ header .snb li:hover {
     margin: 50px 25px;
 }
 .aboutyg .ab_box > .yg_sym > p:last-child {
-    /* font-size: 16px; */
-    font-size: 1.05rem;
+    font-size: 23px;
+    /* font-size: 1.3rem; */
     margin: -40px 0 0 19px;
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-family: 'Do Hyeon', sans-serif;
 }
 .aboutyg .ab_box .introduction {
     width: 75%;
