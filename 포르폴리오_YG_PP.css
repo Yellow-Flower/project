@@ -392,14 +392,14 @@ header .snb li:hover {
 .artist .sec1_2 .text_box1 {
     /* width: 434px; */
     width: 25%;
-    height: 220px;
+    /* height: 220px; */
     /* height: 20%; */
     border: 1px solid #fff;
     filter: drop-shadow(0px 4px 4px rgba(172, 0, 0, 0.25));
-    padding: 22px 15px;
+    padding: 15px 20px;
     display: flex;
     flex-direction: column;
-    gap: 13PX;
+    gap: 8PX;
     position: absolute;
     left: 5%;
     bottom: 10%;
@@ -412,8 +412,8 @@ header .snb li:hover {
     color: #fff;
 }
 .artist .sec1_2 .text_box1 p {
-    /* font-size: 10px; */
-    font-size: 0.7rem;
+    font-size: 12px;
+    /* font-size: 0.7rem; */
     /* font-size: 0.688em; */
     color: #fff;
 }
@@ -431,7 +431,7 @@ header .snb li:hover {
     height: 95%;
     color: #fff;
     font-size: 15px;
-    opacity: 0.3;
+    /* opacity: 0.3; */
 }
 /* ----------------프로필 동그라미 아이콘 위치---------- */
 .sec1_2 .proflie .box2:nth-child(1) {
@@ -458,7 +458,7 @@ header .snb li:hover {
 }
 /* ------------------프로필 숨기기 */
 .sec1_2 .proflie .box2 .name {
-    opacity: 0;
+    /* opacity: 0; */
     transition: all 1s ease;
     vertical-align: top;
     /* display: none; */
@@ -528,6 +528,8 @@ header .snb li:hover {
 }
 .sec1_2 .proflie .box2:nth-child(1) .name::before {
     top: 67.5%;
+    /* left: 33%; */
+    /* top: 61.5%; */
     left: 33%;
     transform: rotate(30deg);
 }
@@ -605,7 +607,6 @@ header .snb li:hover {
     bottom: 5%;
     padding: 19px 0 0 0;
     font-weight: bold;
-    font-size: 15px;
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
 .artist .sec1_2 .proflie .photo .text_box3 > p:first-child {
@@ -616,6 +617,11 @@ header .snb li:hover {
     height: 61px;
     background-color: black;
     background-repeat: no-repeat;
+}
+.artist .sec1_2 .proflie .photo .text_box3 > p:nth-child(2) {
+    width: 90%;
+    font-size: 15px;
+    text-align: center;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list {
     /* display: flex;

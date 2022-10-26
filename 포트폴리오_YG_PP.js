@@ -134,7 +134,7 @@ var swiper4 = new Swiper(".goodsgrid", {
 });
 
 var swiper5 = new Swiper(".album", {
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 10,
   direction: "vertical",
   navigation: {
@@ -144,6 +144,10 @@ var swiper5 = new Swiper(".album", {
   observeParents: true,
   breakpoints: {
     640: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    641: {
       slidesPerView: 2,
       spaceBetween: 10,
     },

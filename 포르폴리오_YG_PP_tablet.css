@@ -7,7 +7,7 @@ header .login_page > div{
     font-size: 16px;
 } 
 header .login_page > div > div:last-child{
-    font-size: 13px;
+    font-size: 13px; 
     margin: 0 -28px 0 0;
 }
 /* ----------------------------------아티스트 페이지2--------------- */
@@ -18,19 +18,26 @@ header .login_page > div > div:last-child{
 .artist .sec1_2 .text_box1 h5{
     font-size: 24px;
 }
-.swiper-wrapper{
-    gap: 50px;
+.sec1_2 .proflie .photo .text_box3 .swiper-wrapper{
+    gap: 40px;
 }
 .sec1_2 .proflie .photo .text_box3{
     /* font-size: 12px; */
     font-size: 0.7rem;
     height: 700px;
-    width: 250px;
+    /* width: 250px; */
 }
 .artist .sec1_2 .proflie .photo .text_box3 > p:first-child{
     background-size: 100% 145%;
     width: 90%;
     height: 61px;
+}
+.artist .sec1_2 .proflie .photo .text_box3 > p:nth-child(2) {
+    font-size: 0.7rem;
+}
+.sec1_2 .proflie .photo .text_box3 .album_list{
+    width: 80%;
+    height: 78%;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div{
     /* flex-direction: column; */
@@ -43,10 +50,10 @@ header .login_page > div > div:last-child{
     height: 1px;
     background: black;
     position: absolute;
-    bottom: -25%;
+    bottom: -10%;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide:nth-child(3) > div::after{
-    bottom: -36%;
+    bottom: -25%;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide img{
     border: none;
@@ -54,9 +61,64 @@ header .login_page > div > div:last-child{
     /* height: 50%; */
     background-color: transparent;
 }
-/* .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section{
-    height: 60%;
-} */
+.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section{
+    width: 60%;
+    padding: 0 10px;
+}
+.sec1_2 .proflie .box2{
+    font-size: 13px;
+}
+.sec1_2 .text_box2 .name .info{
+    font-size: 11px;
+}
+
+/* ---------------------------------프로필의 막대기 가상요소--------------------------- */
+
+.sec1_2 .proflie .box2 .name::before{
+    height: 30px;
+}
+.sec1_2 .proflie .box2:nth-child(1) .name::before {
+    top: 68%;
+    left: 30%;
+    transform: rotate(51deg);
+}
+.sec1_2 .proflie .box2:nth-child(4) .name::before {
+    left: 12%;
+    transform: rotate(1deg);
+} 
+/* ---------------------------------프로필 속의 막대기 가상요소--------------------------- */
+.sec1_2 .proflie .box2:nth-child(1) .line::before {
+    top: 91.8%;
+    left: 43%;
+}
+.sec1_2 .proflie .box2:nth-child(2) .line::before{
+    top: 92%;
+    left: 39%;
+}
+.sec1_2 .proflie .box2:nth-child(3) .line::before {
+    top: 92.5%;
+    left: 48%;
+}
+.sec1_2 .proflie .box2:nth-child(4) .line::before {
+    top: 92%;
+    left: 35%;
+}
+/* ----------------------------------프로필 위치--------------------------------- */
+
+.sec1_2 .proflie .f_LISA .name{
+    padding: 159% 0 0 8%;
+}
+.sec1_2 .proflie .f_JISOO .name{
+    padding: 185% 0 0 5%;
+}
+.sec1_2 .proflie .f_JENNIE .name{
+    padding: 210% 0 0 12%;
+}
+.sec1_2 .proflie .f_ROSE .name {
+    padding: 169% 0 0 0;
+}
+
+
 /* ----------------------------------굿즈 페이지--------------- */
 .select .inner_2 > div:nth-child(3) p:last-child{
     width: 109px;
