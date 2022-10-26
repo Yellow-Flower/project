@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+ 
 /* ---------------------------------메인메뉴--------------- */
 
 /* ----------------------------------메인화면--------------- */
@@ -15,7 +15,9 @@ header a {
     background-size: 73px 47px;
     width: 73px;
     height: 5vh;
-    left: 2.5rem;
+    left: 1.5rem;
+    /* left: 10%; */
+    top: -14%;
 }
 header .button{
     flex-direction: column;
@@ -23,6 +25,7 @@ header .button{
 header .button span{
     font-size: 12px;
     padding: 0 2px;
+    border: none;
 }
 header .button > span {
     padding: 0px 8px;
@@ -32,7 +35,7 @@ header .head_menu{
 }
 header .button .language {
     right: 11px;
-    top: 47px;
+    top: 39px;
 }
 header .button .language span{
     font-size: 12px;
