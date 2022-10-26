@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 body{
     height: 100vh;
@@ -423,14 +423,32 @@ header .snb li:hover {
     display: flex;
     flex-direction: row;
     height: 100%;
+    color: #fff;
 
 }
 /* ==================프로필 동그라미 아이콘============= */
-.sec1_2 .proflie .box2 {
+/* .sec1_2 .proflie .box2 {
     background-image: url(/pp/아이콘//radio_button_checked_FILL0_wght400_GRAD0_opsz48.svg);
     background-repeat: no-repeat;
     background-size: 25px 25px;
     height: 95%;
+    color: #fff;
+    font-size: 15px;
+    opacity: 0.3;
+} */
+.sec1_2 .proflie .box2 .name::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    /* background: rgb(255, 255, 255); */
+    display: inline-block;
+    position: absolute;
+    top: -28%;
+    left: 5%;
+    background-image: url(/pp/아이콘//radio_button_checked_FILL0_wght400_GRAD0_opsz48.svg);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    /* height: 95%; */
     color: #fff;
     font-size: 15px;
     /* opacity: 0.3; */
@@ -440,18 +458,30 @@ header .snb li:hover {
     background-position: 41% 41.2%;
     width: 20%;
     margin: 0 0 0 8%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 .sec1_2 .proflie .box2:nth-child(2) {
     background-position: 28% 41%;
     width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 .sec1_2 .proflie .box2:nth-child(3) {
     background-position: 28% 43.5%;
     width: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 .sec1_2 .proflie .box2:nth-child(4) {
     background-position: 7% 40.7%;
     width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 /* ----------------프로필 동그라미 아이콘 호버시---------- */
 .sec1_2 .proflie .box2:hover {
@@ -479,7 +509,8 @@ header .snb li:hover {
     padding: 233% 0 0 12%;
 }
 .sec1_2 .proflie .f_ROSE .name {
-    padding: 187% 0 0 6%;
+    /* padding: 187% 0 0 6%; */
+    padding: 0 0 60% 0;
 }
 
 .sec1_2 .text_box2 .name {
@@ -546,7 +577,8 @@ header .snb li:hover {
     transform: rotate(-1deg);
 }
 .sec1_2 .proflie .box2:nth-child(4) .name::before {
-    top: 67%;
+    /* top: 67%; */
+    top: -18%;
     left: 16%;
     transform: rotate(-14deg);
 }
