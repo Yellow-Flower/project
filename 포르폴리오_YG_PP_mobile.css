@@ -17,14 +17,25 @@ header a {
     height: 5vh;
     left: 2.5rem;
 }
+header .button{
+    flex-direction: column;
+}
 header .button span{
-    font-size: 15px;
+    font-size: 12px;
+    padding: 0 2px;
 }
 header .button > span {
-    padding: 5px 0;
+    padding: 0px 8px;
 }
 header .head_menu{
     font-size: 30px;
+}
+header .button .language {
+    right: 11px;
+    top: 47px;
+}
+header .button .language span{
+    font-size: 12px;
 }
 header .menu{
     width: 100%;
@@ -74,6 +85,10 @@ header .snb_m{
 }
 .b .swiper-button-next:after {
     font-size: 30px;
+}
+/* ------------------로그인 창------------ */
+header .login_page > div {
+    width: 250px;
 }
 /* ----------------------------------아티스트 페이지2--------------- */
 .artist .sec1_2 .text_box1{
