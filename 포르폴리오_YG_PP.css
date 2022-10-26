@@ -61,6 +61,7 @@ header a {
 }
 header .button{
     display: flex;
+    position: relative;
 }
 header .button .language{
     display: flex;
@@ -71,8 +72,8 @@ header .button .language{
     position: absolute;
     /* right: 1.8%;
     top: 73%; */
-    right: 25px;
-    top: 78px;
+    right: 0;
+    top: 110%;
     z-index: 99999;
     text-align: center;
 }
