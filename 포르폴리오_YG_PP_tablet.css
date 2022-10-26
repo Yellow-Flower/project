@@ -5,16 +5,27 @@ header .login_page > div{
     width: 300px;
     height: 150px;
     font-size: 16px;
-}
+} 
 header .login_page > div > div:last-child{
     font-size: 13px;
     margin: 0 -28px 0 0;
 }
 /* ----------------------------------아티스트 페이지2--------------- */
+.artist .sec1_2 .text_box1{
+    gap: 8px;
+    padding: 15px 15px;
+}
+.artist .sec1_2 .text_box1 h5{
+    font-size: 24px;
+}
+.swiper-wrapper{
+    gap: 50px;
+}
 .sec1_2 .proflie .photo .text_box3{
     /* font-size: 12px; */
     font-size: 0.7rem;
     height: 700px;
+    width: 250px;
 }
 .artist .sec1_2 .proflie .photo .text_box3 > p:first-child{
     background-size: 100% 145%;
@@ -23,7 +34,7 @@ header .login_page > div > div:last-child{
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div{
     /* flex-direction: column; */
-    align-items: center;
+    /* align-items: center; */
     border: none
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div::after{
@@ -32,12 +43,15 @@ header .login_page > div > div:last-child{
     height: 1px;
     background: black;
     position: absolute;
-    bottom: -3%;
+    bottom: -25%;
+}
+.sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide:nth-child(3) > div::after{
+    bottom: -36%;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide img{
     border: none;
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    /* height: 50%; */
     background-color: transparent;
 }
 /* .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section{
