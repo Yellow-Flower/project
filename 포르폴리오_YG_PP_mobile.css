@@ -1,16 +1,79 @@
 @charset "UTF-8";
 
+/* ---------------------------------메인메뉴--------------- */
 
-/* ----------------------------------로그인창--------------- */
+/* ----------------------------------메인화면--------------- */
+.body > .MV {
+    height: 90vh;
+}
+header{
+    height: 5vh;
+    padding: 0 10px;
+}
+header a {
+    background-image: url(/pp/이미지/YG_symbol_W.png);
+    background-size: 73px 47px;
+    width: 73px;
+    height: 5vh;
+    left: 2.5rem;
+}
+header .button span{
+    font-size: 15px;
+}
+header .button > span {
+    padding: 5px 0;
+}
+header .head_menu{
+    font-size: 30px;
+}
 header .menu{
     width: 100%;
+}
+header .menu ul {
+    font-size: 27px;
+}
+header .menu span {
+    font-size: 30px;
+    padding: 20px 0 20px 76%;
 }
 header .gnb{
     width: 50%;
 }
+header .snb ul{
+    font-size: 18px;
+    margin: 50px 0 0 15px;
+    gap: 8px;
+}
 header .snb_m{
     width: 50%;
-    padding: 10px;
+}
+.top{
+    height: 5vh;
+}
+.top h1{
+    font-size: 24px;
+    height: 5vh;
+    line-height: 5vh;
+}
+.sec1_2 .proflie{
+    height: 90vh;
+}
+.sec1_2 .proflie .back {
+    height: 90vh;
+}
+
+
+.swiper-button-next:after{
+    font-size: 30px;
+}
+.swiper-button-prev:after {
+    font-size: 30px;
+}
+.b .swiper-button-prev:after {
+    font-size: 30px;
+}
+.b .swiper-button-next:after {
+    font-size: 30px;
 }
 /* ----------------------------------아티스트 페이지2--------------- */
 .artist .sec1_2 .text_box1{
@@ -28,6 +91,10 @@ header .snb_m{
 }
 .artist .sec1_2 .text_box1{
     width: 40%;
+    height: 200px;
+}
+.artist .sec1_2 .text_box1 p{
+    overflow-x: auto;
 }
 .sec1_2 .proflie .photo .text_box3{
     width: 40%;
@@ -43,6 +110,15 @@ header .snb_m{
 .sec1_2 .proflie .photo .text_box3 .album_list{
     width: 90%;
     height: 65%;
+}
+.sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div {
+    flex-direction: column;
+}
+.sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div > section > div:last-child{
+    overflow: auto;
+    overflow-y: auto;
+    height: 55px;
+    width: 50px;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div::after{
     bottom: 0%;

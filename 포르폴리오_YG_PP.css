@@ -51,6 +51,7 @@ header .yglogo {
 header a {
     background-image: url(/pp/이미지/YG_symbol_W.png);
     background-size: 134px 86.94px;
+    background-repeat: no-repeat;
     width: 134px;
     height: 86.94px;
     margin: 0 auto;
