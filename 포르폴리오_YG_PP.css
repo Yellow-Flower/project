@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
   
-    
+     
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 body{
     height: 100vh;
@@ -50,10 +50,13 @@ header .yglogo {
 }
 header a {
     background-image: url(/pp/이미지/YG_symbol_W.png);
-    background-size: 134px 86.94px;
+    /* background-size: 134px 86.94px; */
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    width: 134px;
-    height: 86.94px;
+    /* width: 134px;
+    height: 86.94px; */
+    width: 100px;
+    height: 10vh;
     margin: 0 auto;
     position: relative;
     left: 4.5rem;
@@ -110,7 +113,7 @@ header .button span:hover{
     border-radius: 15px;
     border: 2px solid black;
 }
-header .button > span{
+header .button > div:first-child > span{
     padding: 5px 12px;
 }
 .top {
@@ -453,8 +456,10 @@ header .snb li:hover {
     color: #fff;
     font-size: 15px;
     opacity: 0.3;
+    top: 50%;
+    left: 50%;
 }
-.sec1_2 .proflie .f_LISA .name::after {
+/* .sec1_2 .proflie .f_LISA .name::after {
     top: 19%;
     left: 32%;
 }
@@ -469,37 +474,32 @@ header .snb li:hover {
 .sec1_2 .proflie .f_ROSE .name::after {
     top: 17%;
     left: 5%;
-}
+} */
 /* ----------------프로필 동그라미 아이콘 위치---------- */
+.sec1_2 .proflie .box2{
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .sec1_2 .proflie .box2:nth-child(1) {
-    background-position: 41% 41.2%;
+    /* background-position: 41% 41.2%; */
     width: 20%;
     margin: 0 0 0 8%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
 }
 .sec1_2 .proflie .box2:nth-child(2) {
-    background-position: 28% 41%;
+    /* background-position: 28% 41%; */
     width: 18%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .sec1_2 .proflie .box2:nth-child(3) {
-    background-position: 28% 43.5%;
+    /* background-position: 28% 43.5%; */
     width: 17%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .sec1_2 .proflie .box2:nth-child(4) {
-    background-position: 7% 40.7%;
+    /* background-position: 7% 40.7%; */
     width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+}  
 /* ----------------프로필 동그라미 아이콘 호버시---------- */
 .sec1_2 .proflie .box2:hover {
     cursor: pointer;
@@ -510,7 +510,7 @@ header .snb li:hover {
     /* opacity: 0; */
     transition: all 1s ease;
     vertical-align: top;
-    display: none;
+    /* display: none; */
 }
 .sec1_2 .proflie .box2 .name.on {
     opacity: 1;
@@ -520,10 +520,10 @@ header .snb li:hover {
     padding: 50% 0 0 0;
 }
 .sec1_2 .proflie .f_JISOO .name {
-    padding: 100% 0 0 5%;
+    padding: 100% 0 0 0;
 }
 .sec1_2 .proflie .f_JENNIE .name {
-    padding: 100% 0 0 12%;
+    padding: 100% 0 0 0;
 }
 .sec1_2 .proflie .f_ROSE .name {
     /* padding: 187% 0 0 6%; */
@@ -575,7 +575,7 @@ header .snb li:hover {
     background: #fff;
     display: inline-block;
     position: absolute;
-    display: none;
+    /* display: none; */
 }
 /* .sec1_2 .proflie .box2 .name::before.on{
     display: block;
@@ -686,7 +686,7 @@ header .snb li:hover {
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper {
     width: 100%;
-    height: 100%;
+    height: 85%;
     text-align: left;
 }
 /* .sec1_2 .proflie .photo .text_box3 .album_list .swiper-wrapper{

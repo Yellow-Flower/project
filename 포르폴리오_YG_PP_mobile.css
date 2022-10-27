@@ -5,7 +5,7 @@
 /* ----------------------------------메인화면--------------- */
 .body > .MV {
     height: 90vh;
-} 
+}  
 header{
     height: 5vh;
     padding: 0 10px;
@@ -16,7 +16,7 @@ header a {
     background-position: center center;
     width: 73px;
     height: 5vh;
-    left: 1.5rem;
+    left: 2.5rem;
     /* left: 10%; */
     /* top: -14%; */
 }
@@ -32,11 +32,23 @@ header .button span{
 header .button > span {
     padding: 0px 11px;
 }
+header .button > div:first-child{
+    height: 5vh;
+}
+header .button > div:first-child > span {
+    padding: 0
+}
+header .button > div:first-child > span:first-child {
+    padding: 4px 0;
+}
+header .button > div:first-child > span:last-child {
+    padding: 0px 5px;
+}
 header .head_menu{
     font-size: 30px;
 }
 header .button .language {
-    right: -5%;
+    right: -1%;
     top: 105%;
 }
 header .button .language span{
@@ -138,6 +150,9 @@ header .login_page > div {
     width: 90%;
     height: 65%;
 }
+.sec1_2 .proflie .photo .text_box3 .album_list .swiper{
+    text-align: center;
+}
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-wrapper{
     display: flex;
 }
@@ -191,7 +206,7 @@ header .login_page > div {
     font-size: 22px;
 }
 .text_box3 .album_list .swiper-button-next{
-    bottom: -10%;
+    bottom: -5%;
     /* bottom: -34px; */
 }
 /* ---------------------------------프로필 속 막대기 가상요소--------------------------- */

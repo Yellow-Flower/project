@@ -73,7 +73,7 @@ $(".gnb span").click(function () {
   $(".snb_m").removeClass("on");
 });
 // --------------------------------------- 로그인 열기-------------------------------
-$(".button > span:first").click(function () {
+$(".button div:first > span:first").click(function () {
   $(".login_page").addClass("on");
 });
 $(".log_close").click(function () {
