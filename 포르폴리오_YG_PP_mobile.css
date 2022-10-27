@@ -143,7 +143,7 @@ header .login_page > div {
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div > section > div:last-child{
     overflow: auto;
-    height: 33px;
+    height: 40px;
     width: 50px;
     display: flex;
     /* flex-direction: row; */
