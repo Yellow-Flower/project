@@ -299,6 +299,9 @@ header .login_page > div {
 
 
 /* ------------------------------------------굿즈----------------------------- */
+/* .select .inner_2 .sel_menu{
+    font-size: 0.2rem;
+} */
 .select .inner_2 > div:nth-child(1) {
     height: 5vh;
 }
@@ -317,5 +320,15 @@ header .login_page > div {
     height: 5vh;
 }
 .select .inner_2 .sel_menu .goodsgrid{
+    height: 50vh;
     margin: 5% 0 5% 0;
 } 
+.select .sel_menu > div:nth-child(1) .yg_goods > div > p:first-child {
+    font-size: 0.5rem;
+}
+.select .sel_menu > div:nth-child(1) .yg_goods > div > p:last-child {
+    font-size: 0.7rem;
+}
+.select .sel_menu > div:nth-child(1) .slide > div:nth-child(2){
+    font-size: 3em;
+}
