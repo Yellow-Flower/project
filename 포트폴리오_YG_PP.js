@@ -1,62 +1,76 @@
 $(document).ready(function () {
-  $(".box2").hover(function () {
-    $(this).children(".name").toggleClass("on");
-  });
-  // -------------------전체메뉴-------------
-  $(".select li").click(function () {
-    var num = $(this).index();
-    $(this).addClass("on").siblings().removeClass("on");
-    $(".sel_menu > div").eq(num).stop(true).show().siblings().hide();
-  });
-  $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
+  if ($(window).width() <= 1024) {
+    $(".box2").click(function () {
+      $(this).children(".name").children("*").toggle()
+      $(".name::before.on").toggle()
+    });
+  }
+  else if ($(window).width()) {
+    $(".box2").hover(function () {
+      $(this).children(".name").children("*").toggle();
+    });
+  }
+});
+// -------------------전체메뉴-------------
+$(".select li").click(function () {
+  var num = $(this).index();
+  $(this).addClass("on").siblings().removeClass("on");
+  $(".sel_menu > div").eq(num).stop(true).show().siblings().hide();
+});
+$(".select li:first").addClass("on").add(".sel_menu > div:first").show();
 
-  $(".history").mCustomScrollbar({
-    theme: "rounded"
+$(".history").mCustomScrollbar({
+  theme: "rounded"
+});
+$(".ac_scroll").mCustomScrollbar({
+  theme: "light-3"
+});
+$(".actor_menu").mCustomScrollbar({
+  theme: "dark-2"
+});
+$(".text_box1 > p").mCustomScrollbar({
+  theme: "light-2"
+});
+$('#up, header > a').click(function () {
+  swiper9.slideTo(0);
+  return flase;
+});
+
+if ($(window).width() <= 640) {
+  $(swiper10).click(function () {
   });
-  $(".ac_scroll").mCustomScrollbar({
-    theme: "light-3"
-  });
-  $(".actor_menu").mCustomScrollbar({
-    theme: "dark-2"
-  });
-  $(".text_box1 > p").mCustomScrollbar({
-    theme: "light-2"
-  });
-  $('#up, header > a').click(function () {
-    swiper9.slideTo(0);
-    return flase;
-  });
+}
+else if ($(window).width() > 640) {
+  $(swiper10).remove();
+}
 
 
 
+// --------------------공지사항-----------------------------
+$(".notice_but > p ").click(function () {
+  var num3 = $(this).index();
+  $(this).addClass("on").siblings().removeClass("on");
+  $(".notice_list > .notice_YG").eq(num3).stop(true).show().siblings().hide();
+});
+$(".notice_but > p:first").addClass("on").add(".notice_list > div:last").show();
+$(".notice_list > div:last").hide();
 
+// ----------------------------------------메뉴 열기-------------------------------
+$(".head_menu").click(function () {
+  $(".menu").addClass("on");
+  $(".gnb li").removeClass("on");
+});
 
-  // --------------------공지사항-----------------------------
-  $(".notice_but > p ").click(function () {
-    var num3 = $(this).index();
-    $(this).addClass("on").siblings().removeClass("on");
-    $(".notice_list > .notice_YG").eq(num3).stop(true).show().siblings().hide();
-  });
-  $(".notice_but > p:first").addClass("on").add(".notice_list > div:last").show();
-  $(".notice_list > div:last").hide();
+$(".gnb li").click(function () {
+  var num2 = $(this).index();
+  $(this).addClass("on").siblings().removeClass("on");
+  $(".snb_m").eq(num2).addClass("on").siblings().removeClass("on");
+});
 
-  // ----------------------------------------메뉴 열기-------------------------------
-  $(".head_menu").click(function () {
-    $(".menu").addClass("on");
-    $(".gnb li").removeClass("on");
-  });
-
-  $(".gnb li").click(function () {
-    var num2 = $(this).index();
-    $(this).addClass("on").siblings().removeClass("on");
-    $(".snb_m").eq(num2).addClass("on").siblings().removeClass("on");
-  });
-
-  // -----------------닫기------------------------
-  $(".gnb span").click(function () {
-    $(".menu").removeClass("on");
-    $(".snb_m").removeClass("on");
-  });
+// -----------------닫기------------------------
+$(".gnb span").click(function () {
+  $(".menu").removeClass("on");
+  $(".snb_m").removeClass("on");
 });
 // --------------------------------------- 로그인 열기-------------------------------
 $(".button > span:first").click(function () {
@@ -93,7 +107,7 @@ var swiper1 = new Swiper(".artist", {
 var swiper2 = new Swiper(".actors", {
   hashNavigation: {
     watchState: true,
-  }, 
+  },
   pagination: {
     el: ".actors .actors_control.swiper-pagination",
     clickable: true,
@@ -224,4 +238,10 @@ var swiper10 = new Swiper(".list_silde", {
   // },
   observer: true,
   observeParents: true,
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+  },
 });
