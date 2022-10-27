@@ -117,14 +117,17 @@ header .login_page > div {
 } */
 .sec1_2 .proflie .photo .text_box3{
     width: 35%;
-    height: 42%;
+    height: 45%;
     /* right: 5%; */
-    /* bottom: 0; */
+    bottom: 3%;
     gap: 10px;
     padding: 8px 0 0 0;
 }
 .sec1_2 .proflie .photo .text_box3 .swiper-wrapper{
     gap: 0px;
+}
+.artist .sec1_2 .proflie .photo .text_box3 > p:nth-child(2) {
+    width: 70%;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list{
     width: 90%;
@@ -170,7 +173,7 @@ header .login_page > div {
     font-size: 22px;
 }
 .text_box3 .album_list .swiper-button-next{
-    bottom: -3%;
+    bottom: -10%;
     /* bottom: -34px; */
 }
 /* ---------------------------------프로필 속 막대기 가상요소--------------------------- */
