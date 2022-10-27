@@ -317,7 +317,36 @@ header .login_page > div {
     font-size: 0.5rem;
 }
 .select .inner_2 > div:nth-child(1) input{
-    height: 5vh;
+    height: 3vh;
+}
+.select .inner_2 > div:nth-child(1) span {
+    font-size: 20px;
+}
+
+.select .inner_2 > div:nth-child(3){
+    height: 80vh;
+}
+.select .inner_2 > div:nth-child(3) p:first-child{
+    font-size: 1.5rem;
+    margin: 0 0 10px 5px;
+}
+.select .inner_2 > div:nth-child(3) p:last-child {
+    width: 100px;
+    height: 31px;
+    font-size: 15px;
+    right: -3%;
+    bottom: -6%;
+}
+.select .inner_2 .sel_menu .b .shopping{
+    bottom: -16%;
+    right: 6.5%;
+    flex-direction: row;
+}
+.select .inner_2 .sel_menu .b .shopping > span{
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
 }
 .select .inner_2 .sel_menu .goodsgrid{
     height: 50vh;
