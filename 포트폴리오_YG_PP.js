@@ -20,7 +20,7 @@ $(document).ready(function () {
     theme: "dark-2"
   });
   $(".text_box1 > p").mCustomScrollbar({
-    theme: "dark-2"
+    theme: "light-2"
   });
   $('#up, header > a').click(function () {
     swiper9.slideTo(0);

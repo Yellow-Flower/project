@@ -418,6 +418,7 @@ header .snb li:hover {
     /* font-size: 0.7rem; */
     /* font-size: 0.688em; */
     color: #fff;
+    overflow-x: auto;
 }
 .artist .sec1_2 .text_box2 {
     display: flex;

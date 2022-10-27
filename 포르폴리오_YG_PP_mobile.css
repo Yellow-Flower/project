@@ -112,9 +112,9 @@ header .login_page > div {
 .artist .sec1_2 .text_box1 h5{
     font-size: 20px;
 }
-.artist .sec1_2 .text_box1 p{
+/* .artist .sec1_2 .text_box1 p{
     overflow-x: auto;
-}
+} */
 .sec1_2 .proflie .photo .text_box3{
     width: 35%;
     height: 42%;
@@ -140,11 +140,10 @@ header .login_page > div {
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div > section > div:last-child{
     overflow: auto;
-    overflow-y: auto;
-    height: 55px;
+    height: 33px;
     width: 50px;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     width: 100px;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div::after{
@@ -171,7 +170,7 @@ header .login_page > div {
     font-size: 22px;
 }
 .text_box3 .album_list .swiper-button-next{
-    bottom: -15%;
+    bottom: -3%;
     /* bottom: -34px; */
 }
 /* ---------------------------------프로필 속 막대기 가상요소--------------------------- */
