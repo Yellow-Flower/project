@@ -26,20 +26,23 @@ header .button span{
     font-size: 12px;
     padding: 0 2px;
     border: none;
+    border: 2px solid black;
 }
 header .button > span {
-    padding: 0px 8px;
+    padding: 0px 11px;
 }
 header .head_menu{
     font-size: 30px;
 }
 header .button .language {
-    right: 4%;
+    right: -5%;
     top: 105%;
 }
 header .button .language span{
     font-size: 12px;
+    padding: 0px 8px;
 }
+
 header .menu{
     width: 100%;
 }
