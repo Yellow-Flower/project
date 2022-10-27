@@ -1,5 +1,5 @@
 @charset "UTF-8";
- 
+  
 /* ----------------------------------로그인창--------------- */
 header .login_page > div{
     width: 300px;
@@ -78,7 +78,7 @@ header .login_page > div > div:last-child{
 
 /* ---------------------------------프로필의 막대기 가상요소--------------------------- */
 
-.sec1_2 .proflie .box2 .name::before{
+/* .sec1_2 .proflie .box2 .name::before{
     height: 30px;
 }
 .sec1_2 .proflie .box2:nth-child(1) .name::before {
@@ -91,7 +91,7 @@ header .login_page > div > div:last-child{
     transform: rotate(1deg);
 } 
 /* ---------------------------------프로필 속의 막대기 가상요소--------------------------- */
-.sec1_2 .proflie .box2:nth-child(1) .line::before {
+/* .sec1_2 .proflie .box2:nth-child(1) .line::before {
     top: 91.8%;
     left: 43%;
 }
@@ -106,10 +106,10 @@ header .login_page > div > div:last-child{
 .sec1_2 .proflie .box2:nth-child(4) .line::before {
     top: 92%;
     left: 35%;
-}
+} */
 /* ----------------------------------프로필 위치--------------------------------- */
 
-.sec1_2 .proflie .f_LISA .name{
+/* .sec1_2 .proflie .f_LISA .name{
     padding: 159% 0 0 8%;
 }
 .sec1_2 .proflie .f_JISOO .name{
@@ -120,7 +120,7 @@ header .login_page > div > div:last-child{
 }
 .sec1_2 .proflie .f_ROSE .name {
     padding: 169% 0 0 0;
-}
+}  */
 
 
 /* ----------------------------------굿즈 페이지--------------- */

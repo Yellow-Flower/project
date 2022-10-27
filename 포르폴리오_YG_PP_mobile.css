@@ -1,5 +1,5 @@
 @charset "UTF-8";
- 
+  
 /* ---------------------------------메인메뉴--------------- */
 
 /* ----------------------------------메인화면--------------- */
@@ -17,7 +17,7 @@ header a {
     height: 5vh;
     left: 1.5rem;
     /* left: 10%; */
-    top: -14%;
+    /* top: -14%; */
 }
 header .button{
     flex-direction: column;
@@ -115,7 +115,7 @@ header .login_page > div {
 }
 .sec1_2 .proflie .photo .text_box3{
     width: 35%;
-    height: 275px;
+    height: 420px;
     /* right: 5%; */
     bottom: 0%;
     gap: 10px;
@@ -168,7 +168,7 @@ header .login_page > div {
     /* bottom: -34px; */
 }
 /* ---------------------------------프로필 속 막대기 가상요소--------------------------- */
-.sec1_2 .proflie .box2 .name::before {
+/* .sec1_2 .proflie .box2 .name::before {
     height: 30px;
 }
 .sec1_2 .proflie .box2:nth-child(1) .name::before{
@@ -209,7 +209,7 @@ header .login_page > div {
 }
 /* ----------------------------------프로필 위치--------------------------------- */
 
-.sec1_2 .proflie .f_LISA .name{
+/* .sec1_2 .proflie .f_LISA .name{
     padding: 150% 0 0 11%;
 }
 .sec1_2 .proflie .f_JISOO .name {
@@ -220,4 +220,39 @@ header .login_page > div {
 }
 .sec1_2 .proflie .f_ROSE .name{
     padding: 150% 0 0 6%;
+} */ 
+/* --------------------------------프로필 동그라미 아이콘------------------- */
+.sec1_2 .proflie .box2 .name::after{
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
 }
+
+.sec1_2 .proflie .f_LISA .name::after {
+    top: 19%;
+    left: 32%;
+}
+.sec1_2 .proflie .f_JISOO .name::after {
+    top: 36%;
+    left: 24%;
+}
+.sec1_2 .proflie .f_JENNIE .name::after {
+    top: 30.5%;
+    left: 22%;
+}
+.sec1_2 .proflie .f_ROSE .name::after {
+    top: 14%;
+    left: 3%;
+}
+/* --------------------------------프로필 막대기------------------- */
+.sec1_2 .proflie .box2 .name::before{
+    height: 20px;
+}
+.sec1_2 .proflie .box2:nth-child(3) .name::before {
+    top: 38.5%;
+}
+.sec1_2 .proflie .box2:nth-child(4) .name::before {
+    top: 24%;
+}
+
+
