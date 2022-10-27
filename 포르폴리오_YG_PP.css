@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 body{
     height: 100vh;
@@ -687,6 +687,7 @@ header .snb li:hover {
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper {
     width: 100%;
     height: 100%;
+    text-align: left;
 }
 /* .sec1_2 .proflie .photo .text_box3 .album_list .swiper-wrapper{
     display: flex;
@@ -745,7 +746,7 @@ header .snb li:hover {
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section .list_silde .swiper-wrapper{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
 }
 
 

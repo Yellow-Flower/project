@@ -236,12 +236,13 @@ var swiper10 = new Swiper(".list_silde", {
   //   el: ".swiper-pagination",
   //   dynamicBullets: true,
   // },
+  slidesPerView: 1,
   observer: true,
   observeParents: true,
   breakpoints: {
     640: {
-      slidesPerView: 1,
-      spaceBetween: 10,
+      slidesPerView: 8,
+      direction: "vertical",
     },
   },
 });
