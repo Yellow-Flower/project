@@ -150,20 +150,13 @@ var swiper4 = new Swiper(".goodsgrid", {
   },
   breakpoints: {
     640: {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      grid: {
-        rows: 1,
-      }
-    },
-    641: {
       slidesPerView: 6,
       spaceBetween: 30,
       grid: {
         rows: 1,
       }
     },
-    1024: {
+    1025: {
       slidesPerView: 6,
       spaceBetween: 30,
       grid: {
