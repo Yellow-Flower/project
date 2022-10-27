@@ -3,7 +3,7 @@ $(document).ready(function () {
     $(".box2").click(function () {
       $(this).children(".name").children("*").toggle()
       $(".name::before.on").toggle()
-    });
+    }); 
   }
   else if ($(window).width()) {
     $(".box2").hover(function () {
@@ -147,6 +147,29 @@ var swiper4 = new Swiper(".goodsgrid", {
   navigation: {
     nextEl: ".b .swiper-button-next",
     prevEl: ".b .swiper-button-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      grid: {
+        rows: 1,
+      }
+    },
+    641: {
+      slidesPerView: 6,
+      spaceBetween: 30,
+      grid: {
+        rows: 1,
+      }
+    },
+    1024: {
+      slidesPerView: 6,
+      spaceBetween: 30,
+      grid: {
+        rows: 2,
+      }
+    },
   },
 });
 
