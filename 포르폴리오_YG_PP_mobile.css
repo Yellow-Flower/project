@@ -303,10 +303,19 @@ header .login_page > div {
     height: 5vh;
 }
 .select .inner_2 > div:nth-child(2){
-    height: 5vh;
+    height: 10vh;
     width: 100%;
+}
+.select .inner_2 > div:nth-child(2) ul {
+    height: 5vh;
+    /* overflow: auto; */
 }
 .select .inner_2 > div:nth-child(2) ul li {
     font-size: 0.5rem;
 }
-
+.select .inner_2 > div:nth-child(1) input{
+    height: 5vh;
+}
+.select .inner_2 .sel_menu .goodsgrid{
+    margin: 5% 0 5% 0;
+} 
