@@ -215,3 +215,13 @@ var swiper9 = new Swiper(".homepage", {
     },
   }
 });
+
+// --------------------------------640-----------------
+var swiper = new Swiper(".list_silde", {
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   dynamicBullets: true,
+  // },
+  observer: true,
+  observeParents: true,
+});
