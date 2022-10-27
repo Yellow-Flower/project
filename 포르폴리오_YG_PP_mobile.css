@@ -298,3 +298,15 @@ header .login_page > div {
 }
 
 
+/* ------------------------------------------굿즈----------------------------- */
+.select .inner_2 > div:nth-child(1) {
+    height: 5vh;
+}
+.select .inner_2 > div:nth-child(2){
+    height: 5vh;
+    width: 100%;
+}
+.select .inner_2 > div:nth-child(2) ul li {
+    font-size: 0.5rem;
+}
+

@@ -135,7 +135,7 @@ var swiper3 = new Swiper(".goods", {
 });
 
 var swiper4 = new Swiper(".goodsgrid", {
-  slidesPerView: 6,
+  slidesPerView: 4,
   grid: {
     rows: 2,
   },
