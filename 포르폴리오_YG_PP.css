@@ -1613,12 +1613,13 @@ header .snb li:hover {
 .audition .inner_3 .ap_left1::after{
     content: "";
     width: 1px;
-    height: 720px;
+    /* height: 720px; */
+    height: 90%;
     background: #fff;
     display: block;
     position: absolute;
     left: 50%;
-    bottom: 9%;
+    bottom: 5%;
 }
 .audition .inner_3 .no_right1 > div > p {
     background-image: url(/pp/이미지/지구본.png);
