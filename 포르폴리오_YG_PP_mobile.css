@@ -143,14 +143,16 @@ header .login_page > div {
     overflow-y: auto;
     height: 55px;
     width: 50px;
-
+    display: flex;
+    flex-direction: row;
+    width: 100px;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div::after{
-    bottom: 0%;
+    display: none;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide:nth-child(3) > div::after{
+/* .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide:nth-child(3) > div::after{
     bottom: 0%;
-}
+} */
 .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section{
     width: 60%;
     padding: 5px;
