@@ -1001,12 +1001,13 @@ header .snb li:hover {
     align-items: center;
 }
 .select .inner_2 > div:nth-child(1) > div {
-    width: 352px;
+    /* width: 352px; */
+    width: 35%;
     position: relative;
 }
 .select .inner_2 > div:nth-child(1) input {
-
-    width: 350px;
+    /* width: 350px; */
+    width: 100%;
     height: 35px;
     /* height: 0.3vh; */
     background-color: transparent;
