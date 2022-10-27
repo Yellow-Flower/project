@@ -386,7 +386,8 @@ header .snb li:hover {
 }
 .sec1_2 .proflie .photo {
     background-image: url(/pp/이미지/블랙핑크_1.jpg);
-    background-size: cover;
+    /* background-size: cover; */
+    background-size: 100%;
     width: 1026px;
     height: 855px;
     margin: 0 auto;
