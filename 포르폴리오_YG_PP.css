@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 body{
     height: 100vh;
@@ -710,6 +710,7 @@ header .snb li:hover {
 .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide section > div {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section > div > h1 {
     font-size: 12px;
