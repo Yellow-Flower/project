@@ -1041,7 +1041,7 @@ header .snb li:hover {
 .select .inner_2 > div:nth-child(2) ul li {
     color: black;
     /* font-size: 1.6rem; */
-    font-size: 28px;
+    /* font-size: 28px; */
     font-weight: bold;
     list-style: none;
     padding: 10px;
@@ -1163,7 +1163,7 @@ header .snb li:hover {
 }
 .select .sel_menu > div:nth-child(1) .yg_goods > p:nth-child(2) {
     /* font-size: 30px; */
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     font-weight: bold;
     padding: 15px 0 0 0;
 }
@@ -1179,7 +1179,8 @@ header .snb li:hover {
     width: 30%;
     background-color: black;
     /* font-size: 80px; */
-    font-size: 4rem;
+    /* font-size: 4rem; */
+    font-size: 4em;
     color: #fff;
 }
 .select .sel_menu > div:nth-child(1) .swiper-slide .gright {
