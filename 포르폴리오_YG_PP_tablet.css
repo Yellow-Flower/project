@@ -135,16 +135,26 @@ header .login_page > div > div:last-child{
 .select .inner_2 > div:nth-child(3) p:last-child{
     width: 109px;
     height: 37px;
+    line-height: 37px;
+    text-align: center;
     font-size: 18px;
     right: -1%;
     bottom: 0%;
+}
+.select .inner_2 > div:nth-child(3) ul{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
  .select .inner_2 .sel_menu .goodsgrid{
     height: 500px;
     /* margin: 10% 0 0 0; */
 } 
+/* .select .inner_2 .sel_menu .goodsgrid .swiper-slide {
+    height: calc((100% - 30px) / 2);
+} */
 .select .inner_2 .sel_menu > .b{
-    height: 62vh;
+    height: 71vh;
 }
 .select .inner_2 .sel_menu .b .shopping{
     bottom: 0%;

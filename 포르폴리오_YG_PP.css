@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 body{
     height: 100vh;
@@ -56,7 +56,7 @@ header a {
     background-repeat: no-repeat;
     /* width: 134px;
     height: 86.94px; */
-    width: 128px;
+    width: 150px;
     height: 10vh;
     margin: 0 auto;
     position: relative;
@@ -993,25 +993,27 @@ header .snb li:hover {
 }
 .select .inner_2 {
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
-.select .inner_2 > div:nth-child(1) {
+.select .inner_2 > div:nth-child(2) {
     /* height: 80px; */
-    height: 8vh;
+    height: 6vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.select .inner_2 > div:nth-child(1) > div {
+.select .inner_2 > div:nth-child(2) > div {
     /* width: 352px; */
     width: 35%;
     position: relative;
 }
-.select .inner_2 > div:nth-child(1) input {
+.select .inner_2 > div:nth-child(2) input {
     /* width: 350px; */
     width: 100%;
-    height: 30px;
-    /* height: 0.3vh; */
-    margin: 8px 0;
+    /* height: 30px; */
+    height: 2vh;
+    /* margin: 8px 0; */
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0);
     border-bottom: 2px solid #fff;
@@ -1019,7 +1021,7 @@ header .snb li:hover {
     font-size: 16px;
     outline: rgba(255, 255, 255, 0.5);
 }
-.select .inner_2 > div:nth-child(1) span {
+.select .inner_2 > div:nth-child(2) span {
     position: absolute;
     bottom: 18%;
     right: 1%;
@@ -1027,22 +1029,22 @@ header .snb li:hover {
     color: #fff;
     cursor: pointer;
 }
-.select .inner_2 > div:nth-child(2) {
+.select .inner_2 > div:nth-child(3) {
     /* height: 80px; */
-    height: 8vh;
+    height: 6vh;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.select .inner_2 > div:nth-child(2) ul {
+.select .inner_2 > div:nth-child(3) ul {
     display: flex;
     align-items: center;
     width: 80%;
-    height: 8vh;
+    height: 6vh;
     justify-content: center;
 }
-.select .inner_2 > div:nth-child(2) ul li {
+.select .inner_2 > div:nth-child(3) ul li {
     color: black;
     /* font-size: 1.6rem; */
     /* font-size: 28px; */
@@ -1052,41 +1054,20 @@ header .snb li:hover {
     cursor: pointer;
 }
 
-.select .inner_2 > div:nth-child(3) {
-    height: 74vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 0 10px 5px 10px;
-}
-.select .inner_2 > div:nth-child(3) p:first-child {
-    color: #fff;
-    font-size: 56px;
-    font-family: 'Fugaz One', 'Kanit', sans-serif;
-    margin: 0 0 10px 20px;
-}
-.select .inner_2 > div:nth-child(3) p:last-child {
-    width: 150px;
-    height: 47px;
-    /* line-height: 47px; */
-    padding: 5px;
-    background-color: black;
-    color: #fff;
-    font-size: 24px;
+.select .inner_2 > div:nth-child(1) {
+    /* height: 74vh; */
+    height: 8vh;
+    line-height: 8vh;
     text-align: center;
-    /* border: 1px solid #fff; */
-    border-radius: 50px;
-    font-family: 'Fugaz One', 'Kanit', sans-serif;
-    cursor: pointer;
-    margin: 0 20px 20px 0;
-    position: absolute;
-    right: 0%;
-    z-index: 9999;
+    background-color: rgba(235, 235, 235, 0.2);
 }
-.select .inner_2 > div:nth-child(3) p:last-child:hover {
-    background-color: rgb(19, 228, 243);
-    color: black;
-    border: 2px solid black;
+.select .inner_2 > div:nth-child(1) p{
+    color: #fff;
+    /* font-size: 56px; */
+    font-size: 3.5rem;
+    font-family: 'Fugaz One', 'Kanit', sans-serif;
+    /* margin: 0 0 10px 20px; */
+    margin: 0 auto;
 }
 /* -----------------------------셀렉트 메뉴바------------------ */
 .select .inner_2 .sel_menu{
@@ -1094,7 +1075,7 @@ header .snb li:hover {
     width: 100%;
     position: absolute;
     z-index: 100;
-    top: 17%;
+    top: 22%;
     font-size: 13px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
@@ -1106,7 +1087,7 @@ header .snb li:hover {
     /* background-color: #fff; */
 }
 .select .inner_2 .sel_menu > .b{
-    height: 74.4vh;
+    height: 71vh;
     width: 100%;
     background-color: #fff;
     padding: 0 5%;
@@ -1233,7 +1214,8 @@ header .snb li:hover {
 
 }
 .select .inner_2 .sel_menu .goodsgrid .swiper-slide {
-    height: calc((100% - 30px) / 2) !important;
+    /* height: calc((100% - 30px) / 2) !important; */
+    height: calc((100% - 30px) / 2)
     /* border: 1px solid rgba(0, 0, 0, 0.1); */
 }
 .select .inner_2 .sel_menu .g_pic {
@@ -1313,25 +1295,51 @@ header .snb li:hover {
 .select .inner_2 .sel_menu .b .shopping {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     position: absolute;
     z-index: 1;
-    bottom: 9.5%;
+    bottom: 4.5%;
     right: 1.5%;
     gap: 5px;
     cursor: pointer;
+    
 }
 .select .inner_2 .sel_menu .b .shopping > span {
     /* position: absolute; */
-    font-size: 38px;
+    font-size: 30px;
     color: #fff;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
     border-radius: 50px;
     background-color: black;
     text-align: center;
 }
 .select .inner_2 .sel_menu .b .shopping > span:hover{
+    background-color: rgb(19, 228, 243);
+    color: black;
+    border: 2px solid black;
+}
+.select .inner_2 .sel_menu .b .shopping > p{
+    width: 110px;
+    height: 40px;
+    /* line-height: 47px; */
+    padding: 5px;
+    background-color: black;
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
+    /* border: 1px solid #fff; */
+    border-radius: 50px;
+    font-family: 'Fugaz One', 'Kanit', sans-serif;
+    cursor: pointer;
+    margin-bottom: 20px;
+    /* position: absolute;
+    right: -1%;
+    top: 10%; */
+    z-index: 9999;
+}
+.select .inner_2 .sel_menu .b .shopping > p:hover{
     background-color: rgb(19, 228, 243);
     color: black;
     border: 2px solid black;

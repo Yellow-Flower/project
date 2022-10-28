@@ -98,16 +98,17 @@ header .snb_m{
 
 
 .swiper-button-next:after{
-    font-size: 30px;
+    font-size: 1.5rem;
 }
 .swiper-button-prev:after {
-    font-size: 30px;
+    font-size: 1.5rem;
 }
 .b .swiper-button-prev:after {
-    font-size: 30px;
+    font-size: 1.5rem;
 }
 .b .swiper-button-next:after {
-    font-size: 30px;
+    /* font-size: 30px; */
+    font-size: 1.5rem;
 }
 /* ------------------로그인 창------------ */
 header .login_page > div {
@@ -307,49 +308,58 @@ header .login_page > div {
     font-size: 0.2rem;
 } */
 .select .inner_2 .sel_menu{
-    top: 13%;
+    top: 14%;
+    height: 83vh;
 }
-.select .inner_2 > div:nth-child(1) {
+.select .inner_2 .sel_menu > .b{
+    height: 83vh;
+}
+.select .inner_2 > div:nth-child(3){
     height: 5vh;
-}
-.select .inner_2 > div:nth-child(2){
-    height: 7vh;
     width: 100%;
     align-items:flex-start;
 }
-.select .inner_2 > div:nth-child(2) ul {
+.select .inner_2 > div:nth-child(3) ul {
+    width: 100%;
     height: 5vh;
-    /* overflow: auto; */
+    overflow-x: auto;
+    overflow-y: hidden;
 }
-.select .inner_2 > div:nth-child(2) ul li {
+.select .inner_2 > div:nth-child(3) ul li {
     font-size: 0.5rem;
     padding: 5px;
 }
-.select .inner_2 > div:nth-child(1) input{
+.select .inner_2 > div:nth-child(3) input{
     height: 3vh;
 }
-.select .inner_2 > div:nth-child(1) span {
+.select .inner_2 > div:nth-child(3) span {
     font-size: 20px;
 }
-
-.select .inner_2 > div:nth-child(3){
-    height: 80vh;
-}
-.select .inner_2 > div:nth-child(3) p:first-child{
-    font-size: 1.5rem;
-    margin: 0 0 10px 5px;
-}
-.select .inner_2 > div:nth-child(3) p:last-child {
+.select .inner_2 > div:nth-child(3) p:last-child{
     width: 100px;
-    height: 31px;
+    height: 3vh;
+    line-height: 3vh;
     font-size: 15px;
-    right: 1%;
-    bottom: -6%;
 }
-.select .inner_2 .sel_menu .b .shopping{
-    bottom: -19%;
-    right: 6.5%;
-    flex-direction: row;
+.select .inner_2 > div:nth-child(1){
+    height: 4vh;
+    line-height: 4vh;
+}
+.select .inner_2 > div:nth-child(1) p{
+    font-size: 1.5rem;
+    /* margin: 0 0 10px 5px; */
+}
+.select .inner_2 > div:nth-child(2){
+    height: 4vh;
+}
+.select .inner_2 > div:nth-child(2) span{
+    /* font-size: 20px; */
+    font-size: 95%;
+}
+.select .inner_2 .sel_menu .b .shopping > p{
+    width: 82px;
+    height: 32px;
+    font-size: 15px;
 }
 .select .inner_2 .sel_menu .b .shopping > span{
     font-size: 20px;
