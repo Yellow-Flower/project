@@ -162,6 +162,7 @@ header .login_page > div > span{
     display: block;
     font-size: 25px;
     padding-left: 15px;
+    cursor: pointer;
 }
 header .login_page > div{
     /* background-color: #fff; */
