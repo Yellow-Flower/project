@@ -1,6 +1,11 @@
 @charset "UTF-8";
    
 /* ---------------------------------메인메뉴--------------- */
+/* ---------------------------------로그인창--------------- */
+header .login_page{
+    background-image: url(/pp/이미지/YG_로그인배경패턴3.png);
+    background-size: contain;
+}
 
 /* ----------------------------------메인화면--------------- */
 .body > .MV {
@@ -324,6 +329,7 @@ header .login_page > div {
     height: 5vh;
     overflow-x: auto;
     overflow-y: hidden;
+    justify-content: flex-start;
 }
 .select .inner_2 > div:nth-child(3) ul li {
     font-size: 0.5rem;

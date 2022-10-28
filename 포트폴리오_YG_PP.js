@@ -82,7 +82,7 @@ $(".gnb span").click(function () {
 $(".button div:first > span:first").click(function () {
   $(".login_page").addClass("on");
 });
-$(".log_close").click(function () {
+$(".log_close, .log_close2").click(function () {
   $(".login_page").removeClass("on");
 });
 // --------------------------------------- 언어 열기-------------------------------

@@ -3,7 +3,7 @@
 /* ----------------------------------로그인창--------------- */
 header .login_page > div{
     width: 300px;
-    height: 150px;
+    height: 194px;
     font-size: 16px;
 } 
 header .login_page > div > div:last-child{
@@ -145,6 +145,7 @@ header .login_page > div > div:last-child{
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
+    justify-content: flex-start;
 }
  .select .inner_2 .sel_menu .goodsgrid{
     height: 500px;
