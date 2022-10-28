@@ -306,6 +306,9 @@ header .login_page > div {
 /* .select .inner_2 .sel_menu{
     font-size: 0.2rem;
 } */
+.select .inner_2 .sel_menu{
+    top: 13%;
+}
 .select .inner_2 > div:nth-child(1) {
     height: 5vh;
 }
