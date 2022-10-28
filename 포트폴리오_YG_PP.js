@@ -1,16 +1,22 @@
 $(document).ready(function () {
   if ($(window).width() <= 1024) {
     $(".box2").click(function () {
-      $(this).children(".name").children("*").toggle()
-      $(".name::before.on").toggle()
-    }); 
-  } 
+      $(this).children(".name").children("*").toggle();
+      $(".name::before.on").toggle();
+    });
+  }
   else if ($(window).width()) {
     $(".box2").hover(function () {
       $(this).children(".name").children("*").toggle();
     });
   }
 });
+// $(document).resize(function () {
+//   if ($(window).width() <= 640) {
+//     $(".br").text("WHAT'S HOT");
+//   };
+// });
+
 // -------------------전체메뉴-------------
 $(".select li").click(function () {
   var num = $(this).index();
