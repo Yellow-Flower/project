@@ -141,7 +141,7 @@ header .login_page > div > div:last-child{
 }
  .select .inner_2 .sel_menu .goodsgrid{
     height: 500px;
-    margin: 10% 0 0 0;
+    /* margin: 10% 0 0 0; */
 } 
 .select .inner_2 .sel_menu > .b{
     height: 62vh;

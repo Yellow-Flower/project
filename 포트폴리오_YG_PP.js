@@ -153,7 +153,7 @@ var swiper4 = new Swiper(".goodsgrid", {
       slidesPerView: 6,
       spaceBetween: 30,
       grid: {
-        rows: 1,
+        rows: 2,
       }
     },
     1025: {
