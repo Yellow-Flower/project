@@ -3,10 +3,12 @@
 /* ---------------------------------메인메뉴--------------- */
 /* ---------------------------------로그인창--------------- */
 header .login_page{
-    background-image: url(/pp/이미지/YG_로그인배경패턴3.png);
+    background-image: url(/pp/이미지/YG_로그인배경패턴6.png);
     background-size: contain;
 }
-
+header .login_page > div > span{
+    padding-left: 190px;
+}
 /* ----------------------------------메인화면--------------- */
 .body > .MV {
     height: 90vh;

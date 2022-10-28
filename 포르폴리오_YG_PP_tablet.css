@@ -6,6 +6,9 @@ header .login_page > div{
     height: 194px;
     font-size: 16px;
 } 
+header .login_page > div > span{
+    padding-left: 230px;
+}
 header .login_page > div > div:last-child{
     font-size: 13px; 
     margin: 0 -28px 0 0;
