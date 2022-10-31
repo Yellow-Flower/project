@@ -546,7 +546,32 @@ header .login_page > div {
 .aboutyg .ab_box .introduction .text_3{
     display: none;
 }
-
+.aboutyg .ab_box .page2{
+    width: 100%;
+    height: 20%;
+}
+.aboutyg .ab_box .history {
+    width: 100%;
+}
+.aboutyg .ab_box .history .sentence .text_small{
+    margin: 0;
+}
+.aboutyg .ab_box .news {
+    width: 100%;
+    height: 50%;
+}
+.aboutyg .ab_box .news > p {
+    font-size: 30px;
+    margin: 0
+}
+.aboutyg .ab_box .yg_notice{
+    width: 100%;
+    height: 50%;
+}
+.aboutyg .ab_box .yg_notice > p{
+    font-size: 30px;
+    margin: 0
+}
 /* ---------------------------풋터----------------------------- */
 footer div:first-child {
     font-size: 8px;

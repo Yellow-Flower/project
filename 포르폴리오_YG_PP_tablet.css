@@ -280,6 +280,9 @@ header .login_page > div > div:last-child{
 .aboutyg .ab_box .history{
     font-size: 1rem;
 }
+.aboutyg .ab_box .history .sentence .text_small{
+    margin: 0;
+}
 .aboutyg .ab_box .j_left{
     padding: 20px;
 }
@@ -306,6 +309,13 @@ header .login_page > div > div:last-child{
 .aboutyg .ab_box .j_right .graph > div img{
     width: 100%;
     height: 100%;
+}
+.aboutyg .ab_box .news {
+    width: 50%;
+}
+.aboutyg .ab_box .news > p {
+    font-size: 40px;
+    margin: 0 0 10px 0;
 }
 .aboutyg .ab_box .yg_notice > div{
     height: 80%;
