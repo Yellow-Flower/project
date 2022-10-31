@@ -1,5 +1,5 @@
 @charset "UTF-8";
-   
+    
 /* ---------------------------------메인메뉴--------------- */
 /* ---------------------------------로그인창--------------- */
 header .login_page{
@@ -13,6 +13,9 @@ header .login_page > div > span{
 .body > .MV {
     height: 90vh;
 }  
+.body .MV video {
+    top: 30%;
+}
 header{
     height: 5vh;
     padding: 0 10px;
@@ -444,4 +447,70 @@ header .login_page > div {
 }
 .select .inner_2 > div:nth-child(2) ul {
     flex-wrap: wrap;
+}
+/* ------------------------오디션 페이지------------------------ */
+.audition > div:first-child{
+    height: 4vh;
+    line-height: 4vh;
+    font-size: 1.5rem;
+}
+.audition .inner_3 .ap_left1 {
+    width: 80%;
+    margin: 0;
+}
+.audition .inner_3 .no_left1 {
+    width: 80%;
+    margin: 0;
+}
+.audition .inner_3 .no_left1::after{
+    display: none;
+}
+.audition .inner_3 .no_left1 .no_sns a {
+    font-size: 20px;
+}
+.audition .inner_3 .no_left1 label{
+    margin: 15% 0 0;
+    font-size: 20px;
+}
+.audition .inner_3 .ap_left1::after{
+    display: none;
+}
+.audition .inner_3 .no_left1 .au_notice > div:first-child span {
+    font-size: 20px;
+}
+.audition .inner_3 .no_left1 .au_notice > div:first-child i{
+    font-size: 20px;
+}
+.audition .inner_3 .ap_left1 p:nth-child(2){
+    font-size: 20px;
+}
+.audition .inner_3 .ap_left1 p:nth-child(3){
+    margin: 50% 10% 5%;
+    font-size: 20px;
+}
+.audition .inner_3 .ap_left1 > a:nth-child(4){
+    display: block;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    background-color: #fff;
+    /* border: 1px solid #fff; */
+    border-radius: 15px;
+    cursor: pointer;
+}
+.audition .inner_3 .ap_left1 > a:nth-child(4):hover{
+    background-color: black;
+    color: #fff;
+}
+.audition .inner_3 .ap_left1 > a:nth-child(4) p{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.audition .inner_3 .ap_right1{
+    display: none;
+}
+.audition .inner_3 .no_right1{
+    display: none;
 }

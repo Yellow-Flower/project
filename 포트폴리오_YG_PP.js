@@ -16,7 +16,11 @@ $(document).ready(function () {
 //     $(".br").text("WHAT'S HOT");
 //   };
 // });
-
+$(document).ready(function () {
+  if ($(window).width() <= 640) {
+    $("inner_3").remove("no_right1", "no_right1"); 
+  }
+});
 // -------------------전체메뉴-------------
 $(".select li").click(function () {
   var num = $(this).index();
