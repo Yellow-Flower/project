@@ -514,3 +514,22 @@ header .login_page > div {
 .audition .inner_3 .no_right1{
     display: none;
 }
+/* ------------------------------------어바웃 와이지----------------------------- */
+.aboutyg .ab_box{
+    flex-direction: column;
+}
+.aboutyg .ab_box > .yg_sym{
+    width: 100%;
+    height: 30%;
+    display: flex;
+}
+.aboutyg .ab_box > .yg_sym > p:first-child{
+    width: 175px;
+    margin: 10px 11px;
+}
+.aboutyg .ab_box > .yg_sym > p:last-child{
+    width: 0;
+}
+.aboutyg .ab_box .introduction .text_3{
+    display: none;
+}

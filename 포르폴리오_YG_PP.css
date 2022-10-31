@@ -1942,7 +1942,7 @@ header .snb li:hover {
     font-family: 'Krub', sans-serif;
     padding: 40px;
 }
-.aboutyg .ab_box .j_right p:first-child {
+.aboutyg .ab_box .j_right > p:first-child {
     font-size: 2rem;
     color: #fff;
     margin-bottom: 5px;
@@ -2067,10 +2067,11 @@ header .snb li:hover {
 }
 .aboutyg .ab_box .yg_notice > div {
     font-family: 'Krub', sans-serif;
-    /* height: 50%; */
+    height: 85%;
 }
 .aboutyg .ab_box .yg_notice > div > .notice_but {
     display: flex;
+    height: 10%;
 }
 .aboutyg .ab_box .yg_notice > div > .notice_but > p{
     color: black;
@@ -2085,6 +2086,13 @@ header .snb li:hover {
     color: #fff;
     background-color: black;
     cursor: pointer;
+}
+.aboutyg .ab_box .yg_notice .notice_list{
+    height: 90%;
+}
+.aboutyg .ab_box .yg_notice .notice_YG{
+    overflow-y:auto;
+    height: 100%;
 }
 .aboutyg .ab_box .yg_notice .notice_box {
     display: flex;

@@ -41,6 +41,9 @@ $(".actor_menu").mCustomScrollbar({
 $(".text_box1 > p").mCustomScrollbar({
   theme: "light-2"
 });
+$(".notice_YG").mCustomScrollbar({
+  theme: "minimal"
+});
 $('#up, header > a').click(function () {
   swiper9.slideTo(0);
   return flase;
