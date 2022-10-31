@@ -515,6 +515,17 @@ header .login_page > div {
     display: none;
 }
 /* ------------------------------------어바웃 와이지----------------------------- */
+.aboutyg{
+    height: 95vh;
+}
+.aboutyg .yg_slide {
+    height: 86vh;
+}
+.aboutyg > div:nth-child(1){
+    height: 4vh;
+    line-height: 4vh;
+    font-size: 1.5rem;
+}
 .aboutyg .ab_box{
     flex-direction: column;
 }
@@ -528,8 +539,22 @@ header .login_page > div {
     margin: 10px 11px;
 }
 .aboutyg .ab_box > .yg_sym > p:last-child{
-    width: 0;
+    width: 50%;
+    height: 20%;
+    margin: 20% 0 0;
 }
 .aboutyg .ab_box .introduction .text_3{
     display: none;
+}
+
+/* ---------------------------풋터----------------------------- */
+footer div:first-child {
+    font-size: 8px;
+}
+footer > p {
+    font-size: 8px;
+}
+footer div:last-child {
+    font-size: 16px;
+    gap: 5px;
 }
