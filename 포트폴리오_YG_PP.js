@@ -11,11 +11,6 @@ $(document).ready(function () {
     });
   }
 });
-// $(document).resize(function () {
-//   if ($(window).width() <= 640) {
-//     $(".br").text("WHAT'S HOT");
-//   };
-// });
 $(document).ready(function () {
   if ($(window).width() <= 640) {
     $("inner_3").remove("no_right1", "no_right1"); 
