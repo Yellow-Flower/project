@@ -544,8 +544,47 @@ header .login_page > div {
     height: 20%;
     margin: 20% 0 0;
 }
+.aboutyg .ab_box .introduction {
+    width: 100%;
+    height: 70%;
+}
+.aboutyg .ab_box .introduction .shapes > div > div{
+    display: flex;
+    flex-direction: column;
+}
+.aboutyg .ab_box .introduction .shapes > div:nth-child(1){
+    /* flex-direction: row; */
+    width: 100%;
+}
+.aboutyg .ab_box .introduction .shapes div:nth-child(1) img{
+    width: 40%;
+    height: 100%;
+}
+.aboutyg .ab_box .introduction .shapes > div:nth-child(3){
+    /* flex-direction: row; */
+    width: 100%;
+}
+.aboutyg .ab_box .introduction .shapes div:nth-child(3) img{
+    width: 40%;
+    height: 100%;
+}
+.aboutyg .ab_box .introduction .shapes > div:nth-child(5){
+    /* flex-direction: row; */
+    width: 100%;
+}
+.aboutyg .ab_box .introduction .shapes div:nth-child(5) img{
+    width: 40%;
+    height: 100%;
+}
+.aboutyg .ab_box .introduction .shapes .arrow_size i{
+    transform: rotate(90deg);
+}
 .aboutyg .ab_box .introduction .text_3{
     display: none;
+}
+.aboutyg .ab_box .introduction > div:last-child{
+    flex-direction: column;
+    overflow: auto;
 }
 .aboutyg .ab_box .page2{
     width: 100%;
@@ -553,12 +592,15 @@ header .login_page > div {
 }
 .aboutyg .ab_box .page2 > p:first-child {
     font-size: 2.5rem;
+    height: 70%;
 }
 .aboutyg .ab_box .page2 > p:last-child{
     font-size: 1.3rem;
+    height: 30%;
 }
 .aboutyg .ab_box .history {
     width: 100%;
+    height: 80%;
 }
 .aboutyg .ab_box .history .sentence .text_small{
     margin: 0;
@@ -567,11 +609,12 @@ header .login_page > div {
     width: 100%;
     /* height: 50%; */
 }
-.aboutyg .ab_box .j_left .table:hover{
+.aboutyg .ab_box .j_left .table_menu:hover{
    text-decoration: underline;
 }
 .aboutyg .ab_box .j_left > div > .table_menu > span {
-    margin: 0 auto;
+    display: inline;
+    font-size: 15px;
 }
 .aboutyg .ab_box .j_right{
     width: 100%;
@@ -595,25 +638,77 @@ header .login_page > div {
     height: 50%;
 }
 .aboutyg .ab_box .news > p {
-    font-size: 30px;
+    font-size: 20px;
     margin: 0
+}
+.aboutyg .ab_box .news > div {
+    gap: 5px;
+}
+.aboutyg .ab_box .news .news_box{
+    width: 100%;
+}
+.aboutyg .ab_box .news .news_box > a{
+    width: 10%;
+    /* width: 45px; */
+    
+}
+.aboutyg .ab_box .news .news_box > div{
+    font-size: 0.7rem;
+    flex-direction: row;
+    /* padding: 0 10px; */
+    width: 90%;
+    justify-content: space-between;
+}
+.aboutyg .ab_box .news .news_box > div > a{
+    height:0;
+    margin: 7px 0;
+    width: 80%;
+}
+.aboutyg .ab_box .news .news_box > div > a > p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.aboutyg .ab_box .news .news_box > div > div{
+    flex-direction: column;
+    width: 20%;
+}
+.aboutyg .ab_box .news .news_box > div > div > p{
+    font-size: 0.7rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .aboutyg .ab_box .yg_notice{
     width: 100%;
     height: 50%;
 }
 .aboutyg .ab_box .yg_notice > p{
-    font-size: 30px;
+    font-size: 20px;
     margin: 0
 }
+.aboutyg .ab_box .yg_notice > div > .notice_but{
+    height: 15%;
+    font-size: 0.7rem;
+}
 /* ---------------------------풋터----------------------------- */
+footer{
+    padding: 0 10px;
+    line-height: 2vh;
+}
 footer div:first-child {
     font-size: 8px;
+    display: flex;
+    flex-direction: column;
 }
 footer > p {
     font-size: 8px;
+    line-height: 5vh;
 }
 footer div:last-child {
     font-size: 16px;
     gap: 5px;
+}
+footer span:nth-child(2){
+    padding: 0;
 }

@@ -1916,6 +1916,13 @@ header .snb li:hover {
     /* font-size: 24px; */
     font-size: 1.2rem;
 }
+.aboutyg .ab_box .j_left > div:nth-child(6) a{
+    color: #fff;
+    text-decoration: none;
+}
+.aboutyg .ab_box .j_left > div:nth-child(6) a:hover{
+    text-decoration: underline;
+}
 .aboutyg .ab_box .j_left > div > table {
     font-size: 13px;
     text-align: center;

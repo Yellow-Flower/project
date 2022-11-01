@@ -272,8 +272,11 @@ var swiper10 = new Swiper(".list_silde", {
 $(document).ready(function () {
   if ($(window).width() <= 640) {
     $('.table').hide();
+    $('.up').hide();
     $(".table_menu").click(function () {
       $(".table").slideToggle(300);
+      $(".down").toggle();
+      $(".up").toggle();
     });
   };
 });
