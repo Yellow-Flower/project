@@ -13,7 +13,7 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
   if ($(window).width() <= 640) {
-    $("inner_3").remove("no_right1", "no_right1"); 
+    $("inner_3").remove("no_right1", "no_right1");
   }
 });
 // -------------------전체메뉴-------------
@@ -36,7 +36,7 @@ $(".actor_menu").mCustomScrollbar({
 $(".text_box1 > p").mCustomScrollbar({
   theme: "light-2"
 });
-$(".notice_YG").mCustomScrollbar({
+$(".notice_YG, .text_3").mCustomScrollbar({
   theme: "minimal"
 });
 $('#up, header > a').click(function () {
@@ -51,8 +51,6 @@ if ($(window).width() <= 640) {
 else if ($(window).width() > 640) {
   $(swiper10).remove();
 }
-
-
 
 // --------------------공지사항-----------------------------
 $(".notice_but > p ").click(function () {
@@ -269,4 +267,13 @@ var swiper10 = new Swiper(".list_silde", {
       direction: "vertical",
     },
   },
+});
+// ------------------640 주식 테이블 감추기---------------------------
+$(document).ready(function () {
+  if ($(window).width() <= 640) {
+    $('.table').hide();
+    $(".table_menu").click(function () {
+      $(".table").slideToggle(300);
+    });
+  };
 });

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-    
+     
 /* ---------------------------------메인메뉴--------------- */
 /* ---------------------------------로그인창--------------- */
 header .login_page{
@@ -528,6 +528,7 @@ header .login_page > div {
 }
 .aboutyg .ab_box{
     flex-direction: column;
+    overflow: auto;
 }
 .aboutyg .ab_box > .yg_sym{
     width: 100%;
@@ -550,6 +551,12 @@ header .login_page > div {
     width: 100%;
     height: 20%;
 }
+.aboutyg .ab_box .page2 > p:first-child {
+    font-size: 2.5rem;
+}
+.aboutyg .ab_box .page2 > p:last-child{
+    font-size: 1.3rem;
+}
 .aboutyg .ab_box .history {
     width: 100%;
 }
@@ -558,14 +565,27 @@ header .login_page > div {
 }
 .aboutyg .ab_box .j_left{
     width: 100%;
-    height: 50%;
+    /* height: 50%; */
+}
+.aboutyg .ab_box .j_left .table:hover{
+   text-decoration: underline;
+}
+.aboutyg .ab_box .j_left > div > .table_menu > span {
+    margin: 0 auto;
 }
 .aboutyg .ab_box .j_right{
     width: 100%;
     height: 50%;
 }
+.aboutyg .ab_box .j_right .graph{
+    margin-top: 10px;
+}
 .aboutyg .ab_box .j_right .graph > img{
     display: none
+}
+.aboutyg .ab_box .j_right .graph > div{
+    gap: 0;
+    padding: 0;
 }
 .aboutyg .ab_box .j_right .graph > div img{
     display: none;

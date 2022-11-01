@@ -1,5 +1,5 @@
 @charset "UTF-8";
-    
+     
 /* ----------------------------------로그인창--------------- */
 header .login_page > div{
     width: 300px;
@@ -292,10 +292,16 @@ header .login_page > div > div:last-child{
 .aboutyg .ab_box .j_left > div{
     font-size: 1rem;
 }
+.aboutyg .ab_box .j_left > div > .table_menu > span {
+    display: none;
+}
 .aboutyg .ab_box .j_right{
     padding: 20px;
 }
 .aboutyg .ab_box .j_right > p {
+    font-size: 1.5rem;
+}
+.aboutyg .ab_box .j_right > p:first-child{
     font-size: 1.5rem;
 }
 .aboutyg .ab_box .j_right .graph > img{
