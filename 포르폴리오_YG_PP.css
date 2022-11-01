@@ -1745,10 +1745,13 @@ header .snb li:hover {
 .aboutyg .ab_box > .yg_sym > p:first-child {
     background-image: url(/pp/이미지/YG_Statement_B.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover;
     width: 220px;
+    margin: 50px 25px; */
     height: 121px;
-    margin: 50px 25px;
+    background-size: contain;
+    width: 90%;
+    margin: 20% 5%;
 }
 .aboutyg .ab_box > .yg_sym > p:last-child {
     font-size: 23px;
@@ -2182,7 +2185,7 @@ footer > div:first-child::before {
     background: #fff;
     display: block;
     position: absolute;
-    margin-left: -50px;
+    margin-left: -20px;
 }
 /* footer span::after{
     content: "";

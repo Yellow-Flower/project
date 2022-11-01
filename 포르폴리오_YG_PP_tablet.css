@@ -373,6 +373,9 @@ footer div:first-child span{
     overflow: hidden;
     white-space: nowrap;
 }
+footer > div:first-child::before{
+    margin-left: -50px;
+}
 footer div:last-child{
     width: 16%;
 }

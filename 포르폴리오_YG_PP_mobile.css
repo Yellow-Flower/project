@@ -728,6 +728,9 @@ footer div:last-child {
     font-size: 16px;
     gap: 5px;
 }
+footer > div:first-child::before{
+    margin-left: -20px;
+}
 footer span:nth-child(2){
     padding: 0;
 }
