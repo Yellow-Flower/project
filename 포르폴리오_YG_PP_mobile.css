@@ -481,14 +481,20 @@ header .login_page > div {
 .audition .inner_3 .no_left1 .au_notice > div:first-child i{
     font-size: 20px;
 }
+.audition .inner_3 .ap_left1 div {
+    height: 50%;
+}
+.audition .inner_3 .ap_left1 div > p:first-child{
+    height: 166%;
+}
+.audition .inner_3 .ap_left1 div > p:nth-child(2){
+    font-size: 20px;
+}
 .audition .inner_3 .ap_left1 p:nth-child(2){
+    /* margin: 150px 10% 0 10%; */
     font-size: 20px;
 }
-.audition .inner_3 .ap_left1 p:nth-child(3){
-    margin: 50% 10% 5%;
-    font-size: 20px;
-}
-.audition .inner_3 .ap_left1 > a:nth-child(4){
+.audition .inner_3 .ap_left1 > a:nth-child(3){
     display: block;
     font-size: 20px;
     color: black;
@@ -498,11 +504,11 @@ header .login_page > div {
     border-radius: 15px;
     cursor: pointer;
 }
-.audition .inner_3 .ap_left1 > a:nth-child(4):hover{
+.audition .inner_3 .ap_left1 > a:nth-child(3):hover{
     background-color: black;
     color: #fff;
 }
-.audition .inner_3 .ap_left1 > a:nth-child(4) p{
+.audition .inner_3 .ap_left1 > a:nth-child(3) p{
     width: 100%;
     height: 50px;
     line-height: 50px;
@@ -519,7 +525,7 @@ header .login_page > div {
     height: 95vh;
 }
 .aboutyg .yg_slide {
-    height: 86vh;
+    height: 84vh;
 }
 .aboutyg > div:nth-child(1){
     height: 4vh;
@@ -542,7 +548,7 @@ header .login_page > div {
 .aboutyg .ab_box > .yg_sym > p:last-child{
     width: 50%;
     height: 20%;
-    margin: 20% 0 0;
+    margin: 20% 0 0 20px;
 }
 .aboutyg .ab_box .introduction {
     width: 100%;
@@ -589,6 +595,7 @@ header .login_page > div {
 .aboutyg .ab_box .page2{
     width: 100%;
     height: 20%;
+    padding: 20px 0 0 20px;
 }
 .aboutyg .ab_box .page2 > p:first-child {
     font-size: 2.5rem;
@@ -693,8 +700,9 @@ header .login_page > div {
 }
 /* ---------------------------풋터----------------------------- */
 footer{
-    padding: 0 10px;
-    line-height: 2vh;
+    padding: 0 20px;
+    height: 7vh;
+    line-height: 7vh;
 }
 footer div:first-child {
     font-size: 8px;
@@ -703,12 +711,18 @@ footer div:first-child {
 }
 footer > p {
     font-size: 8px;
-    line-height: 5vh;
+    line-height: 7vh;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 footer div:last-child {
     font-size: 16px;
     gap: 5px;
 }
 footer span:nth-child(2){
+    padding: 0;
+}
+footer span:nth-child(3){
     padding: 0;
 }
