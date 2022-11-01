@@ -127,6 +127,9 @@ header .login_page > div > div:last-child{
 
 
 /* ----------------------------------굿즈 페이지--------------- */
+.select{
+    height: 95vh;
+} 
 .select .inner_2 .sel_menu{
     font-size: 0.6rem;
 }
@@ -177,6 +180,12 @@ header .login_page > div > div:last-child{
 } */
 
 /* ------------------------------오디션 페이지---------------------------- */
+.audition{
+    height: 95vh;
+}
+.audition .inner_3 .apply{
+    height: 91vh;
+}
 .audition .inner_3 .ap_left1{
     width: 40%;
 }

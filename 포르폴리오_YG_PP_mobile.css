@@ -539,16 +539,19 @@ header .login_page > div {
 .aboutyg .ab_box > .yg_sym{
     width: 100%;
     height: 30%;
-    display: flex;
+    /* display: flex; */
 }
 .aboutyg .ab_box > .yg_sym > p:first-child{
-    width: 175px;
+    /* width: 175px; */
+    width: 50%;
+    height: 70%;
     margin: 10px 11px;
 }
 .aboutyg .ab_box > .yg_sym > p:last-child{
-    width: 50%;
-    height: 20%;
-    margin: 20% 0 0 20px;
+    /* width: 50%;
+    height: 20%; */
+    margin: 5px 0 0 15px;
+    width: 100%;
 }
 .aboutyg .ab_box .introduction {
     width: 100%;
@@ -582,8 +585,13 @@ header .login_page > div {
     width: 40%;
     height: 100%;
 }
+.aboutyg .ab_box .introduction .shapes .arrow_size{
+    /* color:black; */
+}
 .aboutyg .ab_box .introduction .shapes .arrow_size i{
     transform: rotate(90deg);
+    -webkit-text-stroke: 1px #fff;
+    color: black;
 }
 .aboutyg .ab_box .introduction .text_3{
     display: none;
