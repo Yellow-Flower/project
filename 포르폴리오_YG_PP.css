@@ -790,8 +790,9 @@ header .snb li:hover {
     margin: 15% 0px 0 30%;
 }
 .actors .sec1_2 .proflie .hee_box_two:nth-child(1) {
-    background-position: 59% 0.5%;
+    /* background-position: 59% 0.5%; */
     width: 50%;
+    height: 30%;
     margin: 20% 0 0 8%;
 }
 .actors .sec1_2 .proflie .box2:nth-child(1) .line::before {
@@ -843,7 +844,51 @@ header .snb li:hover {
     gap: 15px;
     border: none;
 }
-
+/* ---------------------------배우 프로필 위치-------------------- */
+.actors_left .proflie .box2 .name::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    /* background: rgb(255, 255, 255); */
+    display: inline-block;
+    position: absolute;
+    background-image: url(/pp/아이콘//radio_button_checked_FILL0_wght400_GRAD0_opsz48.svg);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    /* height: 95%; */
+    color: #fff;
+    font-size: 15px;
+    opacity: 1;
+    top: -10%;
+    left: 114%;
+}
+.actors_right .proflie .box2 .name::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    /* background: rgb(255, 255, 255); */
+    display: inline-block;
+    position: absolute;
+    background-image: url(/pp/아이콘//radio_button_checked_FILL0_wght400_GRAD0_opsz48.svg);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    /* height: 95%; */
+    color: #fff;
+    font-size: 15px;
+    opacity: 1;
+    top: -10%;
+    left: 114%;
+}
+.actors_left .proflie .box2 .name {
+    left: -22%;
+    color: #Ffff;
+    background-color: rgba(1, 2, 8, 0.2);
+}
+.actors_right .proflie .box2 .name {
+    left: -22%;
+    color: #Ffff;
+    background-color: rgba(1, 2, 8, 0.2);
+}
 /* ------------------------스와이퍼 수정하기--------------------- */
 .swiper-button-next:after {
     color: #fff;
