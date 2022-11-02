@@ -12,16 +12,16 @@
 //   }
 // });
 $(document).ready(function () {
-  if ($(window).width() <= 1024) {
+  if ($(window).width() > 1024) {
     $(".box2").hover(function () {
       $(this).children(".name").toggleClass("on");
     });
   }
-  // else if ($(window).width()) {
-  //   $(".box2").click(function () {
-  //     $(this).children(".name").toggleClass("on");
-  //   });
-  // }
+  else if ($(window).width() <= 1024) {
+    $(".box2").click(function () {
+      $(this).children(".name").toggleClass("on");
+    });
+  }
   // if ($(window).width() > 640) {
   //   swiper10.destroy();
   // };

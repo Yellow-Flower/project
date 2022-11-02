@@ -494,6 +494,9 @@ header .snb li:hover {
     width: 20%;
 } 
 /* ----------------프로필 영역 호버시---------- */
+.sec1_2 .proflie .box2:hover{
+    cursor: pointer;
+}
 /* .sec1_2 .proflie .box2:nth-child(1):hover{
     background-color: rgba(255, 255, 255, 0.3);
 }
@@ -672,7 +675,7 @@ header .snb li:hover {
 .actors .sec1_2 .proflie {
     width: 100%;
     /* height: 855px; */
-    height: 90vh;
+    height: 80vh;
     position: relative;
     background-image: url(/pp/이미지/배경\ 작업-\ 별2.png);
     background-repeat: no-repeat;
