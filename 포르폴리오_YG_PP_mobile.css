@@ -199,6 +199,9 @@ header .login_page > div {
     padding: 5px;
     margin: 0 auto;
 }
+.sec1_2 .proflie .photo .text_box3 .album_list .album > .swiper-wrapper > .swiper-slide{
+    border-bottom: none;
+}
 /* .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section > div p{
     text-align: left;
 } */
@@ -208,10 +211,9 @@ header .login_page > div {
     overflow-x: auto;
     overflow-y: hidden;
 } */
-/* .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section .list_silde p{
-    width: 100%;
-    flex-shrink: 0;
-} */
+.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section .list_silde p{
+    text-align: center;
+}
 /* .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section .list_silde .swiper-slide{
     height: 10px;
 } */

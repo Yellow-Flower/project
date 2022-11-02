@@ -26,7 +26,7 @@ header .login_page > div > div:last-child{
     font-size: 24px;
 }
 .sec1_2 .proflie .photo .text_box3 .swiper-wrapper{
-    gap: 40px;
+    gap: 0;
 }
 .sec1_2 .proflie .photo .text_box3{
     /* font-size: 12px; */
@@ -52,14 +52,17 @@ header .login_page > div > div:last-child{
     /* align-items: center; */
     border: none
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div::after{
+.sec1_2 .proflie .photo .text_box3 .album_list .album > .swiper-wrapper > .swiper-slide{
+    border-bottom: 1px dashed black;
+}
+/* .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div::after{
     content: "";
     width: 400px;
     height: 1px;
     background: black;
     position: absolute;
     bottom: -10%;
-}
+} */
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide:nth-child(3) > div::after{
     bottom: -25%;
 }
@@ -72,6 +75,9 @@ header .login_page > div > div:last-child{
 .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section{
     width: 60%;
     padding: 0 10px;
+}
+.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section .list_silde p{
+    text-align: center;
 }
 .sec1_2 .proflie .box2{
     font-size: 13px;
@@ -404,4 +410,10 @@ footer span:nth-child(3){
 }
 .b .swiper-button-next:after {
     color: black;
+}
+/* .text_box3 .album_list .swiper-button-next{
+    bottom: -22px;
+} */
+.text_box3 .album_list .swiper-button-next:after {
+    font-size: 22px;
 }

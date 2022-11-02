@@ -262,7 +262,7 @@ var swiper9 = new Swiper(".homepage", {
   }
 });
 
-// --------------------------------640-----------------
+// --------------------------------가수 앨범 속 리스트 슬라이드-----------------
 var swiper10 = new Swiper(".list_silde", {
   // pagination: {
   //   el: ".swiper-pagination",
@@ -281,15 +281,28 @@ var swiper10 = new Swiper(".list_silde", {
   observeParents: true,
   breakpoints: {
     640: {
-      slidesPerView: 4,
+      slidesPerView: 2,
       direction: "vertical",
-      slidesPerGroup: 4,
+      slidesPerGroup: 2,
       loop: true,
       loopFillGroupWithBlank: true,
       autoplay: {
         delay: 2000,
         disableOnInteraction: false,
       },
+      spaceBetween: 5,
+    },
+    1024: {
+      slidesPerView: 3,
+      direction: "vertical",
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      spaceBetween: 15,
     },
   },
 });

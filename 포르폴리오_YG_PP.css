@@ -91,6 +91,7 @@ header .button .language span{
 header .button .language span:hover{
     background-color: #fff;
     color: black;
+    cursor: pointer;
 }
 /* header .button .language .but_lang{
     display: inline-block;
@@ -548,7 +549,9 @@ header .snb li:hover {
 .sec1_2 .proflie .box2 .name .in_sns > a {
     font-size: 15px;
     color: #fff;
-
+}
+.sec1_2 .proflie .box2 .name .in_sns > a:hover{
+    color: red;
 }
 /* --------------------------------------------- */
 
@@ -592,8 +595,8 @@ header .snb li:hover {
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper {
     width: 100%;
-    height: 85%;
-    text-align: left;
+    height: 95%;
+    text-align: center;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div {
     display: flex;
@@ -603,7 +606,7 @@ header .snb li:hover {
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide img {
     width: 50%;
-    border-right: 1px solid black;
+    border-right: 1px dashed black;
     object-fit: contain;
     padding-right: 10px;
 }
@@ -649,7 +652,9 @@ header .snb li:hover {
 .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section .list_silde p{
     /* height: 0; */
     font-size: 0.5rem;
-    text-align: center;
+}
+.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section .list_silde .swiper-slide{
+    display: block;
 }
 /* .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section .list_silde .swiper-wrapper{
     display: flex;
@@ -859,7 +864,7 @@ header .snb li:hover {
 .text_box3 .album_list .swiper-button-next {
     right: 45%;
     top: unset;
-    bottom: -39px;
+    bottom: -22px;
 }
 .actors .text_box3 .album_list .swiper-button-next {
     right: 45%;
