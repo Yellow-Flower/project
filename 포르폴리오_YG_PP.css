@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 body{
     height: 100vh;
@@ -433,7 +433,7 @@ header .snb li:hover {
     /* font-size: 0.7rem; */
     /* font-size: 0.688em; */
     color: #fff;
-    overflow-x: auto;
+    overflow: auto;
 }
 .artist .sec1_2 .text_box2 {
     display: flex;
@@ -629,6 +629,9 @@ header .snb li:hover {
     text-align: center;
     height: 100%;
     overflow: auto;
+}
+.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide section > div:last-child{
+    background-color: rgba(255,255,255,0.4);
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section > div > h1 {
     font-size: 12px;

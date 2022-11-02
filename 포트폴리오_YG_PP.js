@@ -26,11 +26,6 @@ $(document).ready(function () {
   //   swiper10.destroy();
   // };
 });
-$(document).ready(function () {
-  if ($(window).width() <= 640) {
-    $("inner_3").remove("no_right1", "no_right1");
-  }
-});
 // -------------------전체메뉴-------------
 $(".select li").click(function () {
   var num = $(this).index();
@@ -49,6 +44,9 @@ $(".actor_menu").mCustomScrollbar({
   theme: "dark-2"
 });
 $(".text_box1 > p").mCustomScrollbar({
+  theme: "light-2"
+});
+$(".info").mCustomScrollbar({
   theme: "light-2"
 });
 $(".notice_YG, .text_3").mCustomScrollbar({
@@ -307,18 +305,34 @@ var swiper10 = new Swiper(".list_silde", {
   },
 });
 // ------------------640 주식 테이블 감추기---------------------------
-$(document).resize(function () {
+$(document).ready(function () {
   if ($(window).width() <= 640) {
-    $('.table').hide();
-    $('.up').hide();
+    $(".table,.up").hide();
+    // $(".up").hide();
     $(".table_menu").click(function () {
       $(".table").slideToggle(300);
       $(".down").toggle();
       $(".up").toggle();
     });
+    $(".info,.in_sns").hide();
+    // $(".up").hide();
+    $(".name h1").click(function () {
+      $(".info,.in_sns").slideToggle(300);
+      // $(".down").toggle();
+      // $(".up").toggle();
+    });
+    $("inner_3").remove("no_right1", "no_right1");
   }
   // else if ($(window).width() > 640) {
   //   swiper5.destroy();
   // }
+  // else if ($(window).width() <= 640) {
+  //   $("inner_3").remove("no_right1", "no_right1");
+  // }
 });
 
+// $(document).ready(function () {
+//   else if ($(window).width() <= 640) {
+//     $("inner_3").remove("no_right1", "no_right1");
+//   }
+// });

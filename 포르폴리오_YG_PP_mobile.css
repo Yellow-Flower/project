@@ -138,15 +138,17 @@ header .login_page > div {
 .artist .sec1_2 .text_box1{
     gap: 5px;
     padding: 10px 10px;
-    width: 50%;
+    width: 30%;
     height: 200px;
+    left: 66%;
+    bottom: 57%;
 }
 .artist .sec1_2 .text_box1 h5{
     font-size: 20px;
 }
-/* .artist .sec1_2 .text_box1 p{
-    overflow-x: auto;
-} */
+.artist .sec1_2 .text_box1 p{
+    overflow: auto;
+}
 .sec1_2 .proflie .photo .text_box3{
     width: 35%;
     height: 45%;
@@ -217,11 +219,45 @@ header .login_page > div {
 /* .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section .list_silde .swiper-slide{
     height: 10px;
 } */
+.artist .sec1_2 .text_box2 {
+    flex-wrap: wrap;
+    position: absolute;
+    left: 5%;
+    bottom: 8%;
+    width: 55%;
+    height: 40%;
+}
 .sec1_2 .proflie .box2{
     font-size: 10px;
 }
+.sec1_2 .proflie .box2:nth-child(1){
+    margin: 10px 0;
+    width: 50%;
+    height: 40%;
+}
+.sec1_2 .proflie .box2:nth-child(2){
+    margin: 10px 0;
+    width: 50%;
+    height: 40%;
+}
+.sec1_2 .proflie .box2:nth-child(3){
+    margin: 10px 0;
+    width: 50%;
+    height: 40%;
+}
+.sec1_2 .proflie .box2:nth-child(4){
+    margin: 10px 0;
+    width: 50%;
+    height: 60%;
+}
+.sec1_2 .proflie .box2 .name {
+    opacity: 1;
+    height: 100%;
+}
 .sec1_2 .text_box2 .name .info{
     font-size: 8px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .sec1_2 .proflie .box2 .name .in_sns > a {
     font-size: 13px;
@@ -233,95 +269,35 @@ header .login_page > div {
     bottom: -5%;
     /* bottom: -34px; */
 }
-/* ---------------------------------프로필 속 막대기 가상요소--------------------------- */
-/* .sec1_2 .proflie .box2 .name::before {
-    height: 30px;
+/* ---------------------------------프로필--------------------------- */
+.sec1_2 .proflie .box2 .name{
+    padding: 0;
 }
-.sec1_2 .proflie .box2:nth-child(1) .name::before{
-    top: 52%;
-    left: 33%;
-    transform: rotate(22deg);
-}
-.sec1_2 .proflie .box2:nth-child(2) .name::before{
-    top: 52%;
-}
-.sec1_2 .proflie .box2:nth-child(3) .name::before{
-    top: 49.5%;
-    left: 33%;
-}
-.sec1_2 .proflie .box2:nth-child(4) .name::before{
-    top: 53%;
-    left: 17%;
-    transform: rotate(-4deg);
-}
-.sec1_2 .proflie .box2 .name .info .line::before{
-    height: 9px;
-}
-.sec1_2 .proflie .box2:nth-child(1) .line::before {
-    top: 88.8%;
-    left: 62%;
-}
-.sec1_2 .proflie .box2:nth-child(2) .line::before {
-    top: 89%;
-    left: 55%;
-}
-.sec1_2 .proflie .box2:nth-child(3) .line::before {
-    top: 89.5%;
-    left: 64.5%;
-}
-.sec1_2 .proflie .box2:nth-child(4) .line::before {
-    top: 89%;
-    left: 57%;
-}
-/* ----------------------------------프로필 위치--------------------------------- */
-
-/* .sec1_2 .proflie .f_LISA .name{
-    padding: 150% 0 0 11%;
-}
-.sec1_2 .proflie .f_JISOO .name {
-    padding: 170% 0 0 5%;
-}
-.sec1_2 .proflie .f_JENNIE .name {
-    padding: 180% 0 0 12%;
-}
-.sec1_2 .proflie .f_ROSE .name{
-    padding: 150% 0 0 6%;
-} */ 
 /* --------------------------------프로필 동그라미 아이콘------------------- */
 .sec1_2 .proflie .box2 .name::after{
-    width: 20px;
-    height: 20px;
-    background-size: 20px 20px;
+    display: none;
 }
 
 .sec1_2 .proflie .f_LISA .name::after {
-    top: 19%;
-    left: 32%;
+    top: 18%;
+    left: 41%;
 }
 .sec1_2 .proflie .f_JISOO .name::after {
-    top: 36%;
-    left: 24%;
+    top: 18%;
+    left: 41%;
 }
 .sec1_2 .proflie .f_JENNIE .name::after {
-    top: 30.5%;
-    left: 22%;
+    top: 18%;
+    left: 41%;
 }
 .sec1_2 .proflie .f_ROSE .name::after {
-    top: 14%;
-    left: 3%;
+    top: 18%;
+    left: 41%;
 }
-/* --------------------------------프로필 막대기------------------- */
-.sec1_2 .proflie .box2 .name::before{
-    height: 20px;
+/* --------------------------------가수 프로필 넓이------------------- */
+.sec1_2 .text_box2 .f_ROSE .name .info{
+    width: 100%;
 }
-.sec1_2 .proflie .box2:nth-child(3) .name::before {
-    top: 38.5%;
-}
-.sec1_2 .proflie .box2:nth-child(4) .name::before {
-    top: 24%;
-}
-
-
 /* ------------------------------------------굿즈----------------------------- */
 /* .select .inner_2 .sel_menu{
     font-size: 0.2rem;

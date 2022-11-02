@@ -54,6 +54,7 @@ header .login_page > div > div:last-child{
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .album > .swiper-wrapper > .swiper-slide{
     border-bottom: 1px dashed black;
+    padding-bottom: 10px;
 }
 /* .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div::after{
     content: "";
