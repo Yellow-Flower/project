@@ -1,5 +1,5 @@
 @charset "UTF-8";
-     
+      
 /* ----------------------------------로그인창--------------- */
 header .login_page > div{
     width: 300px;
@@ -32,6 +32,7 @@ header .login_page > div > div:last-child{
     /* font-size: 12px; */
     font-size: 0.7rem;
     height: 700px;
+    right: 3%;
     /* width: 250px; */
 }
 .artist .sec1_2 .proflie .photo .text_box3 > p:first-child{
@@ -78,6 +79,10 @@ header .login_page > div > div:last-child{
 .sec1_2 .text_box2 .name .info{
     font-size: 11px;
 }
+.sec1_2 .text_box2 .f_ROSE .name .info{
+    font-size: 11px;
+    width: 60%;
+}
 
 /* ---------------------------------프로필의 막대기 가상요소--------------------------- */
 
@@ -120,10 +125,10 @@ header .login_page > div > div:last-child{
 }
 .sec1_2 .proflie .f_JENNIE .name{
     padding: 210% 0 0 12%;
-}
+} */
 .sec1_2 .proflie .f_ROSE .name {
-    padding: 169% 0 0 0;
-}  */
+    padding: 60% 0 0 0;
+} 
 
 
 /* ----------------------------------굿즈 페이지--------------- */
@@ -155,7 +160,7 @@ header .login_page > div > div:last-child{
 }
  .select .inner_2 .sel_menu .goodsgrid{
     height: 500px;
-    /* margin: 10% 0 0 0; */
+    margin: 5% 0 0 0;
 } 
 /* .select .inner_2 .sel_menu .goodsgrid .swiper-slide {
     height: calc((100% - 30px) / 2);
@@ -184,7 +189,7 @@ header .login_page > div > div:last-child{
     height: 95vh;
 }
 .audition .inner_3 .apply{
-    height: 91vh;
+    height: 82vh;
 }
 .audition .inner_3 .ap_left1{
     width: 40%;
@@ -384,4 +389,19 @@ footer span:nth-child(2){
 }
 footer span:nth-child(3){
     padding: 0;
+}
+/* ------------------------스와이퍼 수정하기--------------------- */
+.swiper-button-next:after {
+    color: #fff;
+    font-size: 25px;
+}
+.swiper-button-prev:after {
+    color: #fff;
+    font-size: 25px;
+}
+.b .swiper-button-prev:after {
+    color: black;
+}
+.b .swiper-button-next:after {
+    color: black;
 }

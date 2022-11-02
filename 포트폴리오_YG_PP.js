@@ -1,15 +1,30 @@
+// $(document).ready(function () {
+//   if ($(window).width() <= 1024) {
+//     $(".box2").click(function () {
+//       $(this).children(".name").children("*").toggle();
+//       $(".name::before.on").toggle();
+//     });
+//   }
+//   else if ($(window).width()) {
+//     $(".box2").hover(function () {
+//       $(this).children(".name").children("*").toggle();
+//     });
+//   }
+// });
 $(document).ready(function () {
   if ($(window).width() <= 1024) {
-    $(".box2").click(function () {
-      $(this).children(".name").children("*").toggle();
-      $(".name::before.on").toggle();
-    });
-  }
-  else if ($(window).width()) {
     $(".box2").hover(function () {
-      $(this).children(".name").children("*").toggle();
+      $(this).children(".name").toggleClass("on");
     });
   }
+  // else if ($(window).width()) {
+  //   $(".box2").click(function () {
+  //     $(this).children(".name").toggleClass("on");
+  //   });
+  // }
+  // if ($(window).width() > 640) {
+  //   swiper10.destroy();
+  // };
 });
 $(document).ready(function () {
   if ($(window).width() <= 640) {
@@ -44,13 +59,8 @@ $('#up, header > a').click(function () {
   return flase;
 });
 
-if ($(window).width() <= 640) {
-  $(swiper10).click(function () {
-  });
-}
-else if ($(window).width() > 640) {
-  $(swiper10).remove();
-}
+
+
 
 // --------------------공지사항-----------------------------
 $(".notice_but > p ").click(function () {
@@ -187,7 +197,7 @@ var swiper5 = new Swiper(".album", {
       spaceBetween: 10,
     },
     641: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 10,
     },
     1024: {
@@ -259,17 +269,32 @@ var swiper10 = new Swiper(".list_silde", {
   //   dynamicBullets: true,
   // },
   slidesPerView: 1,
+  slidesPerGroup: 1,
+  direction: "horizontal",
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  loop: true,
+  loopFillGroupWithBlank: true,
   observer: true,
   observeParents: true,
   breakpoints: {
     640: {
-      slidesPerView: 8,
+      slidesPerView: 4,
       direction: "vertical",
+      slidesPerGroup: 4,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
     },
   },
 });
 // ------------------640 주식 테이블 감추기---------------------------
-$(document).ready(function () {
+$(document).resize(function () {
   if ($(window).width() <= 640) {
     $('.table').hide();
     $('.up').hide();
@@ -278,5 +303,9 @@ $(document).ready(function () {
       $(".down").toggle();
       $(".up").toggle();
     });
-  };
+  }
+  // else if ($(window).width() > 640) {
+  //   swiper5.destroy();
+  // }
 });
+

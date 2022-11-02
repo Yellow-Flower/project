@@ -1,5 +1,5 @@
 @charset "UTF-8";
-     
+      
 /* ---------------------------------메인메뉴--------------- */
 /* ---------------------------------로그인창--------------- */
 header .login_page{
@@ -7,7 +7,7 @@ header .login_page{
     background-size: contain;
 }
 header .login_page > div > span{
-    padding-left: 190px;
+    padding-left: 180px;
 }
 /* ----------------------------------메인화면--------------- */
 .body > .MV {
@@ -202,9 +202,16 @@ header .login_page > div {
 /* .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section > div p{
     text-align: left;
 } */
-.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section .list_silde p{
-    height: 100%;
-}
+/* .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section .list_silde{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+} */
+/* .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section .list_silde p{
+    width: 100%;
+    flex-shrink: 0;
+} */
 /* .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section .list_silde .swiper-slide{
     height: 10px;
 } */
@@ -584,9 +591,6 @@ header .login_page > div {
 .aboutyg .ab_box .introduction .shapes div:nth-child(5) img{
     width: 40%;
     height: 100%;
-}
-.aboutyg .ab_box .introduction .shapes .arrow_size{
-    /* color:black; */
 }
 .aboutyg .ab_box .introduction .shapes .arrow_size i{
     transform: rotate(90deg);
