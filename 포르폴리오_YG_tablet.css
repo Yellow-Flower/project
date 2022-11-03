@@ -1,11 +1,11 @@
 @charset "UTF-8";
-      
+       
 /* ----------------------------------로그인창--------------- */
 header .login_page > div{
     width: 300px;
     height: 194px;
     font-size: 16px;
-} 
+}  
 header .login_page > div > span{
     padding-left: 230px;
 }
@@ -190,6 +190,22 @@ header .login_page > div > div:last-child{
 /* .select .sel_menu > div:nth-child(1) .slide > div:nth-child(2){
     font-size: 4em;
 } */
+
+/* ------------------------------배우 페이지---------------------------- */
+.actors .actors_left .proflie .photo{
+    background-size: contain;
+    background-position: center;
+}
+.actors .actors_right .proflie .photo{
+    background-size: contain;
+    background-position: center;
+}
+.actors .sec1_2 .proflie .hee_box_one:nth-child(1) {
+    margin: -18% 0px 0 21%;
+}
+.actors .sec1_2 .proflie .hee_box_two:nth-child(1) {
+    margin: 21% 0 0 16%;
+}
 
 /* ------------------------------오디션 페이지---------------------------- */
 .audition{

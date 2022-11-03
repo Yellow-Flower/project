@@ -1,14 +1,14 @@
 @charset "UTF-8";
-      
+       
 /* ---------------------------------메인메뉴--------------- */
 /* ---------------------------------로그인창--------------- */
 header .login_page{
-    background-image: url(/pp/이미지/YG_로그인배경패턴6.png);
+    background-image: url(/YG.Ent/이미지/YG_로그인배경패턴6.png);
     background-size: contain;
 }
 header .login_page > div > span{
     padding-left: 180px;
-}
+} 
 /* ----------------------------------메인화면--------------- */
 .body > .MV {
     height: 90vh;
@@ -21,7 +21,7 @@ header{
     padding: 0 10px;
 }
 header a {
-    background-image: url(/pp/이미지/YG_symbol_W.png);
+    background-image: url(/YG.Ent/이미지/YG_symbol_W.png);
     background-size: 73px 47px;
     background-position: center center;
     width: 73px;
@@ -198,7 +198,7 @@ header .login_page > div {
 .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section{
     width: 80%;
     height: 70%;
-    padding: 5px;
+    padding: 5px 0 0;
     margin: 0 auto;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .album > .swiper-wrapper > .swiper-slide{
@@ -234,26 +234,35 @@ header .login_page > div {
     margin: 10px 0;
     width: 50%;
     height: 40%;
+    border: 2px solid #FFF;
+    display: flex;
+    justify-content: flex-start;
 }
 .sec1_2 .proflie .box2:nth-child(2){
     margin: 10px 0;
     width: 50%;
     height: 40%;
+    border: 2px solid #FFF;
 }
 .sec1_2 .proflie .box2:nth-child(3){
     margin: 10px 0;
     width: 50%;
     height: 40%;
+    border: 2px solid #FFF;
 }
 .sec1_2 .proflie .box2:nth-child(4){
     margin: 10px 0;
     width: 50%;
-    height: 60%;
+    height: 40%;
+    border: 2px solid #FFF;
 }
 .sec1_2 .proflie .box2 .name {
     opacity: 1;
     height: 100%;
 }
+/* .sec1_2 .proflie .box2 .name P{
+    width: 50%;
+} */
 .sec1_2 .text_box2 .name .info{
     font-size: 8px;
     overflow-y: auto;

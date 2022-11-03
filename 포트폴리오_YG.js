@@ -4,7 +4,7 @@
 //       $(this).children(".name").children("*").toggle();
 //       $(".name::before.on").toggle();
 //     });
-//   }
+//   } 
 //   else if ($(window).width()) {
 //     $(".box2").hover(function () {
 //       $(this).children(".name").children("*").toggle();

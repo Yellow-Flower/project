@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
     
-       
+        
 * { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 body{
     height: 100vh;
@@ -49,7 +49,7 @@ header .yglogo {
     margin: 0 auto;
 }
 header a {
-    background-image: url(/pp/이미지/YG_symbol_W.png);
+    background-image: url(/YG.Ent/이미지/YG_symbol_W.png);
     /* background-size: 134px 86.94px; */
     /* background-size: 100% 100%; */
     background-size: cover;
@@ -114,7 +114,7 @@ header .button span:hover{
     background-color: #fff;
     border-radius: 15px;
     border: 2px solid black;
-}
+} 
 header .button > div:first-child > span{
     padding: 5px 12px;
 }
@@ -149,7 +149,7 @@ header .login_page{
     transform: translateY(-100%);
     transition: 0.2s all;
     background-color: black;
-    background-image: url(/pp/이미지/YG_로그인배경패턴.png);
+    background-image: url(/YG.Ent/이미지/YG_로그인배경패턴.png);
     /* background-repeat: round; */
     display: flex;
     justify-content: center;
@@ -382,7 +382,7 @@ header .snb li:hover {
     /* height: 855px; */
     height: 80vh;
     position: relative;
-    background-image: url(/pp/이미지/배경\ 작업-\ 별2.png);
+    background-image: url(/YG.Ent/이미지/배경\ 작업-\ 별2.png);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
@@ -398,7 +398,7 @@ header .snb li:hover {
 
 }
 .sec1_2 .proflie .photo {
-    background-image: url(/pp/이미지/블랙핑크_1.jpg);
+    background-image: url(/YG.Ent/이미지/블랙핑크_1.jpg);
     /* background-size: cover; */
     background-repeat: no-repeat;
     background-size: 100%;
@@ -459,7 +459,7 @@ header .snb li:hover {
     /* background: rgb(255, 255, 255); */
     display: inline-block;
     position: absolute;
-    background-image: url(/pp/아이콘//radio_button_checked_FILL0_wght400_GRAD0_opsz48.svg);
+    background-image: url(/YG.Ent/아이콘//radio_button_checked_FILL0_wght400_GRAD0_opsz48.svg);
     background-repeat: no-repeat;
     background-size: 25px 25px;
     /* height: 95%; */
@@ -576,7 +576,7 @@ header .snb li:hover {
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
 .artist .sec1_2 .proflie .photo .text_box3 > p:first-child {
-    background-image: url(/pp/이미지/블랙핑크\ 로고.png);
+    background-image: url(/YG.Ent/이미지/블랙핑크\ 로고.png);
     background-size: 199px 88px;
     background-position: center center;
     width: 211px;
@@ -668,7 +668,7 @@ header .snb li:hover {
 
 
 .actors .actors_left .proflie .photo {
-    background-image: url(/pp/이미지/배우/김희애_3.jpg);
+    background-image: url(/YG.Ent/이미지/배우/김희애_3.jpg);
     background-size: cover;
     width: 1026px;
     height: 855px;
@@ -680,7 +680,7 @@ header .snb li:hover {
     /* height: 855px; */
     height: 80vh;
     position: relative;
-    background-image: url(/pp/이미지/배경\ 작업-\ 별2.png);
+    background-image: url(/YG.Ent/이미지/배경\ 작업-\ 별2.png);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
@@ -698,7 +698,7 @@ header .snb li:hover {
     background-color: rgba(1, 2, 8, 0.5);
 }
 .actors .actors_right .proflie .photo {
-    background-image: url(/pp/이미지/배우/김희애_2.jpg);
+    background-image: url(/YG.Ent/이미지/배우/김희애_2.jpg);
     background-size: cover;
     width: 1026px;
     height: 855px;
@@ -750,6 +750,7 @@ header .snb li:hover {
 .actors .sec1_2 .text_box1 p {
     font-size: 12px;
     color: #fff;
+    overflow: auto;
 }
 .actors .sec1_2 .text_box2 {
     display: flex;
@@ -805,6 +806,8 @@ header .snb li:hover {
 .actors .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div {
     display: block;
     font-size: 0.5rem;
+    border-bottom: 1px dashed black;
+    padding-bottom: 10px;
 }
 .actors .sec1_2 .proflie .photo .text_box3 .album_list .ac_scroll{
     overflow: auto;
@@ -855,7 +858,7 @@ header .snb li:hover {
     /* background: rgb(255, 255, 255); */
     display: inline-block;
     position: absolute;
-    background-image: url(/pp/아이콘//radio_button_checked_FILL0_wght400_GRAD0_opsz48.svg);
+    background-image: url(/YG.Ent/아이콘//radio_button_checked_FILL0_wght400_GRAD0_opsz48.svg);
     background-repeat: no-repeat;
     background-size: 25px 25px;
     /* height: 95%; */
@@ -872,7 +875,7 @@ header .snb li:hover {
     /* background: rgb(255, 255, 255); */
     display: inline-block;
     position: absolute;
-    background-image: url(/pp/아이콘//radio_button_checked_FILL0_wght400_GRAD0_opsz48.svg);
+    background-image: url(/YG.Ent/아이콘//radio_button_checked_FILL0_wght400_GRAD0_opsz48.svg);
     background-repeat: no-repeat;
     background-size: 25px 25px;
     /* height: 95%; */
@@ -944,7 +947,7 @@ header .snb li:hover {
     width: 100%;
     /* height: 1080px; */
     height: 100vh;
-    background-image: url(/pp/이미지/배경\ 작업-\ 별3.png);
+    background-image: url(/YG.Ent/이미지/배경\ 작업-\ 별3.png);
     background-size: cover;
 
 }
@@ -1090,7 +1093,7 @@ header .snb li:hover {
 .select .sel_menu > div:nth-child(1) .swiper-slide .s_one .gleft > p:nth-child(1) {
     height: 80%;
     width: 100%;
-    background-image: url(/pp/이미지/와이지셀렉터-월간포카.jpg);
+    background-image: url(/YG.Ent/이미지/와이지셀렉터-월간포카.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -1098,14 +1101,14 @@ header .snb li:hover {
     /* height: 536px; */
     width: 100%;
     height: 80%;
-    background-image: url(/pp/이미지/와이지셀렉터-블랙핑크.jpg);
+    background-image: url(/YG.Ent/이미지/와이지셀렉터-블랙핑크.jpg);
     /* background-size: cover; */
     background-size: 100% 100%;
 }
 .select .sel_menu > div:nth-child(1) .swiper-slide .s_thr .gleft > p:nth-child(1) {
     height: 80%;
     width: 100%;
-    background-image: url(/pp/이미지/와이지셀렉터-간식타임.jpg);
+    background-image: url(/YG.Ent/이미지/와이지셀렉터-간식타임.jpg);
     /* background-size: cover; */
     background-size: 100% 100%;
 }
@@ -1144,21 +1147,21 @@ header .snb li:hover {
 .select .sel_menu > div:nth-child(1) .swiper-slide .s_one .gright > p:nth-child(1) {
     height: 80%;
     width: 100%;
-    background-image: url(/pp/이미지/와이지셀렉터-리사.jpg);
+    background-image: url(/YG.Ent/이미지/와이지셀렉터-리사.jpg);
     /* background-size: cover; */
     background-size: 100% 100%;
 }
 .select .sel_menu > div:nth-child(1) .swiper-slide .s_two .gright > p:nth-child(1) {
     height: 80%;
     width: 100%;
-    background-image: url(/pp/이미지/와이지셀렉터-블랙핑크2.jpg);
+    background-image: url(/YG.Ent/이미지/와이지셀렉터-블랙핑크2.jpg);
     /* background-size: cover; */
     background-size: 100% 100%;
 }
 .select .sel_menu > div:nth-child(1) .swiper-slide .s_thr .gright > p:nth-child(1) {
     height: 80%;
     width: 100%;
-    background-image: url(/pp/이미지/와이지셀렉터-트레저.jpg);
+    background-image: url(/YG.Ent/이미지/와이지셀렉터-트레저.jpg);
     /* background-size: cover; */
     background-size: 100% 100%;
 }
@@ -1310,7 +1313,7 @@ header .snb li:hover {
 .audition {
     width: 100%;
     height: 100vh;
-    background-image: url(/pp/이미지/배경작업3_수정1.png);
+    background-image: url(/YG.Ent/이미지/배경작업3_수정1.png);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Fugaz One', 'Kanit', sans-serif;
@@ -1357,7 +1360,7 @@ header .snb li:hover {
     height: 50%;
 } 
 .audition .inner_3 .ap_left1 div > p:first-child {
-    background-image: url(/pp/이미지/YG_Statement_W.png);
+    background-image: url(/YG.Ent/이미지/YG_Statement_W.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -1451,7 +1454,7 @@ header .snb li:hover {
 }
 .audition .inner_3 .ap_right1 .ap_head > p:nth-child(1) {
     background-color: black;
-    background-image: url(/pp/이미지/YG\ ENTERTAINMENT_logotype_W.png);
+    background-image: url(/YG.Ent/이미지/YG\ ENTERTAINMENT_logotype_W.png);
     background-repeat: no-repeat;
     background-size: 148px 19px;
     background-position: 6px 6px;
@@ -1465,7 +1468,7 @@ header .snb li:hover {
     padding: 5px 0 0 0;
 }
 .audition .inner_3 .ap_right1 .ap_head > p:nth-child(3) {
-    background-image: url(/pp/아이콘/수정_verified_FILL0_wght400_GRAD0_opsz48.svg);
+    background-image: url(/YG.Ent/아이콘/수정_verified_FILL0_wght400_GRAD0_opsz48.svg);
     width: 30px;
     height: 30px;
 }
@@ -1479,13 +1482,13 @@ header .snb li:hover {
     border-bottom: 1.5px solid black;
 }
 .audition .inner_3 .ap_right1 .instagram .swiper-wrapper > div:nth-child(1) .ins_page > p{
-    background-image: url(/pp/이미지/뉴스/인스타_블랙핑크_1.jpg);
+    background-image: url(/YG.Ent/이미지/뉴스/인스타_블랙핑크_1.jpg);
 }
 .audition .inner_3 .ap_right1 .instagram .swiper-wrapper > div:nth-child(2) .ins_page > p{
-    background-image: url(/pp/이미지/뉴스/인스타_블랙핑크_2.jpg);
+    background-image: url(/YG.Ent/이미지/뉴스/인스타_블랙핑크_2.jpg);
 }
 .audition .inner_3 .ap_right1 .instagram .swiper-wrapper > div:nth-child(3) .ins_page > p{
-    background-image: url(/pp/이미지/뉴스/인스타_블랙핑크_3.jpg);
+    background-image: url(/YG.Ent/이미지/뉴스/인스타_블랙핑크_3.jpg);
 }
 .audition .inner_3 .ap_right1 .ins_page .ap_head {
     margin: 0 0 5px 0;
@@ -1640,7 +1643,7 @@ header .snb li:hover {
     bottom: 5%;
 }
 .audition .inner_3 .no_right1 > div > p {
-    background-image: url(/pp/이미지/지구본.png);
+    background-image: url(/YG.Ent/이미지/지구본.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -1669,7 +1672,7 @@ header .snb li:hover {
 .aboutyg {
     width: 100%;
     height: 90vh;
-    background-image: url(/pp/이미지/배경작업3_수정4.png);
+    background-image: url(/YG.Ent/이미지/배경작업3_수정4.png);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Fugaz One', 'Kanit', sans-serif;
@@ -1697,7 +1700,7 @@ header .snb li:hover {
     background-color: #fff;
 }
 .aboutyg .ab_box > .yg_sym > p:first-child {
-    background-image: url(/pp/이미지/YG_Statement_B.png);
+    background-image: url(/YG.Ent/이미지/YG_Statement_B.png);
     background-repeat: no-repeat;
     /* background-size: cover;
     width: 220px;
