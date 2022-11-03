@@ -52,10 +52,10 @@ header .login_page > div > div:last-child{
     /* align-items: center; */
     border: none
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .album > .swiper-wrapper > .swiper-slide{
-    border-bottom: 1px dashed black;
-    padding-bottom: 10px;
+.actors .proflie .photo .text_box3 .album_list .album > .swiper-wrapper > .swiper-slide{
+    border-bottom: 0
 }
+.sec1_2 .proflie .photo .text_box3 .album_list .album > .swiper-wrapper > .swiper-slide
 /* .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div::after{
     content: "";
     width: 400px;
@@ -199,6 +199,8 @@ header .login_page > div > div:last-child{
 .actors .actors_right .proflie .photo{
     background-size: contain;
     background-position: center;
+    width: 100%;
+    height: 100%;
 }
 .actors .sec1_2 .proflie .hee_box_one:nth-child(1) {
     margin: -18% 0px 0 21%;

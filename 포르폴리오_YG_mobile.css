@@ -442,6 +442,24 @@ header .login_page > div {
 .select .inner_2 > div:nth-child(2) ul {
     flex-wrap: wrap;
 }
+/* ------------------------배우 페이지------------------------ */
+.actors .text_box1 {
+    left: 72%;
+    bottom: 70%;
+}
+.actors .sec1_2 .proflie{
+    height: 90vh;
+}
+.actors .sec1_2 .proflie .back{
+    height: 90vh;
+}
+.actors .sec1_2 .proflie .box2{
+    border: 0;
+}
+.actors .sec1_2 .proflie .photo .text_box3{
+    width: 90%;
+    height: 30%;
+}
 /* ------------------------오디션 페이지------------------------ */
 .audition > div:first-child{
     height: 4vh;

@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 body{
     height: 100vh;
@@ -669,7 +669,8 @@ header .snb li:hover {
 
 .actors .actors_left .proflie .photo {
     background-image: url(/YG.Ent/이미지/배우/김희애_3.jpg);
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
     width: 1026px;
     height: 855px;
     margin: 0 auto;
@@ -699,7 +700,8 @@ header .snb li:hover {
 }
 .actors .actors_right .proflie .photo {
     background-image: url(/YG.Ent/이미지/배우/김희애_2.jpg);
-    background-size: cover;
+    background-size:  contain;
+    background-position: center;
     width: 1026px;
     height: 855px;
     margin: 0 auto;
@@ -806,8 +808,6 @@ header .snb li:hover {
 .actors .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div {
     display: block;
     font-size: 0.5rem;
-    border-bottom: 1px dashed black;
-    padding-bottom: 10px;
 }
 .actors .sec1_2 .proflie .photo .text_box3 .album_list .ac_scroll{
     overflow: auto;
@@ -836,6 +836,8 @@ header .snb li:hover {
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(2) .swiper-slide > div > div {
     /* font-size: 16px; */
     font-size: 0.9rem;
+    border-bottom: 1px dashed black;
+    padding-bottom: 10px;
 }
 .actors .sec1_2 .proflie .photo .text_box3 .album_list {
     width: 85%;
@@ -923,7 +925,7 @@ header .snb li:hover {
 .actors .text_box3 .album_list .swiper-button-next {
     right: 45%;
     top: unset;
-    bottom: -55px;
+    bottom: -8px;
 }
 .text_box3 .b {
     position: relative;

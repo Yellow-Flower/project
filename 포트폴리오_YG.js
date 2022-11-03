@@ -304,6 +304,7 @@ var swiper10 = new Swiper(".list_silde", {
     },
   },
 });
+
 // ------------------640 주식 테이블 감추기---------------------------
 $(document).ready(function () {
   if ($(window).width() <= 640) {
