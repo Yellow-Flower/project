@@ -181,6 +181,9 @@ header .login_page > div {
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div {
     flex-direction: column;
 }
+.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide section > div{
+    height: 30%;
+}
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div > section > div:last-child{
     /* overflow: auto; */
     height: 57%;
@@ -445,7 +448,12 @@ header .login_page > div {
 /* ------------------------배우 페이지------------------------ */
 .actors .text_box1 {
     left: 72%;
-    bottom: 70%;
+    bottom: 66%;
+    height: 250px;
+    background-color: rgba(1, 2, 8, 0.2);
+}
+.actors .sec1_2 .text_box1 h5 {
+    font-size: 20px;
 }
 .actors .sec1_2 .proflie{
     height: 90vh;
@@ -459,6 +467,16 @@ header .login_page > div {
 .actors .sec1_2 .proflie .photo .text_box3{
     width: 90%;
     height: 30%;
+}
+.actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1) span:first-child{
+    width: 14%;
+    text-align: center;
+}
+.actors_right .proflie .box2 .name{
+    background-color: rgba(1, 2, 8, 0);
+}
+.actors .sec1_2 .proflie .hee_box_two:nth-child(1){
+    margin: 28% 0 0 20%;
 }
 /* ------------------------오디션 페이지------------------------ */
 .audition > div:first-child{

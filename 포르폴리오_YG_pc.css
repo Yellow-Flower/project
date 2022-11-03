@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 body{
     height: 100vh;
@@ -575,6 +575,9 @@ header .snb li:hover {
     font-weight: bold;
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
+.artist .sec1_2 .proflie .photo .text_box3 > div:first-child{
+    padding: 0 5px;
+}
 .artist .sec1_2 .proflie .photo .text_box3 > p:first-child {
     background-image: url(/YG.Ent/이미지/블랙핑크\ 로고.png);
     background-size: 199px 88px;
@@ -589,6 +592,7 @@ header .snb li:hover {
     font-size: 15px;
     text-align: center;
 }
+
 .sec1_2 .proflie .photo .text_box3 .album_list {
     /* display: flex;
     flex-direction: column;
@@ -627,6 +631,7 @@ header .snb li:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
+    /* height: 100%; */
     height: 100%;
     overflow: auto;
 }
@@ -720,7 +725,7 @@ header .snb li:hover {
     position: absolute;
     right: 5%;
     bottom: 5%;
-    padding: 19px 0 0 0;
+    padding: 20px;
     /* font-weight: bold; */
     font-size: 15px;
     color: #fff
@@ -819,15 +824,19 @@ header .snb li:hover {
     /* font-family: Kanit, sans-serif; */
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
-
+.actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1){
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    gap: 30px;
+    border-bottom: 1px dashed black;
+    padding-bottom: 10px;
+}
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1) span:first-child {
-    /* font-size: 19px; */
     font-size: 1.2rem;
-    padding: 0 20px 0 0;
 }
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1) span:last-child {
     font-size: 16px;
-    /* padding: 0 100px 0 0; */
 }
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(2) .swiper-slide > div > p {
     /* font-size: 19px; */
@@ -836,11 +845,10 @@ header .snb li:hover {
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(2) .swiper-slide > div > div {
     /* font-size: 16px; */
     font-size: 0.9rem;
-    border-bottom: 1px dashed black;
-    padding-bottom: 10px;
+    text-align: left;
 }
 .actors .sec1_2 .proflie .photo .text_box3 .album_list {
-    width: 85%;
+    width: 100%;
     height: 650px;
 }
 .actors .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide {
@@ -848,9 +856,11 @@ header .snb li:hover {
 }
 .actors .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: row;
+    gap: 20px;
     border: none;
+    border-bottom: 1px dashed black;
+    padding-bottom: 10px;
 }
 /* ---------------------------배우 프로필 위치-------------------- */
 .actors_left .proflie .box2 .name::after {
@@ -915,7 +925,7 @@ header .snb li:hover {
 }
 .text_box3 .album_list .swiper-button-next:after {
     transform: rotate(90deg);
-    font-size: 31px;
+    font-size: 25px;
 }
 .text_box3 .album_list .swiper-button-next {
     right: 45%;
@@ -925,7 +935,7 @@ header .snb li:hover {
 .actors .text_box3 .album_list .swiper-button-next {
     right: 45%;
     top: unset;
-    bottom: -8px;
+    bottom: -3px;
 }
 .text_box3 .b {
     position: relative;

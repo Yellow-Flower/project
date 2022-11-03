@@ -180,7 +180,7 @@ var swiper4 = new Swiper(".goodsgrid", {
   },
 });
 
-var swiper5 = new Swiper(".album", {
+var swiper5 = new Swiper(".album-slide", {
   slidesPerView: 1,
   spaceBetween: 10,
   direction: "vertical",
@@ -304,7 +304,24 @@ var swiper10 = new Swiper(".list_silde", {
     },
   },
 });
-
+// -------------------------------배우 프로필 리스트 슬라이드-----------------
+var swiper11 = new Swiper(".proflie_list", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  direction: "horizontal",
+  navigation: {
+    nextEl: ".proflie_list .swiper-button-next"
+  },
+  observer: true,
+  observeParents: true,
+  breakpoints: {
+    640: {
+      direction: "vertical",
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+  },
+});
 // ------------------640 주식 테이블 감추기---------------------------
 $(document).ready(function () {
   if ($(window).width() <= 640) {

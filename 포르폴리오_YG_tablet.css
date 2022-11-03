@@ -192,6 +192,9 @@ header .login_page > div > div:last-child{
 } */
 
 /* ------------------------------배우 페이지---------------------------- */
+.actors .sec1_2 .text_box1 h5 {
+    font-size: 25px;
+}
 .actors .actors_left .proflie .photo{
     background-size: contain;
     background-position: center;
@@ -208,7 +211,26 @@ header .login_page > div > div:last-child{
 .actors .sec1_2 .proflie .hee_box_two:nth-child(1) {
     margin: 21% 0 0 16%;
 }
-
+.actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1) {
+    gap: 10px;
+}
+.actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1) span:first-child {
+    font-size: 1rem;
+}
+.actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1) span:last-child {
+    font-size: 0.8rem;
+}
+.actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(2) .swiper-slide > div > p{
+    font-size: 1rem;
+    width: 15%;
+}
+.actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(2) .swiper-slide > div > div{
+    font-size: 0.8rem;
+    width: 100%;
+}
+.actors .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div{
+    gap: 10px;
+}
 /* ------------------------------오디션 페이지---------------------------- */
 .audition{
     height: 95vh;
