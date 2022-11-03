@@ -311,6 +311,7 @@ var swiper11 = new Swiper(".proflie_list", {
   direction: "horizontal",
   navigation: {
     nextEl: ".ac_proflie .swiper-button-next",
+    prevEl: ".ac_proflie .swiper-button-prev",
   },
   observer: true,
   observeParents: true,
@@ -319,9 +320,6 @@ var swiper11 = new Swiper(".proflie_list", {
       direction: "vertical",
       slidesPerView: 3,
       spaceBetween: 10,
-      navigation: {
-        prevEl: ".ac_proflie .swiper-button-prev",
-      }
     },
   },
 });

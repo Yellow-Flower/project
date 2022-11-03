@@ -491,6 +491,15 @@ header .login_page > div {
 .actors .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div{
     border-bottom: none;
 }
+.actors .text_box3 .album_list .swiper-button-prev{
+    left: -3%;
+    top: unset;
+    bottom: 40%;
+}
+.actors .text_box3 .album_list .swiper-button-prev:after{
+    display: block;
+    font-size: 20px;
+}
 /* ------------------------오디션 페이지------------------------ */
 .audition > div:first-child{
     height: 4vh;
