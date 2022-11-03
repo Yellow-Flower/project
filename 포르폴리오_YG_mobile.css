@@ -275,7 +275,7 @@ header .login_page > div {
     font-size: 13px;
 }
 .text_box3 .album_list .swiper-button-next:after {
-    font-size: 22px;
+    font-size: 20px;
 }
 .text_box3 .album_list .swiper-button-next{
     bottom: -5%;
@@ -477,6 +477,19 @@ header .login_page > div {
 }
 .actors .sec1_2 .proflie .hee_box_two:nth-child(1){
     margin: 28% 0 0 20%;
+}
+.actors .sec1_2 .proflie .photo .text_box3 .album_list{
+    width: 100%;
+    height: 80%;
+}
+.actors .text_box3 .album_list .swiper-button-next{
+    right: -4%;
+    top: unset;
+    bottom: 40%;
+    transform: rotate(270deg);
+}
+.actors .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div{
+    border-bottom: none;
 }
 /* ------------------------오디션 페이지------------------------ */
 .audition > div:first-child{

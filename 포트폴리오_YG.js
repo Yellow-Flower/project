@@ -185,7 +185,7 @@ var swiper5 = new Swiper(".album-slide", {
   spaceBetween: 10,
   direction: "vertical",
   navigation: {
-    nextEl: ".album_list .swiper-button-next"
+    nextEl: ".art_list .swiper-button-next"
   },
   observer: true,
   observeParents: true,
@@ -310,15 +310,18 @@ var swiper11 = new Swiper(".proflie_list", {
   spaceBetween: 10,
   direction: "horizontal",
   navigation: {
-    nextEl: ".proflie_list .swiper-button-next"
+    nextEl: ".ac_proflie .swiper-button-next",
   },
   observer: true,
   observeParents: true,
   breakpoints: {
-    640: {
+    641: {
       direction: "vertical",
       slidesPerView: 3,
       spaceBetween: 10,
+      navigation: {
+        prevEl: ".ac_proflie .swiper-button-prev",
+      }
     },
   },
 });
