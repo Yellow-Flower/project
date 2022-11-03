@@ -452,9 +452,10 @@ footer span:nth-child(3){
 .b .swiper-button-next:after {
     color: black;
 }
-/* .text_box3 .album_list .swiper-button-next{
-    bottom: -22px;
-} */
+.text_box3 .album_list .swiper-button-next{
+    /* bottom: -42px; */
+    bottom: -7%;
+}
 .text_box3 .album_list .swiper-button-next:after {
     font-size: 22px;
 }

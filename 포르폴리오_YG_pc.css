@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 body{
     height: 100vh;
@@ -1928,71 +1928,36 @@ header .snb li:hover {
     width: 60%;
     font-family: 'Krub', sans-serif;
     padding: 40px;
+    color: #fff;
 }
 .aboutyg .ab_box .j_right > p:first-child {
     font-size: 2rem;
-    color: #fff;
     margin-bottom: 5px;
 }
-.aboutyg .ab_box .j_right div:nth-child(2) {
-    display: flex;
-}
-.aboutyg .ab_box .j_right > div:nth-child(2) > p:first-child {
-    font-size: 16px;
-    color: black;
-    background-color: #fff;
-    padding: 5px 10px;
-}
-.aboutyg .ab_box .j_right > div:nth-child(2) > p:last-child {
-    font-size: 16px;
+.aboutyg .ab_box .j_right > p:nth-child(2){
+    font-size: 1.2rem;
     color: #fff;
-    background-color: black;
+    /* background-color: #fff; */
+    /* padding: 5px; */
+}
+.aboutyg .ab_box .j_right > p:nth-child(2) > span:last-child{
+    font-size: 0.9rem;
+}
+.aboutyg .ab_box .j_right > span:nth-child(3){
+    display: inline-block;
+    font-size: 15px;
+    color: black;
+    background-color: #fff;
+    padding: 5px;
+}
+.aboutyg .ab_box .j_right > span:nth-child(4){
+    font-size: 10px;
+}
+.aboutyg .ab_box .j_right > div:nth-child(5) span{
+    border: 1px solid #fff;
     padding: 5px 10px;
 }
-.aboutyg .ab_box .j_right .graph {
-    display: flex;
-    align-items: flex-end;
-    color: #FFFFFF;
-}
-.aboutyg .ab_box .j_right .graph > img {
-    width: 300px;
-    height: 300px;
-}
-.aboutyg .ab_box .j_right .graph > div {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 0 40px;
-}
-.aboutyg .ab_box .j_right .graph > div img {
-    width: 270px;
-    height: 200px;
-}
-.aboutyg .ab_box .j_right .graph .graph_text {
-    display: flex;
-    font-size: 24px;
-}
-.aboutyg .ab_box .j_right .graph .graph_text div:nth-child(2) {
-    font-size: 12px;
-    display: flex;
-}
-.aboutyg .ab_box .j_right .graph .graph_text div:nth-child(3) {
-    font-size: 8px;
-    display: flex;
-}
-.aboutyg .ab_box .j_right .graph table thead {
-    font-size: 16px;
-    background-color: #fff;
-    color: black;
-    border-collapse: collapse;
-}
-.aboutyg .ab_box .j_right .graph table td {
-    text-align: center;
-    border: 1px solid #fff;
-}
-.aboutyg .ab_box .j_right .graph table td:nth-child(2) {
-    color: red;
-}
+/* -------------- */
 .aboutyg .ab_box .news {
     width: 50%;
     border-right: 1px solid #fff;
