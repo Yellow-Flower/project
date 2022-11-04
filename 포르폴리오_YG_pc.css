@@ -1949,6 +1949,7 @@ header .snb li:hover {
 }
 .aboutyg .ab_box .j_right > p:nth-child(2) > span:last-child{
     font-size: 0.9rem;
+    margin-left: 5px;
 }
 .aboutyg .ab_box .j_right > div:nth-child(3){
     display: inline-block;
@@ -1971,9 +1972,9 @@ header .snb li:hover {
 .aboutyg .ab_box .j_right > div:nth-child(4) span{
     /* border: 1px solid #fff; */
     display: inline-block;
-    width: 100px;
+    /* width: 100px; */
     padding: 5px 10px;
-    border-right: 2px solid #fff;
+    /* border-right: 2px solid #fff; */
     /* text-align: center; */
 }
 .aboutyg .ab_box .j_right > div:nth-child(4) span:nth-child(1){
@@ -1985,8 +1986,8 @@ header .snb li:hover {
     /* border-bottom: 1px solid #fff; */
 }
 .aboutyg .ab_box .j_right > div:nth-child(4) span:nth-child(3){
-    /* border-bottom: 1px solid #fff; */
-    border-right: none;
+    margin-left: -15px;
+    width: 0;
 }
 /* -------------- */
 .aboutyg .ab_box .news {
@@ -2180,6 +2181,7 @@ footer div:last-child {
     display: flex;
     gap: 10px;
     align-items: center;
+    justify-content: center;
 }
 footer div:last-child i {
     color: #fff;

@@ -223,8 +223,8 @@ var swiper7 = new Swiper(".yg_slide", {
     hide: true,
   },
   navigation: {
-    nextEl: ".aboutyg swiper-button-next",
-    prevEl: ".aboutyg swiper-button-prev",
+    nextEl: ".aboutyg .swiper-button-next",
+    prevEl: ".aboutyg .swiper-button-prev",
   },
 });
 var swiper8 = new Swiper(".instagram", {

@@ -400,11 +400,15 @@ header .login_page > div > div:last-child{
     overflow-y:auto;
     height: 100%;
 }
+#up{
+    font-size: 35px;
+    bottom: 9%;
+}
 /* --------------------풋터------------------------ */
 footer{
     height: 7vh;
     line-height: 7vh;
-    padding: 0 50px;
+    padding: 0 30px;
     align-items: center;
 }
 footer > p {
@@ -426,7 +430,8 @@ footer div:first-child span{
     white-space: nowrap;
 }
 footer > div:first-child::before{
-    margin-left: -50px;
+    margin-left: -30px;
+    bottom: 9%;
 }
 footer div:last-child{
     width: 16%;

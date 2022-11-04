@@ -577,7 +577,7 @@ header .login_page > div {
     height: 95vh;
 }
 .aboutyg .yg_slide {
-    height: 84vh;
+    height: 83vh;
 }
 .aboutyg > div:nth-child(1){
     height: 4vh;
@@ -673,6 +673,13 @@ header .login_page > div {
     width: 100%;
     /* height: 50%; */
 }
+.aboutyg .ab_box .j_left > p{
+    font-size: 1.2rem;
+}
+.aboutyg .ab_box .j_left > div{
+    font-size: 0.9rem;
+
+}
 .aboutyg .ab_box .j_left .table_menu:hover{
    text-decoration: underline;
 }
@@ -696,6 +703,21 @@ header .login_page > div {
 }
 .aboutyg .ab_box .j_right .graph > div img{
     display: none;
+}
+.aboutyg .ab_box .j_right > p:first-child {
+    font-size: 1.2rem;
+}
+.aboutyg .ab_box .j_right > p:nth-child(2) {
+    font-size: 1rem;
+}
+.aboutyg .ab_box .j_right > p:nth-child(2) > span:last-child {
+    font-size: 0.8rem;
+}
+.aboutyg .ab_box .j_right > div:nth-child(3) {
+    font-size: 12px;
+}
+.aboutyg .ab_box .j_right > div:nth-child(4){
+    font-size: 12px;
 }
 .aboutyg .ab_box .news {
     width: 100%;
@@ -758,17 +780,20 @@ header .login_page > div {
 /* ---------------------------풋터----------------------------- */
 footer{
     padding: 0 20px;
-    height: 7vh;
-    line-height: 7vh;
+    height: 8vh;
+    line-height: 8vh;
 }
 footer div:first-child {
     font-size: 8px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 footer > p {
     font-size: 8px;
-    line-height: 7vh;
+    height: 8vh;
+    line-height: 8vh;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -776,13 +801,19 @@ footer > p {
 footer div:last-child {
     font-size: 16px;
     gap: 5px;
+    height: 100%;
 }
 footer > div:first-child::before{
     margin-left: -20px;
+    bottom: 12.5%;
 }
 footer span:nth-child(2){
     padding: 0;
 }
 footer span:nth-child(3){
     padding: 0;
+}
+#up{
+    font-size: 30px;
+    bottom: 9%;
 }
