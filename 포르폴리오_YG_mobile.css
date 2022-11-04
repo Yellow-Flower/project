@@ -142,6 +142,7 @@ header .login_page > div {
     height: 200px;
     left: 66%;
     bottom: 57%;
+    background-color: rgba(1, 2, 8, 0.2);
 }
 .artist .sec1_2 .text_box1 h5{
     font-size: 20px;
@@ -237,7 +238,7 @@ header .login_page > div {
     margin: 10px 0;
     width: 50%;
     height: 40%;
-    border: 2px solid #FFF;
+    border: 1px solid rgba(255, 255, 255, 0);
     display: flex;
     justify-content: flex-start;
 }
@@ -245,27 +246,35 @@ header .login_page > div {
     margin: 10px 0;
     width: 50%;
     height: 40%;
-    border: 2px solid #FFF;
+    border: 1px solid rgba(255, 255, 255, 0);
 }
 .sec1_2 .proflie .box2:nth-child(3){
     margin: 10px 0;
     width: 50%;
     height: 40%;
-    border: 2px solid #FFF;
+    border: 1px solid rgba(255, 255, 255, 0);
 }
 .sec1_2 .proflie .box2:nth-child(4){
     margin: 10px 0;
     width: 50%;
     height: 40%;
-    border: 2px solid #FFF;
+    border: 1px solid rgba(255, 255, 255, 0);
 }
-.sec1_2 .proflie .box2 .name {
+.sec1_2 .proflie .box2 .name{
     opacity: 1;
     height: 100%;
+    margin: 10px 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0);
 }
-/* .sec1_2 .proflie .box2 .name P{
-    width: 50%;
-} */
+.sec1_2 .proflie .box2 .name.on{
+    height: 100%;
+    margin: 10px 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
 .sec1_2 .text_box2 .name .info{
     font-size: 8px;
     overflow-y: auto;
@@ -448,7 +457,7 @@ header .login_page > div {
 /* ------------------------배우 페이지------------------------ */
 .actors .text_box1 {
     left: 72%;
-    bottom: 66%;
+    bottom: 50%;
     height: 250px;
     background-color: rgba(1, 2, 8, 0.2);
 }
@@ -471,9 +480,6 @@ header .login_page > div {
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1) span:first-child{
     width: 14%;
     text-align: center;
-}
-.actors_right .proflie .box2 .name{
-    background-color: rgba(1, 2, 8, 0);
 }
 .actors .sec1_2 .proflie .hee_box_two:nth-child(1){
     margin: 28% 0 0 20%;

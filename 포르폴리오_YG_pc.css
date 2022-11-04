@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 body{
     height: 100vh;
@@ -795,16 +795,16 @@ header .snb li:hover {
     height: 100%;
 
 }
-.actors .sec1_2 .proflie .hee_box_one:nth-child(1) {
+/* .actors .sec1_2 .proflie .hee_box_one:nth-child(1) {
     background-position: 59% 0.5%;
     width: 50%;
     margin: 15% 0px 0 30%;
-}
+} */
 .actors .sec1_2 .proflie .hee_box_two:nth-child(1) {
     /* background-position: 59% 0.5%; */
     width: 50%;
     height: 30%;
-    margin: 20% 0 0 8%;
+    margin: 7% 0px 0px 16%;
 }
 .actors .sec1_2 .proflie .box2:nth-child(1) .line::before {
     top: 70.8%;
@@ -895,7 +895,7 @@ header .snb li:hover {
     font-size: 15px;
     opacity: 1;
     top: -10%;
-    left: 114%;
+    left: 106%;
 }
 .actors_left .proflie .box2 .name {
     left: -22%;
@@ -905,7 +905,7 @@ header .snb li:hover {
 .actors_right .proflie .box2 .name {
     left: -22%;
     color: #Ffff;
-    background-color: rgba(1, 2, 8, 0.2);
+    /* background-color: rgba(1, 2, 8, 0.2); */
 }
 /* ------------------------스와이퍼 수정하기--------------------- */
 .swiper-button-next:after {
@@ -1981,9 +1981,6 @@ header .snb li:hover {
     color: #000000;
     background-color: #fff;
     font-weight: bold;
-}
-.aboutyg .ab_box .j_right > div:nth-child(4) span:nth-child(2){
-    /* border-bottom: 1px solid #fff; */
 }
 .aboutyg .ab_box .j_right > div:nth-child(4) span:nth-child(3){
     margin-left: -15px;
