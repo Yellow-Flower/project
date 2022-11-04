@@ -67,7 +67,7 @@ header .button .language {
 }
 header .button .language span{
     font-size: 12px;
-    padding: 0px 8px;
+    /* padding: 0px 8px; */
 }
 
 header .menu{
@@ -138,10 +138,10 @@ header .login_page > div {
 .artist .sec1_2 .text_box1{
     gap: 5px;
     padding: 10px 10px;
-    width: 30%;
-    height: 200px;
-    left: 66%;
-    bottom: 57%;
+    width: 80%;
+    height: 130px;
+    left: 10%;
+    bottom: 53%;
     background-color: rgba(1, 2, 8, 0.2);
 }
 .artist .sec1_2 .text_box1 h5{
@@ -151,15 +151,20 @@ header .login_page > div {
     overflow: auto;
 }
 .sec1_2 .proflie .photo .text_box3{
-    width: 35%;
+    width: 80%;
     height: 45%;
-    /* right: 5%; */
+    right: 10%;
     bottom: 3%;
     gap: 10px;
     padding: 8px 0 0 0;
+    /* background-color: rgba(0, 0, 0, 1); */
 }
 .sec1_2 .proflie .photo .text_box3 .swiper-wrapper{
     gap: 0px;
+}
+.artist .sec1_2 .proflie .photo .text_box3 > p:first-child{
+    width: 49%;
+    height: 61px;
 }
 .artist .sec1_2 .proflie .photo .text_box3 > p:nth-child(2) {
     width: 70%;
@@ -175,9 +180,10 @@ header .login_page > div {
     display: flex;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide img{
-    width: 70%;
-    height: 30%;
+    width: 40%;
+    height: 40%;
     margin: 0 auto;
+    padding-right: 0;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div {
     flex-direction: column;
@@ -186,138 +192,72 @@ header .login_page > div {
     height: 30%;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div > section > div:last-child{
-    /* overflow: auto; */
-    height: 57%;
+    height: 50%;
     width: 50px;
     display: flex;
-    /* flex-direction: row; */
     width: 100%;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div::after{
     display: none;
 }
-/* .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide:nth-child(3) > div::after{
-    bottom: 0%;
-} */
 .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section{
     width: 80%;
-    height: 70%;
+    height: 50%;
     padding: 5px 0 0;
     margin: 0 auto;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .album > .swiper-wrapper > .swiper-slide{
     border-bottom: none;
+} 
+.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section > div > p{
+    font-size: 0.7rem;
 }
-/* .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section > div p{
-    text-align: left;
-} */
-/* .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section .list_silde{
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    overflow-y: hidden;
-} */
 .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section .list_silde p{
     text-align: center;
+    font-size: 0.7rem;
 }
-/* .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section .list_silde .swiper-slide{
-    height: 10px;
-} */
-.artist .sec1_2 .text_box2 {
-    flex-wrap: wrap;
-    position: absolute;
-    left: 5%;
-    bottom: 8%;
-    width: 55%;
-    height: 40%;
-}
+
 .sec1_2 .proflie .box2{
     font-size: 10px;
-}
-.sec1_2 .proflie .box2:nth-child(1){
-    margin: 10px 0;
-    width: 50%;
-    height: 40%;
-    border: 1px solid rgba(255, 255, 255, 0);
+    text-align: center;
+    background-position: center center;
     display: flex;
-    justify-content: flex-start;
-}
-.sec1_2 .proflie .box2:nth-child(2){
-    margin: 10px 0;
-    width: 50%;
-    height: 40%;
-    border: 1px solid rgba(255, 255, 255, 0);
-}
-.sec1_2 .proflie .box2:nth-child(3){
-    margin: 10px 0;
-    width: 50%;
-    height: 40%;
-    border: 1px solid rgba(255, 255, 255, 0);
-}
-.sec1_2 .proflie .box2:nth-child(4){
-    margin: 10px 0;
-    width: 50%;
-    height: 40%;
-    border: 1px solid rgba(255, 255, 255, 0);
+    justify-content: center;
+    align-items: center;
 }
 .sec1_2 .proflie .box2 .name{
+    padding: 50% 0 0;
     opacity: 1;
-    height: 100%;
-    margin: 10px 0;
-    width: 100%;
-    height: 100%;
-    border: 1px solid rgba(255, 255, 255, 0);
 }
-.sec1_2 .proflie .box2 .name.on{
-    height: 100%;
-    margin: 10px 0;
-    width: 100%;
-    height: 100%;
-    border: 1px solid rgba(255, 255, 255, 0);
+.sec1_2 .proflie .box2.on{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
 }
-.sec1_2 .text_box2 .name .info{
-    font-size: 8px;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-.sec1_2 .proflie .box2 .name .in_sns > a {
-    font-size: 13px;
-}
-.text_box3 .album_list .swiper-button-next:after {
-    font-size: 20px;
-}
-.text_box3 .album_list .swiper-button-next{
-    bottom: -10%;
-    /* bottom: -34px; */
+.sec1_2 .proflie .box2:nth-child(4){
+    width: 14%;
 }
 /* ---------------------------------프로필--------------------------- */
 .sec1_2 .proflie .box2 .name{
-    padding: 0;
+    padding: 0 0 50% 0;
 }
+.sec1_2 .proflie .box2 .name > p,.info, .in_sns{
+    display: none;
+}
+/* .sec1_2 .proflie .f_LISA .name {
+    padding: 0 0 50% 0;
+}
+.sec1_2 .proflie .f_JISOO .name {
+    padding: 0 0 50% 0;
+}
+.sec1_2 .proflie .f_JENNIE .name {
+    padding: 0 0 50% 0;
+}
+.sec1_2 .proflie .f_ROSE .name {
+    padding: 0 0 50% 0;
+} */
 /* --------------------------------프로필 동그라미 아이콘------------------- */
 .sec1_2 .proflie .box2 .name::after{
     display: none;
-}
-
-.sec1_2 .proflie .f_LISA .name::after {
-    top: 18%;
-    left: 41%;
-}
-.sec1_2 .proflie .f_JISOO .name::after {
-    top: 18%;
-    left: 41%;
-}
-.sec1_2 .proflie .f_JENNIE .name::after {
-    top: 18%;
-    left: 41%;
-}
-.sec1_2 .proflie .f_ROSE .name::after {
-    top: 18%;
-    left: 41%;
-}
-/* --------------------------------가수 프로필 넓이------------------- */
-.sec1_2 .text_box2 .f_ROSE .name .info{
-    width: 100%;
 }
 /* ------------------------------------------굿즈----------------------------- */
 /* .select .inner_2 .sel_menu{
@@ -456,13 +396,19 @@ header .login_page > div {
 }
 /* ------------------------배우 페이지------------------------ */
 .actors .text_box1 {
-    left: 72%;
+    /* left: 72%;
     bottom: 50%;
-    height: 250px;
+    height: 250px; */
+    bottom: 33%;
+    width: 90%;
+    height: 180px;
     background-color: rgba(1, 2, 8, 0.2);
 }
 .actors .sec1_2 .text_box1 h5 {
     font-size: 20px;
+}
+.actors .sec1_2 .text_box2{
+    display: none;
 }
 .actors .sec1_2 .proflie{
     height: 90vh;
@@ -476,6 +422,9 @@ header .login_page > div {
 .actors .sec1_2 .proflie .photo .text_box3{
     width: 90%;
     height: 30%;
+    bottom: 2%;
+    color: black;
+    background-color: rgba(255, 254, 254, 0.3);
 }
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1) span:first-child{
     width: 14%;

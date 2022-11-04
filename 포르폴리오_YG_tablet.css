@@ -11,7 +11,6 @@ header .login_page > div > span{
 }
 header .login_page > div > div:last-child{
     font-size: 13px; 
-    margin: 0 -28px 0 0;
 }
 /* ----------------------------------아티스트 페이지2--------------- */
 .sec1_2 .proflie .photo{
@@ -109,7 +108,7 @@ header .login_page > div > div:last-child{
 /* .sec1_2 .proflie .box2:nth-child(1) .line::before {
     top: 91.8%;
     left: 43%;
-}
+} 
 .sec1_2 .proflie .box2:nth-child(2) .line::before{
     top: 92%;
     left: 39%;
@@ -459,8 +458,11 @@ footer span:nth-child(3){
 }
 .text_box3 .album_list .swiper-button-next{
     /* bottom: -42px; */
-    bottom: -7%;
+    bottom: -4%;
 }
 .text_box3 .album_list .swiper-button-next:after {
     font-size: 22px;
+}
+.actors .text_box3 .album_list .swiper-button-next{
+    bottom: 1%;
 }

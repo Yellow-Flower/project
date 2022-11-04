@@ -11,21 +11,11 @@
 //     });
 //   }
 // });
-$(document).ready(function () {
-  if ($(window).width() > 1024) {
-    $(".box2").hover(function () {
-      $(this).children(".name").toggleClass("on");
-    });
-  }
-  else if ($(window).width() <= 1024) {
-    $(".box2").click(function () {
-      $(this).children(".name").toggleClass("on");
-    });
-  }
+
   // if ($(window).width() > 640) {
   //   swiper10.destroy();
   // };
-});
+
 // -------------------전체메뉴-------------
 $(".select li").click(function () {
   var num = $(this).index();
@@ -266,8 +256,8 @@ var swiper10 = new Swiper(".list_silde", {
   //   el: ".swiper-pagination",
   //   dynamicBullets: true,
   // },
-  slidesPerView: 1,
-  slidesPerGroup: 1,
+  slidesPerView: 3,
+  slidesPerGroup: 3,
   direction: "horizontal",
   autoplay: {
     delay: 2000,
@@ -278,7 +268,7 @@ var swiper10 = new Swiper(".list_silde", {
   observer: true,
   observeParents: true,
   breakpoints: {
-    640: {
+    641: {
       slidesPerView: 2,
       direction: "vertical",
       slidesPerGroup: 2,
@@ -323,38 +313,92 @@ var swiper11 = new Swiper(".proflie_list", {
     },
   },
 });
+
+// $(document).ready(function () {
+//   if ($(window).width() > 1024) {
+//     $(".box2").hover(function () {
+//       $(this).children(".name").toggleClass("on");
+//     });
+//   }
+//   else if ($(window).width() <= 1024) {
+//     $(".box2").click(function () {
+//       $(this).children(".name").toggleClass("on");
+//     });
+//   }
+// });
+
+
+//   if ($(window).width() <= 640) {
+//     $(".table,.up").hide();
+//     // $(".up").hide();
+//     $(".table_menu").click(function () {
+//       $(".table").slideToggle(300);
+//       $(".down").toggle();
+//       $(".up").toggle();
+//     });
+//     $(".info,.in_sns").hide();
+//     $(".name").click(function () {
+//       var num3 = $(this).index();
+//       $(this).addClass("on");
+//       $(".info").eq(num3).stop(true).slideToggle(300);
+//       $(".in_sns").eq(num3).slideToggle(300);
+//     });
+//     $("inner_3").remove("no_right1", "no_right1");
+//   }
 // ------------------640 주식 테이블 감추기---------------------------
 $(document).ready(function () {
-  if ($(window).width() <= 640) {
+  if ($(window).width() > 1024) {
+    $(".box2").hover(function () {
+      $(this).children(".name").toggleClass("on");
+    });
+  }
+  else if ($(window).width() >= 641) {
+    $(".box2").click(function () {
+      $(this).children(".name").toggleClass("on");
+    });
+  }
+  else if ($(window).width() <= 640) {
     $(".table,.up").hide();
-    // $(".up").hide();
     $(".table_menu").click(function () {
       $(".table").slideToggle(300);
       $(".down").toggle();
       $(".up").toggle();
     });
-    $(".info,.in_sns").hide();
-    // $(".up").hide();
-    $(".name h1").click(function () {
-      $(".info,.in_sns").slideToggle(300);
-      // $(".down").toggle();
-      // $(".up").toggle();
+    // $(".name > p,.info,.in_sns").hide();
+    $(".box2").click(function () {
+      $(this).addClass("on").siblings().removeClass("on");
     });
     $("inner_3").remove("no_right1", "no_right1");
   }
-  // else if ($(window).width() > 640) {
-  //   swiper5.destroy();
-  // }
-  // else if ($(window).width() <= 640) {
-  //   $("inner_3").remove("no_right1", "no_right1");
-  // }
 });
+// -----------------------------
+$(document).resize(function () {
+  if ($(window).width() > 1024) {
+    $(".box2").hover(function () {
+      $(this).children(".name").toggleClass("on");
+    });
+  }
+  else if ($(window).width() >= 641) {
+    $(".box2").click(function () {
+      $(this).children(".name").toggleClass("on");
+    });
+  }
+  else if ($(window).width() <= 640) {
+    $(".table,.up").hide();
+    $(".table_menu").click(function () {
+      $(".table").slideToggle(300);
+      $(".down").toggle();
+      $(".up").toggle();
+    });
+    // $(".name > *").hide();
+    // $(".name > h1").show();
 
-// $(document).ready(function () {
-//   else if ($(window).width() <= 640) {
-//     $("inner_3").remove("no_right1", "no_right1");
-//   }
-// });
+    $(".box2").click(function () {
+      $(this).addClass("on").siblings().removeClass("on");
+    });
+    $("inner_3").remove("no_right1", "no_right1");
+  }
+});
 // --------------------------------주식시세----------------------------------
 // 실시간8자리날짜구하기
 function getToday() {
