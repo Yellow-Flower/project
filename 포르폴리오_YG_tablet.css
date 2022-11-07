@@ -1,5 +1,5 @@
 @charset "UTF-8";
-        
+         
 /* ----------------------------------로그인창--------------- */
 header .login_page > div{
     width: 300px;
@@ -235,7 +235,7 @@ header .login_page > div > div:last-child{
     height: 95vh;
 }
 .audition .inner_3 .apply{
-    height: 82vh;
+    height: 91vh;
 }
 .audition .inner_3 .ap_left1{
     width: 40%;
@@ -299,7 +299,7 @@ header .login_page > div > div:last-child{
 
 /* --------------------------어바웃 와이지----------------------- */
 .aboutyg .yg_slide {
-    height: 75vh;
+    height: 72vh;
 }
 .aboutyg .ab_box > .yg_sym > p:first-child{
     background-size: contain;
@@ -401,39 +401,48 @@ header .login_page > div > div:last-child{
 }
 #up{
     font-size: 35px;
-    bottom: 9%;
+    bottom: 12%;
 }
 /* --------------------풋터------------------------ */
 footer{
-    height: 7vh;
-    line-height: 7vh;
+    height: 10vh;
+    line-height: 10vh;
     padding: 0 30px;
     align-items: center;
 }
-footer > p {
-    height: 7vh;
-    width: 15%;
+footer div:nth-child(2){
+    width: 18%;
+    height: 10vh;
+    line-height: 10vh;
+}
+footer div:nth-child(2) p {
+    height: 10vh;
+    /* width: 15%; */
+    text-align: center;
 }
 footer div:first-child{
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 55%;
+    justify-content: center;
+    font-size: 12px;
 }
 footer div:first-child span{
     /* height: 100%; */
-    height: 20px;
+    /* height: 20px; */
     line-height: 20px;
-    text-overflow: ellipsis;
+    /* text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;
+    white-space: nowrap; */
+    word-break: break-all;
 }
 footer > div:first-child::before{
     margin-left: -30px;
-    bottom: 9%;
+    bottom: 11%;
 }
 footer div:last-child{
-    width: 16%;
+    width: 19%;
 }
 footer span:nth-child(2){
     padding: 0;
