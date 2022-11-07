@@ -11,7 +11,7 @@
 //     });
 //   }
 // });
-
+ 
   // if ($(window).width() > 640) {
   //   swiper10.destroy();
   // };
@@ -25,6 +25,9 @@ $(".select li").click(function () {
 $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
 
 $(".history").mCustomScrollbar({
+  theme: "rounded"
+});
+$(".shapes").mCustomScrollbar({
   theme: "rounded"
 });
 $(".ac_scroll").mCustomScrollbar({
@@ -369,9 +372,12 @@ $(document).ready(function () {
       $(this).addClass("on").siblings().removeClass("on");
     });
     $("inner_3").remove("no_right1", "no_right1");
+    // $(".shapes").mCustomScrollbar({
+    //   theme: "rounded"
+    // });
   }
 });
-// -----------------------------
+// -----------------리사이즈----------------------
 $(document).resize(function () {
   if ($(window).width() > 1024) {
     $(".box2").hover(function () {
@@ -397,6 +403,9 @@ $(document).resize(function () {
       $(this).addClass("on").siblings().removeClass("on");
     });
     $("inner_3").remove("no_right1", "no_right1");
+    // $(".shapes").mCustomScrollbar({
+    //   theme: "rounded"
+    // });
   }
 });
 // --------------------------------주식시세----------------------------------

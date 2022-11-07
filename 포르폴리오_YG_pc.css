@@ -8,7 +8,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+}
+:root {
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    /* --colorBlack: #000; */
+    --colorEEE: #eee;
+    /* --colorEEELight: #e8e8e8; */
+    /* --colorGreyBasic: #666; */
+    /* --colorGreyLight: #969696; */
 }
 body{
     height: 100vh;
@@ -149,7 +157,7 @@ header .login_page{
     transform: translateY(-100%);
     transition: 0.2s all;
     background-color: black;
-    background-image: url(/YG.Ent/이미지/YG_로그인배경패턴10.png);
+    background-image: url(/YG.Ent/이미지/YG_로그인배경패턴12.png);
     /* background-repeat: round; */
     display: flex;
     justify-content: center;
@@ -440,6 +448,16 @@ header .snb li:hover {
     flex-direction: row;
     height: 100%;
     color: #fff;
+}
+/* --------------------------스크롤  패딩------------- */
+.proflie .sec1_2 .text_box1 #mCSB_5_dragger_vertical{
+    padding-left: 12px;
+}
+.mCSB_scrollTools .mCSB_draggerContainer{
+    padding-left: 5px;
+}
+.ab_box .mCSB_scrollTools .mCSB_draggerContainer{
+    padding-left: 0px;
 }
 /* ==================프로필 동그라미 아이콘============= */
 /* .sec1_2 .proflie .box2 {
@@ -833,6 +851,7 @@ header .snb li:hover {
 }
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1) span:first-child {
     font-size: 1.2rem;
+    flex: 1;
 }
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1) span:last-child {
     font-size: 16px;
@@ -840,11 +859,13 @@ header .snb li:hover {
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(2) .swiper-slide > div > p {
     /* font-size: 19px; */
     font-size: 1.2rem;
+    flex: 1;
 }
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(2) .swiper-slide > div > div {
     /* font-size: 16px; */
     font-size: 0.9rem;
     text-align: left;
+    width: 85%;
 }
 .actors .sec1_2 .proflie .photo .text_box3 .album_list {
     width: 100%;
@@ -946,7 +967,8 @@ header .snb li:hover {
     bottom: 42px;
 }
 .audition .swiper-pagination-bullet{
-    color: #fff;
+    /* color: #fff; */
+    background: var(--colorEEE);
 }
 /* ------------------------블랙핑크 프로필 숨기기------------------- */
 .list_1 {
@@ -967,16 +989,17 @@ header .snb li:hover {
 }
 .select > div {
     /* height: 100px; */
-    height: 90vh;
+    height: 95vh;
 }
-.select .inner_2 {
+/* .select .inner_2 {
     position: relative;
     display: flex;
     flex-direction: column;
-}
+    justify-content: center;
+} */
 .select .inner_2 > div:nth-child(2) {
     /* height: 80px; */
-    height: 6vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1051,13 +1074,13 @@ header .snb li:hover {
 .select .inner_2 .sel_menu{
     /* height: 75vh; */
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
     z-index: 100;
     top: 22%;
     font-size: 13px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-    padding: 0 5%;
+    /* padding: 0 5%; */
 }
 .select .inner_2 .sel_menu > .goods{
     height: 62vh;
@@ -1065,11 +1088,14 @@ header .snb li:hover {
     /* background-color: #fff; */
 }
 .select .inner_2 .sel_menu > .b{
-    height: 71vh;
+    height: 66vh;
     width: 100%;
     background-color: #fff;
-    padding: 0 5%;
-    /* position: relative; */
+    padding: 5%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .select .inner_2 .sel_menu .goods{
     height: 62vh;
@@ -1188,8 +1214,10 @@ header .snb li:hover {
 }
 .select .inner_2 .sel_menu .goodsgrid {
     width: 100%;
-    height: 600px;
-    margin: 5% 0 0 0;
+    /* height: 600px; */
+    height: 66vh;
+    padding: 0 2px;
+    /* padding: 0 5%; */
 
 }
 .select .inner_2 .sel_menu .goodsgrid .swiper-slide {
@@ -1201,7 +1229,7 @@ header .snb li:hover {
     /* width: 236px;
     height: 330px; */
     width: 100%;
-    height: 100%;
+    /* height: 200px; */
     text-align: center;
     /* padding: 0 10%; */
     display: flex;
@@ -1254,7 +1282,7 @@ header .snb li:hover {
 
 /* --------------------메뉴 감추기------------ */
 .sel_menu > div {
-    position: absolute;
+    /* position: absolute; */
     left: 0;
     top: 0;
     display: none;
@@ -1277,7 +1305,7 @@ header .snb li:hover {
     align-items: flex-end;
     position: absolute;
     z-index: 1;
-    bottom: 4.5%;
+    bottom: -2%;
     right: 1.5%;
     gap: 5px;
     cursor: pointer;
@@ -1612,11 +1640,11 @@ header .snb li:hover {
     display: block;
     margin: 50px 0 0 0;
 }
-.audition .inner_3 .no_left1 input {
+.audition .inner_3 .no_left1 textarea {
     /* width: 400px;
     height: 200px; */
     width: 100%;
-    height: 40%;
+    height: 23%;
     font-size: 16px;
     /* font-weight: bold; */
     /* margin: 0 0 0 50px; */
@@ -1697,6 +1725,11 @@ header .snb li:hover {
 .aboutyg .yg_slide .swiper-scrollbar.abo {
     color: #fff;
     opacity: 1;
+    background: var(--colorEEE);
+}
+.aboutyg .yg_slide .swiper-slide{
+    display: flex;
+    align-items: center;
 }
 .aboutyg .ab_box {
     /* width: 1300px; */
@@ -1745,6 +1778,11 @@ header .snb li:hover {
     justify-content: space-between;
     align-items: center;
 
+}
+.aboutyg .ab_box .introduction .shapes div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .aboutyg .ab_box .introduction .shapes > div:nth-child(1) {
     display: flex;

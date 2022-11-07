@@ -164,18 +164,19 @@ header .login_page > div > div:last-child{
     overflow-y: hidden;
     justify-content: flex-start;
 }
- .select .inner_2 .sel_menu .goodsgrid{
-    height: 500px;
-    margin: 5% 0 0 0;
+.select .inner_2 .sel_menu .goodsgrid{
+    /* height: 500px; */
+    height: 66vh;
+    padding: 5% 0;
 } 
 /* .select .inner_2 .sel_menu .goodsgrid .swiper-slide {
     height: calc((100% - 30px) / 2);
 } */
 .select .inner_2 .sel_menu > .b{
-    height: 71vh;
+    height: 66vh;
 }
 .select .inner_2 .sel_menu .b .shopping{
-    bottom: 0%;
+    bottom: -2%;
 }
 .select .inner_2 .sel_menu .b .shopping > span{
     font-size: 28px;
@@ -235,7 +236,7 @@ header .login_page > div > div:last-child{
     height: 95vh;
 }
 .audition .inner_3 .apply{
-    height: 91vh;
+    height: 82vh;
 }
 .audition .inner_3 .ap_left1{
     width: 40%;
@@ -255,7 +256,7 @@ header .login_page > div > div:last-child{
 .audition .inner_3 .no_left1 .au_notice{
     font-size: 12px;
 }
-.audition .inner_3 .no_left1 input{
+.audition .inner_3 .no_left1 textarea{
     font-size: 12px;
 }
 .audition .inner_3 .no_right1{
@@ -311,7 +312,7 @@ header .login_page > div > div:last-child{
     font-size: 20px;
     margin: -40px 5%;
 }
-.aboutyg .ab_box .introduction .shapes div:nth-child(1) img {
+.boutyg .ab_box .introduction .shapes div:nth-child(1) img {
     width: 100%;
     height: 100%;
 }
