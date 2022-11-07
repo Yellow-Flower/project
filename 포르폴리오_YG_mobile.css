@@ -560,7 +560,7 @@ header .login_page > div {
 }
 .aboutyg .ab_box{
     flex-direction: column;
-    overflow: auto;
+    /* overflow: auto; */
 }
 .aboutyg .ab_box > .yg_sym{
     width: 100%;
@@ -613,6 +613,9 @@ header .login_page > div {
     width: 40%;
     height: 100%;
 }
+/* .aboutyg .ab_box .introduction .shapes .arrow_size{
+    color:black;
+} */
 .aboutyg .ab_box .introduction .shapes .arrow_size i{
     transform: rotate(90deg);
     -webkit-text-stroke: 1px #fff;
@@ -770,6 +773,7 @@ footer div:first-child {
 footer div:nth-child(2){
     width: 18%;
     height: 15vh;
+    flex-grow: 1;
 }
 footer div:nth-child(2) p {
     height: 15vh;

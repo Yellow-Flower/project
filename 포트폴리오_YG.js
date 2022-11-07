@@ -24,9 +24,12 @@ $(".text_box1 > p").mCustomScrollbar({
 $(".info").mCustomScrollbar({
   theme: "light-2"
 });
-$(".notice_YG, .text_3").mCustomScrollbar({
+$(".notice_YG").mCustomScrollbar({
   theme: "minimal"
 });
+// $(".text_3").mCustomScrollbar({
+//   theme: "minimal"
+// });
 $('#up, header > a').click(function () {
   swiper9.slideTo(0);
   return flase;
@@ -283,7 +286,7 @@ var swiper11 = new Swiper(".proflie_list", {
     },
   },
 });
-// ------------------640 주식 테이블 감추기---------------------------
+// ------------------640 레디---------------------------
 $(document).ready(function () {
   if ($(window).width() > 1024) {
     $(".box2").hover(function () {
@@ -303,13 +306,16 @@ $(document).ready(function () {
       $(".up").toggle();
     });
     // $(".name > p,.info,.in_sns").hide();
+    $(".shapes").mCustomScrollbar({
+      theme: "rounded"
+    });
     $(".box2").click(function () {
       $(this).addClass("on").siblings().removeClass("on");
     });
     $("inner_3").remove("no_right1", "no_right1");
   }
 });
-// -----------------리사이즈----------------------
+// -----------------640 리사이즈----------------------
 $(document).resize(function () {
   if ($(window).width() > 1024) {
     $(".box2").hover(function () {
@@ -330,7 +336,9 @@ $(document).resize(function () {
     });
     // $(".name > *").hide();
     // $(".name > h1").show();
-
+    // $(".introduction").mCustomScrollbar({
+    //   theme: "rounded"
+    // });
     $(".box2").click(function () {
       $(this).addClass("on").siblings().removeClass("on");
     });

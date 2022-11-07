@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 :root {
     /* font-family: 'Noto Sans KR', sans-serif; */
@@ -1778,11 +1778,6 @@ header .snb li:hover {
     justify-content: space-between;
     align-items: center;
 
-}
-.aboutyg .ab_box .introduction .shapes div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 .aboutyg .ab_box .introduction .shapes > div:nth-child(1) {
     display: flex;
