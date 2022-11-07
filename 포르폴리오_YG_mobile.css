@@ -565,18 +565,20 @@ header .login_page > div {
 .aboutyg .ab_box > .yg_sym{
     width: 100%;
     height: 30%;
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .aboutyg .ab_box > .yg_sym > p:first-child{
     /* width: 175px; */
     width: 50%;
     height: 70%;
-    margin: 10px 11px;
+    margin: 10px 0 0 10px;
 }
 .aboutyg .ab_box > .yg_sym > p:last-child{
     /* width: 50%;
     height: 20%; */
-    margin: 5px 0 0 15px;
+    margin: 0 0 0 10px;
     width: 100%;
 }
 .aboutyg .ab_box .introduction {
@@ -783,7 +785,7 @@ footer div:last-child {
 }
 footer > div:first-child::before{
     margin-left: -20px;
-    bottom: 19%;
+    bottom: 20%;
 }
 footer span:nth-child(2){
     padding: 0;

@@ -1,21 +1,3 @@
-// $(document).ready(function () {
-//   if ($(window).width() <= 1024) {
-//     $(".box2").click(function () {
-//       $(this).children(".name").children("*").toggle();
-//       $(".name::before.on").toggle();
-//     });
-//   } 
-//   else if ($(window).width()) {
-//     $(".box2").hover(function () {
-//       $(this).children(".name").children("*").toggle();
-//     });
-//   }
-// });
- 
-  // if ($(window).width() > 640) {
-  //   swiper10.destroy();
-  // };
-
 // -------------------전체메뉴-------------
 $(".select li").click(function () {
   var num = $(this).index();
@@ -27,9 +9,9 @@ $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
 $(".history").mCustomScrollbar({
   theme: "rounded"
 });
-$(".shapes").mCustomScrollbar({
-  theme: "rounded"
-});
+// $(".shapes").mCustomScrollbar({
+//   theme: "rounded"
+// });
 $(".ac_scroll").mCustomScrollbar({
   theme: "light-3"
 });
@@ -49,10 +31,6 @@ $('#up, header > a').click(function () {
   swiper9.slideTo(0);
   return flase;
 });
-
-
-
-
 // --------------------공지사항-----------------------------
 $(".notice_but > p ").click(function () {
   var num3 = $(this).index();
@@ -88,10 +66,8 @@ $(".log_close, .log_close2").click(function () {
 });
 // --------------------------------------- 언어 열기-------------------------------
 $(".but_lang").click(function () {
-  // $(this).css({"background-color": "black", "color": "white"});
   $(".language").slideToggle("fast", "swing");
 });
-
 $(".language").hide();
 // ---------------스와이퍼----------------------
 
@@ -234,12 +210,7 @@ var swiper8 = new Swiper(".instagram", {
 var swiper9 = new Swiper(".homepage", {
   direction: "vertical",
   slidesPerView: 1,
-  // spaceBetween: 30,
   mousewheel: true,
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //   clickable: true,
-  // },
   observer: true,
   observeParents: true,
   on: {
@@ -255,10 +226,6 @@ var swiper9 = new Swiper(".homepage", {
 
 // --------------------------------가수 앨범 속 리스트 슬라이드-----------------
 var swiper10 = new Swiper(".list_silde", {
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //   dynamicBullets: true,
-  // },
   slidesPerView: 3,
   slidesPerGroup: 3,
   direction: "horizontal",
@@ -316,38 +283,6 @@ var swiper11 = new Swiper(".proflie_list", {
     },
   },
 });
-
-// $(document).ready(function () {
-//   if ($(window).width() > 1024) {
-//     $(".box2").hover(function () {
-//       $(this).children(".name").toggleClass("on");
-//     });
-//   }
-//   else if ($(window).width() <= 1024) {
-//     $(".box2").click(function () {
-//       $(this).children(".name").toggleClass("on");
-//     });
-//   }
-// });
-
-
-//   if ($(window).width() <= 640) {
-//     $(".table,.up").hide();
-//     // $(".up").hide();
-//     $(".table_menu").click(function () {
-//       $(".table").slideToggle(300);
-//       $(".down").toggle();
-//       $(".up").toggle();
-//     });
-//     $(".info,.in_sns").hide();
-//     $(".name").click(function () {
-//       var num3 = $(this).index();
-//       $(this).addClass("on");
-//       $(".info").eq(num3).stop(true).slideToggle(300);
-//       $(".in_sns").eq(num3).slideToggle(300);
-//     });
-//     $("inner_3").remove("no_right1", "no_right1");
-//   }
 // ------------------640 주식 테이블 감추기---------------------------
 $(document).ready(function () {
   if ($(window).width() > 1024) {
@@ -372,9 +307,6 @@ $(document).ready(function () {
       $(this).addClass("on").siblings().removeClass("on");
     });
     $("inner_3").remove("no_right1", "no_right1");
-    // $(".shapes").mCustomScrollbar({
-    //   theme: "rounded"
-    // });
   }
 });
 // -----------------리사이즈----------------------
@@ -403,9 +335,6 @@ $(document).resize(function () {
       $(this).addClass("on").siblings().removeClass("on");
     });
     $("inner_3").remove("no_right1", "no_right1");
-    // $(".shapes").mCustomScrollbar({
-    //   theme: "rounded"
-    // });
   }
 });
 // --------------------------------주식시세----------------------------------
