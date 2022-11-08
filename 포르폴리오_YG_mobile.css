@@ -175,6 +175,7 @@ header .login_page > div {
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper{
     text-align: center;
+    width: 95%;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-wrapper{
     display: flex;
@@ -439,8 +440,12 @@ header .login_page > div {
     color: black;
     background-color: rgba(255, 254, 254, 0.3);
 }
+.actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1){
+    width: 95%;
+}
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1) span:first-child{
-    width: 14%;
+    flex: 1;
+    /* width: 14%; */
     text-align: center;
 }
 .actors .sec1_2 .proflie .hee_box_two:nth-child(1){
@@ -578,6 +583,7 @@ header .login_page > div {
 .aboutyg .ab_box > .yg_sym > p:last-child{
     /* width: 50%;
     height: 20%; */
+    text-align: left;
     margin: 0 0 0 10px;
     width: 100%;
 }
@@ -784,7 +790,6 @@ footer div:nth-child(2) p {
 footer div:last-child {
     font-size: 16px;
     gap: 5px;
-    width: 23%;
     height: 100%;
 }
 footer > div:first-child::before{

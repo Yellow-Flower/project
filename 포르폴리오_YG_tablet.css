@@ -219,6 +219,7 @@ header .login_page > div > div:last-child{
 }
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1) span:last-child {
     font-size: 0.8rem;
+    width: 100%;
 }
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(2) .swiper-slide > div > p{
     font-size: 1rem;
@@ -283,8 +284,8 @@ header .login_page > div > div:last-child{
     padding: 0 5%;
 }
 .audition .inner_3 .ap_right1 .ap_head > p:nth-child(1) {
-    background-size: 93px 15px;
-    background-position: 4px 4px;
+    background-size: 100px 14px;
+    background-position: 3px 3px;
     width: 20px;
     height: 20px;
     line-height: 20px;
@@ -293,6 +294,9 @@ header .login_page > div > div:last-child{
 .audition .inner_3 .ap_right1 .ap_head > p:nth-child(3){
     width: 20px;
     height: 20px;
+}
+.audition .inner_3 .ap_right1 .ins_page > p{
+    height: 72%;
 }
 .audition .inner_3 .ap_left1 a:nth-child(4){
     display: none;
@@ -310,7 +314,8 @@ header .login_page > div > div:last-child{
 .aboutyg .ab_box > .yg_sym > p:last-child{
     width: 90%;
     font-size: 20px;
-    margin: -40px 5%;
+    margin: -40px 0 0 0;
+    text-align: center;
 }
 .boutyg .ab_box .introduction .shapes div:nth-child(1) img {
     width: 100%;
@@ -333,7 +338,7 @@ header .login_page > div > div:last-child{
 }
 .aboutyg .ab_box .introduction .text_3{
     overflow-y: auto;
-    height: 240px;
+    height: 200px;
 }
 .aboutyg .ab_box .page2 {
     padding: 20px;
@@ -478,5 +483,5 @@ footer span:nth-child(3){
     font-size: 22px;
 }
 .actors .text_box3 .album_list .swiper-button-next{
-    bottom: 1%;
+    bottom: -2%;
 }

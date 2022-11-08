@@ -9,9 +9,6 @@ $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
 $(".history").mCustomScrollbar({
   theme: "rounded"
 });
-// $(".shapes").mCustomScrollbar({
-//   theme: "rounded"
-// });
 $(".ac_scroll").mCustomScrollbar({
   theme: "light-3"
 });
@@ -210,6 +207,22 @@ var swiper8 = new Swiper(".instagram", {
   observeParents: true,
 });
 // ----------------------홈페이지 전체 슬라이드-------------
+// var swiper9 = new Swiper(".homepage", {
+//   direction: "vertical",
+//   slidesPerView: 1,
+//   mousewheel: true,
+//   observer: true,
+//   observeParents: true,
+//   on: {
+//     slideChange: function () {
+//       if (this.realIndex > 3) {
+//         $("#up").addClass("on");
+//       } else {
+//         $("#up").removeClass("on");
+//       }
+//     },
+//   }
+// });
 var swiper9 = new Swiper(".homepage", {
   direction: "vertical",
   slidesPerView: 1,
@@ -218,15 +231,20 @@ var swiper9 = new Swiper(".homepage", {
   observeParents: true,
   on: {
     slideChange: function () {
-      if (this.realIndex >= 3) {
-        $("#up").addClass("on");
-      } else {
-        $("#up").removeClass("on");
+      var slideindex = this.realIndex
+      switch (slideindex) {
+        case 3 :
+          $("#up").removeClass("on on2").addClass("on");
+          break;
+        case 4 :
+          $("#up").removeClass("on on2").addClass("on2");
+          break;
+        default :
+        $("#up").removeClass("on on2");
       }
     },
   }
 });
-
 // --------------------------------가수 앨범 속 리스트 슬라이드-----------------
 var swiper10 = new Swiper(".list_silde", {
   slidesPerView: 3,

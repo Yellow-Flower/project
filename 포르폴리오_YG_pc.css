@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 :root {
     /* font-family: 'Noto Sans KR', sans-serif; */
@@ -845,7 +845,7 @@ header .snb li:hover {
     display: flex;
     /* justify-content: space-between; */
     width: 100%;
-    gap: 30px;
+    gap: 20px;
     border-bottom: 1px dashed black;
     padding-bottom: 10px;
 }
@@ -855,6 +855,7 @@ header .snb li:hover {
 }
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1) span:last-child {
     font-size: 16px;
+    width: 100%;
 }
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(2) .swiper-slide > div > p {
     /* font-size: 19px; */
@@ -1098,6 +1099,9 @@ header .snb li:hover {
     align-items: center;
     justify-content: center;
 }
+/* .select .inner_2 .sel_menu > .b > .goodsgrid > .swiper-wrapper >.swiper-slide{
+    margin-bottom: 5px;
+} */
 .select .inner_2 .sel_menu .goods{
     height: 62vh;
     width: 100%;
@@ -1227,10 +1231,8 @@ header .snb li:hover {
     /* border: 1px solid rgba(0, 0, 0, 0.1); */
 }
 .select .inner_2 .sel_menu .g_pic {
-    /* width: 236px;
-    height: 330px; */
     width: 100%;
-    /* height: 200px; */
+    height: 100%;
     text-align: center;
     /* padding: 0 10%; */
     display: flex;
@@ -1239,23 +1241,27 @@ header .snb li:hover {
     justify-content: space-between;
     align-items: center;
 }
+/* .select .inner_2 .sel_menu .g_pic p{
+    height: 30%;
+}
+.select .inner_2 .sel_menu .g_pic .sale{
+    height: 10%;
+} */
 .select .inner_2 .sel_menu .g_pic > div:first-child {
-    /* width: 235px;
-    height: 249px; */
-    /* background-color: #fff; */
+    height: 60%;
     border: 1px solid black;
     overflow: hidden;
 }
 .select .inner_2 .sel_menu .g_pic img {
-    /* width: 233px; */
-    /* height: 247px; */
     width: 100%;
+    height: 100%;
     /* margin: 0 auto; */
 }
 /* ----------------세일 + 솔드아웃------------------ */
 .select .inner_2 .sel_menu .g_pic .line-through {
     text-decoration: line-through;
     font-size: 7px;
+    /* height: 10%; */
 }
 .select .inner_2 .sel_menu .g_pic > div span:first-child {
     color: #fff;
@@ -1455,7 +1461,8 @@ header .snb li:hover {
     border: 1.5px solid black;
     border-radius: 15px;
     /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
-    padding: 15px 0;
+    /* padding: 15px 0; */
+    padding-top: 15px
 }
 .audition .inner_3 .ap_right1 .ins_page div:nth-child(2){
     padding: 0 15px;
@@ -1491,9 +1498,12 @@ header .snb li:hover {
 }
 .audition .inner_3 .ap_right1 .ap_head {
     display: flex;
+    align-items: center;
     gap: 2px;
-    height: 40px;
+    /* height: 40px; */
+    height: 10%;
     padding: 0 15px;
+    margin: 0 0 5px 0;
 }
 .audition .inner_3 .ap_right1 .ap_head > p:nth-child(1) {
     background-color: black;
@@ -1507,19 +1517,22 @@ header .snb li:hover {
     text-align: center;
     border-radius: 50px;
 }
-.audition .inner_3 .ap_right1 .ap_head > p:nth-child(2) {
-    padding: 5px 0 0 0;
-}
 .audition .inner_3 .ap_right1 .ap_head > p:nth-child(3) {
     background-image: url(/YG.Ent/아이콘/수정_verified_FILL0_wght400_GRAD0_opsz48.svg);
     width: 30px;
     height: 30px;
 }
+.audition .inner_3 .ap_right1 .ins_page .material-symbols-outlined{
+    font-size: 19px;
+    line-height: 19px;
+}
 .audition .inner_3 .ap_right1 .ins_page > p{
-    background-repeat: no-repeat;
     width: 100%;
-    height: 71%;
-    background-size: cover;
+    height: 68%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000000;
     /* margin: 0 0 0 -16px; */
     border-top: 1.5px solid black;
     border-bottom: 1.5px solid black;
@@ -1533,14 +1546,13 @@ header .snb li:hover {
 .audition .inner_3 .ap_right1 .instagram .swiper-wrapper > div:nth-child(3) .ins_page > p{
     background-image: url(/YG.Ent/이미지/뉴스/인스타_블랙핑크_3.jpg);
 }
-.audition .inner_3 .ap_right1 .ins_page .ap_head {
-    margin: 0 0 5px 0;
-}
 .audition .inner_3 .ap_right1 .ins_page > div:last-child {
     display: flex;
-    height: 10px;
+    align-items: center;
+    /* height: 10px; */
+    height: 12%;
     gap: 2px;
-    margin: 10px 0;
+    /* margin: 9px 0 2px; */
 }
 .audition .inner_3 .ap_right1 .ins_page > div:last-child > img {
     width: 20px;
@@ -1645,7 +1657,7 @@ header .snb li:hover {
     /* width: 400px;
     height: 200px; */
     width: 100%;
-    height: 23%;
+    height: 30%;
     font-size: 16px;
     /* font-weight: bold; */
     /* margin: 0 0 0 50px; */
@@ -1760,9 +1772,7 @@ header .snb li:hover {
 }
 .aboutyg .ab_box > .yg_sym > p:last-child {
     font-size: 23px;
-    /* font-size: 1.3rem; */
     margin: -40px 0 0 19px;
-    /* font-weight: bold; */
     font-family: 'Do Hyeon', sans-serif;
 }
 .aboutyg .ab_box .introduction {
@@ -2155,7 +2165,6 @@ header .snb li:hover {
     color: #Fff;
     position: absolute;
     right: 2%;
-    bottom: 7%;
     z-index: 5555;
     opacity: 0;
     transition: all 0.5s ease;
@@ -2164,6 +2173,12 @@ header .snb li:hover {
 #up.on{
     opacity: 1;
     visibility: visible;
+    bottom: 2%;
+}
+#up.on2{
+    opacity: 1;
+    visibility: visible;
+    bottom: 11%;
 }
 footer {
     height: 5vh;
