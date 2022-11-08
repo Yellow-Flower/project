@@ -5,7 +5,19 @@ $(".select li").click(function () {
   $(".sel_menu > div").eq(num).stop(true).show().siblings().hide();
 });
 $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
- 
+
+$(".snb_m li").click(function () {
+  var num = $(this).index();
+  $(this).addClass("on").siblings().removeClass("on");
+  $(".art_tab").eq(num).stop(true).show().siblings().hide();
+});
+$(".art_tab:first").addClass("on").show();
+
+$('#up, header > a').click(function () {
+  swiper9.slideTo(0);
+  return flase;
+});
+
 $(".history").mCustomScrollbar({
   theme: "rounded"
 });
@@ -27,10 +39,7 @@ $(".notice_YG").mCustomScrollbar({
 // $(".text_3").mCustomScrollbar({
 //   theme: "minimal"
 // });
-$('#up, header > a').click(function () {
-  swiper9.slideTo(0);
-  return flase;
-});
+
 // --------------------공지사항-----------------------------
 $(".notice_but > p ").click(function () {
   var num3 = $(this).index();
@@ -245,6 +254,7 @@ var swiper9 = new Swiper(".homepage", {
     },
   }
 });
+
 // --------------------------------가수 앨범 속 리스트 슬라이드-----------------
 var swiper10 = new Swiper(".list_silde", {
   slidesPerView: 3,
@@ -304,7 +314,7 @@ var swiper11 = new Swiper(".proflie_list", {
     },
   },
 });
-// ------------------640 레디---------------------------
+// ------------------레디---------------------------
 $(document).ready(function () {
   if ($(window).width() > 1024) {
     $(".box2").hover(function () {
@@ -333,7 +343,7 @@ $(document).ready(function () {
     $("inner_3").remove("no_right1", "no_right1");
   }
 });
-// -----------------640 리사이즈----------------------
+// -----------------리사이즈----------------------
 $(document).resize(function () {
   if ($(window).width() > 1024) {
     $(".box2").hover(function () {

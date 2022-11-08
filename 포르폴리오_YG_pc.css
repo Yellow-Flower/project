@@ -26,7 +26,12 @@ body{
 .homepage {
     width: 100%;
     height: 90vh;
-    
+}
+.homepage .art_tab{
+    display: none;
+}
+.homepage .art_tab.on{
+    display: block;
 }
 /* ------------------------------------------------- */
 .mainfont1 {
@@ -395,7 +400,7 @@ header .snb li:hover {
     background-size: cover;
     z-index: 1;
 }
-.sec1_2 .proflie .back {
+.blackpink .proflie .back {
     width: 100%;
     /* height: 855px; */
     height: 80vh;
@@ -403,9 +408,17 @@ header .snb li:hover {
     background-color: rgba(231, 144, 238, 0.7);
     display: flex;
     flex-direction: column;
-
 }
-.sec1_2 .proflie .photo {
+.winner .proflie .back {
+    width: 100%;
+    /* height: 855px; */
+    height: 80vh;
+    position: relative;
+    background-color: rgba(37, 31, 1, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+.blackpink .sec1_2 .proflie .photo {
     background-image: url(/YG.Ent/이미지/블랙핑크_1.jpg);
     /* background-size: cover; */
     background-repeat: no-repeat;
@@ -414,13 +427,40 @@ header .snb li:hover {
     height: 855px;
     margin: 0 auto;
 }
-.artist .sec1_2 .text_box1 {
+.winner .sec1_2 .proflie .photo {
+    background-image: url(/YG.Ent/이미지/WN25657.jpg);
+    /* background-size: cover; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.blackpink .sec1_2 .text_box1 {
     /* width: 300px; */
     width: 25%;
     height: 220px;
     /* height: 20%; */
     border: 1px solid #fff;
     filter: drop-shadow(0px 4px 4px rgba(172, 0, 0, 0.25));
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8PX;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+.winner .sec1_2 .text_box1 {
+    /* width: 300px; */
+    width: 25%;
+    height: 220px;
+    /* height: 20%; */
+    border: 1px solid #fff;
+    filter: drop-shadow(0px 4px 4px rgba(61, 55, 2, 0.25));
+    background-color: rgba(255, 255, 255, 0.2);
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
@@ -575,7 +615,7 @@ header .snb li:hover {
 }
 /* --------------------------------------------- */
 
-.sec1_2 .proflie .photo .text_box3 {
+.blackpink .sec1_2 .proflie .photo .text_box3 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -592,16 +632,42 @@ header .snb li:hover {
     font-weight: bold;
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
+.winner .sec1_2 .proflie .photo .text_box3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    /* width: 452px; */
+    width: 25%;
+    height: 800px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(46, 54, 1, 0.25);
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    padding: 19px 0 0 0;
+    font-weight: bold;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
 .artist .sec1_2 .proflie .photo .text_box3 > div:first-child{
     padding: 0 5px;
 }
-.artist .sec1_2 .proflie .photo .text_box3 > p:first-child {
+.blackpink .sec1_2 .proflie .photo .text_box3 > p:first-child {
     background-image: url(/YG.Ent/이미지/블랙핑크\ 로고.png);
     background-size: 199px 88px;
     background-position: center center;
     width: 211px;
     height: 61px;
     background-color: black;
+    background-repeat: no-repeat;
+}
+.winner .sec1_2 .proflie .photo .text_box3 > p:first-child {
+    background-image: url(/YG.Ent/이미지/위너로고.jpg);
+    background-size: contain;
+    background-position: center center;
+    width: 211px;
+    height: 61px;
+    background-color: #fff;
     background-repeat: no-repeat;
 }
 .artist .sec1_2 .proflie .photo .text_box3 > p:nth-child(2) {
@@ -643,6 +709,7 @@ header .snb li:hover {
     /* height: 190px; */
     padding: 10px;
     flex-shrink: 0;
+    background-color: rgba(255,255,255,0.4);
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide section > div {
     display: flex;
@@ -652,9 +719,9 @@ header .snb li:hover {
     height: 100%;
     overflow: auto;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide section > div:last-child{
+/* .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide section > div:last-child{
     background-color: rgba(255,255,255,0.4);
-}
+} */
 .sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section > div > h1 {
     font-size: 12px;
 }
