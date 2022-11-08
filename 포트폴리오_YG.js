@@ -5,7 +5,7 @@ $(".select li").click(function () {
   $(".sel_menu > div").eq(num).stop(true).show().siblings().hide();
 });
 $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
-
+ 
 $(".history").mCustomScrollbar({
   theme: "rounded"
 });
