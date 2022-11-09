@@ -6,12 +6,28 @@ $(".select li").click(function () {
 });
 $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
 
-$(".snb_m:first li").click(function () {
+// --------------------------------하위 메뉴 클릭시 페이지 이동-------------------
+$(".snb_m:eq(0) li").click(function () {
   var num = $(this).index();
   $(this).addClass("on").siblings().removeClass("on");
   $(".art_tab").eq(num).stop(true).show().siblings().hide();
 });
 $(".art_tab:first").addClass("on").show();
+
+$(".snb_m:eq(1) li").click(function () {
+  var num2 = $(this).index();
+  $(this).addClass("on").siblings().removeClass("on");
+  $(".act_tab").eq(num2).stop(true).show().siblings().hide();
+});
+$(".act_tab:first").addClass("on").show();
+
+$(".snb_m:eq(2) li").click(function () {
+  var num3 = $(this).index();
+  $(this).addClass("on").siblings().removeClass("on");
+  $(".sel_menu > div").eq(num3).stop(true).show().siblings().hide();
+  $(".sel_tab li").eq(num3).stop(true).addClass("on").siblings().removeClass("on");
+});
+$(".select li:first").addClass("on").add(".sel_menu > div:first").show();
 
 $('#up, header > a').click(function () {
   swiper9.slideTo(0);

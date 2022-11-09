@@ -33,6 +33,12 @@ body{
 .homepage .art_tab.on{
     display: block;
 }
+.homepage .act_tab{
+    display: none;
+}
+.homepage .act_tab.on{
+    display: block;
+}
 /* ------------------------------------------------- */
 .mainfont1 {
     font-family: 'Fugaz One', cursive;
