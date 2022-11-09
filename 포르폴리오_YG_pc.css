@@ -2286,6 +2286,21 @@ header .snb li:hover {
     margin-left: -15px;
     width: 0;
 }
+.aboutyg .ab_box .j_right > div:nth-child(4) span i{
+    font-size: 20px;
+}
+.aboutyg .ab_box .j_right > div:nth-child(4) span .fa-caret-up{
+    display: none;
+}
+.aboutyg .ab_box .j_right > div:nth-child(4) span .fa-caret-up.up{
+    display: block;
+}
+.aboutyg .ab_box .j_right > div:nth-child(4) span .fa-caret-down{
+    display: none;
+}
+.aboutyg .ab_box .j_right > div:nth-child(4) span .fa-caret-down.down{
+    display: block;
+}
 /* -------------- */
 .aboutyg .ab_box .news {
     width: 50%;

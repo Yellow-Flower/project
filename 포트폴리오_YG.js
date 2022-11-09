@@ -5,7 +5,7 @@ $(".select li").click(function () {
   $(".sel_menu > div").eq(num).stop(true).show().siblings().hide();
 });
 $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
-
+ 
 // --------------------------------하위 메뉴 클릭시 페이지 이동-------------------
 $(".snb_m:eq(0) li").click(function () {
   var num = $(this).index();
@@ -14,21 +14,22 @@ $(".snb_m:eq(0) li").click(function () {
 });
 $(".art_tab:first").addClass("on").show();
 
-$(".snb_m:eq(1) li").click(function () {
-  var num2 = $(this).index();
-  $(this).addClass("on").siblings().removeClass("on");
-  $(".act_tab").eq(num2).stop(true).show().siblings().hide();
-});
-$(".act_tab:first").addClass("on").show();
+// $(".snb_m:eq(1) li").click(function () {
+//   var num2 = $(this).index();
+//   $(this).addClass("on").siblings().removeClass("on");
+//   $(".act_tab").eq(num2).stop(true).show().siblings().hide();
+// });
+// $(".act_tab:first").addClass("on").show();
 
-$(".snb_m:eq(2) li").click(function () {
-  var num3 = $(this).index();
-  // $(slideindex).eq(2).show();
-  $(this).addClass("on").siblings().removeClass("on");
-  $(".sel_menu > div").eq(num3).stop(true).show().siblings().hide();
-  $(".sel_tab li").eq(num3).stop(true).addClass("on").siblings().removeClass("on");
-});
-$(".select li:first").addClass("on").add(".sel_menu > div:first").show();
+// $(".snb_m:eq(2) li").click(function () {
+//   var num3 = $(this).index();
+//   // $(slideindex).eq(2).show();
+//   $(this).addClass("on").siblings().removeClass("on");
+//   $(".sel_menu > div").eq(num3).stop(true).show().siblings().hide();
+//   $(".sel_tab li").eq(num3).stop(true).addClass("on").siblings().removeClass("on");
+// });
+// $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
+// ------------------------------------------------------------------------------------
 
 $('#up, header > a').click(function () {
   swiper9.slideTo(0);
@@ -473,11 +474,11 @@ fetch(publicAPIurl)
       // 등락비율
       if (yesterStock.fltRt > 0) {
           //상승
-          fltRt.innerText = yesterStock.fltRt + '%';
+          fltRt.innerText =  "(" + yesterStock.fltRt + '%' + ")";
           fltRt.classList.add('up');
       } else {
           //하락
-          fltRt.innerText = yesterStock.fltRt + '%';
+          fltRt.innerText =  "(" + yesterStock.fltRt + '%' + ")";
           fltRt.classList.add('down');
       }
   });
