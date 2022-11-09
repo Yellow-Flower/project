@@ -1,5 +1,5 @@
 @charset "UTF-8";
-          
+           
 /* ----------------------------------로그인창--------------- */
 header .login_page > div{
     width: 300px;
@@ -16,6 +16,9 @@ header .login_page > div > div:last-child{
 .sec1_2 .proflie .photo{
     width: 100%;
 }
+.winner .sec1_2 .proflie .photo{
+    background-size: cover;
+}
 .artist .sec1_2 .text_box1{
     gap: 8px;
     padding: 15px 15px;
@@ -23,6 +26,12 @@ header .login_page > div > div:last-child{
 }
 .artist .sec1_2 .text_box1 h5{
     font-size: 24px;
+}
+.artist .sec1_2 .proflie .photo > div:last-child {
+    left: 44%;
+}
+.artist .sec1_2 .proflie .photo > div:last-child a{
+    font-size: 22px;
 }
 .sec1_2 .proflie .photo .text_box3 .swiper-wrapper{
     gap: 0;
@@ -91,36 +100,23 @@ header .login_page > div > div:last-child{
 }
 
 /* ---------------------------------프로필의 막대기 가상요소--------------------------- */
-
-/* .sec1_2 .proflie .box2 .name::before{
-    height: 30px;
+.winner .sec1_2 .proflie .box2:nth-child(1) {
+    /* background-position: 41% 41.2%; */
+    width: 20%;
+    margin: 0 0 0 8%;
 }
-.sec1_2 .proflie .box2:nth-child(1) .name::before {
-    top: 68%;
-    left: 30%;
-    transform: rotate(51deg);
+.winner .sec1_2 .proflie .box2:nth-child(2) {
+    /* background-position: 28% 41%; */
+    width: 14%;
 }
-.sec1_2 .proflie .box2:nth-child(4) .name::before {
-    left: 12%;
-    transform: rotate(1deg);
+.winner .sec1_2 .proflie .box2:nth-child(3) {
+    /* background-position: 28% 43.5%; */
+    width: 15%;
+}
+.winner .sec1_2 .proflie .box2:nth-child(4) {
+    /* background-position: 7% 40.7%; */
+    width: 19%;
 } 
-/* ---------------------------------프로필 속의 막대기 가상요소--------------------------- */
-/* .sec1_2 .proflie .box2:nth-child(1) .line::before {
-    top: 91.8%;
-    left: 43%;
-} 
-.sec1_2 .proflie .box2:nth-child(2) .line::before{
-    top: 92%;
-    left: 39%;
-}
-.sec1_2 .proflie .box2:nth-child(3) .line::before {
-    top: 92.5%;
-    left: 48%;
-}
-.sec1_2 .proflie .box2:nth-child(4) .line::before {
-    top: 92%;
-    left: 35%;
-} */
 /* ----------------------------------프로필 위치--------------------------------- */
 
 /* .sec1_2 .proflie .f_LISA .name{
