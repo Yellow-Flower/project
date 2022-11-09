@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 :root {
     /* font-family: 'Noto Sans KR', sans-serif; */
@@ -434,11 +434,11 @@ header .snb li:hover {
 }
 .TREASURE .sec1_2 .proflie .photo {
     background-image: url(/YG.Ent/이미지/트레져5.png);
-    /* background-size: cover; */
-    background-size: contain;
+    background-size: cover;
+    /* background-size: contain; */
     background-position: center;
-    /* width: 100%;
-    height: 100%; */
+    /* width: 100%; */
+    height: 100%;
 }
 .sec1_2 .text_box1 {
     /* width: 300px; */
@@ -453,7 +453,7 @@ header .snb li:hover {
     gap: 8PX;
     position: absolute;
     left: 5%;
-    bottom: 5%;
+    bottom: 3%;
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
 .winner .sec1_2 .text_box1 {
@@ -551,8 +551,52 @@ header .snb li:hover {
     background-image: url(/YG.Ent/아이콘/black_radio_button_checked_FILL0_wght400_GRAD0_opsz48.png);
     /* color: #000; */
 }
-.TREASURE .sec1_2 .proflie .f_YE-DAM .name::after{
-    top: 50%;
+.TREASURE .sec1_2 .proflie .f_SOJUNGHWAN .name::after{
+    top: 41%;
+    left: 30%;
+}
+.TREASURE .sec1_2 .proflie .f_YOSHI .name::after{
+    top: 56%;
+    left: 23%;
+}
+.TREASURE .sec1_2 .proflie .f_JUNKYU .name::after{
+    top: 48%;
+    left: 9%;
+}
+.TREASURE .sec1_2 .proflie .f_ASAHI .name::after{
+    top: 58%;
+    left: 22%;
+}
+.TREASURE .sec1_2 .proflie .f_HARUTO .name::after{
+    top: 54%;
+    left: 30%;
+}
+.TREASURE .sec1_2 .proflie .f_JIHOON .name::after{
+    top: 83%;
+    left: 30%;
+}
+.TREASURE .sec1_2 .proflie .f_CHOIHYUNSUK .name::after{
+    top: 62%;
+    left: 65%;
+}
+.TREASURE .sec1_2 .proflie .f_YEDAM .name::after{
+    top: -42%;
+    left: 30%;
+}
+.TREASURE .sec1_2 .proflie .f_YOONJAEHYUK .name::after{
+    top: -17%;
+    left: 30%;
+}
+.TREASURE .sec1_2 .proflie .f_DOYOUNG .name::after{
+    top: 35%;
+    left: 102%;
+}
+.TREASURE .sec1_2 .proflie .f_PARKJEONGWOO .name::after{
+    top: -49%;
+    left: 44%;
+}
+.TREASURE .sec1_2 .proflie .f_MASHIHO .name::after{
+    top: 111%;
     left: 30%;
 }
 /* ----------------프로필 동그라미 아이콘 위치---------- */
@@ -627,8 +671,8 @@ header .snb li:hover {
 } 
 .TREASURE .sec1_2 .proflie .box2:nth-child(9) {
     /* background-position: 28% 43.5%; */
-    width: 15%;
-    margin: 0 0 0 19%;
+    width: 17%;
+    margin: 0 0 0 14%;
 }
 .TREASURE .sec1_2 .proflie .box2:nth-child(10) {
     /* background-position: 7% 40.7%; */
@@ -636,7 +680,7 @@ header .snb li:hover {
 } 
 .TREASURE .sec1_2 .proflie .box2:nth-child(11) {
     /* background-position: 28% 43.5%; */
-    width: 21%;
+    width: 24%;
 }
 .TREASURE .sec1_2 .proflie .box2:nth-child(12) {
     /* background-position: 7% 40.7%; */
@@ -682,8 +726,41 @@ header .snb li:hover {
 .sec1_2 .proflie .f_ROSE .name {
     padding: 60% 0 0 6%;
 }
-.sec1_2 .proflie .f_YE-DAM .name {
-    padding: 106% 6% 0 6%;
+.sec1_2 .proflie .f_SOJUNGHWAN .name {
+    padding: 144% 6% 0 6%;
+}
+.sec1_2 .proflie .f_YOSHI .name {
+    padding:180% 6% 0 6%;
+}
+.sec1_2 .proflie .f_JUNKYU .name {
+    padding: 270% 6% 0 6%;
+}
+.sec1_2 .proflie .f_ASAHI .name {
+    padding: 210% 6% 0 6%;
+}
+.sec1_2 .proflie .f_HARUTO .name {
+    padding: 350% 6% 0 6%;
+}
+.sec1_2 .proflie .f_JIHOON .name {
+    padding: 0% 6% 220% 6%;
+}
+.sec1_2 .proflie .f_CHOIHYUNSUK .name {
+    padding: 300% 6% 0 6%;
+}
+.sec1_2 .proflie .f_MASHIHO .name {
+    padding: 0% 6% 100% 6%;
+}
+.sec1_2 .proflie .f_YEDAM .name {
+    padding: 0% 6% 0 6%;
+}
+
+.sec1_2 .proflie .f_YOONJAEHYUK .name {
+    padding: 0% 10% 0 0;
+}
+.sec1_2 .proflie .f_DOYOUNG .name {
+    padding: 0% 6% 0 6%;
+}.sec1_2 .proflie .f_PARKJEONGWOO .name {
+    padding: 0% 6% 0 6%;
 }
 .sec1_2 .text_box2 .name {
     display: flex;
@@ -691,7 +768,10 @@ header .snb li:hover {
     gap: 5px;
     position: relative;
 }
-.blackpink .sec1_2 .text_box2 .name > p {
+.sec1_2 .text_box2 .name > h1 {
+    font-size: 18px;
+}
+.sec1_2 .text_box2 .name > p {
     width: 54px;
     height: 2px;
     background-color: #fff;
@@ -699,6 +779,9 @@ header .snb li:hover {
 .winner .sec1_2 .text_box2 .name > p {
     width: 54px;
     height: 2px;
+    background-color: #000;
+}
+.TREASURE .sec1_2 .text_box2 .name > p {
     background-color: #000;
 }
 .sec1_2 .text_box2 .name .info {
@@ -729,10 +812,14 @@ header .snb li:hover {
     box-shadow: 0px 4px 4px rgba(172, 0, 0, 0.25);
     position: absolute;
     right: 5%;
-    bottom: 5%;
+    bottom: 3%;
     padding: 19px 0 0 0;
     font-weight: bold;
     font-family: 'IBM Plex Sans KR', sans-serif;
+}
+.TREASURE .sec1_2 .proflie .photo .text_box3{
+    width: 20%;
+    right: 3%;
 }
 .winner .sec1_2 .proflie .photo .text_box3 {
     box-shadow: 0px 4px 4px rgba(46, 54, 1, 0.25);
@@ -1114,6 +1201,9 @@ header .snb li:hover {
     right: 45%;
     top: unset;
     bottom: -22px;
+}
+.TREASURE .text_box3 .album_list .swiper-button-next {
+    bottom: -1%;
 }
 .actors .text_box3 .album_list .swiper-button-next {
     right: 45%;

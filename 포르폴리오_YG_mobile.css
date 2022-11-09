@@ -143,6 +143,7 @@ header .login_page > div {
     background-size: contain;
     background-position: top;
 }
+
 .artist .sec1_2 .text_box1{
     gap: 5px;
     padding: 10px 10px;
@@ -151,6 +152,9 @@ header .login_page > div {
     left: 10%;
     bottom: 34%;
     background-color: rgba(1, 2, 8, 0.2);
+}
+.TREASURE .artist .sec1_2 .text_box1{
+    height: 110px;
 }
 .artist .sec1_2 .text_box1 h5{
     font-size: 20px;
@@ -170,6 +174,9 @@ header .login_page > div {
     display: flex;
     flex-direction: column;
     align-items:center;
+}
+.artist .sec1_2 .proflie .photo > div:last-child a{
+    font-size: 18px;
 }
 .artist .sec1_2 .proflie .photo .text_box3{
     width: 80%;
@@ -204,6 +211,10 @@ header .login_page > div {
 .text_box3 .album_list .swiper-button-next{
     right: 47%;
     bottom: -6%;
+}
+.TREASURE .text_box3 .album_list .swiper-button-next{
+    top: unset;
+    bottom: -5%;
 }
 .text_box3 .album_list .swiper-button-next:after{
     font-size: 15px;
@@ -261,6 +272,18 @@ header .login_page > div {
 .sec1_2 .proflie .box2:nth-child(4){
     width: 14%;
 }
+.TREASURE .sec1_2 .proflie .box2:nth-child(9){
+    height: 30%;
+}
+.TREASURE .sec1_2 .proflie .box2:nth-child(10){
+    height: 30%;
+}
+.TREASURE .sec1_2 .proflie .box2:nth-child(11){
+    height: 30%;
+}
+.TREASURE .sec1_2 .proflie .box2:nth-child(12){
+    height: 30%;
+}
 /* ---------------------------------프로필--------------------------- */
 .sec1_2 .proflie .box2 .name{
     padding: 0 0 400% 0;
@@ -269,18 +292,42 @@ header .login_page > div {
 .sec1_2 .proflie .box2 .name > p,.info, .in_sns{
     display: none;
 }
-/* .sec1_2 .proflie .f_LISA .name {
-    padding: 0 0 50% 0;
+.sec1_2 .proflie .f_SOJUNGHWAN .name {
+    padding: 144% 20% 0 0;
 }
-.sec1_2 .proflie .f_JISOO .name {
-    padding: 0 0 50% 0;
+.sec1_2 .proflie .f_YOSHI .name {
+    padding:180% 6% 0 6%;
 }
-.sec1_2 .proflie .f_JENNIE .name {
-    padding: 0 0 50% 0;
+.sec1_2 .proflie .f_JUNKYU .name {
+    padding: 180% 40% 0 0;
 }
-.sec1_2 .proflie .f_ROSE .name {
-    padding: 0 0 50% 0;
-} */
+.sec1_2 .proflie .f_ASAHI .name {
+    padding: 180% 30% 0 0;
+}
+.sec1_2 .proflie .f_HARUTO .name {
+    padding: 350% 6% 0 6%;
+}
+.sec1_2 .proflie .f_JIHOON .name {
+    padding: 680% 0 0 70%;
+}
+.sec1_2 .proflie .f_CHOIHYUNSUK .name {
+    padding: 250% 6% 0 6%;
+}
+.sec1_2 .proflie .f_MASHIHO .name {
+    padding: 460% 50% 0% 0%;
+}
+.sec1_2 .proflie .f_YEDAM .name {
+    padding: 40% 30% 0 0%;
+}
+.sec1_2 .proflie .f_YOONJAEHYUK .name {
+    padding: 80% 10% 0 0;
+}
+.sec1_2 .proflie .f_DOYOUNG .name {
+    padding: 90% 0% 0 120%;
+}
+.sec1_2 .proflie .f_PARKJEONGWOO .name {
+    padding: 0 0 150% 20%;
+}
 /* --------------------------------프로필 동그라미 아이콘------------------- */
 .sec1_2 .proflie .box2 .name::after{
     display: none;
@@ -451,6 +498,15 @@ header .login_page > div {
 }
 .actors .sec1_2 .text_box2{
     display: none;
+}
+.TREASURE .sec1_2 .text_box2 {
+    height: 40%;
+}
+.sec1_2 .text_box2 .name > h1{
+    font-size: 15px;
+}
+.TREASURE .sec1_2 .text_box2 .name > h1{
+    font-size: 11px;
 }
 .actors .sec1_2 .proflie{
     height: 90vh;

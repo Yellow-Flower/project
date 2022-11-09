@@ -6,7 +6,7 @@ $(".select li").click(function () {
 });
 $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
 
-$(".snb_m li").click(function () {
+$(".snb_m:first li").click(function () {
   var num = $(this).index();
   $(this).addClass("on").siblings().removeClass("on");
   $(".art_tab").eq(num).stop(true).show().siblings().hide();
