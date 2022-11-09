@@ -23,7 +23,7 @@ $(".act_tab:first").addClass("on").show();
 
 $(".snb_m:eq(2) li").click(function () {
   var num3 = $(this).index();
-  $(slideindex).eq(2).show();
+  // $(slideindex).eq(2).show();
   $(this).addClass("on").siblings().removeClass("on");
   $(".sel_menu > div").eq(num3).stop(true).show().siblings().hide();
   $(".sel_tab li").eq(num3).stop(true).addClass("on").siblings().removeClass("on");
