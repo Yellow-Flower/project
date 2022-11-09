@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 :root {
     /* font-family: 'Noto Sans KR', sans-serif; */
@@ -437,8 +437,8 @@ header .snb li:hover {
     /* background-size: cover; */
     background-size: contain;
     background-position: center;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
 }
 .sec1_2 .text_box1 {
     /* width: 300px; */
@@ -484,6 +484,10 @@ header .snb li:hover {
     color: #fff;
 }
 .winner .sec1_2 .text_box2{
+    color: black
+}
+.TREASURE .sec1_2 .text_box2{
+    flex-wrap: wrap;
     color: black
 }
 .artist .sec1_2 .proflie .photo > div:last-child{
@@ -540,24 +544,17 @@ header .snb li:hover {
     left: 30%;
 }
 .winner .sec1_2 .proflie .box2 .name::after {
-    content: "";
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    position: absolute;
     background-image: url(/YG.Ent/아이콘/black_radio_button_checked_FILL0_wght400_GRAD0_opsz48.png);
-    background-repeat: no-repeat;
-    background-size: 25px 25px;
-    /* height: 95%; */
     color: #000;
-    font-size: 15px;
-    opacity: 1;
-    top: 25%;
+}
+.TREASURE .sec1_2 .proflie .box2 .name::after {
+    background-image: url(/YG.Ent/아이콘/black_radio_button_checked_FILL0_wght400_GRAD0_opsz48.png);
+    /* color: #000; */
+}
+.TREASURE .sec1_2 .proflie .f_YE-DAM .name::after{
+    top: 50%;
     left: 30%;
 }
-/* .winner .sec1_2 .proflie .box2 .name::after{
-    color: black;
-} */
 /* ----------------프로필 동그라미 아이콘 위치---------- */
 .sec1_2 .proflie .box2{
     background-position: center center;
@@ -594,6 +591,56 @@ header .snb li:hover {
 }
 .winner .sec1_2 .proflie .box2:nth-child(4) {
     width: 20%;
+} 
+.TREASURE .sec1_2 .proflie .box2:nth-child(1) {
+    /* background-position: 41% 41.2%; */
+    width: 14%;
+    margin: 0 0 0 0%;
+}
+.TREASURE .sec1_2 .proflie .box2:nth-child(2) {
+    /* background-position: 28% 41%; */
+    width: 14%;
+}
+.TREASURE .sec1_2 .proflie .box2:nth-child(3) {
+    /* background-position: 28% 43.5%; */
+    width: 9%;
+}
+.TREASURE .sec1_2 .proflie .box2:nth-child(4) {
+    /* background-position: 7% 40.7%; */
+    width: 13%;
+} 
+.TREASURE .sec1_2 .proflie .box2:nth-child(5) {
+    /* background-position: 41% 41.2%; */
+    width: 8%;
+}
+.TREASURE .sec1_2 .proflie .box2:nth-child(6) {
+    /* background-position: 28% 41%; */
+    width: 7%;
+}
+.TREASURE .sec1_2 .proflie .box2:nth-child(7) {
+    /* background-position: 28% 43.5%; */
+    width: 11%;
+}
+.TREASURE .sec1_2 .proflie .box2:nth-child(8) {
+    /* background-position: 7% 40.7%; */
+    width: 10%;
+} 
+.TREASURE .sec1_2 .proflie .box2:nth-child(9) {
+    /* background-position: 28% 43.5%; */
+    width: 15%;
+    margin: 0 0 0 19%;
+}
+.TREASURE .sec1_2 .proflie .box2:nth-child(10) {
+    /* background-position: 7% 40.7%; */
+    width: 26%;
+} 
+.TREASURE .sec1_2 .proflie .box2:nth-child(11) {
+    /* background-position: 28% 43.5%; */
+    width: 21%;
+}
+.TREASURE .sec1_2 .proflie .box2:nth-child(12) {
+    /* background-position: 7% 40.7%; */
+    width: 19%;
 } 
 /* ----------------프로필 영역 호버시---------- */
 .sec1_2 .proflie .box2:hover{
@@ -635,7 +682,9 @@ header .snb li:hover {
 .sec1_2 .proflie .f_ROSE .name {
     padding: 60% 0 0 6%;
 }
-
+.sec1_2 .proflie .f_YE-DAM .name {
+    padding: 106% 6% 0 6%;
+}
 .sec1_2 .text_box2 .name {
     display: flex;
     flex-direction: column;

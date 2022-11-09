@@ -201,6 +201,13 @@ header .login_page > div {
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-wrapper{
     display: flex;
 }
+.text_box3 .album_list .swiper-button-next{
+    right: 47%;
+    bottom: -6%;
+}
+.text_box3 .album_list .swiper-button-next:after{
+    font-size: 15px;
+}
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide img{
     width: 40%;
     height: 40%;

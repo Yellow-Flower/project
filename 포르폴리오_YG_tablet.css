@@ -54,6 +54,9 @@ header .login_page > div > div:last-child{
     width: 90%;
     height: 61px;
 }
+.winner .sec1_2 .proflie .photo .text_box3 > p:first-child{
+    background-size: contain;
+}
 .TREASURE .sec1_2 .proflie .photo .text_box3 > p:first-child {
     background-size: contain;
 }
