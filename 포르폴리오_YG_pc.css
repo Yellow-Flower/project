@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 :root {
     /* font-family: 'Noto Sans KR', sans-serif; */
@@ -400,7 +400,7 @@ header .snb li:hover {
     background-size: cover;
     z-index: 1;
 }
-.blackpink .proflie .back {
+.proflie .back {
     width: 100%;
     /* height: 855px; */
     height: 80vh;
@@ -410,15 +410,12 @@ header .snb li:hover {
     flex-direction: column;
 }
 .winner .proflie .back {
-    width: 100%;
-    /* height: 855px; */
-    height: 80vh;
-    position: relative;
     background-color: rgba(37, 31, 1, 0.5);
-    display: flex;
-    flex-direction: column;
 }
-.blackpink .sec1_2 .proflie .photo {
+.TREASURE .proflie .back {
+    background-color: rgba(255, 77, 0, 0.5);
+}
+.sec1_2 .proflie .photo {
     background-image: url(/YG.Ent/이미지/블랙핑크_1.jpg);
     /* background-size: cover; */
     background-repeat: no-repeat;
@@ -431,13 +428,19 @@ header .snb li:hover {
     background-image: url(/YG.Ent/이미지/WN25657.jpg);
     /* background-size: cover; */
     background-size: contain;
-    background-repeat: no-repeat;
     background-position: center;
     width: 100%;
     height: 100%;
-    margin: 0 auto;
 }
-.blackpink .sec1_2 .text_box1 {
+.TREASURE .sec1_2 .proflie .photo {
+    background-image: url(/YG.Ent/이미지/트레져5.png);
+    /* background-size: cover; */
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+.sec1_2 .text_box1 {
     /* width: 300px; */
     width: 25%;
     height: 220px;
@@ -454,21 +457,12 @@ header .snb li:hover {
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
 .winner .sec1_2 .text_box1 {
-    /* width: 300px; */
-    width: 25%;
-    height: 220px;
-    /* height: 20%; */
-    border: 1px solid #fff;
     filter: drop-shadow(0px 4px 4px rgba(61, 55, 2, 0.25));
     background-color: rgba(255, 255, 255, 0.2);
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 8PX;
-    position: absolute;
-    left: 5%;
-    bottom: 5%;
-    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+.TREASURE .sec1_2 .text_box1 {
+    filter: drop-shadow(0px 4px 4px rgba(61, 55, 2, 0.25));
+    background-color: rgba(62, 60, 60, 0.3);
 }
 .artist .sec1_2 .text_box1 h5 {
     font-size: 30px;
@@ -528,14 +522,14 @@ header .snb li:hover {
     font-size: 15px;
     opacity: 0.3;
 } */
-.blackpink .sec1_2 .proflie .box2 .name::after {
+.sec1_2 .proflie .box2 .name::after {
     content: "";
     width: 40px;
     height: 40px;
     /* background: rgb(255, 255, 255); */
     display: inline-block;
     position: absolute;
-    background-image: url(/YG.Ent/아이콘//radio_button_checked_FILL0_wght400_GRAD0_opsz48.svg);
+    background-image: url(/YG.Ent/아이콘/radio_button_checked_FILL0_wght400_GRAD0_opsz48.svg);
     background-repeat: no-repeat;
     background-size: 25px 25px;
     /* height: 95%; */
@@ -551,7 +545,7 @@ header .snb li:hover {
     height: 40px;
     display: inline-block;
     position: absolute;
-    background-image: url(/YG.Ent/아이콘//radio_button_checked_FILL0_wght400_GRAD0_opsz48.svg);
+    background-image: url(/YG.Ent/아이콘/black_radio_button_checked_FILL0_wght400_GRAD0_opsz48.png);
     background-repeat: no-repeat;
     background-size: 25px 25px;
     /* height: 95%; */
@@ -674,8 +668,7 @@ header .snb li:hover {
     color: red;
 }
 /* --------------------------------------------- */
-
-.blackpink .sec1_2 .proflie .photo .text_box3 {
+.sec1_2 .proflie .photo .text_box3 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -693,26 +686,15 @@ header .snb li:hover {
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
 .winner .sec1_2 .proflie .photo .text_box3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 18px;
-    /* width: 452px; */
-    width: 25%;
-    height: 800px;
-    background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(46, 54, 1, 0.25);
-    position: absolute;
-    right: 5%;
-    bottom: 5%;
-    padding: 19px 0 0 0;
-    font-weight: bold;
-    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+.TREASURE .sec1_2 .proflie .photo .text_box3 {
+    box-shadow: 0px 4px 4px rgba(46, 54, 1, 0.25);
 }
 .artist .sec1_2 .proflie .photo .text_box3 > div:first-child{
     padding: 0 5px;
 }
-.blackpink .sec1_2 .proflie .photo .text_box3 > p:first-child {
+.sec1_2 .proflie .photo .text_box3 > p:first-child {
     background-image: url(/YG.Ent/이미지/블랙핑크\ 로고.png);
     background-size: 199px 88px;
     background-position: center center;
@@ -724,11 +706,14 @@ header .snb li:hover {
 .winner .sec1_2 .proflie .photo .text_box3 > p:first-child {
     background-image: url(/YG.Ent/이미지/위너로고.jpg);
     background-size: contain;
-    background-position: center center;
-    width: 211px;
-    height: 61px;
     background-color: #fff;
-    background-repeat: no-repeat;
+}
+.TREASURE .sec1_2 .proflie .photo .text_box3 > p:first-child {
+    background-image: url(/YG.Ent/이미지/트레저로고.jpg);
+    background-size: contain;
+    background-color: #fff;
+    width: 211px;
+    height: 100%;
 }
 .artist .sec1_2 .proflie .photo .text_box3 > p:nth-child(2) {
     width: 90%;

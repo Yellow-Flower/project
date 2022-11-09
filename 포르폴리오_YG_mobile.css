@@ -139,6 +139,10 @@ header .login_page > div {
     background-size: contain;
     background-position: top;
 }
+.TREASURE .sec1_2 .proflie .photo{
+    background-size: contain;
+    background-position: top;
+}
 .artist .sec1_2 .text_box1{
     gap: 5px;
     padding: 10px 10px;
@@ -272,6 +276,9 @@ header .login_page > div {
 } */
 /* --------------------------------프로필 동그라미 아이콘------------------- */
 .sec1_2 .proflie .box2 .name::after{
+    display: none;
+}
+.winner .sec1_2 .proflie .box2 .name::after{
     display: none;
 }
 /* ------------------------------------------굿즈----------------------------- */
