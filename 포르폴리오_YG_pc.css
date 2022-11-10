@@ -45,10 +45,10 @@ body{
 .homepage .au_tab.on{
     display: block;
 }
-.yg_slide .yg_tab{
+.homepage .yg_tab{
     display: none;
 }
-.yg_slide .yg_tab.on{
+.homepage .yg_tab.on{
     display: block;
 }
 /* ------------------------------------------------- */

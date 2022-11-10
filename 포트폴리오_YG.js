@@ -45,7 +45,7 @@ $(".snb_m:eq(4) li").click(function () {
   var tab5 = $(this).index();
   $(this).addClass("on").siblings().removeClass("on");
   swiper9.slideTo(4, 300);
-  $(".yg_tab").eq(tab5).stop(true).addClass("on").siblings().removeClass("on");
+  $(".yg_tab").eq(tab5).stop(true).addClass("on").show().siblings(".yg_tab").removeClass("on").hide();
 });
 $(".yg_tab:first").addClass("on").show();
 
