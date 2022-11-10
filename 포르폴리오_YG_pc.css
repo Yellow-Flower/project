@@ -309,7 +309,6 @@ header .menu ul {
     color: #fff;
     font-size: 32px;
     font-family: 'Fugaz One', cursive;
-    cursor: pointer;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -354,15 +353,18 @@ header .gnb li:hover {
     color: black;
     -webkit-text-stroke: 1px #fff
 }
-
-
-  
 header .snb_m.on{
     opacity: 1;
 } 
 header .snb li:hover {
     color: yellow;
-    -webkit-text-stroke: 1px black
+    -webkit-text-stroke: 1px black;
+    cursor: pointer;
+}
+header .snb_m .black:hover{
+    color: black;
+    -webkit-text-stroke: 0px;
+    cursor: default;
 }
 /* --------------------sec2_MV---------------------------- */
 .body > .MV {

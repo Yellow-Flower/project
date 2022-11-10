@@ -40,7 +40,7 @@ $(".snb_m:eq(3) li").click(function () {
   $(".au_tab").eq(tab4).stop(true).addClass("on").siblings().removeClass("on");
 });
 $(".au_tab:first").addClass("on").show();
-// =========================================================================================  ok
+
 $(".snb_m:eq(4) li").click(function () {
   var tab5 = $(this).index();
   $(this).addClass("on").siblings().removeClass("on");
@@ -48,50 +48,8 @@ $(".snb_m:eq(4) li").click(function () {
   $(".yg_tab").eq(tab5).stop(true).addClass("on").show().siblings(".yg_tab").removeClass("on").hide();
 });
 $(".yg_tab:first").addClass("on").show();
+//--------------------------------------------페이지 이동시 뮤직비디오 일시정지----------------------
 
-
-// $(".snb_m li").click(function(){
-//   var tab1 = $(this).index();
-//   $(".homepage > .swiper-wrapper > .swiper-slide").each(function(index, element){
-//     $(this).eq().addClass("on").siblings().removeClass("on");
-//   });
-// });
-
-// $(".homepage > .swiper-wrapper > .swiper-slide").each(function() {
-//   let tab = $(this).index();
-//   let tab1 = $(".art_tab").eq().stop(true).show().siblings(".art_tab").hide();
-//   let tab2 = $(".act_tab").eq().stop(true).show().siblings(".act_tab").hide();
-//   let tab3 = $(".au_tab").eq().stop(true).show().siblings(".au_tab").hide();
-//   let tab4 = $(".yg_tab").eq().stop(true).show().siblings(".yg_tab").hide();
-
-//   $(".snb_m li").click(function() {
-//     let tab5 = $(this).index();
-//     $(this).addClass('on').siblings().removeClass('on');
-//     $(tab1).eq(tab2).addClass('on').siblings().removeClass('on');
-//   });
-// });
-
-// $(".snb_m li").click(function() {
-//   let tab = $(this).index();
-//   let tab1 = $(".art_tab").eq().stop(true).show().siblings(".art_tab").hide();
-//   let tab2 = $(".act_tab").eq().stop(true).show().siblings(".act_tab").hide();
-//   let tab3 = $(".au_tab").eq().stop(true).show().siblings(".au_tab").hide();
-//   let tab4 = $(".yg_tab").eq().stop(true).show().siblings(".yg_tab").hide();
-//   $(".homepage > .swiper-wrapper > .swiper-slide").each(function(index, element) {
-//     let tab5 = $(this).index();
-//     $(this).addClass('on').siblings().removeClass('on');
-//   });
-// });
-
-
-// $('li.more').each(function() {
-//   let $2menuindex = $(this).index();
-//   let $3menu = $(this).parent().next().children('.contentlist');
-//   $(this).click(function() {
-//       $(this).addClass('on').siblings().removeClass('on');
-//       $($3menu).eq($2menuindex).addClass('on').siblings().removeClass('on');
-//   });
-// });
 // ------------------------------------------------------------------------------------
 
 $('#up, header > a').click(function () {
@@ -175,6 +133,11 @@ var swiper1 = new Swiper(".artist", {
   },
   observer: true,
   observeParents: true,
+  // on : {
+  //   slideChange : function(){
+  //     $("video").attr("muted", "false");
+  //   }
+  // }
 });
 
 var swiper2 = new Swiper(".actors", {
@@ -333,7 +296,9 @@ var swiper9 = new Swiper(".homepage", {
           break;
         default :
         $("#up").removeClass("on on2");
+        $("video").attr("muted", "true");
       }
+      
     },
   }
 });
