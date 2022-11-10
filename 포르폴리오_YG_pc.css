@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
-     
+      
             
 * { 
     margin: 0;
@@ -37,6 +37,18 @@ body{
     display: none;
 }
 .homepage .act_tab.on{
+    display: block;
+}
+.homepage .au_tab{
+    display: none;
+}
+.homepage .au_tab.on{
+    display: block;
+}
+.homepage .yg_tab{
+    display: none;
+}
+.homepage .yg_tab.on{
     display: block;
 }
 /* ------------------------------------------------- */

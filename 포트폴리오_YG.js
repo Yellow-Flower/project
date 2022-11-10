@@ -1,4 +1,4 @@
-// -------------------전체메뉴-------------
+// -------------------전체 상위 메뉴-------------
 $(".select li").click(function () {
   var num = $(this).index();
   $(this).addClass("on").siblings().removeClass("on");
@@ -8,27 +8,42 @@ $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
  
 // --------------------------------하위 메뉴 클릭시 페이지 이동-------------------
 $(".snb_m:eq(0) li").click(function () {
-  var num = $(this).index();
+  var tab1 = $(this).index();
   $(this).addClass("on").siblings().removeClass("on");
-  $(".art_tab").eq(num).stop(true).show().siblings().hide();
+  $(".art_tab").eq(tab1).stop(true).show().siblings().hide();
 });
 $(".art_tab:first").addClass("on").show();
 
-// $(".snb_m:eq(1) li").click(function () {
-//   var num2 = $(this).index();
-//   $(this).addClass("on").siblings().removeClass("on");
-//   $(".act_tab").eq(num2).stop(true).show().siblings().hide();
-// });
-// $(".act_tab:first").addClass("on").show();
+$(".snb_m:eq(1) li").click(function () {
+  var tab2 = $(this).index();
+  $(this).addClass("on").siblings().removeClass("on");
+  $(".act_tab").eq(tab2).stop(true).show().siblings().hide();
+});
+$(".act_tab:first").addClass("on").show();
+$(".snb_m:eq(2) li").click(function () {
+  var tab3 = $(this).index();
+  $(this).addClass("on").siblings().removeClass("on");
+  $(".slide0-3").show().siblings().hide();
+  $(".sel_menu > div").eq(tab3).stop(true).show().siblings().hide();
+  $(".sel_tab li").eq(tab3).stop(true).addClass("on").siblings().removeClass("on");
+});
+$(".select").addClass("on").add(".sel_menu > div:first").show();
 
-// $(".snb_m:eq(2) li").click(function () {
-//   var num3 = $(this).index();
-//   // $(slideindex).eq(2).show();
-//   $(this).addClass("on").siblings().removeClass("on");
-//   $(".sel_menu > div").eq(num3).stop(true).show().siblings().hide();
-//   $(".sel_tab li").eq(num3).stop(true).addClass("on").siblings().removeClass("on");
-// });
-// $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
+// ----------------------------------------------------------
+$(".snb_m:eq(3) li").click(function () {
+  var tab4 = $(this).index();
+  $(this).addClass("on").siblings().removeClass("on");
+  $(".slide0-4").show().siblings().hide();
+  $(".au_tab").eq(tab4).stop(true).addClass("on").siblings().removeClass("on");
+});
+$(".au_tab:first").addClass("on").show();
+
+$(".snb_m:eq(4) li").click(function () {
+  var tab5 = $(this).index();
+  $(this).addClass("on").siblings().removeClass("on");
+  $(".yg_tab").eq(tab5).stop(true).addClass("on").siblings().removeClass("on");
+});
+$(".yg_tab:first").addClass("on").show();
 // ------------------------------------------------------------------------------------
 
 $('#up, header > a').click(function () {
