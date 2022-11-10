@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 :root {
     /* font-family: 'Noto Sans KR', sans-serif; */
@@ -322,13 +322,18 @@ header .snb ul {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin: 10px 0 0 15px;
+    margin: 30px 0 0 15px;
+    width: 90%;
 }
 header .snb .actor_menu{
     overflow-y: auto;
     height: 95%;
     /* display: flex;
+    flex-direction: column;
     gap: 5px; */
+}
+header .snb .actor_menu li{
+    margin-bottom: 5px;
 }
 .mCSB_inside > .mCSB_container{
     margin-right: 0;
