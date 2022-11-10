@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 :root {
     /* font-family: 'Noto Sans KR', sans-serif; */
@@ -45,10 +45,10 @@ body{
 .homepage .au_tab.on{
     display: block;
 }
-.homepage .yg_tab{
+.yg_slide .yg_tab{
     display: none;
 }
-.homepage .yg_tab.on{
+.yg_slide .yg_tab.on{
     display: block;
 }
 /* ------------------------------------------------- */
@@ -1132,7 +1132,7 @@ header .snb li:hover {
     /* font-size: 16px; */
     font-size: 0.9rem;
     text-align: left;
-    width: 85%;
+    width: 100%;
 }
 .actors .sec1_2 .proflie .photo .text_box3 .album_list {
     width: 100%;
@@ -1402,7 +1402,7 @@ header .snb li:hover {
 }
 .select .sel_menu > div:nth-child(1) .swiper-slide .gleft {
     width: 35%;
-    height: 62vh;
+    height: 65vh;
 }
 .select .sel_menu > div:nth-child(1) .swiper-slide .s_one .gleft > p:nth-child(1) {
     height: 80%;
@@ -1446,7 +1446,7 @@ header .snb li:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 62vh;
+    height: 65vh;
     width: 30%;
     background-color: black;
     /* font-size: 80px; */
@@ -1456,7 +1456,7 @@ header .snb li:hover {
 }
 .select .sel_menu > div:nth-child(1) .swiper-slide .gright {
     width: 35%;
-    height: 62vh;
+    height: 65vh;
 }
 .select .sel_menu > div:nth-child(1) .swiper-slide .s_one .gright > p:nth-child(1) {
     height: 80%;

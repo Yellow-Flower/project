@@ -6,44 +6,92 @@ $(".select li").click(function () {
 });
 $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
  
-// --------------------------------하위 메뉴 클릭시 페이지 이동-------------------
+// --------------------------------하위 메뉴 클릭시 페이지 이동 ☆ p.469 each메서드 참고해서 간략하게 줄이기-------------------
 $(".snb_m:eq(0) li").click(function () {
+  swiper9.slideTo(0, 300);
   var tab1 = $(this).index();
   $(this).addClass("on").siblings().removeClass("on");
-  $(".art_tab").eq(tab1).stop(true).show().siblings().hide();
+  $(".art_tab > div").eq(tab1).stop(true).show().siblings(".art_tab > div").hide();
 });
 $(".art_tab:first").addClass("on").show();
 
 $(".snb_m:eq(1) li").click(function () {
   var tab2 = $(this).index();
   $(this).addClass("on").siblings().removeClass("on");
-  $(".act_tab").eq(tab2).stop(true).show().siblings().hide();
+  swiper9.slideTo(1, 300);
+  $(".act_tab > div").eq(tab2).stop(true).show().siblings(".act_tab > div").hide();
 });
 $(".act_tab:first").addClass("on").show();
+
 $(".snb_m:eq(2) li").click(function () {
   var tab3 = $(this).index();
   $(this).addClass("on").siblings().removeClass("on");
-  $(".slide0-3").show().siblings().hide();
+  swiper9.slideTo(2, 300);
+  // $(".slide0-3").show().siblings().hide();
   $(".sel_menu > div").eq(tab3).stop(true).show().siblings().hide();
   $(".sel_tab li").eq(tab3).stop(true).addClass("on").siblings().removeClass("on");
 });
 $(".select").addClass("on").add(".sel_menu > div:first").show();
 
-// ----------------------------------------------------------
 $(".snb_m:eq(3) li").click(function () {
   var tab4 = $(this).index();
   $(this).addClass("on").siblings().removeClass("on");
-  $(".slide0-4").show().siblings().hide();
+  swiper9.slideTo(3, 300);
   $(".au_tab").eq(tab4).stop(true).addClass("on").siblings().removeClass("on");
 });
 $(".au_tab:first").addClass("on").show();
-
+// =========================================================================================  ok
 $(".snb_m:eq(4) li").click(function () {
   var tab5 = $(this).index();
   $(this).addClass("on").siblings().removeClass("on");
+  swiper9.slideTo(4, 300);
   $(".yg_tab").eq(tab5).stop(true).addClass("on").siblings().removeClass("on");
 });
 $(".yg_tab:first").addClass("on").show();
+
+
+// $(".snb_m li").click(function(){
+//   var tab1 = $(this).index();
+//   $(".homepage > .swiper-wrapper > .swiper-slide").each(function(index, element){
+//     $(this).eq().addClass("on").siblings().removeClass("on");
+//   });
+// });
+
+// $(".homepage > .swiper-wrapper > .swiper-slide").each(function() {
+//   let tab = $(this).index();
+//   let tab1 = $(".art_tab").eq().stop(true).show().siblings(".art_tab").hide();
+//   let tab2 = $(".act_tab").eq().stop(true).show().siblings(".act_tab").hide();
+//   let tab3 = $(".au_tab").eq().stop(true).show().siblings(".au_tab").hide();
+//   let tab4 = $(".yg_tab").eq().stop(true).show().siblings(".yg_tab").hide();
+
+//   $(".snb_m li").click(function() {
+//     let tab5 = $(this).index();
+//     $(this).addClass('on').siblings().removeClass('on');
+//     $(tab1).eq(tab2).addClass('on').siblings().removeClass('on');
+//   });
+// });
+
+// $(".snb_m li").click(function() {
+//   let tab = $(this).index();
+//   let tab1 = $(".art_tab").eq().stop(true).show().siblings(".art_tab").hide();
+//   let tab2 = $(".act_tab").eq().stop(true).show().siblings(".act_tab").hide();
+//   let tab3 = $(".au_tab").eq().stop(true).show().siblings(".au_tab").hide();
+//   let tab4 = $(".yg_tab").eq().stop(true).show().siblings(".yg_tab").hide();
+//   $(".homepage > .swiper-wrapper > .swiper-slide").each(function(index, element) {
+//     let tab5 = $(this).index();
+//     $(this).addClass('on').siblings().removeClass('on');
+//   });
+// });
+
+
+// $('li.more').each(function() {
+//   let $2menuindex = $(this).index();
+//   let $3menu = $(this).parent().next().children('.contentlist');
+//   $(this).click(function() {
+//       $(this).addClass('on').siblings().removeClass('on');
+//       $($3menu).eq($2menuindex).addClass('on').siblings().removeClass('on');
+//   });
+// });
 // ------------------------------------------------------------------------------------
 
 $('#up, header > a').click(function () {
@@ -220,12 +268,14 @@ var swiper6 = new Swiper(".about_audition", {
   effect: "flip",
   grabCursor: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".ad_sw.swiper-pagination",
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".ad_sw.swiper-button-next",
+    prevEl: ".ad_sw.swiper-button-prev",
   },
+  observer: true,
+  observeParents: true,
 });
 
 var swiper7 = new Swiper(".yg_slide", {
@@ -287,7 +337,17 @@ var swiper9 = new Swiper(".homepage", {
     },
   }
 });
+// let [x, y] = [0, 0]
+// const[left, up, right, down] = [37, 38, 39, 40];
 
+// $(document.body).addEventListener('keydown', (event) => {
+//   switch(event.keyCode){
+//     case down : y -= 1;
+//       break;
+//     case up : y += 1;
+//       break;
+//   }
+// });
 // --------------------------------가수 앨범 속 리스트 슬라이드-----------------
 var swiper10 = new Swiper(".list_silde", {
   slidesPerView: 3,
