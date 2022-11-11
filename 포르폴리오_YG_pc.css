@@ -182,7 +182,7 @@ header .login_page{
     transform: translateY(-100%);
     transition: 0.2s all;
     background-color: black;
-    background-image: url(/YG.Ent/이미지/YG_로그인배경패턴12.png);
+    background-image: url(/YG.Ent/이미지/YG_로그인배경패턴14.png);
     /* background-repeat: round; */
     display: flex;
     justify-content: center;
@@ -1483,7 +1483,7 @@ header .snb_m .black:hover{
 .select .sel_menu > div:nth-child(1) .swiper-slide .s_one .gright > a:first-child p {
     height: 80%;
     width: 100%;
-    background-image: url(/YG.Ent/이미지/와이지셀렉터-블랙핑크3.jpg);
+    background-image: url(/YG.Ent/이미지/와이지셀렉터-블랙핑크_케이스티파이.jpg);
     /* background-size: cover; */
     background-size: 100% 100%;
 }
@@ -1507,6 +1507,9 @@ header .snb_m .black:hover{
     text-decoration: none;
     cursor: pointer;
     color: black;
+}
+.select .inner_2 .sel_menu .b .g_pic a:hover{
+    text-decoration: underline;
 }
 .select .inner_2 .sel_menu .goodsgrid {
     width: 100%;
