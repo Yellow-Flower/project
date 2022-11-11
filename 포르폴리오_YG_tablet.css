@@ -1,5 +1,5 @@
 @charset "UTF-8";
-            
+             
 /* ----------------------------------로그인창--------------- */
 header .login_page > div{
     width: 300px;
@@ -304,7 +304,7 @@ header .login_page > div > div:last-child{
     height: 20px;
 }
 .audition .inner_3 .ap_right1 .ins_page > p{
-    height: 72%;
+    height: 65%;
 }
 .audition .inner_3 .ap_left1 a:nth-child(4){
     display: none;
@@ -346,7 +346,7 @@ header .login_page > div > div:last-child{
 }
 .aboutyg .ab_box .introduction .text_3{
     overflow-y: auto;
-    height: 200px;
+    /* height: 200px; */
 }
 .aboutyg .ab_box .page2 {
     padding: 20px;

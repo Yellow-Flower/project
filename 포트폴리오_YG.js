@@ -45,7 +45,7 @@ $(".snb_m:eq(4) li").click(function () {
   var tab5 = $(this).index();
   $(this).addClass("on").siblings().removeClass("on");
   swiper9.slideTo(4, 300);
-  $(".yg_tab").eq(tab5).stop(true).addClass("on").show().siblings(".yg_tab").removeClass("on").hide();
+  $(".yg_tab").eq(tab5).stop(true).addClass("on").siblings(".yg_tab").removeClass("on");
 });
 $(".yg_tab:first").addClass("on").show();
 //--------------------------------------------페이지 이동시 뮤직비디오 일시정지----------------------
