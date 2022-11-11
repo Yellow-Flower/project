@@ -12,6 +12,7 @@ $(".snb_m:eq(0) li").click(function () {
   var tab1 = $(this).index();
   $(this).addClass("on").siblings().removeClass("on");
   $(".art_tab > div").eq(tab1).stop(true).show().siblings(".art_tab > div").hide();
+  video.get(0).pause();
 });
 $(".art_tab:first").addClass("on").show();
 
@@ -118,6 +119,7 @@ $(".but_lang").click(function () {
 });
 $(".language").hide();
 // ---------------스와이퍼----------------------
+var video = $("video");
 
 var swiper1 = new Swiper(".artist", {
   hashNavigation: {
@@ -133,11 +135,12 @@ var swiper1 = new Swiper(".artist", {
   },
   observer: true,
   observeParents: true,
-  // on : {
-  //   slideChange : function(){
-  //     $("video").attr("muted", "false");
-  //   }
-  // }
+  on : {
+    
+    slideChange : function(){
+      video.get(0).pause();
+    }
+  }
 });
 
 var swiper2 = new Swiper(".actors", {
@@ -301,7 +304,8 @@ var swiper9 = new Swiper(".homepage", {
         $("#up").removeClass("on on2");
         $("video").attr("muted", "true");
       }
-      
+      video.get(0).pause();
+
     },
   }
 });
