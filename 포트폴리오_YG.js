@@ -9,10 +9,12 @@ $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
 // --------------------------------하위 메뉴 클릭시 페이지 이동 ☆ p.469 each메서드 참고해서 간략하게 줄이기-------------------
 $(".snb_m:eq(0) li").click(function () {
   swiper9.slideTo(0, 300);
+  $('video').each(function() {
+    this.pause()
+  });
   var tab1 = $(this).index();
   $(this).addClass("on").siblings().removeClass("on");
   $(".art_tab > div").eq(tab1).stop(true).show().siblings(".art_tab > div").hide();
-  video.get(0).pause();
 });
 $(".art_tab:first").addClass("on").show();
 
@@ -38,7 +40,15 @@ $(".snb_m:eq(3) li").click(function () {
   var tab4 = $(this).index();
   $(this).addClass("on").siblings().removeClass("on");
   swiper9.slideTo(3, 300);
-  $(".au_tab").eq(tab4).stop(true).addClass("on").siblings().removeClass("on");
+  switch (tab4) {
+    case 0 :
+      swiper6.slideTo(0, 300);
+      break;
+    case 1 :
+      swiper6.slideTo(1, 300);
+      break;
+  }
+  // $(".au_tab").eq(tab4).stop(true).addClass("on").siblings().removeClass("on");
 });
 $(".au_tab:first").addClass("on").show();
 
@@ -46,10 +56,35 @@ $(".snb_m:eq(4) li").click(function () {
   var tab5 = $(this).index();
   $(this).addClass("on").siblings().removeClass("on");
   swiper9.slideTo(4, 300);
-  $(".yg_tab").eq(tab5).stop(true).addClass("on").siblings(".yg_tab").removeClass("on");
+  switch (tab5) {
+    case 0 :
+      swiper7.slideTo(0, 300);
+      break;
+    case 1 :
+      swiper7.slideTo(1, 300);
+      break;
+    case 2 :
+      swiper7.slideTo(2, 300);
+      break;
+    case 3 :
+      swiper7.slideTo(3, 300);
+      break;
+  }
+  // if (tab5 = 0){
+  //   swiper7.slideTo(0, 300);
+  // }
+  // else if (tab5 = 1){
+  //   swiper7.slideTo(1, 300);
+  // }
+  // else if (tab5 = 2){
+  //   swiper7.slideTo(1, 300);
+  // } 
+  // else if (tab5 = 3){
+  //   swiper7.slideTo(3, 300);
+  // };
+  // $(".yg_tab").eq(tab5).stop(true).addClass("on").siblings().removeClass("on");
 });
 $(".yg_tab:first").addClass("on").show();
-//--------------------------------------------페이지 이동시 뮤직비디오 일시정지----------------------
 
 // ------------------------------------------------------------------------------------
 
@@ -138,7 +173,9 @@ var swiper1 = new Swiper(".artist", {
   on : {
     
     slideChange : function(){
-      video.get(0).pause();
+      $('video').each(function() {
+        this.pause()
+      })
     }
   }
 });
@@ -302,10 +339,10 @@ var swiper9 = new Swiper(".homepage", {
           break;
         default :
         $("#up").removeClass("on on2");
-        $("video").attr("muted", "true");
       }
-      video.get(0).pause();
-
+      $('video').each(function() {
+        this.pause()
+      })
     },
   }
 });
