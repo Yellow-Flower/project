@@ -369,17 +369,24 @@ header .snb_m .black:hover{
     cursor: default;
 }
 /* --------------------sec2_MV---------------------------- */
+.body{
+    height: 80vh;
+}
 .body > .MV {
-    width: 100%;
+    /* width: 100%; */
     /* height: 855px; */
     height: 80vh;
-    position: relative;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .body .MV video {
-    width: 100%;
+    /* width: 100%; */
+    height: 100%;
     /* height: 80vh; */
-    position: relative;
-    z-index: 1;
+    /* position: relative;
+    z-index: 1; */
 }
 .body .material-symbols-outlined {
     font-size: 57px;
@@ -1417,6 +1424,9 @@ header .snb_m .black:hover{
     text-decoration: underline;
     cursor: pointer;
 }
+.select .sel_menu > div:nth-child(1) .yg_goods > a{
+    height: 80%;
+}
 .select .sel_menu > div:nth-child(1) .swiper-slide .gleft {
     width: 35%;
     height: 66vh;
@@ -1655,7 +1665,7 @@ header .snb_m .black:hover{
 /* ---------------------오디션---------------------------- */
 .audition {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background-image: url(/YG.Ent/이미지/배경작업3_수정1.png);
     background-repeat: no-repeat;
     background-size: cover;

@@ -70,19 +70,6 @@ $(".snb_m:eq(4) li").click(function () {
       swiper7.slideTo(3, 300);
       break;
   }
-  // if (tab5 = 0){
-  //   swiper7.slideTo(0, 300);
-  // }
-  // else if (tab5 = 1){
-  //   swiper7.slideTo(1, 300);
-  // }
-  // else if (tab5 = 2){
-  //   swiper7.slideTo(1, 300);
-  // } 
-  // else if (tab5 = 3){
-  //   swiper7.slideTo(3, 300);
-  // };
-  // $(".yg_tab").eq(tab5).stop(true).addClass("on").siblings().removeClass("on");
 });
 $(".yg_tab:first").addClass("on").show();
 
