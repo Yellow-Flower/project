@@ -252,7 +252,7 @@ var swiper7 = new Swiper(".yg_slide", {
   },
 });
 var swiper8 = new Swiper(".instagram", {
-  spaceBetween: 100,
+  spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
     delay: 2500,
@@ -284,6 +284,9 @@ var swiper9 = new Swiper(".homepage", {
   mousewheel: true,
   observer: true,
   observeParents: true,
+  keyboard: {
+    enabled: true,
+  },
   on: {
     slideChange: function () {
       var slideindex = this.realIndex

@@ -1360,6 +1360,7 @@ header .snb_m .black:hover{
     font-size: 13px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+    /* display: flex; */
     /* padding: 0 5%; */
 }
 .select .inner_2 .sel_menu > .goods{
@@ -1406,29 +1407,37 @@ header .snb_m .black:hover{
 }
 .select .sel_menu > div:nth-child(1) .yg_goods {
     background-color: #fff;
-    cursor: pointer;
     height: 64vh;
+}
+.select .sel_menu > div:nth-child(1) .yg_goods a{
+    text-decoration: none;
+    color: #000;
+}
+.select .sel_menu > div:nth-child(1) .yg_goods a:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 .select .sel_menu > div:nth-child(1) .swiper-slide .gleft {
     width: 35%;
-    height: 65vh;
+    height: 66vh;
 }
-.select .sel_menu > div:nth-child(1) .swiper-slide .s_one .gleft > p:nth-child(1) {
+
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_one .gleft > a:first-child p {
     height: 80%;
     width: 100%;
-    background-image: url(/YG.Ent/이미지/와이지셀렉터-월간포카.jpg);
+    background-image: url(/YG.Ent/이미지/와이지셀렉터-월간포카11.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
-.select .sel_menu > div:nth-child(1) .swiper-slide .s_two .gleft > p:nth-child(1) {
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_two .gleft > a:first-child p {
     /* height: 536px; */
     width: 100%;
     height: 80%;
-    background-image: url(/YG.Ent/이미지/와이지셀렉터-블랙핑크.jpg);
+    background-image: url(/YG.Ent/이미지/와이지셀렉터-이찬혁.jpg);
     /* background-size: cover; */
     background-size: 100% 100%;
 }
-.select .sel_menu > div:nth-child(1) .swiper-slide .s_thr .gleft > p:nth-child(1) {
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_thr .gleft > a:first-child p {
     height: 80%;
     width: 100%;
     background-image: url(/YG.Ent/이미지/와이지셀렉터-간식타임.jpg);
@@ -1440,14 +1449,15 @@ header .snb_m .black:hover{
     flex-direction: column;
     justify-content: center;
     height: 20%;
+    color: #000;
 }
-.select .sel_menu > div:nth-child(1) .yg_goods > div > p:first-child {
+.select .sel_menu > div:nth-child(1) .yg_goods > div p:first-child {
     /* font-size: 30px; */
-    /* font-size: 1.2rem; */
+    font-size: 1.2rem;
     font-weight: bold;
     /* padding: 15px 0 0 0; */
 }
-.select .sel_menu > div:nth-child(1) .yg_goods > div > p:last-child {
+.select .sel_menu > div:nth-child(1) .yg_goods > div p:last-child {
     font-size: 1rem;
 }
 .select .sel_menu > div:nth-child(1) .slide > div:nth-child(2){
@@ -1455,36 +1465,39 @@ header .snb_m .black:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 65vh;
+    height: 66vh;
     width: 30%;
     background-color: black;
     /* font-size: 80px; */
     /* font-size: 4rem; */
-    font-size: 5em;
     color: #fff;
+}
+.select .sel_menu > div:nth-child(1) .slide > div:nth-child(2) p{
+    font-size: 5em;
+    width: 90%;
 }
 .select .sel_menu > div:nth-child(1) .swiper-slide .gright {
     width: 35%;
-    height: 65vh;
+    height: 66vh;
 }
-.select .sel_menu > div:nth-child(1) .swiper-slide .s_one .gright > p:nth-child(1) {
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_one .gright > a:first-child p {
     height: 80%;
     width: 100%;
-    background-image: url(/YG.Ent/이미지/와이지셀렉터-리사.jpg);
+    background-image: url(/YG.Ent/이미지/와이지셀렉터-블랙핑크3.jpg);
     /* background-size: cover; */
     background-size: 100% 100%;
 }
-.select .sel_menu > div:nth-child(1) .swiper-slide .s_two .gright > p:nth-child(1) {
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_two .gright > a:first-child p {
     height: 80%;
     width: 100%;
-    background-image: url(/YG.Ent/이미지/와이지셀렉터-블랙핑크2.jpg);
+    background-image: url(/YG.Ent/이미지/와이지셀렉터-트레저3.jpg);
     /* background-size: cover; */
     background-size: 100% 100%;
 }
-.select .sel_menu > div:nth-child(1) .swiper-slide .s_thr .gright > p:nth-child(1) {
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_thr .gright > a:first-child p {
     height: 80%;
     width: 100%;
-    background-image: url(/YG.Ent/이미지/와이지셀렉터-트레저.jpg);
+    background-image: url(/YG.Ent/이미지/와이지셀렉터-트레저2.jpg);
     /* background-size: cover; */
     background-size: 100% 100%;
 }
@@ -1970,6 +1983,7 @@ header .snb_m .black:hover{
 }
 .audition .inner_3 .no_right1 > div > div {
     word-break: keep-all;
+    margin-top: 20px;
 }
 .audition .inner_3 .ap_left1::after{
     content: "";
@@ -2006,7 +2020,7 @@ header .snb_m .black:hover{
     color: #785928;
     text-shadow: 3px 0px 0px #2B2801;
 }
-.audition .inner_3 .no_right1 
+/* .audition .inner_3 .no_right1  */
 
 /* ----------------------어바웃 와이지----------------- */
 
