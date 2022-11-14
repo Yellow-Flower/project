@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
         
-            
+             
 * { 
     margin: 0;
     padding: 0;
@@ -1024,11 +1024,12 @@ header .snb_m .black:hover{
     box-shadow: 0px 4px 4px rgba(26, 25, 25, 0.5);
     position: absolute;
     right: 5%;
-    bottom: 5%;
+    bottom: 3%;
     padding: 20px;
     /* font-weight: bold; */
     font-size: 15px;
-    color: #fff
+    color: #fff;
+    font-family: 'IBM Plex Sans KR', sans-serif;
 }
 .actors .sec1_2 .proflie .box2:nth-child(1) .name::before {
     top: -36.5%;
@@ -1036,8 +1037,8 @@ header .snb_m .black:hover{
     transform: rotate(90deg);
 }
 .actors .text_box1 {
-    width: 434px;
-    height: 200px;
+    width: 25%;
+    height: 220px;
     border: 1px solid #fff;
     filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
     padding: 22px 15px;
@@ -1046,7 +1047,7 @@ header .snb_m .black:hover{
     gap: 13PX;
     position: absolute;
     left: 5%;
-    bottom: 10%;
+    bottom: 3%;
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
 .actors .sec1_2 .text_box1 h5 {
@@ -1064,21 +1065,6 @@ header .snb_m .black:hover{
     flex-direction: row;
     height: 100%;
 
-}
-.actors .text_box1 {
-    /* width: 434px;
-    height: 200px; */
-    width: 25%;
-    height: 220px;
-    border: 1px solid #fff;
-    padding: 22px 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 13PX;
-    position: absolute;
-    left: 5%;
-    bottom: 10%;
-    font-family: 'IBM Plex Sans KR', sans-serif;
 }
 .actors .sec1_2 .text_box1 h5 {
     font-size: 30px;
@@ -1120,10 +1106,6 @@ header .snb_m .black:hover{
     /* height: 80%; */
 }
 /* ------------------배우 프로필 리스트-------- */
-.actors .sec1_2 .proflie .photo .text_box3 {
-    /* font-family: Kanit, sans-serif; */
-    font-family: 'IBM Plex Sans KR', sans-serif;
-}
 .actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1){
     display: flex;
     /* justify-content: space-between; */
@@ -1212,6 +1194,28 @@ header .snb_m .black:hover{
     color: #Ffff;
     /* background-color: rgba(1, 2, 8, 0.2); */
 }
+.actors .sec1_2 .proflie .photo > div:last-child{
+    height: 100px;
+    position: absolute;
+    left: 32%;
+    bottom: -5%;
+}
+.actors .sec1_2 .proflie .photo > div:last-child a{
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 5px;
+}
+.actors .sec1_2 .proflie .photo > div:last-child a:hover{
+    font-size: 25px;
+    color: #000
+}
+/* ----------------------배우 : 차승원-------------------------- */
+.actors.cha .actors_right .proflie .photo {
+    background-image: url(/YG.Ent/이미지/배우/차승원_1.png);
+}
+.actors.cha .sec1_2 .proflie .back{
+    background-color: rgb(252 252 244 0.5);
+}
 /* ------------------------스와이퍼 수정하기--------------------- */
 .swiper-button-next:after {
     color: #fff;
@@ -1235,7 +1239,7 @@ header .snb_m .black:hover{
 .text_box3 .album_list .swiper-button-next {
     right: 45%;
     top: unset;
-    bottom: -22px;
+    bottom: -8px;
 }
 .TREASURE .text_box3 .album_list .swiper-button-next {
     bottom: -1%;
@@ -2070,12 +2074,15 @@ header .snb_m .black:hover{
 }
 .aboutyg .ab_box {
     /* width: 1300px; */
-    width: 50%;
+    width: 80%;
     /* height: 600px; */
     height: 70%;
     outline: 1px solid #fff;
     display: flex;
     margin: 7% auto;
+}
+.aboutyg .ab_box.ir{
+    width: 50%;
 }
 .aboutyg .ab_box > .yg_sym {
     /* width: 300px; */
@@ -2118,14 +2125,14 @@ header .snb_m .black:hover{
 .aboutyg .ab_box .introduction .shapes > div:nth-child(1) {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: space-between;
     align-items: center;
     width: 28%;
     height: 100%;
 }
 .aboutyg .ab_box .introduction .shapes > div > div {
     width: 100%;
-    height: 20%;
+    height: 10%;
 }
 .aboutyg .ab_box .introduction .shapes img {
     width: 70%;
@@ -2168,7 +2175,7 @@ header .snb_m .black:hover{
 .aboutyg .ab_box .introduction .shapes > div:nth-child(3) {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: space-between;
     align-items: center;
     width: 28%;
     height: 100%;
@@ -2181,7 +2188,7 @@ header .snb_m .black:hover{
 .aboutyg .ab_box .introduction .shapes > div:nth-child(5) {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: space-between;
     align-items: center;
     width: 28%;
     height: 100%;
@@ -2197,7 +2204,7 @@ header .snb_m .black:hover{
 }
 .aboutyg .ab_box .introduction .text_3 {
     /* height: 100px; */
-    height: 50%;
+    height: 40%;
     overflow: auto;
     position: relative;
     /* font-size: 13.2px; */
@@ -2360,25 +2367,11 @@ header .snb_m .black:hover{
     background-color: #fff;
     font-weight: bold;
 }
-.aboutyg .ab_box .j_right > div:nth-child(4) span:nth-child(3){
-    margin-left: -15px;
-    width: 0;
-}
-.aboutyg .ab_box .j_right > div:nth-child(4) span i{
-    font-size: 20px;
-}
-.aboutyg .ab_box .j_right > div:nth-child(4) span .fa-caret-up{
-    display: none;
-}
-.aboutyg .ab_box .j_right > div:nth-child(4) span .fa-caret-up.up{
-    display: block;
-}
-.aboutyg .ab_box .j_right > div:nth-child(4) span .fa-caret-down{
-    display: none;
-}
-.aboutyg .ab_box .j_right > div:nth-child(4) span .fa-caret-down.down{
-    display: block;
-}
+.up { color: #e74c3c; } 
+.up::before { content: "\25B4"; } 
+.down { color: #3498db; } 
+.down::before { content: "\25BE"; } 
+
 /* -------------- */
 .aboutyg .ab_box .news {
     width: 50%;
@@ -2457,12 +2450,14 @@ header .snb_m .black:hover{
 }
 .aboutyg .ab_box .yg_notice > div > .notice_but {
     display: flex;
-    height: 10%;
+    align-items: center;
+    /* height: 10%; */
 }
 .aboutyg .ab_box .yg_notice > div > .notice_but > p{
     color: black;
     background-color: #fff;
     padding: 5px 10px;
+    height: 100%;
 }
 .aboutyg .ab_box .yg_notice > div > .notice_but > p.on{
     color: #fff;

@@ -1,4 +1,4 @@
-// -------------------전체 상위 메뉴-------------
+// -------------------셀렉트 메뉴 열기-------------
 $(".select li").click(function () {
   var num = $(this).index();
   $(this).addClass("on").siblings().removeClass("on");
@@ -126,7 +126,7 @@ $(".gnb li").click(function () {
   $(".snb_m").eq(num2).addClass("on").siblings().removeClass("on");
 });
 
-// -----------------닫기------------------------
+// -----------------메뉴 닫기------------------------
 $(".gnb span").click(function () {
   $(".menu").removeClass("on");
   $(".snb_m").removeClass("on");
@@ -289,22 +289,6 @@ var swiper8 = new Swiper(".instagram", {
   observeParents: true,
 });
 // ----------------------홈페이지 전체 슬라이드-------------
-// var swiper9 = new Swiper(".homepage", {
-//   direction: "vertical",
-//   slidesPerView: 1,
-//   mousewheel: true,
-//   observer: true,
-//   observeParents: true,
-//   on: {
-//     slideChange: function () {
-//       if (this.realIndex > 3) {
-//         $("#up").addClass("on");
-//       } else {
-//         $("#up").removeClass("on");
-//       }
-//     },
-//   }
-// });
 var swiper9 = new Swiper(".homepage", {
   direction: "vertical",
   slidesPerView: 1,
@@ -451,11 +435,6 @@ $(document).resize(function () {
       $(".down").toggle();
       $(".up").toggle();
     });
-    // $(".name > *").hide();
-    // $(".name > h1").show();
-    // $(".introduction").mCustomScrollbar({
-    //   theme: "rounded"
-    // });
     $(".box2").click(function () {
       $(this).addClass("on").siblings().removeClass("on");
     });
@@ -536,11 +515,11 @@ fetch(publicAPIurl)
       if (yesterStock.vs > 0) {
           //상승
           vs.innerText = yesterStock.vs;
-          vs.classList.add('up');
+          vs.classList.add('up').addClass('.fa-caret-up').removeClass('.fa-caret-down');
       } else {
           //하락
           vs.innerText = yesterStock.vs;
-          vs.classList.add('down');
+          vs.classList.add('down').addClass('.fa-caret-down').removeClass('.fa-caret-up');
       }
       // 등락비율
       if (yesterStock.fltRt > 0) {
