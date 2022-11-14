@@ -1194,27 +1194,24 @@ header .snb_m .black:hover{
     color: #Ffff;
     /* background-color: rgba(1, 2, 8, 0.2); */
 }
-.actors .sec1_2 .proflie .photo > div:last-child{
-    height: 100px;
-    position: absolute;
-    left: 32%;
-    bottom: -5%;
-}
-.actors .sec1_2 .proflie .photo > div:last-child a{
-    font-size: 25px;
-    color: rgba(255, 255, 255, 0.7);
-    margin-right: 5px;
-}
-.actors .sec1_2 .proflie .photo > div:last-child a:hover{
-    font-size: 25px;
-    color: #000
-}
 /* ----------------------배우 : 차승원-------------------------- */
 .actors.cha .actors_right .proflie .photo {
     background-image: url(/YG.Ent/이미지/배우/차승원_1.png);
 }
 .actors.cha .sec1_2 .proflie .back{
-    background-color: rgb(252 252 244 0.5);
+    background-color: rgb(245, 210, 170, 0.5);
+}
+.actors .text_box1{
+    background-color: rgb(162, 161, 147, 0.4);
+}
+.actors.cha .sec1_2 .text_box1 h5{
+    color: #000;
+}
+.actors.cha .sec1_2 .text_box1 p{
+    color: #000;
+}
+.actors.cha .sec1_2 .proflie .photo .text_box3{
+    color: #000;
 }
 /* ------------------------스와이퍼 수정하기--------------------- */
 .swiper-button-next:after {
