@@ -90,10 +90,10 @@ header a {
     height: 86.94px; */
     height: 10vh;
     /* width: 100%; */
-    width: 150px;
+    width: 15%;
     margin: 0 auto;
     position: relative;
-    left: 4.5rem;
+    left: 5rem;
     cursor: pointer;
 }
 header .button{
@@ -1745,8 +1745,8 @@ header .snb_m .black:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-between;
+    /* gap: 40px; */
     margin: 25px 0 0 0;
     border: 1.5px solid #000000;
     padding: 50px;
@@ -1754,7 +1754,7 @@ header .snb_m .black:hover{
 }
 .audition .inner_3 .ap_right1 .swiper {
     width: 100%;
-    height: 100%;
+    height: 75%;
 }
 .audition .inner_3 .ap_right1 .ins_page{
     /* width: 430px;
@@ -1774,6 +1774,7 @@ header .snb_m .black:hover{
 .audition .inner_3 .ap_right1 .ins_page div:nth-child(2){
     padding: 0 15px;
     height: 10%;
+    margin-bottom: 5px;
 }
 .audition .inner_3 .ap_right1 .ins_page div:nth-child(4){
     padding: 0 15px;
@@ -1786,12 +1787,14 @@ header .snb_m .black:hover{
 }
 .audition .inner_3 .ap_right1 > div:last-child{
     width: 100%;
-    height: 85px;
+    height: 20%;
 }
 .audition .inner_3 .ap_right1 > div:last-child p{
     /* width: 430px;
     height: 85px; */
-    line-height: 85px;
+    /* line-height: 85px; */
+    /* height: 100%; */
+    padding: 8%;
     background-color: black;
     /* outline: 1px solid black; */
     border-radius: 15px;
@@ -1803,6 +1806,9 @@ header .snb_m .black:hover{
 }
 .audition .inner_3 .ap_right1 > div:last-child a{
     text-decoration: none;
+    display: block;
+    height: 100%;
+
 }
 .audition .inner_3 .ap_right1 .ap_head {
     display: flex;
@@ -2104,6 +2110,7 @@ header .snb_m .black:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 
 }
 .aboutyg .ab_box .introduction .shapes > div:nth-child(1) {
@@ -2112,12 +2119,14 @@ header .snb_m .black:hover{
     /* justify-content: center; */
     align-items: center;
     width: 28%;
+    height: 100%;
 }
-.aboutyg .ab_box .introduction .shapes div:nth-child(1) div:first-child{
+.aboutyg .ab_box .introduction .shapes > div > div {
+    width: 100%;
     height: 20%;
 }
-.aboutyg .ab_box .introduction .shapes div:nth-child(1) img {
-    width: 100%;
+.aboutyg .ab_box .introduction .shapes img {
+    width: 70%;
     height: 30%;
     margin: 7px 0;
 }
@@ -2141,7 +2150,8 @@ header .snb_m .black:hover{
     /* margin: 0 0 0 10px; */
 }
 .aboutyg .ab_box .introduction .shapes .arrow_size p {
-    font-size: 15px;
+    font-size: 12px;
+    margin: 0 10px;
     text-align: center;
 }
 .aboutyg .ab_box .introduction .shapes .text_size p:first-child {
@@ -2159,9 +2169,10 @@ header .snb_m .black:hover{
     /* justify-content: center; */
     align-items: center;
     width: 28%;
+    height: 100%;
 }
 .aboutyg .ab_box .introduction .shapes div:nth-child(3) img {
-    width: 100%;
+    width: 70%;
     height: 30%;
     margin: 7px 0;
 }
@@ -2171,28 +2182,25 @@ header .snb_m .black:hover{
     /* justify-content: center; */
     align-items: center;
     width: 28%;
+    height: 100%;
 }
 .aboutyg .ab_box .introduction .shapes div:nth-child(5) img {
     /* height: 228px; */
-    width: 100%;
+    width: 80%;
     height: 30%;
     margin: 7px 0;
 }
 .aboutyg .ab_box .introduction > div:last-child {
     display: flex;
-    height: 100%;
 }
-.aboutyg .ab_box .introduction .shapes > div:first-child > div:last-child{
-    height: 50%;
-}
-
 .aboutyg .ab_box .introduction .text_3 {
     /* height: 100px; */
+    height: 50%;
+    overflow: auto;
     position: relative;
     /* font-size: 13.2px; */
     font-size: 0.7rem;
     /* border-right: 1px solid #fff; */
-    overflow: auto;
 }
 .aboutyg .ab_box .introduction .shapes > div:last-child > p::after {
     display: none;
@@ -2201,7 +2209,7 @@ header .snb_m .black:hover{
     /* width: 300px; */
     width: 30%;
     color: #fff;
-    padding: 40px 0 0 40px;
+    padding: 40px 20px;
 }
 .aboutyg .ab_box .page2 > p:first-child {
     font-size: 57px;
@@ -2395,7 +2403,7 @@ header .snb_m .black:hover{
     height: 18%;
 }
 .aboutyg .ab_box .news .news_box > a{
-    width: 20%;
+    width: 18%;
 }
 .aboutyg .ab_box .news .news_box img{
     /* width: 80px;

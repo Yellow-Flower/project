@@ -14,6 +14,7 @@ $(".snb_m:eq(0) li").click(function () {
   });
   var tab1 = $(this).index();
   $(this).addClass("on").siblings().removeClass("on");
+  $(".menu, .snb_m").removeClass("on");
   $(".art_tab > div").eq(tab1).stop(true).show().siblings(".art_tab > div").hide();
 });
 $(".art_tab:first").addClass("on").show();
@@ -22,6 +23,7 @@ $(".snb_m:eq(1) li").click(function () {
   var tab2 = $(this).index();
   $(this).addClass("on").siblings().removeClass("on");
   swiper9.slideTo(1, 300);
+  $(".menu, .snb_m").removeClass("on");
   $(".act_tab > div").eq(tab2).stop(true).show().siblings(".act_tab > div").hide();
 });
 $(".act_tab:first").addClass("on").show();
@@ -30,7 +32,7 @@ $(".snb_m:eq(2) li").click(function () {
   var tab3 = $(this).index();
   $(this).addClass("on").siblings().removeClass("on");
   swiper9.slideTo(2, 300);
-  // $(".slide0-3").show().siblings().hide();
+  $(".menu, .snb_m").removeClass("on");
   $(".sel_menu > div").eq(tab3).stop(true).show().siblings().hide();
   $(".sel_tab li").eq(tab3).stop(true).addClass("on").siblings().removeClass("on");
 });
@@ -48,7 +50,7 @@ $(".snb_m:eq(3) li").click(function () {
       swiper6.slideTo(1, 300);
       break;
   }
-  // $(".au_tab").eq(tab4).stop(true).addClass("on").siblings().removeClass("on");
+  $(".menu, .snb_m").removeClass("on");
 });
 $(".au_tab:first").addClass("on").show();
 
@@ -70,6 +72,7 @@ $(".snb_m:eq(4) li").click(function () {
       swiper7.slideTo(3, 300);
       break;
   }
+  $(".menu, .snb_m").removeClass("on");
 });
 $(".yg_tab:first").addClass("on").show();
 

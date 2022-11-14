@@ -1,5 +1,5 @@
 @charset "UTF-8";
-             
+              
 /* ----------------------------------로그인창--------------- */
 header .login_page > div{
     width: 300px;
@@ -329,7 +329,7 @@ header .login_page > div > div:last-child{
     width: 100%;
     height: 100%;
 }
-.aboutyg .ab_box .introduction .shapes div:nth-child(1) img {
+/* .aboutyg .ab_box .introduction .shapes div:nth-child(1) img {
     width: 100%;
     height: 100%;
 }
@@ -340,7 +340,7 @@ header .login_page > div > div:last-child{
 .aboutyg .ab_box .introduction .shapes div:nth-child(5) img{
     width: 100%;
     height: 100%;
-}
+} */
 .aboutyg .ab_box .introduction .shapes .arrow_size p {
     font-size: 12px;
 }
