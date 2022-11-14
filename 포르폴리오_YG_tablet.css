@@ -13,6 +13,9 @@ header .login_page > div > div:last-child{
     font-size: 13px; 
 }
 /* ----------------------------------아티스트 페이지2--------------- */
+.body .MV video{
+    width: 100%;
+}
 .sec1_2 .proflie .photo{
     width: 100%;
 }
@@ -279,9 +282,9 @@ header .login_page > div > div:last-child{
 .audition .inner_3 .no_right1 > div p:nth-child(1){
     font-size: 2rem;
 }
-.audition .inner_3 .ap_right1 > div:last-child p {
+/* .audition .inner_3 .ap_right1 > div:last-child p {
     line-height: 75px;
-}
+} */
 
 .audition .inner_3 .no_right1 > div p:nth-child(2){
     font-size: 2rem;

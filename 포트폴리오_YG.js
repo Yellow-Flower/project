@@ -256,19 +256,16 @@ var swiper5 = new Swiper(".album-slide", {
     },
   },
 });
-
 var swiper6 = new Swiper(".about_audition", {
   effect: "flip",
   grabCursor: true,
   pagination: {
-    el: ".ad_sw.swiper-pagination",
+    el: ".swiper-pagination",
   },
   navigation: {
-    nextEl: ".ad_sw.swiper-button-next",
-    prevEl: ".ad_sw.swiper-button-prev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
-  observer: true,
-  observeParents: true,
 });
 
 var swiper7 = new Swiper(".yg_slide", {
