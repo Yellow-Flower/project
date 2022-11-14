@@ -2070,7 +2070,7 @@ header .snb_m .black:hover{
 }
 .aboutyg .ab_box {
     /* width: 1300px; */
-    width: 80%;
+    width: 50%;
     /* height: 600px; */
     height: 70%;
     outline: 1px solid #fff;
@@ -2310,7 +2310,7 @@ header .snb_m .black:hover{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 50%;
+    width: 100%;
     font-family: 'Krub', sans-serif;
     padding: 40px 50px;
     color: #fff;
@@ -2335,11 +2335,11 @@ header .snb_m .black:hover{
     color: black;
     background-color: #fff;
     padding: 5px;
-    width: 90%;
+    /* width: 90%; */
 }
 .aboutyg .ab_box .j_right > div:nth-child(4){
     border: 1px solid #fff;
-    width: 90%;
+    /* width: 90%; */
 }
 .aboutyg .ab_box .j_right > span:nth-child(4){
     font-size: 10px;
