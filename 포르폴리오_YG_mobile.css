@@ -733,11 +733,19 @@ header .login_page > div {
 .aboutyg .ab_box .introduction .shapes > div > div{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100%;
 }
 .aboutyg .ab_box .introduction .shapes > div:nth-child(1){
     /* flex-direction: row; */
     width: 100%;
+}
+.aboutyg .ab_box .introduction .shapes div:nth-child(1) span:first-child{
+    font-size: 14px;
+}
+.aboutyg .ab_box .introduction .shapes div:nth-child(1) span:last-child{
+    font-size: 10px;
 }
 .aboutyg .ab_box .introduction .shapes div:nth-child(1) img{
     width: 40%;
@@ -759,9 +767,9 @@ header .login_page > div {
     width: 40%;
     height: 100%;
 }
-/* .aboutyg .ab_box .introduction .shapes .arrow_size{
-    color:black;
-} */
+.aboutyg .ab_box .introduction .shapes > div > div:first-child{
+    height: 100%;
+}
 .aboutyg .ab_box .introduction .shapes .arrow_size i{
     transform: rotate(90deg);
     -webkit-text-stroke: 1px #fff;
@@ -812,22 +820,27 @@ header .login_page > div {
 }
 .aboutyg .ab_box .news .news_box{
     width: 100%;
+    height: 30%;
 }
 .aboutyg .ab_box .news .news_box > a{
     width: 10%;
-    /* width: 45px; */
-    
 }
 .aboutyg .ab_box .news .news_box > div{
+    width: 90%;
     font-size: 0.7rem;
     flex-direction: row;
-    /* padding: 0 10px; */
-    width: 90%;
     justify-content: space-between;
+    align-items: center;
+}
+.aboutyg .ab_box .news .news_box:nth-child(4){
+    display: none;
+}
+.aboutyg .ab_box .news .news_box:nth-child(5){
+    display: none;
 }
 .aboutyg .ab_box .news .news_box > div > a{
-    height:0;
-    margin: 7px 0;
+    height: 30%;
+    /* margin: 7px 0; */
     width: 80%;
 }
 .aboutyg .ab_box .news .news_box > div > a > p{

@@ -2091,7 +2091,7 @@ header .snb_m .black:hover{
     color: #fff;
     padding: 20px;
 }
-.aboutyg .ab_box .introduction .shapes {
+.aboutyg .ab_box .introduction .shapes{
     display: flex;
     justify-content: space-between;
     align-items: center;
