@@ -414,13 +414,10 @@ header .login_page > div {
     /* height: 78vh; */
     padding: 5% 2px;
 }
-.select .sel_menu > div:nth-child(1) .yg_goods > div{
-    height: 5vh;
-}
-.select .sel_menu > div:nth-child(1) .yg_goods > div > p:first-child {
+.select .sel_menu > div:nth-child(1) .yg_goods > div p:first-child{
     font-size: 0.5rem;
 }
-.select .sel_menu > div:nth-child(1) .yg_goods > div > p:last-child {
+.select .sel_menu > div:nth-child(1) .yg_goods > div p:last-child{
     font-size: 0.7rem;
 }
 .select .sel_menu > div:nth-child(1) .swiper-slide .s_one .gleft > p:nth-child(1){
@@ -467,7 +464,12 @@ header .login_page > div {
     font-size: 3em;
     width: 100%;
     height: 15vh;
-    /* height: 30%; */
+    line-height: 15vh;
+}
+.select .sel_menu > div:nth-child(1) .slide > div:nth-child(2) p{
+    font-size: 1.5em;
+    width: 90%;
+    height: 100%;
 }
 .select .sel_menu > div:nth-child(1) .newf{
     flex-direction: column;
@@ -483,6 +485,36 @@ header .login_page > div {
 }
 .select .inner_2 > div:nth-child(2) ul {
     flex-wrap: wrap;
+}
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_one .gleft > a:first-child p{
+    background-repeat: repeat;
+    background-size: contain;
+    width: 100%;
+}
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_two .gleft > a:first-child p{
+    background-repeat: repeat;
+    background-size: contain;
+    width: 100%;
+}
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_thr .gleft > a:first-child p{
+    background-repeat: repeat;
+    background-size: contain;
+    width: 100%;
+}
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_one .gright > a:first-child p{
+    background-repeat: repeat;
+    background-size: contain;
+    width: 100%;
+}
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_two .gright > a:first-child p{
+    background-repeat: repeat;
+    background-size: contain;
+    width: 100%;
+}
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_thr .gright > a:first-child p{
+    background-repeat: repeat;
+    background-size: contain;
+    width: 100%;
 }
 /* ------------------------배우 페이지------------------------ */
 .actors .text_box1 {

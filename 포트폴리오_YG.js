@@ -303,13 +303,21 @@ var swiper9 = new Swiper(".homepage", {
       var slideindex = this.realIndex
       switch (slideindex) {
         case 3 :
-          $("#up").removeClass("on on2").addClass("on");
+          $("#up").removeClass("on on2 on3").addClass("on");
           break;
         case 4 :
-          $("#up").removeClass("on on2").addClass("on2");
+          var size = this.window(width)
+          switch (size) {
+            case size > 640 :
+              $("#up").removeClass("on on3").addClass("on2");
+            break;
+            case size <= 640 :
+              $("#up").removeClass("on on2").addClass("on3");
+            break;
+          };
           break;
         default :
-        $("#up").removeClass("on on2");
+        $("#up").removeClass("on on2 on3");
       }
       $('video').each(function() {
         this.pause()
@@ -317,17 +325,6 @@ var swiper9 = new Swiper(".homepage", {
     },
   }
 });
-// let [x, y] = [0, 0]
-// const[left, up, right, down] = [37, 38, 39, 40];
-
-// $(document.body).addEventListener('keydown', (event) => {
-//   switch(event.keyCode){
-//     case down : y -= 1;
-//       break;
-//     case up : y += 1;
-//       break;
-//   }
-// });
 // --------------------------------가수 앨범 속 리스트 슬라이드-----------------
 var swiper10 = new Swiper(".list_silde", {
   slidesPerView: 3,
