@@ -895,7 +895,7 @@ header .snb_m .black:hover{
     flex-direction: column;
     gap: 8px; */
     width: 80%;
-    height: 80%;
+    height: 75%;
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper {
     width: 100%;
@@ -1113,8 +1113,7 @@ header .snb_m .black:hover{
 }
 .actors .sec1_2 .proflie .photo .text_box3 .album_list {
     width: 100%;
-    height: 90%;
-    /* height: 650px; */
+    height: 80%;
 }
 .actors .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide {
     height: 30px;
@@ -1225,7 +1224,7 @@ header .snb_m .black:hover{
 .text_box3 .album_list .swiper-button-next {
     right: 45%;
     top: unset;
-    bottom: -8px;
+    bottom: -3%;
 }
 .TREASURE .text_box3 .album_list .swiper-button-next {
     bottom: -1%;
@@ -1233,7 +1232,7 @@ header .snb_m .black:hover{
 .actors .text_box3 .album_list .swiper-button-next {
     right: 45%;
     top: unset;
-    bottom: 0px;;
+    bottom: -30px;
 }
 .text_box3 .album_list .swiper-button-prev:after{
     display: none;
@@ -1343,7 +1342,7 @@ header .snb_m .black:hover{
 .select .inner_2 > div:nth-child(1) p{
     color: #fff;
     /* font-size: 56px; */
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-family: 'Fugaz One', 'Kanit', sans-serif;
     /* margin: 0 0 10px 20px; */
     margin: 0 auto;
@@ -1678,7 +1677,7 @@ header .snb_m .black:hover{
     margin: 0 0 10px 20px; */
     color: #fff;
     /* font-size: 56px; */
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-family: 'Fugaz One', 'Kanit', sans-serif;
     /* margin: 0 0 10px 20px; */
     margin: 0 auto;
@@ -2367,6 +2366,9 @@ header .snb_m .black:hover{
     width: 20%;
     height: 90%;
 }
+.aboutyg .ab_box .j_right  > div:last-child > div:last-child{
+    margin-top: -1px;
+}
 .up { color: #e74c3c; } 
 .up::before { content: "\25B4"; } 
 .down { color: #3498db; } 
@@ -2501,7 +2503,7 @@ header .snb_m .black:hover{
 .aboutyg > div:nth-child(1){
     color: #fff;
     /* font-size: 56px; */
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-family: 'Fugaz One', 'Kanit', sans-serif;
     /* margin: 0 0 10px 20px; */
     margin: 0 auto;
@@ -2535,12 +2537,7 @@ header .snb_m .black:hover{
 #up.on2{
     opacity: 1;
     visibility: visible;
-    bottom: 11%;
-}
-#up.on3{
-    opacity: 1;
-    visibility: visible;
-    bottom: 17%;
+    bottom: 6%;
 }
 footer {
     height: 5vh;
