@@ -1,5 +1,5 @@
 @charset "UTF-8";
-              
+               
 /* ---------------------------------메인메뉴--------------- */
 /* ---------------------------------로그인창--------------- */
 header .login_page{
@@ -412,7 +412,7 @@ header .login_page > div {
     line-height: 30px;
 }
 .select .inner_2 .sel_menu .goodsgrid{
-    height: 60vh;
+    height: 100%;
     /* height: 78vh; */
     padding: 5% 2px;
 }

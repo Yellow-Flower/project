@@ -5,12 +5,12 @@ $(".select li").click(function () {
     $(".sel_menu > div").eq(num).stop(true).show().siblings().hide();
 });
 $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
-
+ 
 // --------------------------------하위 메뉴 클릭시 페이지 이동 ☆ p.469 each메서드 참고해서 간략하게 줄이기-------------------
 $(".snb_m:eq(0) li").click(function () {
     // swiper9.slideTo(0, 300);
     $("html, body").animate({
-        scrollTop: $('.art_tab').offset().top - 93
+        scrollTop: 0
     }, 1000);
     $('video').each(function () {
         this.pause();
@@ -96,33 +96,10 @@ $(".yg_tab:first").addClass("on").show();
 $('#up, header > a').click(function () {
     // swiper9.slideTo(0);
     $("html, body").animate({
-        scrollTop: $('.homepage').offset().top
+        scrollTop: 0
     }, 1000);
     return flase;
 });
-
-// $(".history").mCustomScrollbar({
-//   theme: "rounded"
-// });
-// $(".ac_scroll").mCustomScrollbar({
-//   theme: "light-3"
-// });
-// $(".actor_menu").mCustomScrollbar({
-//   theme: "dark-2"
-// });
-// $(".text_box1 > p").mCustomScrollbar({
-//   theme: "light-2"
-// });
-// $(".info").mCustomScrollbar({
-//   theme: "light-2"
-// });
-// $(".notice_YG").mCustomScrollbar({
-//   theme: "minimal"
-// });
-// $(".text_3").mCustomScrollbar({
-//   theme: "minimal"
-// });
-
 // --------------------공지사항-----------------------------
 $(".notice_but > p ").click(function () {
     var num3 = $(this).index();
@@ -233,7 +210,7 @@ var swiper4 = new Swiper(".goodsgrid", {
         prevEl: ".b .swiper-button-prev",
     },
     breakpoints: {
-        640: {
+        641: {
             slidesPerView: 6,
             spaceBetween: 30,
             grid: {

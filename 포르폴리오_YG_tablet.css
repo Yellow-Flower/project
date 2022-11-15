@@ -1,5 +1,5 @@
 @charset "UTF-8";
-               
+                
 /* ----------------------------------로그인창--------------- */
 header .login_page > div{
     width: 300px;
@@ -173,7 +173,7 @@ header .login_page > div > div:last-child{
 }
 .select .inner_2 .sel_menu .goodsgrid{
     /* height: 500px; */
-    height: 66vh;
+    height: 100%;
     padding: 5% 0;
 } 
 /* .select .inner_2 .sel_menu .goodsgrid .swiper-slide {

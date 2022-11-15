@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
-         
+          
              
 * { 
     margin: 0;
@@ -24,7 +24,8 @@ body{
 /* css 스크롤바 커스텀 */
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 2px;
+    height: 2px;
   }
   
   /* Track */
@@ -56,28 +57,16 @@ body{
     height: 100%;
 }
 .homepage .art_tab > div:first-child{ display: block; }
-/* .homepage .art_tab.on{
-    display: block;
-}
+
 .homepage .act_tab{
     height: 100%;
+}
+.homepage .act_tab > div{
     display: none;
+    height: 100%;
 }
-.homepage .act_tab.on{
-    display: block;
-}
-.homepage .au_tab{
-    display: none;
-}
-.homepage .au_tab.on{
-    display: block;
-}
-.homepage .yg_tab{
-    display: none;
-}
-.homepage .yg_tab.on{
-    display: block;
-} */
+.homepage .act_tab > div:first-child{ display: block; }
+
 /* ------------------------------------------------- */
 .mainfont1 {
     font-family: 'Fugaz One', cursive;
@@ -482,7 +471,7 @@ header .snb_m .black:hover{
     background-repeat: no-repeat;
     background-size: 100%;
     width: 1026px;
-    height: 855px;
+    height: 100%;
     margin: 0 auto;
 }
 .winner .sec1_2 .proflie .photo {
@@ -1291,15 +1280,8 @@ header .snb_m .black:hover{
 
 }
 .select > div {
-    /* height: 100px; */
-    height: 95vh;
+    height: 100vh;
 }
-/* .select .inner_2 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
 .select .inner_2 > div:nth-child(2) {
     /* height: 80px; */
     height: 10vh;
@@ -1392,18 +1374,43 @@ header .snb_m .black:hover{
     /* background-color: #fff; */
 }
 .select .inner_2 .sel_menu > .b{
-    height: 66vh;
+    display: none;
+    height: 67vh;
     width: 100%;
     background-color: #fff;
-    padding: 5%;
+    padding: 0 5%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-/* .select .inner_2 .sel_menu > .b > .goodsgrid > .swiper-wrapper >.swiper-slide{
-    margin-bottom: 5px;
-} */
+.select .inner_2 .sel_menu .tech{
+    display: none;
+}
+.select .inner_2 .sel_menu .CHEERING{
+    display: none;
+}
+.select .inner_2 .sel_menu .MUSIC{
+    display: none;
+}
+.select .inner_2 .sel_menu .FASHION{
+    display: none;
+}
+.select .inner_2 .sel_menu .tech{
+    display: none;
+}
+.select .inner_2 .sel_menu .ACC{
+    display: none;
+}
+.select .inner_2 .sel_menu .STATIONERY{
+    display: none;
+}
+.select .inner_2 .sel_menu .MAGAZINES{
+    display: none;
+}
+.select .inner_2 .sel_menu .ETC{
+    display: none;
+}
 .select .inner_2 .sel_menu .goods{
     height: 62vh;
     width: 100%;
@@ -1542,11 +1549,8 @@ header .snb_m .black:hover{
 }
 .select .inner_2 .sel_menu .goodsgrid {
     width: 100%;
-    /* height: 600px; */
-    height: 66vh;
+    height: 100%;
     padding: 0 2px 2% 2px;
-    /* padding: 0 5%; */
-
 }
 .select .inner_2 .sel_menu .goodsgrid .swiper-slide {
     /* height: calc((100% - 30px) / 2) !important; */
@@ -1564,12 +1568,6 @@ header .snb_m .black:hover{
     justify-content: space-between;
     align-items: center;
 }
-/* .select .inner_2 .sel_menu .g_pic p{
-    height: 30%;
-}
-.select .inner_2 .sel_menu .g_pic .sale{
-    height: 10%;
-} */
 .select .inner_2 .sel_menu .g_pic > div:first-child {
     height: 60%;
     border: 1px solid black;
