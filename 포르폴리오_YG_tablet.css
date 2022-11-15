@@ -253,7 +253,6 @@ header .login_page > div > div:last-child{
 .audition .inner_3 .ap_left1{
     width: 40%;
 }
-
 .audition .inner_3 .ap_left1 div > p:nth-child(2) {
     font-size: 26px;
 }
@@ -273,26 +272,16 @@ header .login_page > div > div:last-child{
 }
 .audition .inner_3 .no_right1{
     width: 40%;
-    justify-content: flex-start;
-}
-.audition .inner_3 .no_right1 > div > p{
-    width: 150px;
-    height: 150px;
 }
 .audition .inner_3 .no_right1 > div p:nth-child(1){
     font-size: 2rem;
 }
-/* .audition .inner_3 .ap_right1 > div:last-child p {
-    line-height: 75px;
-} */
-
 .audition .inner_3 .no_right1 > div p:nth-child(2){
     font-size: 2rem;
 }
 .audition .inner_3 .no_right1 > div > div{
-    /* width: 80%; */
     word-break: keep-all;
-    padding: 0 5%;
+    /* padding: 0 5%; */
 }
 .audition .inner_3 .ap_right1 .ap_head > p:nth-child(1) {
     background-size: 100px 14px;
@@ -301,7 +290,6 @@ header .login_page > div > div:last-child{
     height: 20px;
     line-height: 20px;
 }
-
 .audition .inner_3 .ap_right1 .ap_head > p:nth-child(3){
     width: 20px;
     height: 20px;

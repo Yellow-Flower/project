@@ -558,6 +558,10 @@ header .login_page > div {
     display: block;
     font-size: 20px;
 }
+/* ------------------------배우 : 차승원----------------------------- */
+.actors.cha .actors_right .proflie .photo{
+    background-position: top;
+}
 /* ------------------------오디션 페이지------------------------ */
 .audition > div:first-child{
     height: 4vh;
@@ -587,6 +591,9 @@ header .login_page > div {
 }
 .audition .inner_3 .ap_left1::after{
     display: none;
+}
+.audition .inner_3 .no_left1 .au_notice{
+    height: 40%;
 }
 .audition .inner_3 .no_left1 .au_notice > div:first-child span {
     font-size: 20px;
@@ -679,6 +686,7 @@ header .login_page > div {
 .aboutyg .ab_box .introduction .shapes > div > div{
     display: flex;
     flex-direction: column;
+    height: 30%;
 }
 .aboutyg .ab_box .introduction .shapes > div:nth-child(1){
     /* flex-direction: row; */
@@ -725,69 +733,24 @@ header .login_page > div {
     padding: 20px 0 0 20px;
 }
 .aboutyg .ab_box .page2 > p:first-child {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     height: 70%;
 }
 .aboutyg .ab_box .page2 > p:last-child{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     height: 30%;
 }
 .aboutyg .ab_box .history {
     width: 100%;
     height: 80%;
+    font-size: 0.9rem;
 }
 .aboutyg .ab_box .history .sentence .text_small{
     margin: 0;
-}
-.aboutyg .ab_box .j_left{
-    width: 100%;
-    /* height: 50%; */
-}
-.aboutyg .ab_box .j_left > p{
-    font-size: 1.2rem;
-}
-.aboutyg .ab_box .j_left > div{
     font-size: 0.9rem;
-
 }
-.aboutyg .ab_box .j_left .table_menu:hover{
-   text-decoration: underline;
-}
-.aboutyg .ab_box .j_left > div > .table_menu > span {
-    display: inline;
-    font-size: 15px;
-}
-.aboutyg .ab_box .j_right{
-    width: 100%;
-    height: 50%;
-}
-.aboutyg .ab_box .j_right .graph{
-    margin-top: 10px;
-}
-.aboutyg .ab_box .j_right .graph > img{
-    display: none
-}
-.aboutyg .ab_box .j_right .graph > div{
-    gap: 0;
-    padding: 0;
-}
-.aboutyg .ab_box .j_right .graph > div img{
-    display: none;
-}
-.aboutyg .ab_box .j_right > p:first-child {
-    font-size: 1.2rem;
-}
-.aboutyg .ab_box .j_right > p:nth-child(2) {
-    font-size: 1rem;
-}
-.aboutyg .ab_box .j_right > p:nth-child(2) > span:last-child {
-    font-size: 0.8rem;
-}
-.aboutyg .ab_box .j_right > div:nth-child(3) {
-    font-size: 12px;
-}
-.aboutyg .ab_box .j_right > div:nth-child(4){
-    font-size: 12px;
+.aboutyg .ab_box.ir{
+    width: 80%;
 }
 .aboutyg .ab_box .news {
     width: 100%;
