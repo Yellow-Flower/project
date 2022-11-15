@@ -303,27 +303,33 @@ var swiper9 = new Swiper(".homepage", {
       var slideindex = this.realIndex
       switch (slideindex) {
         case 3 :
-          $("#up").removeClass("on on2 on3").addClass("on");
+          $("#up").removeClass("on on3").addClass("on");
           break;
         case 4 :
-          var size = this.window(width)
-          switch (size) {
-            case size > 640 :
-              $("#up").removeClass("on on3").addClass("on2");
-            break;
-            case size <= 640 :
-              $("#up").removeClass("on on2").addClass("on3");
-            break;
-          };
+          $("#up").removeClass("on on3").addClass("on3");
           break;
         default :
-        $("#up").removeClass("on on2 on3");
+        $("#up").removeClass("on on3");
       }
       $('video').each(function() {
         this.pause()
       })
     },
-  }
+  },
+  breakpoints: {
+    641: { 
+      slideChange: function () {
+        switch (slideindex) {
+          case 4 :
+            $("#up").removeClass("on on2").addClass("on2");
+            break;
+        }
+        $('video').each(function() {
+          this.pause()
+        })
+      },
+    },
+  },
 });
 // --------------------------------가수 앨범 속 리스트 슬라이드-----------------
 var swiper10 = new Swiper(".list_silde", {

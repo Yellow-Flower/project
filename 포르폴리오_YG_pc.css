@@ -1132,6 +1132,7 @@ header .snb_m .black:hover{
     font-size: 0.9rem;
     text-align: left;
     width: 100%;
+    height: 90%;
 }
 .actors .sec1_2 .proflie .photo .text_box3 .album_list {
     width: 100%;
@@ -1484,7 +1485,7 @@ header .snb_m .black:hover{
     /* padding: 15px 0 0 0; */
 }
 .select .sel_menu > div:nth-child(1) .yg_goods > div p:last-child {
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 .select .sel_menu > div:nth-child(1) .slide > div:nth-child(2){
     /* height: 620px; */

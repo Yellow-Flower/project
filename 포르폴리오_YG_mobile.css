@@ -415,10 +415,10 @@ header .login_page > div {
     padding: 5% 2px;
 }
 .select .sel_menu > div:nth-child(1) .yg_goods > div p:first-child{
-    font-size: 0.5rem;
+    font-size: 0.7rem;
 }
 .select .sel_menu > div:nth-child(1) .yg_goods > div p:last-child{
-    font-size: 0.7rem;
+    font-size: 0.5rem;
 }
 .select .sel_menu > div:nth-child(1) .swiper-slide .s_one .gleft > p:nth-child(1){
     /* height: 130px;
@@ -718,7 +718,7 @@ header .login_page > div {
 .aboutyg .ab_box .introduction .shapes > div > div{
     display: flex;
     flex-direction: column;
-    height: 30%;
+    height: 100%;
 }
 .aboutyg .ab_box .introduction .shapes > div:nth-child(1){
     /* flex-direction: row; */

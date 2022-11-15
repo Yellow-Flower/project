@@ -198,10 +198,12 @@ header .login_page > div > div:last-child{
 .select .sel_menu > div:nth-child(1) .yg_goods > div > p:last-child{
     font-size: 0.8rem;
 }
-/* .select .sel_menu > div:nth-child(1) .slide > div:nth-child(2){
-    font-size: 4em;
-} */
-
+.select .sel_menu > div:nth-child(1) .yg_goods > div p:first-child{
+    font-size: 0.9rem;
+}
+.select .sel_menu > div:nth-child(1) .yg_goods > div p:last-child {
+    font-size: 0.7rem;
+}
 /* ------------------------------배우 페이지---------------------------- */
 .actors .sec1_2 .text_box1 h5 {
     font-size: 25px;
