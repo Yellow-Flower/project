@@ -5,12 +5,12 @@ $(".select li").click(function () {
   $(".sel_menu > div").eq(num).stop(true).show().siblings().hide();
 });
 $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
- 
+
 // --------------------------------하위 메뉴 클릭시 페이지 이동 ☆ p.469 each메서드 참고해서 간략하게 줄이기-------------------
 $(".snb_m:eq(0) li").click(function () {
   swiper9.slideTo(0, 300);
-  $('video').each(function() {
-    this.pause()
+  $('video').each(function () {
+    this.pause();
   });
   var tab1 = $(this).index();
   $(this).addClass("on").siblings().removeClass("on");
@@ -43,10 +43,10 @@ $(".snb_m:eq(3) li").click(function () {
   $(this).addClass("on").siblings().removeClass("on");
   swiper9.slideTo(3, 300);
   switch (tab4) {
-    case 0 :
+    case 0:
       swiper6.slideTo(0, 300);
       break;
-    case 1 :
+    case 1:
       swiper6.slideTo(1, 300);
       break;
   }
@@ -59,16 +59,16 @@ $(".snb_m:eq(4) li").click(function () {
   $(this).addClass("on").siblings().removeClass("on");
   swiper9.slideTo(4, 300);
   switch (tab5) {
-    case 0 :
+    case 0:
       swiper7.slideTo(0, 300);
       break;
-    case 1 :
+    case 1:
       swiper7.slideTo(1, 300);
       break;
-    case 2 :
+    case 2:
       swiper7.slideTo(2, 300);
       break;
-    case 3 :
+    case 3:
       swiper7.slideTo(3, 300);
       break;
   }
@@ -160,12 +160,12 @@ var swiper1 = new Swiper(".artist", {
   },
   observer: true,
   observeParents: true,
-  on : {
-    
-    slideChange : function(){
-      $('video').each(function() {
-        this.pause()
-      })
+  on: {
+
+    slideChange: function () {
+      $('video').each(function () {
+        this.pause();
+      });
     }
   }
 });
@@ -300,34 +300,31 @@ var swiper9 = new Swiper(".homepage", {
   },
   on: {
     slideChange: function () {
-      var slideindex = this.realIndex
+      var slideindex = this.realIndex;
       switch (slideindex) {
-        case 3 :
+        case 3:
           $("#up").removeClass("on on3").addClass("on");
           break;
-        case 4 :
+        case 4:
           $("#up").removeClass("on on3").addClass("on3");
           break;
-        default :
-        $("#up").removeClass("on on3");
+        default:
+          $("#up").removeClass("on on3");
       }
-      $('video').each(function() {
-        this.pause()
-      })
+      $('video').each(function () {
+        this.pause();
+      });
     },
   },
   breakpoints: {
-    641: { 
+    641: {
       slideChange: function () {
         switch (slideindex) {
-          case 4 :
-            $("#up").removeClass("on on2").addClass("on2");
+          case 4:
+            $("#up").removeClass("on on3").addClass("on3");
             break;
         }
-        $('video').each(function() {
-          this.pause()
-        })
-      },
+      }
     },
   },
 });
@@ -473,21 +470,21 @@ function numberWithCommas(x) {
 function numberWithKorean(num) {
   let result = '';
   for (i = 0; i < num.length; i++) {
-      arr = [num.charAt(num.length - (i + 1))]; // for구문을 통해 반복하여 역순으로 배열채우기
-      // console.log(arr);
-      str = '';
-      if (arr != '') str += arr;
-      if (i == 8) str += '억';
-      if (i == 11) str += ',';
-      if (i == 12) str += '조 ';
-      result = str + result;
+    arr = [num.charAt(num.length - (i + 1))]; // for구문을 통해 반복하여 역순으로 배열채우기
+    // console.log(arr);
+    str = '';
+    if (arr != '') str += arr;
+    if (i == 8) str += '억';
+    if (i == 11) str += ',';
+    if (i == 12) str += '조 ';
+    result = str + result;
   }
   if (num != 0) {
-      let clip = result.lastIndexOf('억')
-      result = result.substring(0, clip+1) + '원'; // 억단위에서 절삭
-      
-      let zeroComma = result.search(/0,/gi); // 천억단위에서 0값 및 콤마찾기, 있으면 index 반환
-      if (zeroComma > 0) result = result.replace('0,',''); 
+    let clip = result.lastIndexOf('억');
+    result = result.substring(0, clip + 1) + '원'; // 억단위에서 절삭
+
+    let zeroComma = result.search(/0,/gi); // 천억단위에서 0값 및 콤마찾기, 있으면 index 반환
+    if (zeroComma > 0) result = result.replace('0,', '');
   }
   return result;
 }
@@ -502,36 +499,36 @@ const publicAPIurl = `https://runauxlabs.herokuapp.com/https://api.odcloud.kr/ap
 // RunaUXLabs전용 https://runauxlabs.herokuapp.com/
 // 프록시서버는 클라이언트가 프록시 서버 자신을 통해서 다른 네트워크 서비스에 간접적으로 접속할 수 있게 해 준다. 브라우저와 서버 간의 통신을 도와주는 중계서버라고 생각하면 된다. 
 fetch(publicAPIurl)
-  .then((response) => response.json() )
+  .then((response) => response.json())
   .then(function (data) {
-      let yesterStock = data.response.body.items.item[0]; // 전날 주식정보
+    let yesterStock = data.response.body.items.item[0]; // 전날 주식정보
 
-      itmsNm.innerText = yesterStock.itmsNm; // 종목명
-      srtnCd.innerText = yesterStock.srtnCd; // 종목코드 6자리
-      mrktCtg.innerText = yesterStock.mrktCtg; // 시장구분
-      basDt.innerText = yesterdayKO; // 기준일
-      clpr.innerText = `${numberWithCommas(yesterStock.clpr)}원`; // 전날 종가
-      mrktTotAmt.innerText = numberWithKorean(yesterStock.mrktTotAmt); // 전날 시가총액
-      yesterStock.vs = Number(yesterStock.vs); // 등락금액 숫자변환
-      yesterStock.fltRt = Number(yesterStock.fltRt); // 등락비율 숫자변환
-      // 등락금액
-      if (yesterStock.vs > 0) {
-          //상승
-          vs.innerText = yesterStock.vs;
-          vs.classList.add('up').addClass('.fa-caret-up').removeClass('.fa-caret-down');
-      } else {
-          //하락
-          vs.innerText = yesterStock.vs;
-          vs.classList.add('down').addClass('.fa-caret-down').removeClass('.fa-caret-up');
-      }
-      // 등락비율
-      if (yesterStock.fltRt > 0) {
-          //상승
-          fltRt.innerText =  "(" + yesterStock.fltRt + '%' + ")";
-          fltRt.classList.add('up');
-      } else {
-          //하락
-          fltRt.innerText =  "(" + yesterStock.fltRt + '%' + ")";
-          fltRt.classList.add('down');
-      }
+    itmsNm.innerText = yesterStock.itmsNm; // 종목명
+    srtnCd.innerText = yesterStock.srtnCd; // 종목코드 6자리
+    mrktCtg.innerText = yesterStock.mrktCtg; // 시장구분
+    basDt.innerText = yesterdayKO; // 기준일
+    clpr.innerText = `${numberWithCommas(yesterStock.clpr)}원`; // 전날 종가
+    mrktTotAmt.innerText = numberWithKorean(yesterStock.mrktTotAmt); // 전날 시가총액
+    yesterStock.vs = Number(yesterStock.vs); // 등락금액 숫자변환
+    yesterStock.fltRt = Number(yesterStock.fltRt); // 등락비율 숫자변환
+    // 등락금액
+    if (yesterStock.vs > 0) {
+      //상승
+      vs.innerText = yesterStock.vs;
+      vs.classList.add('up').addClass('.fa-caret-up').removeClass('.fa-caret-down');
+    } else {
+      //하락
+      vs.innerText = yesterStock.vs;
+      vs.classList.add('down').addClass('.fa-caret-down').removeClass('.fa-caret-up');
+    }
+    // 등락비율
+    if (yesterStock.fltRt > 0) {
+      //상승
+      fltRt.innerText = "(" + yesterStock.fltRt + '%' + ")";
+      fltRt.classList.add('up');
+    } else {
+      //하락
+      fltRt.innerText = "(" + yesterStock.fltRt + '%' + ")";
+      fltRt.classList.add('down');
+    }
   });

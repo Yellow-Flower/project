@@ -506,9 +506,7 @@ header .snb_m .black:hover{
     color: #fff;
 }
 .artist .sec1_2 .text_box1 p {
-    font-size: 12px;
-    /* font-size: 0.7rem; */
-    /* font-size: 0.688em; */
+    font-size: 14px;
     color: #fff;
     overflow: auto;
 }
@@ -1056,7 +1054,7 @@ header .snb_m .black:hover{
     color: #fff;
 }
 .actors .sec1_2 .text_box1 p {
-    font-size: 12px;
+    font-size: 14px;
     color: #fff;
     overflow: auto;
 }
@@ -1064,28 +1062,7 @@ header .snb_m .black:hover{
     display: flex;
     flex-direction: row;
     height: 100%;
-
 }
-.actors .sec1_2 .text_box1 h5 {
-    font-size: 30px;
-    text-align: center;
-    color: #fff;
-}
-.actors .sec1_2 .text_box1 p {
-    font-size: 12px;
-    color: #fff;
-}
-.actors .sec1_2 .text_box2 {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-
-}
-/* .actors .sec1_2 .proflie .hee_box_one:nth-child(1) {
-    background-position: 59% 0.5%;
-    width: 50%;
-    margin: 15% 0px 0 30%;
-} */
 .actors .sec1_2 .proflie .hee_box_two:nth-child(1) {
     /* background-position: 59% 0.5%; */
     width: 50%;
@@ -1850,7 +1827,7 @@ header .snb_m .black:hover{
     line-height: 19px;
 }
 .audition .inner_3 .ap_right1 .ins_page > p{
-    width: 100%;
+    width: 101%;
     height: 65%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1859,7 +1836,7 @@ header .snb_m .black:hover{
     /* margin: 0 0 0 -16px; */
     border-top: 1.5px solid black;
     border-bottom: 1.5px solid black;
-    margin: 0 1px;
+    margin: -1px;
 }
 .audition .inner_3 .ap_right1 .instagram .swiper-wrapper > div:nth-child(1) .ins_page > p{
     background-image: url(/YG.Ent/이미지/뉴스/인스타_블랙핑크_1.jpg);
@@ -2130,14 +2107,29 @@ header .snb_m .black:hover{
     width: 28%;
     height: 100%;
 }
-.aboutyg .ab_box .introduction .shapes > div > div {
+.aboutyg .ab_box .introduction .shapes > div > div:first-child {
     width: 100%;
     height: 20%;
 }
-.aboutyg .ab_box .introduction .shapes img {
-    width: 150px;
-    height: 150px;
+.aboutyg .ab_box .introduction .shapes > div:nth-child(3) .text_size{
+    height: 30%;
+}
+.aboutyg .ab_box .introduction .shapes .shape{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40%;
+    width: 100%;
     margin: 7px 0;
+}
+.aboutyg .ab_box .introduction .shapes .sha_one{
+    background-image: url(/YG.Ent/이미지/yg도형_1.png);
+}
+.aboutyg .ab_box .introduction .shapes .sha__two{
+    background-image: url(/YG.Ent/이미지/yg도형_2.png);
+}
+.aboutyg .ab_box .introduction .shapes .sha__thr{
+    background-image: url(/YG.Ent/이미지/yg도형_3.png);
 }
 .aboutyg .ab_box .introduction .shapes div:nth-child(1) span:first-child {
     font-size: 20px;
