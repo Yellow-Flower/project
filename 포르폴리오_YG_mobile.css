@@ -742,20 +742,21 @@ header .login_page > div {
     width: 100%;
     height: 70%;
 }
-.aboutyg .ab_box .introduction .shapes .shape{
-    height: 100px;
-    width: 100%;
-}
-.aboutyg .ab_box .introduction .shapes > div > div{
-    display: flex;
+.aboutyg .ab_box .introduction .shapes > div{
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100%;
 }
-.aboutyg .ab_box .introduction .shapes > div:nth-child(1){
-    /* flex-direction: row; */
-    width: 100%;
+.aboutyg .ab_box .introduction .shapes > div > div:nth-child(1){
+    justify-content: center;
+}
+.aboutyg .ab_box .introduction .shapes > div > div:nth-child(1) > div:first-child{
+    flex-direction: column;
+    height: 30%;
+}.aboutyg .ab_box .introduction .shapes .shape{
+    height: 70%;
+}
+.aboutyg .ab_box .introduction .shapes .arrow_size{
+    width: 50%;
 }
 .aboutyg .ab_box .introduction .shapes div:nth-child(1) span:first-child{
     font-size: 14px;
@@ -768,7 +769,6 @@ header .login_page > div {
     height: 100%;
 }
 .aboutyg .ab_box .introduction .shapes > div:nth-child(3){
-    /* flex-direction: row; */
     width: 100%;
 }
 .aboutyg .ab_box .introduction .shapes div:nth-child(3) img{
@@ -776,7 +776,6 @@ header .login_page > div {
     height: 100%;
 }
 .aboutyg .ab_box .introduction .shapes > div:nth-child(5){
-    /* flex-direction: row; */
     width: 100%;
 }
 .aboutyg .ab_box .introduction .shapes div:nth-child(5) img{
@@ -785,6 +784,9 @@ header .login_page > div {
 }
 .aboutyg .ab_box .introduction .shapes > div > div:first-child{
     height: 100%;
+}
+.aboutyg .ab_box .introduction .shapes > div:last-child > div:first-child{
+    height: 30%;
 }
 .aboutyg .ab_box .introduction .shapes .arrow_size i{
     transform: rotate(90deg);

@@ -327,14 +327,21 @@ header .login_page > div > div:last-child{
     height: 100%;
 }
 .aboutyg .ab_box .introduction .shapes .arrow_size p {
-    font-size: 12px;
+    font-size: 14px;
 }
 .aboutyg .ab_box .introduction .shapes .arrow_size i{
-    font-size: 2rem;
+    font-size: 35px;
+}
+.aboutyg .ab_box .introduction .shapes > div div:nth-child(1) span:first-child {
+    font-size: 22px;
+}
+.aboutyg .ab_box .introduction .shapes > div div:nth-child(1) span:last-child{
+    font-size: 14px;
 }
 .aboutyg .ab_box .introduction .text_3{
+    width: 100%;
     overflow-y: auto;
-    /* height: 200px; */
+    font-size: 14px;
 }
 .aboutyg .ab_box .page2 {
     padding: 20px;

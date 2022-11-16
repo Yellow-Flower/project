@@ -1484,7 +1484,6 @@ header .snb_m .black:hover{
     justify-content: center;
     height: 20%;
     color: #000;
-    padding
 }
 .select .sel_menu > div:nth-child(1) .yg_goods > div p:first-child {
     /* font-size: 30px; */
@@ -2119,31 +2118,37 @@ header .snb_m .black:hover{
     height: 100%;
     display: flex;
     flex-direction: column;
-    
     color: #fff;
-    padding: 20px;
+    padding: 30px 50px;
 }
 .aboutyg .ab_box .introduction .shapes{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: 100%;
-
+    overflow: auto;
+    text-align: center;
 }
-.aboutyg .ab_box .introduction .shapes > div:nth-child(1) {
+.aboutyg .ab_box .introduction .shapes > div{
+    height: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+.aboutyg .ab_box .introduction .shapes > div:last-child{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutyg .ab_box .introduction .shapes > div > div:nth-child(1) {
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 28%;
-    height: 100%;
 }
-.aboutyg .ab_box .introduction .shapes > div > div:first-child {
-    width: 100%;
-    height: 20%;
-}
-.aboutyg .ab_box .introduction .shapes > div:nth-child(3) .text_size{
-    height: 30%;
+.aboutyg .ab_box .introduction .shapes > div > div:nth-child(1) > div:first-child{
+    display: flex;
+    align-items: center;
+    gap:5px
 }
 .aboutyg .ab_box .introduction .shapes .shape{
     background-size: contain;
@@ -2162,28 +2167,28 @@ header .snb_m .black:hover{
 .aboutyg .ab_box .introduction .shapes .sha__thr{
     background-image: url(/YG.Ent/이미지/yg도형_3.png);
 }
-.aboutyg .ab_box .introduction .shapes div:nth-child(1) span:first-child {
-    font-size: 20px;
+.aboutyg .ab_box .introduction .shapes > div div:nth-child(1) span:first-child {
+    font-size: 22px;
     font-weight: bold;
 }
-.aboutyg .ab_box .introduction .shapes div:nth-child(1) span:last-child {
-    font-size: 12px;
+.aboutyg .ab_box .introduction .shapes > div div:nth-child(1) span:last-child {
+    font-size: 15px;
 }
 .aboutyg .ab_box .introduction .shapes .arrow_size {
-    width: 8%;
+    width: 20%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
+    justify-content: center;
 }
 .aboutyg .ab_box .introduction .shapes .arrow_size i {
-    font-size: 2.2rem;
+    font-size: 40px;
     width: 37px;
     margin: 0 0 0 10px;
 }
 .aboutyg .ab_box .introduction .shapes .arrow_size p {
-    font-size: 12px;
-    margin: 0 10px;
+    font-size: 15px;
+    /* margin: 0 10px; */
     text-align: center;
 }
 .aboutyg .ab_box .introduction .shapes .text_size p:first-child {
@@ -2195,7 +2200,7 @@ header .snb_m .black:hover{
     font-size: 12px;
     text-align: center;
 }
-.aboutyg .ab_box .introduction .shapes > div:nth-child(3) {
+.aboutyg .ab_box .introduction .shapes > div > div:nth-child(3) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -2208,37 +2213,20 @@ header .snb_m .black:hover{
     height: 150px;
     margin: 7px 0;
 }
-.aboutyg .ab_box .introduction .shapes > div:nth-child(5) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 28%;
-    height: 100%;
-}
 .aboutyg .ab_box .introduction .shapes div:nth-child(5) img {
-    /* height: 228px; */
     width: 180px;
     height: 150px;
     margin: 7px 0;
 }
-.aboutyg .ab_box .introduction > div:last-child {
-    display: flex;
-}
 .aboutyg .ab_box .introduction .text_3 {
-    /* height: 100px; */
+    width: 80%;
     height: 40%;
     overflow: auto;
     position: relative;
-    /* font-size: 13.2px; */
-    font-size: 0.7rem;
-    /* border-right: 1px solid #fff; */
-}
-.aboutyg .ab_box .introduction .shapes > div:last-child > p::after {
-    display: none;
+    font-size: 16px;
+    text-align: justify;
 }
 .aboutyg .ab_box .page2 {
-    /* width: 300px; */
     width: 30%;
     color: #fff;
     padding: 40px 20px;
@@ -2251,11 +2239,11 @@ header .snb_m .black:hover{
 }
 .aboutyg .ab_box .history {
     color: #fff;
-    padding: 20px;
+    padding: 5%;
     font-size: 24px;
     overflow: auto;
-    /* width: 700px; */
     width: 70%;
+    height: 90%;
 }
 .aboutyg .ab_box .history .sentence {
     display: flex;
