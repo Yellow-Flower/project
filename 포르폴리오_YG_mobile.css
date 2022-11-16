@@ -528,6 +528,9 @@ header .login_page > div {
     background-size: contain;
     width: 100%;
 }
+/* .select .inner_2 .sel_menu .g_pic > div:first-child{
+    height: 50%;
+} */
 /* ------------------------배우 페이지------------------------ */
 .actors .text_box1 {
     /* left: 72%;

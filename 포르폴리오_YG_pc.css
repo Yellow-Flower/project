@@ -1552,7 +1552,7 @@ header .snb_m .black:hover{
 }
 .select .inner_2 .sel_menu .g_pic {
     width: 100%;
-    height: 100%;
+    height: 80%;
     display: flex;
     gap: 5px;
     flex-direction: column;
