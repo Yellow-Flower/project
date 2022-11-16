@@ -410,6 +410,7 @@ $(document).ready(function () {
         });
         
         $(".snb_m:eq(1) li").click(function () {
+            var header = $("header").height()
             $("html, body").animate({
                 scrollTop: $('.act_tab').offset().top - header
             }, 1000);
@@ -417,7 +418,6 @@ $(document).ready(function () {
                 this.pause();
             });
             var tab1 = $(this).index();
-            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $(".menu, .snb_m").removeClass("on");
             $(".act_tab > div").eq(tab1).stop(true).show().siblings(".act_tab > div").hide();
@@ -496,6 +496,7 @@ $(document).ready(function () {
         });
         
         $(".snb_m:eq(1) li").click(function () {
+            var header = $("header").height()
             $("html, body").animate({
                 scrollTop: $('.act_tab').offset().top - header
             }, 1000);
@@ -503,7 +504,6 @@ $(document).ready(function () {
                 this.pause();
             });
             var tab1 = $(this).index();
-            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $(".menu, .snb_m").removeClass("on");
             $(".act_tab > div").eq(tab1).stop(true).show().siblings(".act_tab > div").hide();
@@ -590,6 +590,7 @@ $(document).ready(function () {
         });
         
         $(".snb_m:eq(1) li").click(function () {
+            var header = $("header").height()
             $("html, body").animate({
                 scrollTop: $('.act_tab').offset().top - header
             }, 1000);
@@ -597,7 +598,6 @@ $(document).ready(function () {
                 this.pause();
             });
             var tab1 = $(this).index();
-            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $(".menu, .snb_m").removeClass("on");
             $(".act_tab > div").eq(tab1).stop(true).show().siblings(".act_tab > div").hide();
@@ -679,6 +679,7 @@ $(document).resize(function () {
         });
         
         $(".snb_m:eq(1) li").click(function () {
+            var header = $("header").height()
             $("html, body").animate({
                 scrollTop: $('.act_tab').offset().top - header
             }, 1000);
@@ -686,7 +687,6 @@ $(document).resize(function () {
                 this.pause();
             });
             var tab1 = $(this).index();
-            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $(".menu, .snb_m").removeClass("on");
             $(".act_tab > div").eq(tab1).stop(true).show().siblings(".act_tab > div").hide();
@@ -765,6 +765,7 @@ $(document).resize(function () {
         });
         
         $(".snb_m:eq(1) li").click(function () {
+            var header = $("header").height()
             $("html, body").animate({
                 scrollTop: $('.act_tab').offset().top - header
             }, 1000);
@@ -857,6 +858,7 @@ $(document).resize(function () {
         });
         
         $(".snb_m:eq(1) li").click(function () {
+            var header = $("header").height()
             $("html, body").animate({
                 scrollTop: $('.act_tab').offset().top - header
             }, 1000);
@@ -864,7 +866,6 @@ $(document).resize(function () {
                 this.pause();
             });
             var tab1 = $(this).index();
-            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $(".menu, .snb_m").removeClass("on");
             $(".act_tab > div").eq(tab1).stop(true).show().siblings(".act_tab > div").hide();
