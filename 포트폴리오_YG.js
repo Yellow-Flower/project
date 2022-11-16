@@ -979,7 +979,8 @@ let codeStock = '122870'; // 주식코드
 
 const serviceKey = 'gptlfeF0tckKWZugnRmyvS4wuIp7K2dDyLC9SjDzp%2BIk8HEEiN8OH9m9Xm1%2BH%2FIvBWPxcRBQ8mhpUGvA9n9yVA%3D%3D'; // API인증키
 // 개인계정의 인증키로 활성화된 API입력
-const publicAPIurl = `https://runauxlabs.herokuapp.com/https://api.odcloud.kr/api/GetStockSecuritiesInfoService/v1/getStockPriceInfo?numOfRows=3&resultType=json&likeSrtnCd=${codeStock}&serviceKey=${serviceKey}`;
+const publicAPIurl = `https://api.odcloud.kr/api/GetStockSecuritiesInfoService/v1/getStockPriceInfo?numOfRows=3&resultType=json&likeSrtnCd=122870&serviceKey=gptlfeF0tckKWZugnRmyvS4wuIp7K2dDyLC9SjDzp%2BIk8HEEiN8OH9m9Xm1%2BH%2FIvBWPxcRBQ8mhpUGvA9n9yVA%3D%3D`;
+// const publicAPIurl = `https://api.odcloud.kr/api/GetStockSecuritiesInfoService/v1/getStockPriceInfo?numOfRows=3&resultType=json&likeSrtnCd=${codeStock}&serviceKey=${serviceKey}`;
 // CORS이슈, 외부API를 사용하고 있는 입장에서는 서버를 제어할 수 없으므로 구글링에 나오는 해결법 중 HTTP 응답 헤더인 Access-Control-Allow-Origin 를 설정할 수 없음
 // 프록시 서버를 사용하여 우회하는 방식으로 해결 https://cors-anywhere.herokuapp.com/
 // RunaUXLabs전용 https://runauxlabs.herokuapp.com/
@@ -997,6 +998,10 @@ fetch(publicAPIurl)
         mrktTotAmt.innerText = numberWithKorean(yesterStock.mrktTotAmt); // 전날 시가총액
         yesterStock.vs = Number(yesterStock.vs); // 등락금액 숫자변환
         yesterStock.fltRt = Number(yesterStock.fltRt); // 등락비율 숫자변환
+        lstgStCnt.innerText = yesterStock.lstgStCnt; // 전날 종목의 상장주식수
+        hipr.innerText = yesterStock.hipr; // 전날의 최고가
+        lopr.innerText = yesterStock.lopr; // 전날의 최저가
+
         // 등락금액
         if (yesterStock.vs > 0) {
             //상승

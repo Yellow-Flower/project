@@ -1,0 +1,68 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "NORMAL SERVICE."
+        },
+        "body": {
+            "numOfRows": 3,
+            "pageNo": 1,
+            "totalCount": 710,
+            "items": {
+                "item": [
+                    {
+                        "basDt": "20221115",
+                        "srtnCd": "122870",
+                        "isinCd": "KR7122870009",
+                        "itmsNm": "와이지엔터테인먼트",
+                        "mrktCtg": "KOSDAQ",
+                        "clpr": "41850",
+                        "vs": "850",
+                        "fltRt": "2.07",
+                        "mkp": "41150",
+                        "hipr": "42050",
+                        "lopr": "40900",
+                        "trqu": "368294",
+                        "trPrc": "15326573500",
+                        "lstgStCnt": "18648709",
+                        "mrktTotAmt": "780448471650"
+                    },
+                    {
+                        "basDt": "20221114",
+                        "srtnCd": "122870",
+                        "isinCd": "KR7122870009",
+                        "itmsNm": "와이지엔터테인먼트",
+                        "mrktCtg": "KOSDAQ",
+                        "clpr": "41000",
+                        "vs": "-1800",
+                        "fltRt": "-4.21",
+                        "mkp": "42950",
+                        "hipr": "42950",
+                        "lopr": "40600",
+                        "trqu": "561015",
+                        "trPrc": "23164203500",
+                        "lstgStCnt": "18648709",
+                        "mrktTotAmt": "764597069000"
+                    },
+                    {
+                        "basDt": "20221111",
+                        "srtnCd": "122870",
+                        "isinCd": "KR7122870009",
+                        "itmsNm": "와이지엔터테인먼트",
+                        "mrktCtg": "KOSDAQ",
+                        "clpr": "42800",
+                        "vs": "1550",
+                        "fltRt": "3.76",
+                        "mkp": "42850",
+                        "hipr": "43350",
+                        "lopr": "41650",
+                        "trqu": "608431",
+                        "trPrc": "25786643150",
+                        "lstgStCnt": "18648709",
+                        "mrktTotAmt": "798164745200"
+                    }
+                ]
+            }
+        }
+    }
+}
