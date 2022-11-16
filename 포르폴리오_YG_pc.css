@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
           
-             
+   
+
 * { 
     margin: 0;
     padding: 0;
@@ -24,7 +25,7 @@ body{
 /* css 스크롤바 커스텀 */
 /* width */
 ::-webkit-scrollbar {
-    width: 2px;
+    width: 3px;
     height: 2px;
   }
   
@@ -49,7 +50,7 @@ body{
     margin: 10vh 0 0 0;
 }
 .homepage .art_tab{
-    height: 100%;
+    height: 90vh;
 }
 .homepage .art_tab > div{
     display: none;
@@ -58,7 +59,7 @@ body{
 .homepage .art_tab > div:first-child{ display: block; }
 
 .homepage .act_tab{
-    height: 100%;
+    height: 90vh;
 }
 .homepage .act_tab > div{
     display: none;
@@ -183,6 +184,7 @@ header .button > div:first-child > span{
     line-height: 10vh;
 }
 .sec1_1 {
+    height: 90vh;
     background-color: black;
 }
 /* -----------------------------------login_page--------------------------------- */
@@ -1269,8 +1271,8 @@ header .snb_m .black:hover{
 .select {
 
     width: 100%;
-    /* height: 1080px; */
-    height: 100vh;
+    /* height: 100%; */
+    height: 90vh;
     background-image: url(/YG.Ent/이미지/배경\ 작업-\ 별3.png);
     background-size: cover;
 
@@ -1371,10 +1373,10 @@ header .snb_m .black:hover{
 }
 .select .inner_2 .sel_menu > .b{
     display: none;
-    height: 67vh;
+    height: 66vh;
     width: 100%;
     background-color: #fff;
-    padding: 0 5%;
+    padding: 2% 5%;
     position: relative;
     display: flex;
     align-items: center;
@@ -1482,6 +1484,7 @@ header .snb_m .black:hover{
     justify-content: center;
     height: 20%;
     color: #000;
+    padding
 }
 .select .sel_menu > div:nth-child(1) .yg_goods > div p:first-child {
     /* font-size: 30px; */
@@ -1535,11 +1538,6 @@ header .snb_m .black:hover{
 }
 
 /* =------------셀렉트 tech-------- */
-.select .inner_2 .sel_menu .b .g_pic a {
-    text-decoration: none;
-    cursor: pointer;
-    color: black;
-}
 .select .inner_2 .sel_menu .b .g_pic a:hover{
     text-decoration: underline;
 }
@@ -1551,13 +1549,10 @@ header .snb_m .black:hover{
 .select .inner_2 .sel_menu .goodsgrid .swiper-slide {
     /* height: calc((100% - 30px) / 2) !important; */
     height: calc((100% - 30px) / 2)
-    /* border: 1px solid rgba(0, 0, 0, 0.1); */
 }
 .select .inner_2 .sel_menu .g_pic {
     width: 100%;
     height: 100%;
-    text-align: center;
-    /* padding: 0 10%; */
     display: flex;
     gap: 5px;
     flex-direction: column;
@@ -1572,13 +1567,32 @@ header .snb_m .black:hover{
 .select .inner_2 .sel_menu .g_pic img {
     width: 100%;
     height: 100%;
-    /* margin: 0 auto; */
+}
+.select .inner_2 .sel_menu .b .g_pic a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+/* .select .inner_2 .sel_menu .g_pic > p:nth-child(2){
+    text-align: center;
+    word-wrap: break-word;
+} */
+.select .inner_2 .sel_menu .g_pic > p:nth-child(2){
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 90%;
+    text-align: center;
 }
 /* ----------------세일 + 솔드아웃------------------ */
 .select .inner_2 .sel_menu .g_pic .line-through {
     text-decoration: line-through;
     font-size: 7px;
+    margin-bottom: -21px;
     /* height: 10%; */
+}
+.select .inner_2 .sel_menu .g_pic .sale{
+    margin-left: -15%;
 }
 .select .inner_2 .sel_menu .g_pic > div span:first-child {
     color: #fff;
@@ -1594,14 +1608,14 @@ header .snb_m .black:hover{
     color: #fff;
     padding: 0px 7px;
     border-radius: 10px;
-    /* margin-top: 0px; */
+    margin-top: -8%;
 }
 .select .inner_2 .sel_menu .g_pic .set {
     background-color: red;
     color: #fff;
     padding: 0px 7px;
     border-radius: 10px;
-    /* margin-top: 0px; */
+    margin-top: -7px;
 }
 
 /* --------------------메뉴 감추기------------ */
@@ -1630,7 +1644,7 @@ header .snb_m .black:hover{
     position: absolute;
     z-index: 1;
     bottom: -2%;
-    right: 1.5%;
+    right: 1%;
     gap: 5px;
     cursor: pointer;
     
@@ -1652,22 +1666,17 @@ header .snb_m .black:hover{
     border: 2px solid black;
 }
 .select .inner_2 .sel_menu .b .shopping > p{
-    width: 110px;
-    height: 40px;
-    /* line-height: 47px; */
+    width: 45%;
+    height: 20%;
     padding: 5px;
     background-color: black;
     color: #fff;
     font-size: 19px;
     text-align: center;
-    /* border: 1px solid #fff; */
     border-radius: 50px;
     font-family: 'Fugaz One', 'Kanit', sans-serif;
     cursor: pointer;
-    margin-bottom: 20px;
-    /* position: absolute;
-    right: -1%;
-    top: 10%; */
+    margin-bottom: 30%;
     z-index: 9999;
 }
 .select .inner_2 .sel_menu .b .shopping > p:hover{
@@ -1678,6 +1687,7 @@ header .snb_m .black:hover{
 /* ---------------------오디션---------------------------- */
 .audition {
     width: 100%;
+    /* height: 100%; */
     height: 90vh;
     background-image: url(/YG.Ent/이미지/배경작업3_수정1.png);
     background-repeat: no-repeat;
@@ -2050,6 +2060,7 @@ header .snb_m .black:hover{
 
 .aboutyg {
     width: 100%;
+    /* height: 100%; */
     height: 90vh;
     background-image: url(/YG.Ent/이미지/배경작업3_수정4.png);
     background-repeat: no-repeat;
@@ -2057,7 +2068,8 @@ header .snb_m .black:hover{
     font-family: 'Fugaz One', 'Kanit', sans-serif;
 }
 .aboutyg .yg_slide {
-    height: 77vh;
+    height: 80%;
+    /* height: 71vh; */
 }
 .aboutyg .yg_slide .swiper-scrollbar.abo {
     color: #fff;
@@ -2167,7 +2179,7 @@ header .snb_m .black:hover{
 .aboutyg .ab_box .introduction .shapes .arrow_size i {
     font-size: 2.2rem;
     width: 37px;
-    /* margin: 0 0 0 10px; */
+    margin: 0 0 0 10px;
 }
 .aboutyg .ab_box .introduction .shapes .arrow_size p {
     font-size: 12px;
@@ -2560,55 +2572,32 @@ header .snb_m .black:hover{
     bottom: 6%;
 }
 footer {
-    height: 5vh;
-    line-height: 5vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: #fff;
     padding: 0 40px 0 20px;
-    /* position: absolute; */
-}
-footer > div:first-child::before {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background: #fff;
-    display: block;
-    position: absolute;
-    margin-left: -20px;
-}
-/* footer span::after{
-    content: "";
-    width: 1px;
-    height: 10px;
-    background: #fff;
-    display: block;
-    position: absolute;
-    bottom: 12%;
-    right: 64.8%;
-} */
-footer span:nth-child(2) {
-    padding: 0 0 0 10px;
-}
-footer span:nth-child(3) {
-    padding: 0 0 0 10px;
+    border-top: 0.5px solid #fff;
 }
 footer div:first-child {
     font-size: 13px;
+    display: flex;
+    gap: 10px;
+    width: 75%;
 }
-footer div:first-child span{
-    line-height: 20px;
+footer div:first-child span:last-child{
     word-break: break-all;
 }
 footer div:nth-child(2){
-    width: 18%;
+    width: 15%;
     height: 5vh;
-    line-height: 5vh;
     text-align: center;
 }
 footer div:nth-child(2) p {
     font-size: 12px;
-    /* padding: 0 0 0 600px; */
+    height: 5vh;
+    line-height: 5vh;
 }
 footer div:last-child {
     font-size: 24px;
@@ -2616,6 +2605,8 @@ footer div:last-child {
     gap: 10px;
     align-items: center;
     justify-content: center;
+    width: 10%;
+    height: 5vh;
 }
 footer div:last-child i {
     color: #fff;

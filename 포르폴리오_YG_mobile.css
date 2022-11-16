@@ -1,5 +1,7 @@
 @charset "UTF-8";
-               
+           
+
+
 /* ---------------------------------로그인창--------------- */
 header .login_page{
     background-image: url(/YG.Ent/이미지/YG_로그인배경패턴14.png);
@@ -126,14 +128,18 @@ header .login_page > div {
 }
 /* ------------------------홈페이지-------------------- */
 .homepage{
-    height: 100%;
-    margin: 0;
-}
-.homepage .art_tab{
-    height: 100%;
     margin: 5vh 0 0 0;
 }
+.homepage .art_tab{
+    height: 95vh;
+}
+.homepage .act_tab{
+    height: 95vh;
+}
 /* ----------------------------------아티스트 페이지2--------------- */
+.sec1_1 {
+    height: 95vh;
+}
 .sec1_2 .proflie .photo{
     width: 100%;
     height: 50%;
@@ -343,9 +349,9 @@ header .login_page > div {
     display: none;
 }
 /* ------------------------------------------굿즈----------------------------- */
-/* .select .inner_2 .sel_menu{
-    font-size: 0.2rem;
-} */
+.select{
+    height: 95vh;
+}
 .select .inner_2 .sel_menu{
     top: 14%;
     height: 78vh;
@@ -610,6 +616,9 @@ header .login_page > div {
     background-position: top;
 }
 /* ------------------------오디션 페이지------------------------ */
+.audition{
+    height: 95vh;
+}
 .audition > div:first-child{
     height: 4vh;
     line-height: 4vh;
@@ -695,7 +704,7 @@ header .login_page > div {
     height: 95vh;
 }
 .aboutyg .yg_slide {
-    height: 76vh;
+    height: 80%;
 }
 .aboutyg > div:nth-child(1){
     height: 4vh;
@@ -778,6 +787,8 @@ header .login_page > div {
     transform: rotate(90deg);
     -webkit-text-stroke: 1px #fff;
     color: black;
+    font-size: 1.5rem;
+    margin: 0 0 0 0;
 }
 .aboutyg .ab_box .introduction .text_3{
     display: none;
@@ -817,7 +828,7 @@ header .login_page > div {
 }
 .aboutyg .ab_box .news > p {
     font-size: 20px;
-    margin: 0
+    margin-bottom: 5px;
 }
 .aboutyg .ab_box .news > div {
     gap: 5px;
@@ -868,46 +879,56 @@ header .login_page > div {
 }
 .aboutyg .ab_box .yg_notice > p{
     font-size: 20px;
-    margin: 0
+    margin-bottom: 5px;
 }
 .aboutyg .ab_box .yg_notice > div > .notice_but{
     height: 15%;
     font-size: 0.7rem;
 }
+.aboutyg .ab_box .yg_notice .notice_box a{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.aboutyg .ab_box .yg_notice .notice_box p:last-child{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
 /* ---------------------------풋터----------------------------- */
 footer{
     padding: 0 20px;
     height: 15vh;
-    line-height: 15vh;
 }
 footer div:first-child {
     font-size: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 0;
     width: 53%;
     height: 100%;
 }
 footer div:nth-child(2){
     width: 18%;
-    height: 15vh;
-    flex-grow: 1;
+    height: 100%;
+    /* flex-grow: 1; */
 }
 footer div:nth-child(2) p {
     height: 15vh;
     line-height: 15vh;
-    font-size: 8px;
-    word-break: break-all;
+    font-size: 5px;
+    word-wrap: break-word;
 }
 footer div:last-child {
     font-size: 16px;
     gap: 5px;
     height: 100%;
 }
-footer > div:first-child::before{
+/* footer > div:first-child::before{
     margin-left: -20px;
     bottom: 20%;
-}
+} */
 footer span:nth-child(2){
     padding: 0;
 }

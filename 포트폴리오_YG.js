@@ -221,7 +221,32 @@ var swiper4 = new Swiper(".goodsgrid", {
     },
 });
 
-var swiper5 = new Swiper(".album-slide", {
+var swiper5 = new Swiper(".ac_album-slide", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    direction: "vertical",
+    navigation: {
+        nextEl: ".act_list .swiper-button-next"
+    },
+    observer: true,
+    observeParents: true,
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        641: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+    },
+});
+
+var swiper14 = new Swiper(".album-slide", {
     slidesPerView: 1,
     spaceBetween: 10,
     direction: "vertical",
@@ -386,12 +411,13 @@ $(document).ready(function () {
         
         $(".snb_m:eq(1) li").click(function () {
             $("html, body").animate({
-                scrollTop: $('.act_tab').offset().top - 93
+                scrollTop: $('.act_tab').offset().top - header
             }, 1000);
             $('video').each(function () {
                 this.pause();
             });
             var tab1 = $(this).index();
+            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $(".menu, .snb_m").removeClass("on");
             $(".act_tab > div").eq(tab1).stop(true).show().siblings(".act_tab > div").hide();
@@ -399,9 +425,10 @@ $(document).ready(function () {
         
         $(".snb_m:eq(2) li").click(function () {
             var tab3 = $(this).index();
+            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $("html, body").animate({
-                scrollTop: $('.select').offset().top - 93
+                scrollTop: $('.select').offset().top - header
             }, 1000);
             $(".menu, .snb_m").removeClass("on");
             $(".sel_menu > div").eq(tab3).stop(true).show().siblings().hide();
@@ -410,10 +437,11 @@ $(document).ready(function () {
         
         $(".snb_m:eq(3) li").click(function () {
             var tab4 = $(this).index();
+            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $("html, body").animate({
                 
-                scrollTop: $('.audition').offset().top - 93
+                scrollTop: $('.audition').offset().top - header
             }, 1000);
             switch (tab4) {
                 case 0:
@@ -428,9 +456,10 @@ $(document).ready(function () {
         
         $(".snb_m:eq(4) li").click(function () {
             var tab5 = $(this).index();
+            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $("html, body").animate({
-                scrollTop: $('.aboutyg').offset().top - 93
+                scrollTop: $('.aboutyg').offset().top - header
             }, 1000);
             switch (tab5) {
                 case 0:
@@ -468,12 +497,13 @@ $(document).ready(function () {
         
         $(".snb_m:eq(1) li").click(function () {
             $("html, body").animate({
-                scrollTop: $('.act_tab').offset().top - 93
+                scrollTop: $('.act_tab').offset().top - header
             }, 1000);
             $('video').each(function () {
                 this.pause();
             });
             var tab1 = $(this).index();
+            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $(".menu, .snb_m").removeClass("on");
             $(".act_tab > div").eq(tab1).stop(true).show().siblings(".act_tab > div").hide();
@@ -481,9 +511,10 @@ $(document).ready(function () {
         
         $(".snb_m:eq(2) li").click(function () {
             var tab3 = $(this).index();
+            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $("html, body").animate({
-                scrollTop: $('.select').offset().top - 93
+                scrollTop: $('.select').offset().top - header
             }, 1000);
             $(".menu, .snb_m").removeClass("on");
             $(".sel_menu > div").eq(tab3).stop(true).show().siblings().hide();
@@ -492,10 +523,11 @@ $(document).ready(function () {
         
         $(".snb_m:eq(3) li").click(function () {
             var tab4 = $(this).index();
+            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $("html, body").animate({
                 
-                scrollTop: $('.audition').offset().top - 93
+                scrollTop: $('.audition').offset().top - header
             }, 1000);
             switch (tab4) {
                 case 0:
@@ -510,9 +542,10 @@ $(document).ready(function () {
         
         $(".snb_m:eq(4) li").click(function () {
             var tab5 = $(this).index();
+            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $("html, body").animate({
-                scrollTop: $('.aboutyg').offset().top - 93
+                scrollTop: $('.aboutyg').offset().top - header
             }, 1000);
             switch (tab5) {
                 case 0:
@@ -558,12 +591,13 @@ $(document).ready(function () {
         
         $(".snb_m:eq(1) li").click(function () {
             $("html, body").animate({
-                scrollTop: $('.act_tab').offset().top - 47
+                scrollTop: $('.act_tab').offset().top - header
             }, 1000);
             $('video').each(function () {
                 this.pause();
             });
             var tab1 = $(this).index();
+            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $(".menu, .snb_m").removeClass("on");
             $(".act_tab > div").eq(tab1).stop(true).show().siblings(".act_tab > div").hide();
@@ -571,9 +605,10 @@ $(document).ready(function () {
         
         $(".snb_m:eq(2) li").click(function () {
             var tab3 = $(this).index();
+            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $("html, body").animate({
-                scrollTop: $('.select').offset().top - 47
+                scrollTop: $('.select').offset().top - header
             }, 1000);
             $(".menu, .snb_m").removeClass("on");
             $(".sel_menu > div").eq(tab3).stop(true).show().siblings().hide();
@@ -582,10 +617,11 @@ $(document).ready(function () {
         
         $(".snb_m:eq(3) li").click(function () {
             var tab4 = $(this).index();
+            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $("html, body").animate({
                 
-                scrollTop: $('.audition').offset().top - 47
+                scrollTop: $('.audition').offset().top - header
             }, 1000);
             switch (tab4) {
                 case 0:
@@ -600,9 +636,10 @@ $(document).ready(function () {
         
         $(".snb_m:eq(4) li").click(function () {
             var tab5 = $(this).index();
+            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $("html, body").animate({
-                scrollTop: $('.aboutyg').offset().top - 47
+                scrollTop: $('.aboutyg').offset().top - header
             }, 1000);
             switch (tab5) {
                 case 0:
@@ -643,12 +680,13 @@ $(document).resize(function () {
         
         $(".snb_m:eq(1) li").click(function () {
             $("html, body").animate({
-                scrollTop: $('.act_tab').offset().top - 95
+                scrollTop: $('.act_tab').offset().top - header
             }, 1000);
             $('video').each(function () {
                 this.pause();
             });
             var tab1 = $(this).index();
+            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $(".menu, .snb_m").removeClass("on");
             $(".act_tab > div").eq(tab1).stop(true).show().siblings(".act_tab > div").hide();
@@ -656,9 +694,10 @@ $(document).resize(function () {
         
         $(".snb_m:eq(2) li").click(function () {
             var tab3 = $(this).index();
+            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $("html, body").animate({
-                scrollTop: $('.select').offset().top - 95
+                scrollTop: $('.select').offset().top - header
             }, 1000);
             $(".menu, .snb_m").removeClass("on");
             $(".sel_menu > div").eq(tab3).stop(true).show().siblings().hide();
@@ -667,10 +706,11 @@ $(document).resize(function () {
         
         $(".snb_m:eq(3) li").click(function () {
             var tab4 = $(this).index();
+            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $("html, body").animate({
                 
-                scrollTop: $('.audition').offset().top - 95
+                scrollTop: $('.audition').offset().top - header
             }, 1000);
             switch (tab4) {
                 case 0:
@@ -685,9 +725,10 @@ $(document).resize(function () {
         
         $(".snb_m:eq(4) li").click(function () {
             var tab5 = $(this).index();
+            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $("html, body").animate({
-                scrollTop: $('.aboutyg').offset().top - 95
+                scrollTop: $('.aboutyg').offset().top - header
             }, 1000);
             switch (tab5) {
                 case 0:
@@ -725,7 +766,7 @@ $(document).resize(function () {
         
         $(".snb_m:eq(1) li").click(function () {
             $("html, body").animate({
-                scrollTop: $('.act_tab').offset().top - 95
+                scrollTop: $('.act_tab').offset().top - header
             }, 1000);
             $('video').each(function () {
                 this.pause();
@@ -738,9 +779,10 @@ $(document).resize(function () {
         
         $(".snb_m:eq(2) li").click(function () {
             var tab3 = $(this).index();
+            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $("html, body").animate({
-                scrollTop: $('.select').offset().top - 95
+                scrollTop: $('.select').offset().top - header
             }, 1000);
             $(".menu, .snb_m").removeClass("on");
             $(".sel_menu > div").eq(tab3).stop(true).show().siblings().hide();
@@ -749,10 +791,11 @@ $(document).resize(function () {
         
         $(".snb_m:eq(3) li").click(function () {
             var tab4 = $(this).index();
+            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $("html, body").animate({
                 
-                scrollTop: $('.audition').offset().top - 95
+                scrollTop: $('.audition').offset().top - header
             }, 1000);
             switch (tab4) {
                 case 0:
@@ -767,9 +810,10 @@ $(document).resize(function () {
         
         $(".snb_m:eq(4) li").click(function () {
             var tab5 = $(this).index();
+            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $("html, body").animate({
-                scrollTop: $('.aboutyg').offset().top - 95
+                scrollTop: $('.aboutyg').offset().top - header
             }, 1000);
             switch (tab5) {
                 case 0:
@@ -814,12 +858,13 @@ $(document).resize(function () {
         
         $(".snb_m:eq(1) li").click(function () {
             $("html, body").animate({
-                scrollTop: $('.act_tab').offset().top - 47
+                scrollTop: $('.act_tab').offset().top - header
             }, 1000);
             $('video').each(function () {
                 this.pause();
             });
             var tab1 = $(this).index();
+            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $(".menu, .snb_m").removeClass("on");
             $(".act_tab > div").eq(tab1).stop(true).show().siblings(".act_tab > div").hide();
@@ -827,9 +872,10 @@ $(document).resize(function () {
         
         $(".snb_m:eq(2) li").click(function () {
             var tab3 = $(this).index();
+            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $("html, body").animate({
-                scrollTop: $('.select').offset().top - 47
+                scrollTop: $('.select').offset().top - header
             }, 1000);
             $(".menu, .snb_m").removeClass("on");
             $(".sel_menu > div").eq(tab3).stop(true).show().siblings().hide();
@@ -838,10 +884,11 @@ $(document).resize(function () {
         
         $(".snb_m:eq(3) li").click(function () {
             var tab4 = $(this).index();
+            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $("html, body").animate({
                 
-                scrollTop: $('.audition').offset().top - 47
+                scrollTop: $('.audition').offset().top - header
             }, 1000);
             switch (tab4) {
                 case 0:
@@ -856,9 +903,10 @@ $(document).resize(function () {
         
         $(".snb_m:eq(4) li").click(function () {
             var tab5 = $(this).index();
+            var header = $("header").height()
             $(this).addClass("on").siblings().removeClass("on");
             $("html, body").animate({
-                scrollTop: $('.aboutyg').offset().top - 47
+                scrollTop: $('.aboutyg').offset().top - header
             }, 1000);
             switch (tab5) {
                 case 0:
