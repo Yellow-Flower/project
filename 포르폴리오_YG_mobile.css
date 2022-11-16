@@ -828,7 +828,7 @@ header .login_page > div {
     width: 80%;
 }
 .aboutyg .ab_box.ir > div{
-    padding: 20px;
+    /* padding: 20px; */
     font-size: 14px;
 }
 .aboutyg .ab_box.ir > div > p:first-child{

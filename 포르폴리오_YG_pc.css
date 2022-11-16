@@ -2225,7 +2225,8 @@ header .snb_m .black:hover{
 .aboutyg .ab_box .page2 {
     width: 30%;
     color: #fff;
-    padding: 40px;
+    /* padding: 40px; */
+    padding: 5%;
 }
 .aboutyg .ab_box .page2 > p:first-child {
     font-size: 57px;
@@ -2262,7 +2263,7 @@ header .snb_m .black:hover{
 }
 .aboutyg .ab_box.ir > div{
     width: 100%;
-    padding: 50px;
+    padding: 5%;
     font-size: 16px;
 }
 .aboutyg .ab_box.ir > div > p:first-child{
