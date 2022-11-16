@@ -990,7 +990,7 @@ fetch(publicAPIurl)
         let yesterStock = data.response.body.items.item[0]; // 전날 주식정보
 
         itmsNm.innerText = yesterStock.itmsNm; // 종목명
-        srtnCd.innerText = yesterStock.srtnCd; // 종목코드 6자리
+        srtnCd.innerText = "(" + yesterStock.srtnCd + ")"; // 종목코드 6자리
         mrktCtg.innerText = yesterStock.mrktCtg; // 시장구분
         basDt.innerText = yesterdayKO; // 기준일
         clpr.innerText = `${numberWithCommas(yesterStock.clpr)}원`; // 전날 종가
