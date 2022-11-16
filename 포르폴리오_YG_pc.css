@@ -2280,11 +2280,13 @@ header .snb_m .black:hover{
     font-size: 15px;
 }
 .aboutyg .ab_box.ir > div > div:nth-child(4){
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
     display: flex;
     padding: 10px 0;
     align-items: center;
+    font-family: 'Heebo', sans-serif;
+    height: 60%;
 }
 .aboutyg .ab_box.ir > div > div:nth-child(4) .j_left{
     width: 50%;
@@ -2294,8 +2296,8 @@ header .snb_m .black:hover{
 }
 .aboutyg .ab_box.ir > div > div:nth-child(4) .j_right{
     width: 50%;
-    font-size: 25px;
-    color: #e7e495;
+    font-size: 20px;
+    color: #f9f58e;
     /* color: #006ECD; */
 }
 .aboutyg .ab_box.ir > div > div:nth-child(4) .j_right .big{
@@ -2326,9 +2328,11 @@ header .snb_m .black:hover{
     align-items: center;
 }
 
-.up { color: #e74c3c; } 
+.up { color: #ef988f; } 
+/* .up { color: #e74c3c; }  */
 .up::before { content: "\25B4"; } 
-.down { color: #3498db; } 
+.down { color: #99d6ff; } 
+/* .down { color: #3498db; }  */
 .down::before { content: "\25BE"; } 
 
 /* -------------- */

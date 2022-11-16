@@ -827,6 +827,38 @@ header .login_page > div {
 .aboutyg .ab_box.ir{
     width: 80%;
 }
+.aboutyg .ab_box.ir > div{
+    padding: 20px;
+    font-size: 14px;
+}
+.aboutyg .ab_box.ir > div > p:first-child{
+    font-size: 20px;
+}
+.aboutyg .ab_box.ir > div > p:nth-child(2){
+    font-size: 15px;
+}
+.aboutyg .ab_box.ir > div > div:nth-child(4){
+    flex-direction: column;
+    overflow: auto;
+    height: 78%;
+}
+.aboutyg .ab_box.ir > div > div:nth-child(4) .j_left{
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+.aboutyg .ab_box.ir > div > div:nth-child(4) .j_left > div > div{
+    margin-bottom: 10px;
+}
+.aboutyg .ab_box.ir > div > div:nth-child(4) .j_left > div > div > span{
+    font-size: 20px;
+}
+.aboutyg .ab_box.ir > div > div:nth-child(4) .j_right{
+    width: 100%;
+    font-size: 15px;
+}
+.aboutyg .ab_box.ir > div > div:nth-child(4) .j_right #mrktCtg{
+    font-size: 15px;
+}
 .aboutyg .ab_box .news {
     width: 100%;
     height: 50%;
