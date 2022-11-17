@@ -5,7 +5,22 @@ $(".select li").click(function () {
     $(".sel_menu > div").eq(num).stop(true).show().siblings().hide();
 });
 $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
- 
+ //----------------------인스타그램--------------------
+// (function() {
+//     new InstagramFeed({
+//         'username': 'yg_ent_official',
+//         'container': document.getElementById("instafeed"),
+//         'display_profile': false,
+//         'display_biography': false,
+//         'display_gallery': true,
+//         'display_igtv': false,
+//         'callback': null,
+//         'styling': false,
+//         'items': 10, // 표시 개수
+//         'lazy_load': true,
+//         'on_error': console.error
+//     });
+// })();
 // --------------------------------하위 메뉴 클릭시 페이지 이동 ☆ p.469 each메서드 참고해서 간략하게 줄이기-------------------
 // $(".snb_m:eq(0) li").click(function () {
 //     $("html, body").animate({
@@ -84,16 +99,90 @@ $(".select li:first").addClass("on").add(".sel_menu > div:first").show();
 //     }
 //     $(".menu, .snb_m").removeClass("on");
 // });
+$(".snb_m:eq(0) li").click(function () {
+    swiper9.slideTo(0, 300);
+    $('video').each(function() {
+      this.pause()
+    });
+    var tab1 = $(this).index();
+    $(this).addClass("on").siblings().removeClass("on");
+    $(".menu, .snb_m").removeClass("on");
+    $(".art_tab > div").eq(tab1).stop(true).show().siblings(".art_tab > div").hide();
+  });
+  $(".art_tab:first").addClass("on").show();
+  
+  $(".snb_m:eq(1) li").click(function () {
+    var tab2 = $(this).index();
+    $(this).addClass("on").siblings().removeClass("on");
+    swiper9.slideTo(1, 300);
+    $(".menu, .snb_m").removeClass("on");
+    $(".act_tab > div").eq(tab2).stop(true).show().siblings(".act_tab > div").hide();
+  });
+  $(".act_tab:first").addClass("on").show();
+  
+  $(".snb_m:eq(2) li").click(function () {
+    var tab3 = $(this).index();
+    $(this).addClass("on").siblings().removeClass("on");
+    swiper9.slideTo(2, 300);
+    $(".menu, .snb_m").removeClass("on");
+    $(".sel_menu > div").eq(tab3).stop(true).show().siblings().hide();
+    $(".sel_tab li").eq(tab3).stop(true).addClass("on").siblings().removeClass("on");
+  });
+  $(".select").addClass("on").add(".sel_menu > div:first").show();
+  
+  $(".snb_m:eq(3) li").click(function () {
+    var tab4 = $(this).index();
+    $(this).addClass("on").siblings().removeClass("on");
+    swiper9.slideTo(3, 300);
+    switch (tab4) {
+      case 0 :
+        swiper6.slideTo(0, 300);
+        break;
+      case 1 :
+        swiper6.slideTo(1, 300);
+        break;
+    }
+    $(".menu, .snb_m").removeClass("on");
+  });
+  $(".au_tab:first").addClass("on").show();
+  
+  $(".snb_m:eq(4) li").click(function () {
+    var tab5 = $(this).index();
+    $(this).addClass("on").siblings().removeClass("on");
+    swiper9.slideTo(4, 300);
+    switch (tab5) {
+      case 0 :
+        swiper7.slideTo(0, 300);
+        break;
+      case 1 :
+        swiper7.slideTo(1, 300);
+        break;
+      case 2 :
+        swiper7.slideTo(2, 300);
+        break;
+      case 3 :
+        swiper7.slideTo(3, 300);
+        break;
+    }
+    $(".menu, .snb_m").removeClass("on");
+  });
+  $(".yg_tab:first").addClass("on").show();
+  
 
 // ------------------------------------------------------------------------------------
 
+// $('#up, header > a').click(function () {
+//     // swiper9.slideTo(0);
+//     $("html, body").animate({
+//         scrollTop: 0
+//     }, 1000);
+//     return flase;
+// });
 $('#up, header > a').click(function () {
-    // swiper9.slideTo(0);
-    $("html, body").animate({
-        scrollTop: 0
-    }, 1000);
+    swiper9.slideTo(0);
     return flase;
-});
+  });
+  
 // --------------------공지사항-----------------------------
 $(".notice_but > p ").click(function () {
     var num3 = $(this).index();
@@ -303,34 +392,34 @@ var swiper8 = new Swiper(".instagram", {
     observeParents: true,
 });
 // ----------------------홈페이지 전체 슬라이드-------------
-// var swiper9 = new Swiper(".homepage", {
-//   direction: "vertical",
-//   slidesPerView: 1,
-//   mousewheel: true,
-//   observer: true,
-//   observeParents: true,
-//   keyboard: {
-//     enabled: true,
-//   },
-//   on: {
-//     slideChange: function () {
-//       var slideindex = this.realIndex;
-//       switch (slideindex) {
-//         case 3:
-//           $("#up").removeClass("on on2").addClass("on");
-//           break;
-//         case 4:
-//           $("#up").removeClass("on on2").addClass("on2");
-//           break;
-//         default:
-//           $("#up").removeClass("on on2");
-//       }
-//       $('video').each(function () {
-//         this.pause();
-//       });
-//     },
-//   },
-// });
+var swiper9 = new Swiper(".homepage", {
+  direction: "vertical",
+  slidesPerView: 1,
+  mousewheel: true,
+  observer: true,
+  observeParents: true,
+  keyboard: {
+    enabled: true,
+  },
+  on: {
+    slideChange: function () {
+      var slideindex = this.realIndex;
+      switch (slideindex) {
+        case 3:
+          $("#up").removeClass("on on2").addClass("on");
+          break;
+        case 4:
+          $("#up").removeClass("on on2").addClass("on2");
+          break;
+        default:
+          $("#up").removeClass("on on2");
+      }
+      $('video').each(function () {
+        this.pause();
+      });
+    },
+  },
+});
 // --------------------------------가수 앨범 속 리스트 슬라이드-----------------
 var swiper10 = new Swiper(".list_silde", {
     slidesPerView: 3,
@@ -391,542 +480,583 @@ var swiper11 = new Swiper(".proflie_list", {
     },
 });
 // ------------------레디---------------------------
+// $(document).ready(function () {
+//     if ($(window).width() > 1024) {
+//         $(".box2").hover(function () {
+//             $(this).children(".name").toggleClass("on");
+//         });
+//         $(".snb_m:eq(0) li").click(function () {
+//             $("html, body").animate({
+//                 scrollTop: 0
+//             }, 1000);
+//             $('video').each(function () {
+//                 this.pause();
+//             });
+//             var tab1 = $(this).index();
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $(".menu, .snb_m").removeClass("on");
+//             $(".art_tab > div").eq(tab1).stop(true).show().siblings(".art_tab > div").hide();
+//         });
+        
+//         $(".snb_m:eq(1) li").click(function () {
+//             var header = $("header").height()
+//             $("html, body").animate({
+//                 scrollTop: $('.act_tab').offset().top - header
+//             }, 1000);
+//             $('video').each(function () {
+//                 this.pause();
+//             });
+//             var tab1 = $(this).index();
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $(".menu, .snb_m").removeClass("on");
+//             $(".act_tab > div").eq(tab1).stop(true).show().siblings(".act_tab > div").hide();
+//         });
+        
+//         $(".snb_m:eq(2) li").click(function () {
+//             var tab3 = $(this).index();
+//             var header = $("header").height()
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $("html, body").animate({
+//                 scrollTop: $('.select').offset().top - header
+//             }, 1000);
+//             $(".menu, .snb_m").removeClass("on");
+//             $(".sel_menu > div").eq(tab3).stop(true).show().siblings().hide();
+//             $(".sel_tab li").eq(tab3).stop(true).addClass("on").siblings().removeClass("on");
+//         });
+        
+//         $(".snb_m:eq(3) li").click(function () {
+//             var tab4 = $(this).index();
+//             var header = $("header").height()
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $("html, body").animate({
+                
+//                 scrollTop: $('.audition').offset().top - header
+//             }, 1000);
+//             switch (tab4) {
+//                 case 0:
+//                     swiper6.slideTo(0, 300);
+//                     break;
+//                 case 1:
+//                     swiper6.slideTo(1, 300);
+//                     break;
+//             }
+//             $(".menu, .snb_m").removeClass("on");
+//         });
+        
+//         $(".snb_m:eq(4) li").click(function () {
+//             var tab5 = $(this).index();
+//             var header = $("header").height()
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $("html, body").animate({
+//                 scrollTop: $('.aboutyg').offset().top - header
+//             }, 1000);
+//             switch (tab5) {
+//                 case 0:
+//                     swiper7.slideTo(0, 300);
+//                     break;
+//                 case 1:
+//                     swiper7.slideTo(1, 300);
+//                     break;
+//                 case 2:
+//                     swiper7.slideTo(2, 300);
+//                     break;
+//                 case 3:
+//                     swiper7.slideTo(3, 300);
+//                     break;
+//             }
+//             $(".menu, .snb_m").removeClass("on");
+//         });
+//     }
+//     else if ($(window).width() >= 641) {
+//         $(".box2").click(function () {
+//             $(this).children(".name").toggleClass("on");
+//         });
+//         $(".snb_m:eq(0) li").click(function () {
+//             $("html, body").animate({
+//                 scrollTop: 0
+//             }, 1000);
+//             $('video').each(function () {
+//                 this.pause();
+//             });
+//             var tab1 = $(this).index();
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $(".menu, .snb_m").removeClass("on");
+//             $(".art_tab > div").eq(tab1).stop(true).show().siblings(".art_tab > div").hide();
+//         });
+        
+//         $(".snb_m:eq(1) li").click(function () {
+//             var header = $("header").height()
+//             $("html, body").animate({
+//                 scrollTop: $('.act_tab').offset().top - header
+//             }, 1000);
+//             $('video').each(function () {
+//                 this.pause();
+//             });
+//             var tab1 = $(this).index();
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $(".menu, .snb_m").removeClass("on");
+//             $(".act_tab > div").eq(tab1).stop(true).show().siblings(".act_tab > div").hide();
+//         });
+        
+//         $(".snb_m:eq(2) li").click(function () {
+//             var tab3 = $(this).index();
+//             var header = $("header").height()
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $("html, body").animate({
+//                 scrollTop: $('.select').offset().top - header
+//             }, 1000);
+//             $(".menu, .snb_m").removeClass("on");
+//             $(".sel_menu > div").eq(tab3).stop(true).show().siblings().hide();
+//             $(".sel_tab li").eq(tab3).stop(true).addClass("on").siblings().removeClass("on");
+//         });
+        
+//         $(".snb_m:eq(3) li").click(function () {
+//             var tab4 = $(this).index();
+//             var header = $("header").height()
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $("html, body").animate({
+                
+//                 scrollTop: $('.audition').offset().top - header
+//             }, 1000);
+//             switch (tab4) {
+//                 case 0:
+//                     swiper6.slideTo(0, 300);
+//                     break;
+//                 case 1:
+//                     swiper6.slideTo(1, 300);
+//                     break;
+//             }
+//             $(".menu, .snb_m").removeClass("on");
+//         });
+        
+//         $(".snb_m:eq(4) li").click(function () {
+//             var tab5 = $(this).index();
+//             var header = $("header").height()
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $("html, body").animate({
+//                 scrollTop: $('.aboutyg').offset().top - header
+//             }, 1000);
+//             switch (tab5) {
+//                 case 0:
+//                     swiper7.slideTo(0, 300);
+//                     break;
+//                 case 1:
+//                     swiper7.slideTo(1, 300);
+//                     break;
+//                 case 2:
+//                     swiper7.slideTo(2, 300);
+//                     break;
+//                 case 3:
+//                     swiper7.slideTo(3, 300);
+//                     break;
+//             }
+//             $(".menu, .snb_m").removeClass("on");
+//         });
+//     }
+//     else if ($(window).width() <= 640) {
+//         $(".table,.up").hide();
+//         $(".table_menu").click(function () {
+//             $(".table").slideToggle(300);
+//             $(".down").toggle();
+//             $(".up").toggle();
+//         });
+//         // $(".name > p,.info,.in_sns").hide();
+//         $(".box2").click(function () {
+//             $(this).addClass("on").siblings().removeClass("on");
+//         });
+//         $("inner_3").remove("no_right1", "no_right1");
+//         $(".snb_m:eq(0) li").click(function () {
+//             $("html, body").animate({
+//                 scrollTop: 0
+//             }, 1000);
+//             $('video').each(function () {
+//                 this.pause();
+//             });
+//             var tab1 = $(this).index();
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $(".menu, .snb_m").removeClass("on");
+//             $(".art_tab > div").eq(tab1).stop(true).show().siblings(".art_tab > div").hide();
+//         });
+        
+//         $(".snb_m:eq(1) li").click(function () {
+//             var header = $("header").height()
+//             $("html, body").animate({
+//                 scrollTop: $('.act_tab').offset().top - header
+//             }, 1000);
+//             $('video').each(function () {
+//                 this.pause();
+//             });
+//             var tab1 = $(this).index();
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $(".menu, .snb_m").removeClass("on");
+//             $(".act_tab > div").eq(tab1).stop(true).show().siblings(".act_tab > div").hide();
+//         });
+        
+//         $(".snb_m:eq(2) li").click(function () {
+//             var tab3 = $(this).index();
+//             var header = $("header").height()
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $("html, body").animate({
+//                 scrollTop: $('.select').offset().top - header
+//             }, 1000);
+//             $(".menu, .snb_m").removeClass("on");
+//             $(".sel_menu > div").eq(tab3).stop(true).show().siblings().hide();
+//             $(".sel_tab li").eq(tab3).stop(true).addClass("on").siblings().removeClass("on");
+//         });
+        
+//         $(".snb_m:eq(3) li").click(function () {
+//             var tab4 = $(this).index();
+//             var header = $("header").height()
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $("html, body").animate({
+                
+//                 scrollTop: $('.audition').offset().top - header
+//             }, 1000);
+//             switch (tab4) {
+//                 case 0:
+//                     swiper6.slideTo(0, 300);
+//                     break;
+//                 case 1:
+//                     swiper6.slideTo(1, 300);
+//                     break;
+//             }
+//             $(".menu, .snb_m").removeClass("on");
+//         });
+        
+//         $(".snb_m:eq(4) li").click(function () {
+//             var tab5 = $(this).index();
+//             var header = $("header").height()
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $("html, body").animate({
+//                 scrollTop: $('.aboutyg').offset().top - header
+//             }, 1000);
+//             switch (tab5) {
+//                 case 0:
+//                     swiper7.slideTo(0, 300);
+//                     break;
+//                 case 1:
+//                     swiper7.slideTo(1, 300);
+//                     break;
+//                 case 2:
+//                     swiper7.slideTo(2, 300);
+//                     break;
+//                 case 3:
+//                     swiper7.slideTo(3, 300);
+//                     break;
+//             }
+//             $(".menu, .snb_m").removeClass("on");
+//         });
+//     }
+// });
 $(document).ready(function () {
     if ($(window).width() > 1024) {
-        $(".box2").hover(function () {
-            $(this).children(".name").toggleClass("on");
-        });
-        $(".snb_m:eq(0) li").click(function () {
-            $("html, body").animate({
-                scrollTop: 0
-            }, 1000);
-            $('video').each(function () {
-                this.pause();
-            });
-            var tab1 = $(this).index();
-            $(this).addClass("on").siblings().removeClass("on");
-            $(".menu, .snb_m").removeClass("on");
-            $(".art_tab > div").eq(tab1).stop(true).show().siblings(".art_tab > div").hide();
-        });
-        
-        $(".snb_m:eq(1) li").click(function () {
-            var header = $("header").height()
-            $("html, body").animate({
-                scrollTop: $('.act_tab').offset().top - header
-            }, 1000);
-            $('video').each(function () {
-                this.pause();
-            });
-            var tab1 = $(this).index();
-            $(this).addClass("on").siblings().removeClass("on");
-            $(".menu, .snb_m").removeClass("on");
-            $(".act_tab > div").eq(tab1).stop(true).show().siblings(".act_tab > div").hide();
-        });
-        
-        $(".snb_m:eq(2) li").click(function () {
-            var tab3 = $(this).index();
-            var header = $("header").height()
-            $(this).addClass("on").siblings().removeClass("on");
-            $("html, body").animate({
-                scrollTop: $('.select').offset().top - header
-            }, 1000);
-            $(".menu, .snb_m").removeClass("on");
-            $(".sel_menu > div").eq(tab3).stop(true).show().siblings().hide();
-            $(".sel_tab li").eq(tab3).stop(true).addClass("on").siblings().removeClass("on");
-        });
-        
-        $(".snb_m:eq(3) li").click(function () {
-            var tab4 = $(this).index();
-            var header = $("header").height()
-            $(this).addClass("on").siblings().removeClass("on");
-            $("html, body").animate({
-                
-                scrollTop: $('.audition').offset().top - header
-            }, 1000);
-            switch (tab4) {
-                case 0:
-                    swiper6.slideTo(0, 300);
-                    break;
-                case 1:
-                    swiper6.slideTo(1, 300);
-                    break;
-            }
-            $(".menu, .snb_m").removeClass("on");
-        });
-        
-        $(".snb_m:eq(4) li").click(function () {
-            var tab5 = $(this).index();
-            var header = $("header").height()
-            $(this).addClass("on").siblings().removeClass("on");
-            $("html, body").animate({
-                scrollTop: $('.aboutyg').offset().top - header
-            }, 1000);
-            switch (tab5) {
-                case 0:
-                    swiper7.slideTo(0, 300);
-                    break;
-                case 1:
-                    swiper7.slideTo(1, 300);
-                    break;
-                case 2:
-                    swiper7.slideTo(2, 300);
-                    break;
-                case 3:
-                    swiper7.slideTo(3, 300);
-                    break;
-            }
-            $(".menu, .snb_m").removeClass("on");
-        });
+      $(".box2").hover(function () {
+        $(this).children(".name").toggleClass("on");
+      });
     }
     else if ($(window).width() >= 641) {
-        $(".box2").click(function () {
-            $(this).children(".name").toggleClass("on");
-        });
-        $(".snb_m:eq(0) li").click(function () {
-            $("html, body").animate({
-                scrollTop: 0
-            }, 1000);
-            $('video').each(function () {
-                this.pause();
-            });
-            var tab1 = $(this).index();
-            $(this).addClass("on").siblings().removeClass("on");
-            $(".menu, .snb_m").removeClass("on");
-            $(".art_tab > div").eq(tab1).stop(true).show().siblings(".art_tab > div").hide();
-        });
-        
-        $(".snb_m:eq(1) li").click(function () {
-            var header = $("header").height()
-            $("html, body").animate({
-                scrollTop: $('.act_tab').offset().top - header
-            }, 1000);
-            $('video').each(function () {
-                this.pause();
-            });
-            var tab1 = $(this).index();
-            $(this).addClass("on").siblings().removeClass("on");
-            $(".menu, .snb_m").removeClass("on");
-            $(".act_tab > div").eq(tab1).stop(true).show().siblings(".act_tab > div").hide();
-        });
-        
-        $(".snb_m:eq(2) li").click(function () {
-            var tab3 = $(this).index();
-            var header = $("header").height()
-            $(this).addClass("on").siblings().removeClass("on");
-            $("html, body").animate({
-                scrollTop: $('.select').offset().top - header
-            }, 1000);
-            $(".menu, .snb_m").removeClass("on");
-            $(".sel_menu > div").eq(tab3).stop(true).show().siblings().hide();
-            $(".sel_tab li").eq(tab3).stop(true).addClass("on").siblings().removeClass("on");
-        });
-        
-        $(".snb_m:eq(3) li").click(function () {
-            var tab4 = $(this).index();
-            var header = $("header").height()
-            $(this).addClass("on").siblings().removeClass("on");
-            $("html, body").animate({
-                
-                scrollTop: $('.audition').offset().top - header
-            }, 1000);
-            switch (tab4) {
-                case 0:
-                    swiper6.slideTo(0, 300);
-                    break;
-                case 1:
-                    swiper6.slideTo(1, 300);
-                    break;
-            }
-            $(".menu, .snb_m").removeClass("on");
-        });
-        
-        $(".snb_m:eq(4) li").click(function () {
-            var tab5 = $(this).index();
-            var header = $("header").height()
-            $(this).addClass("on").siblings().removeClass("on");
-            $("html, body").animate({
-                scrollTop: $('.aboutyg').offset().top - header
-            }, 1000);
-            switch (tab5) {
-                case 0:
-                    swiper7.slideTo(0, 300);
-                    break;
-                case 1:
-                    swiper7.slideTo(1, 300);
-                    break;
-                case 2:
-                    swiper7.slideTo(2, 300);
-                    break;
-                case 3:
-                    swiper7.slideTo(3, 300);
-                    break;
-            }
-            $(".menu, .snb_m").removeClass("on");
-        });
+      $(".box2").click(function () {
+        $(this).children(".name").toggleClass("on");
+      });
     }
     else if ($(window).width() <= 640) {
-        $(".table,.up").hide();
-        $(".table_menu").click(function () {
-            $(".table").slideToggle(300);
-            $(".down").toggle();
-            $(".up").toggle();
-        });
-        // $(".name > p,.info,.in_sns").hide();
-        $(".box2").click(function () {
-            $(this).addClass("on").siblings().removeClass("on");
-        });
-        $("inner_3").remove("no_right1", "no_right1");
-        $(".snb_m:eq(0) li").click(function () {
-            $("html, body").animate({
-                scrollTop: 0
-            }, 1000);
-            $('video').each(function () {
-                this.pause();
-            });
-            var tab1 = $(this).index();
-            $(this).addClass("on").siblings().removeClass("on");
-            $(".menu, .snb_m").removeClass("on");
-            $(".art_tab > div").eq(tab1).stop(true).show().siblings(".art_tab > div").hide();
-        });
-        
-        $(".snb_m:eq(1) li").click(function () {
-            var header = $("header").height()
-            $("html, body").animate({
-                scrollTop: $('.act_tab').offset().top - header
-            }, 1000);
-            $('video').each(function () {
-                this.pause();
-            });
-            var tab1 = $(this).index();
-            $(this).addClass("on").siblings().removeClass("on");
-            $(".menu, .snb_m").removeClass("on");
-            $(".act_tab > div").eq(tab1).stop(true).show().siblings(".act_tab > div").hide();
-        });
-        
-        $(".snb_m:eq(2) li").click(function () {
-            var tab3 = $(this).index();
-            var header = $("header").height()
-            $(this).addClass("on").siblings().removeClass("on");
-            $("html, body").animate({
-                scrollTop: $('.select').offset().top - header
-            }, 1000);
-            $(".menu, .snb_m").removeClass("on");
-            $(".sel_menu > div").eq(tab3).stop(true).show().siblings().hide();
-            $(".sel_tab li").eq(tab3).stop(true).addClass("on").siblings().removeClass("on");
-        });
-        
-        $(".snb_m:eq(3) li").click(function () {
-            var tab4 = $(this).index();
-            var header = $("header").height()
-            $(this).addClass("on").siblings().removeClass("on");
-            $("html, body").animate({
-                
-                scrollTop: $('.audition').offset().top - header
-            }, 1000);
-            switch (tab4) {
-                case 0:
-                    swiper6.slideTo(0, 300);
-                    break;
-                case 1:
-                    swiper6.slideTo(1, 300);
-                    break;
-            }
-            $(".menu, .snb_m").removeClass("on");
-        });
-        
-        $(".snb_m:eq(4) li").click(function () {
-            var tab5 = $(this).index();
-            var header = $("header").height()
-            $(this).addClass("on").siblings().removeClass("on");
-            $("html, body").animate({
-                scrollTop: $('.aboutyg').offset().top - header
-            }, 1000);
-            switch (tab5) {
-                case 0:
-                    swiper7.slideTo(0, 300);
-                    break;
-                case 1:
-                    swiper7.slideTo(1, 300);
-                    break;
-                case 2:
-                    swiper7.slideTo(2, 300);
-                    break;
-                case 3:
-                    swiper7.slideTo(3, 300);
-                    break;
-            }
-            $(".menu, .snb_m").removeClass("on");
-        });
+      $(".shapes").mCustomScrollbar({
+        theme: "rounded"
+      });
+      $(".box2").click(function () {
+        $(this).addClass("on").siblings().removeClass("on");
+      });
+      $("inner_3").remove("no_right1", "no_right1");
     }
-});
+  });
 // -----------------리사이즈----------------------
+// $(document).resize(function () {
+//     if ($(window).width() > 1024) {
+//         $(".box2").hover(function () {
+//             $(this).children(".name").toggleClass("on");
+//         });
+//         $(".snb_m:eq(0) li").click(function () {
+//             $("html, body").animate({
+//                 scrollTop: 0
+//             }, 1000);
+//             $('video').each(function () {
+//                 this.pause();
+//             });
+//             var tab1 = $(this).index();
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $(".menu, .snb_m").removeClass("on");
+//             $(".art_tab > div").eq(tab1).stop(true).show().siblings(".art_tab > div").hide();
+//         });
+        
+//         $(".snb_m:eq(1) li").click(function () {
+//             var header = $("header").height()
+//             $("html, body").animate({
+//                 scrollTop: $('.act_tab').offset().top - header
+//             }, 1000);
+//             $('video').each(function () {
+//                 this.pause();
+//             });
+//             var tab1 = $(this).index();
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $(".menu, .snb_m").removeClass("on");
+//             $(".act_tab > div").eq(tab1).stop(true).show().siblings(".act_tab > div").hide();
+//         });
+        
+//         $(".snb_m:eq(2) li").click(function () {
+//             var tab3 = $(this).index();
+//             var header = $("header").height()
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $("html, body").animate({
+//                 scrollTop: $('.select').offset().top - header
+//             }, 1000);
+//             $(".menu, .snb_m").removeClass("on");
+//             $(".sel_menu > div").eq(tab3).stop(true).show().siblings().hide();
+//             $(".sel_tab li").eq(tab3).stop(true).addClass("on").siblings().removeClass("on");
+//         });
+        
+//         $(".snb_m:eq(3) li").click(function () {
+//             var tab4 = $(this).index();
+//             var header = $("header").height()
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $("html, body").animate({
+                
+//                 scrollTop: $('.audition').offset().top - header
+//             }, 1000);
+//             switch (tab4) {
+//                 case 0:
+//                     swiper6.slideTo(0, 300);
+//                     break;
+//                 case 1:
+//                     swiper6.slideTo(1, 300);
+//                     break;
+//             }
+//             $(".menu, .snb_m").removeClass("on");
+//         });
+        
+//         $(".snb_m:eq(4) li").click(function () {
+//             var tab5 = $(this).index();
+//             var header = $("header").height()
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $("html, body").animate({
+//                 scrollTop: $('.aboutyg').offset().top - header
+//             }, 1000);
+//             switch (tab5) {
+//                 case 0:
+//                     swiper7.slideTo(0, 300);
+//                     break;
+//                 case 1:
+//                     swiper7.slideTo(1, 300);
+//                     break;
+//                 case 2:
+//                     swiper7.slideTo(2, 300);
+//                     break;
+//                 case 3:
+//                     swiper7.slideTo(3, 300);
+//                     break;
+//             }
+//             $(".menu, .snb_m").removeClass("on");
+//         });
+//     }
+//     else if ($(window).width() >= 641) {
+//         $(".box2").click(function () {
+//             $(this).children(".name").toggleClass("on");
+//         });
+//         $(".snb_m:eq(0) li").click(function () {
+//             $("html, body").animate({
+//                 scrollTop: 0
+//             }, 1000);
+//             $('video').each(function () {
+//                 this.pause();
+//             });
+//             var tab1 = $(this).index();
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $(".menu, .snb_m").removeClass("on");
+//             $(".art_tab > div").eq(tab1).stop(true).show().siblings(".art_tab > div").hide();
+//         });
+        
+//         $(".snb_m:eq(1) li").click(function () {
+//             var header = $("header").height()
+//             $("html, body").animate({
+//                 scrollTop: $('.act_tab').offset().top - header
+//             }, 1000);
+//             $('video').each(function () {
+//                 this.pause();
+//             });
+//             var tab1 = $(this).index();
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $(".menu, .snb_m").removeClass("on");
+//             $(".act_tab > div").eq(tab1).stop(true).show().siblings(".act_tab > div").hide();
+//         });
+        
+//         $(".snb_m:eq(2) li").click(function () {
+//             var tab3 = $(this).index();
+//             var header = $("header").height()
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $("html, body").animate({
+//                 scrollTop: $('.select').offset().top - header
+//             }, 1000);
+//             $(".menu, .snb_m").removeClass("on");
+//             $(".sel_menu > div").eq(tab3).stop(true).show().siblings().hide();
+//             $(".sel_tab li").eq(tab3).stop(true).addClass("on").siblings().removeClass("on");
+//         });
+        
+//         $(".snb_m:eq(3) li").click(function () {
+//             var tab4 = $(this).index();
+//             var header = $("header").height()
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $("html, body").animate({
+                
+//                 scrollTop: $('.audition').offset().top - header
+//             }, 1000);
+//             switch (tab4) {
+//                 case 0:
+//                     swiper6.slideTo(0, 300);
+//                     break;
+//                 case 1:
+//                     swiper6.slideTo(1, 300);
+//                     break;
+//             }
+//             $(".menu, .snb_m").removeClass("on");
+//         });
+        
+//         $(".snb_m:eq(4) li").click(function () {
+//             var tab5 = $(this).index();
+//             var header = $("header").height()
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $("html, body").animate({
+//                 scrollTop: $('.aboutyg').offset().top - header
+//             }, 1000);
+//             switch (tab5) {
+//                 case 0:
+//                     swiper7.slideTo(0, 300);
+//                     break;
+//                 case 1:
+//                     swiper7.slideTo(1, 300);
+//                     break;
+//                 case 2:
+//                     swiper7.slideTo(2, 300);
+//                     break;
+//                 case 3:
+//                     swiper7.slideTo(3, 300);
+//                     break;
+//             }
+//             $(".menu, .snb_m").removeClass("on");
+//         });
+//     }
+//     else if ($(window).width() <= 640) {
+//         $(".table,.up").hide();
+//         $(".table_menu").click(function () {
+//             $(".table").slideToggle(300);
+//             $(".down").toggle();
+//             $(".up").toggle();
+//         });
+//         $(".box2").click(function () {
+//             $(this).addClass("on").siblings().removeClass("on");
+//         });
+//         $("inner_3").remove("no_right1", "no_right1");
+//         $(".snb_m:eq(0) li").click(function () {
+//             $("html, body").animate({
+//                 scrollTop: 0
+//             }, 1000);
+//             $('video').each(function () {
+//                 this.pause();
+//             });
+//             var tab1 = $(this).index();
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $(".menu, .snb_m").removeClass("on");
+//             $(".art_tab > div").eq(tab1).stop(true).show().siblings(".art_tab > div").hide();
+//         });
+        
+//         $(".snb_m:eq(1) li").click(function () {
+//             var header = $("header").height()
+//             $("html, body").animate({
+//                 scrollTop: $('.act_tab').offset().top - header
+//             }, 1000);
+//             $('video').each(function () {
+//                 this.pause();
+//             });
+//             var tab1 = $(this).index();
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $(".menu, .snb_m").removeClass("on");
+//             $(".act_tab > div").eq(tab1).stop(true).show().siblings(".act_tab > div").hide();
+//         });
+        
+//         $(".snb_m:eq(2) li").click(function () {
+//             var tab3 = $(this).index();
+//             var header = $("header").height()
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $("html, body").animate({
+//                 scrollTop: $('.select').offset().top - header
+//             }, 1000);
+//             $(".menu, .snb_m").removeClass("on");
+//             $(".sel_menu > div").eq(tab3).stop(true).show().siblings().hide();
+//             $(".sel_tab li").eq(tab3).stop(true).addClass("on").siblings().removeClass("on");
+//         });
+        
+//         $(".snb_m:eq(3) li").click(function () {
+//             var tab4 = $(this).index();
+//             var header = $("header").height()
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $("html, body").animate({
+                
+//                 scrollTop: $('.audition').offset().top - header
+//             }, 1000);
+//             switch (tab4) {
+//                 case 0:
+//                     swiper6.slideTo(0, 300);
+//                     break;
+//                 case 1:
+//                     swiper6.slideTo(1, 300);
+//                     break;
+//             }
+//             $(".menu, .snb_m").removeClass("on");
+//         });
+        
+//         $(".snb_m:eq(4) li").click(function () {
+//             var tab5 = $(this).index();
+//             var header = $("header").height()
+//             $(this).addClass("on").siblings().removeClass("on");
+//             $("html, body").animate({
+//                 scrollTop: $('.aboutyg').offset().top - header
+//             }, 1000);
+//             switch (tab5) {
+//                 case 0:
+//                     swiper7.slideTo(0, 300);
+//                     break;
+//                 case 1:
+//                     swiper7.slideTo(1, 300);
+//                     break;
+//                 case 2:
+//                     swiper7.slideTo(2, 300);
+//                     break;
+//                 case 3:
+//                     swiper7.slideTo(3, 300);
+//                     break;
+//             }
+//             $(".menu, .snb_m").removeClass("on");
+//         });
+//     }
+// });
 $(document).resize(function () {
     if ($(window).width() > 1024) {
-        $(".box2").hover(function () {
-            $(this).children(".name").toggleClass("on");
-        });
-        $(".snb_m:eq(0) li").click(function () {
-            $("html, body").animate({
-                scrollTop: 0
-            }, 1000);
-            $('video').each(function () {
-                this.pause();
-            });
-            var tab1 = $(this).index();
-            $(this).addClass("on").siblings().removeClass("on");
-            $(".menu, .snb_m").removeClass("on");
-            $(".art_tab > div").eq(tab1).stop(true).show().siblings(".art_tab > div").hide();
-        });
-        
-        $(".snb_m:eq(1) li").click(function () {
-            var header = $("header").height()
-            $("html, body").animate({
-                scrollTop: $('.act_tab').offset().top - header
-            }, 1000);
-            $('video').each(function () {
-                this.pause();
-            });
-            var tab1 = $(this).index();
-            $(this).addClass("on").siblings().removeClass("on");
-            $(".menu, .snb_m").removeClass("on");
-            $(".act_tab > div").eq(tab1).stop(true).show().siblings(".act_tab > div").hide();
-        });
-        
-        $(".snb_m:eq(2) li").click(function () {
-            var tab3 = $(this).index();
-            var header = $("header").height()
-            $(this).addClass("on").siblings().removeClass("on");
-            $("html, body").animate({
-                scrollTop: $('.select').offset().top - header
-            }, 1000);
-            $(".menu, .snb_m").removeClass("on");
-            $(".sel_menu > div").eq(tab3).stop(true).show().siblings().hide();
-            $(".sel_tab li").eq(tab3).stop(true).addClass("on").siblings().removeClass("on");
-        });
-        
-        $(".snb_m:eq(3) li").click(function () {
-            var tab4 = $(this).index();
-            var header = $("header").height()
-            $(this).addClass("on").siblings().removeClass("on");
-            $("html, body").animate({
-                
-                scrollTop: $('.audition').offset().top - header
-            }, 1000);
-            switch (tab4) {
-                case 0:
-                    swiper6.slideTo(0, 300);
-                    break;
-                case 1:
-                    swiper6.slideTo(1, 300);
-                    break;
-            }
-            $(".menu, .snb_m").removeClass("on");
-        });
-        
-        $(".snb_m:eq(4) li").click(function () {
-            var tab5 = $(this).index();
-            var header = $("header").height()
-            $(this).addClass("on").siblings().removeClass("on");
-            $("html, body").animate({
-                scrollTop: $('.aboutyg').offset().top - header
-            }, 1000);
-            switch (tab5) {
-                case 0:
-                    swiper7.slideTo(0, 300);
-                    break;
-                case 1:
-                    swiper7.slideTo(1, 300);
-                    break;
-                case 2:
-                    swiper7.slideTo(2, 300);
-                    break;
-                case 3:
-                    swiper7.slideTo(3, 300);
-                    break;
-            }
-            $(".menu, .snb_m").removeClass("on");
-        });
+      $(".box2").hover(function () {
+        $(this).children(".name").toggleClass("on");
+      });
     }
     else if ($(window).width() >= 641) {
-        $(".box2").click(function () {
-            $(this).children(".name").toggleClass("on");
-        });
-        $(".snb_m:eq(0) li").click(function () {
-            $("html, body").animate({
-                scrollTop: 0
-            }, 1000);
-            $('video').each(function () {
-                this.pause();
-            });
-            var tab1 = $(this).index();
-            $(this).addClass("on").siblings().removeClass("on");
-            $(".menu, .snb_m").removeClass("on");
-            $(".art_tab > div").eq(tab1).stop(true).show().siblings(".art_tab > div").hide();
-        });
-        
-        $(".snb_m:eq(1) li").click(function () {
-            var header = $("header").height()
-            $("html, body").animate({
-                scrollTop: $('.act_tab').offset().top - header
-            }, 1000);
-            $('video').each(function () {
-                this.pause();
-            });
-            var tab1 = $(this).index();
-            $(this).addClass("on").siblings().removeClass("on");
-            $(".menu, .snb_m").removeClass("on");
-            $(".act_tab > div").eq(tab1).stop(true).show().siblings(".act_tab > div").hide();
-        });
-        
-        $(".snb_m:eq(2) li").click(function () {
-            var tab3 = $(this).index();
-            var header = $("header").height()
-            $(this).addClass("on").siblings().removeClass("on");
-            $("html, body").animate({
-                scrollTop: $('.select').offset().top - header
-            }, 1000);
-            $(".menu, .snb_m").removeClass("on");
-            $(".sel_menu > div").eq(tab3).stop(true).show().siblings().hide();
-            $(".sel_tab li").eq(tab3).stop(true).addClass("on").siblings().removeClass("on");
-        });
-        
-        $(".snb_m:eq(3) li").click(function () {
-            var tab4 = $(this).index();
-            var header = $("header").height()
-            $(this).addClass("on").siblings().removeClass("on");
-            $("html, body").animate({
-                
-                scrollTop: $('.audition').offset().top - header
-            }, 1000);
-            switch (tab4) {
-                case 0:
-                    swiper6.slideTo(0, 300);
-                    break;
-                case 1:
-                    swiper6.slideTo(1, 300);
-                    break;
-            }
-            $(".menu, .snb_m").removeClass("on");
-        });
-        
-        $(".snb_m:eq(4) li").click(function () {
-            var tab5 = $(this).index();
-            var header = $("header").height()
-            $(this).addClass("on").siblings().removeClass("on");
-            $("html, body").animate({
-                scrollTop: $('.aboutyg').offset().top - header
-            }, 1000);
-            switch (tab5) {
-                case 0:
-                    swiper7.slideTo(0, 300);
-                    break;
-                case 1:
-                    swiper7.slideTo(1, 300);
-                    break;
-                case 2:
-                    swiper7.slideTo(2, 300);
-                    break;
-                case 3:
-                    swiper7.slideTo(3, 300);
-                    break;
-            }
-            $(".menu, .snb_m").removeClass("on");
-        });
+      $(".box2").click(function () {
+        $(this).children(".name").toggleClass("on");
+      });
     }
     else if ($(window).width() <= 640) {
-        $(".table,.up").hide();
-        $(".table_menu").click(function () {
-            $(".table").slideToggle(300);
-            $(".down").toggle();
-            $(".up").toggle();
-        });
-        $(".box2").click(function () {
-            $(this).addClass("on").siblings().removeClass("on");
-        });
-        $("inner_3").remove("no_right1", "no_right1");
-        $(".snb_m:eq(0) li").click(function () {
-            $("html, body").animate({
-                scrollTop: 0
-            }, 1000);
-            $('video').each(function () {
-                this.pause();
-            });
-            var tab1 = $(this).index();
-            $(this).addClass("on").siblings().removeClass("on");
-            $(".menu, .snb_m").removeClass("on");
-            $(".art_tab > div").eq(tab1).stop(true).show().siblings(".art_tab > div").hide();
-        });
-        
-        $(".snb_m:eq(1) li").click(function () {
-            var header = $("header").height()
-            $("html, body").animate({
-                scrollTop: $('.act_tab').offset().top - header
-            }, 1000);
-            $('video').each(function () {
-                this.pause();
-            });
-            var tab1 = $(this).index();
-            $(this).addClass("on").siblings().removeClass("on");
-            $(".menu, .snb_m").removeClass("on");
-            $(".act_tab > div").eq(tab1).stop(true).show().siblings(".act_tab > div").hide();
-        });
-        
-        $(".snb_m:eq(2) li").click(function () {
-            var tab3 = $(this).index();
-            var header = $("header").height()
-            $(this).addClass("on").siblings().removeClass("on");
-            $("html, body").animate({
-                scrollTop: $('.select').offset().top - header
-            }, 1000);
-            $(".menu, .snb_m").removeClass("on");
-            $(".sel_menu > div").eq(tab3).stop(true).show().siblings().hide();
-            $(".sel_tab li").eq(tab3).stop(true).addClass("on").siblings().removeClass("on");
-        });
-        
-        $(".snb_m:eq(3) li").click(function () {
-            var tab4 = $(this).index();
-            var header = $("header").height()
-            $(this).addClass("on").siblings().removeClass("on");
-            $("html, body").animate({
-                
-                scrollTop: $('.audition').offset().top - header
-            }, 1000);
-            switch (tab4) {
-                case 0:
-                    swiper6.slideTo(0, 300);
-                    break;
-                case 1:
-                    swiper6.slideTo(1, 300);
-                    break;
-            }
-            $(".menu, .snb_m").removeClass("on");
-        });
-        
-        $(".snb_m:eq(4) li").click(function () {
-            var tab5 = $(this).index();
-            var header = $("header").height()
-            $(this).addClass("on").siblings().removeClass("on");
-            $("html, body").animate({
-                scrollTop: $('.aboutyg').offset().top - header
-            }, 1000);
-            switch (tab5) {
-                case 0:
-                    swiper7.slideTo(0, 300);
-                    break;
-                case 1:
-                    swiper7.slideTo(1, 300);
-                    break;
-                case 2:
-                    swiper7.slideTo(2, 300);
-                    break;
-                case 3:
-                    swiper7.slideTo(3, 300);
-                    break;
-            }
-            $(".menu, .snb_m").removeClass("on");
-        });
+      $(".box2").click(function () {
+        $(this).addClass("on").siblings().removeClass("on");
+      });
+      $("inner_3").remove("no_right1", "no_right1");
     }
-});
+  });
+
+
 // --------------------------------주식시세----------------------------------
 // 실시간8자리날짜구하기
 function getToday() {

@@ -48,14 +48,14 @@ body{
     width: 100%;
     height: 100vh;
     margin: 10vh 0 0 0;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    /* overflow-y: scroll;
+    scroll-snap-type: y mandatory; */
 }
-.homepage > div{
+/* .homepage > div{
     height: 100%;
     color: #fff;
     scroll-snap-align: start;
-}
+} */
 .homepage .art_tab{
     height: 90vh;
 }
@@ -405,13 +405,15 @@ header .snb_m .black:hover{
     align-items: center;
     justify-content: center;
 }
-.body .MV video {
-    /* margin: 0 auto; */
-    /* width: 95%; */
+.body .MV a{
+    width: 50%;
     height: 100%;
-    /* height: 80vh; */
-    /* position: relative;
-    z-index: 1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body .MV img{
+    height: 100%;
 }
 .body .material-symbols-outlined {
     font-size: 57px;
@@ -2276,10 +2278,7 @@ header .snb_m .black:hover{
 .aboutyg .ab_box.ir > div > p:first-child{
     font-size: 50px;
 }
-.aboutyg .ab_box.ir > div > p:nth-child(2){
-    font-size: 20px;
-}
-.aboutyg .ab_box.ir > div > div:nth-child(3){
+.aboutyg .ab_box.ir > div > div:nth-child(2){
     text-align: end;
     margin-bottom: 5px;
 }
@@ -2287,7 +2286,7 @@ header .snb_m .black:hover{
     color: #fff;
     font-size: 15px;
 }
-.aboutyg .ab_box.ir > div > div:nth-child(4){
+.aboutyg .ab_box.ir > div > div:nth-child(3){
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
     display: flex;
@@ -2296,41 +2295,41 @@ header .snb_m .black:hover{
     font-family: 'Heebo', sans-serif;
     height: 60%;
 }
-.aboutyg .ab_box.ir > div > div:nth-child(4) .j_left{
+.aboutyg .ab_box.ir > div > div:nth-child(3) .j_left{
     width: 50%;
 }
-.aboutyg .ab_box.ir > div > div:nth-child(4) .j_left > div > div > span{
+.aboutyg .ab_box.ir > div > div:nth-child(3) .j_left > div > div > span{
     font-size: 40px;
 }
-.aboutyg .ab_box.ir > div > div:nth-child(4) .j_right{
+.aboutyg .ab_box.ir > div > div:nth-child(3) .j_right{
     width: 50%;
     font-size: 20px;
     color: #f9f58e;
     /* color: #006ECD; */
 }
-.aboutyg .ab_box.ir > div > div:nth-child(4) .j_right .big{
+.aboutyg .ab_box.ir > div > div:nth-child(3) .j_right .big{
     font-size: 16px;
     color: #fff;
     border-right: 2px solid #fff;
     padding-right: 10px;
 }
-.aboutyg .ab_box.ir > div > div:nth-child(4) .j_right #mrktCtg{
+.aboutyg .ab_box.ir > div > div:nth-child(3) .j_right #mrktCtg{
     font-size: 16px;
     color: #fff;
     border-right: 2px solid #fff;
     padding-right: 10px;
 }
-.aboutyg .ab_box.ir > div > div:nth-child(4) .j_right > div:first-child > div{
+.aboutyg .ab_box.ir > div > div:nth-child(3) .j_right > div:first-child > div{
     border-bottom: 1px solid #fff;
     display: flex;
     padding: 10px 0;
     gap: 10px;
     align-items: center;
 }
-.aboutyg .ab_box.ir > div > div:nth-child(4) .j_right > div:last-child{
+.aboutyg .ab_box.ir > div > div:nth-child(3) .j_right > div:last-child{
     padding: 10px 0;
 }
-.aboutyg .ab_box.ir > div > div:nth-child(4) .j_right > div:last-child > div{
+.aboutyg .ab_box.ir > div > div:nth-child(3) .j_right > div:last-child > div{
     display: flex;
     gap: 10px;
     align-items: center;
@@ -2506,7 +2505,7 @@ header .snb_m .black:hover{
 #up.on2{
     opacity: 1;
     visibility: visible;
-    bottom: 6%;
+    bottom: 11%;
 }
 footer {
     height: 10vh;
@@ -2551,4 +2550,98 @@ footer div:last-child i {
 footer div:last-child i:hover {
     color: red;
     cursor: pointer;
+}
+
+/* ------------------------------- */
+#footer .footer-container {font-size: 0;}
+
+/* ----- pc width size ----- */
+#footer .footer-container .instagram {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#footer .footer-container .instagram h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400; 
+    letter-spacing: 2px;
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+}
+
+/* .instagram-box {} */
+
+#instafeed {
+    position: relative;
+}
+
+#instafeed .instagram_gallery {
+    list-style: none;
+    padding: 5px 0 20px;
+    margin: 0;
+}
+
+#instafeed .instagram_gallery li {
+    display: inline-block;
+    width: 20%;
+    overflow: hidden;
+}
+
+#instafeed .instagram_gallery li a {
+    display: block;
+    position: relative;
+}
+
+#instafeed .instagram_gallery li a:after {
+    content: '\f16d';
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 400;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #fff;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+#instafeed .instagram_gallery li a:hover:after {
+    opacity: 0;
+}
+
+#instafeed .instagram_gallery li a:hover .instagram-caption {
+    opacity: 1
+}
+
+#instafeed .instagram_gallery li a:hover > img {
+    filter: blur(1px);
+}
+
+#instafeed .instagram_gallery li a:hover > .caption-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#instafeed .instagram_gallery li a img {
+    width: 100%;
+    padding: 2px;
+    border-radius: 7px;
+}
+
+#instafeed .instagram_gallery li a .caption-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s ease;
+}
+
+#instafeed .instagram_gallery li a .instagram-caption {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: #fff;
+    opacity: 0;
 }

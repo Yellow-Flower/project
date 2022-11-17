@@ -1,6 +1,6 @@
 @charset "UTF-8";
            
- 
+  
 /* ----------------------------------로그인창--------------- */
 header .login_page > div{
     width: 300px;
@@ -383,11 +383,11 @@ header .login_page > div > div:last-child{
     font-size: 35px;
     bottom: 12%;
 }
-#up.on2{
+/* #up.on2{
     opacity: 1;
     visibility: visible;
     bottom: 11%;
-}
+} */
 /* --------------------풋터------------------------ */
 footer{
     height: 10vh;

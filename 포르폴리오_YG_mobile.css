@@ -838,29 +838,26 @@ header .login_page > div {
 .aboutyg .ab_box.ir > div > p:first-child{
     font-size: 20px;
 }
-.aboutyg .ab_box.ir > div > p:nth-child(2){
-    font-size: 15px;
-}
-.aboutyg .ab_box.ir > div > div:nth-child(4){
+.aboutyg .ab_box.ir > div > div:nth-child(3){
     flex-direction: column;
     overflow: auto;
     height: 78%;
 }
-.aboutyg .ab_box.ir > div > div:nth-child(4) .j_left{
+.aboutyg .ab_box.ir > div > div:nth-child(3) .j_left{
     width: 100%;
     border-bottom: 1px solid #fff;
 }
-.aboutyg .ab_box.ir > div > div:nth-child(4) .j_left > div > div{
+.aboutyg .ab_box.ir > div > div:nth-child(3) .j_left > div > div{
     margin-bottom: 10px;
 }
-.aboutyg .ab_box.ir > div > div:nth-child(4) .j_left > div > div > span{
+.aboutyg .ab_box.ir > div > div:nth-child(3) .j_left > div > div > span{
     font-size: 20px;
 }
-.aboutyg .ab_box.ir > div > div:nth-child(4) .j_right{
+.aboutyg .ab_box.ir > div > div:nth-child(3) .j_right{
     width: 100%;
     font-size: 15px;
 }
-.aboutyg .ab_box.ir > div > div:nth-child(4) .j_right #mrktCtg{
+.aboutyg .ab_box.ir > div > div:nth-child(3) .j_right #mrktCtg{
     font-size: 15px;
 }
 .aboutyg .ab_box .news {
@@ -983,5 +980,5 @@ footer span:nth-child(3){
 #up.on2{
     opacity: 1;
     visibility: visible;
-    bottom: 17%;
+    bottom: 16%;
 }
