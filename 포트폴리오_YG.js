@@ -1128,9 +1128,9 @@ fetch(publicAPIurl)
         mrktTotAmt.innerText = numberWithKorean(yesterStock.mrktTotAmt); // 전날 시가총액
         yesterStock.vs = Number(yesterStock.vs); // 등락금액 숫자변환
         yesterStock.fltRt = Number(yesterStock.fltRt); // 등락비율 숫자변환
-        lstgStCnt.innerText = yesterStock.lstgStCnt; // 전날 종목의 상장주식수
-        hipr.innerText = yesterStock.hipr; // 전날의 최고가
-        lopr.innerText = yesterStock.lopr; // 전날의 최저가
+        lstgStCnt.innerText =`${numberWithCommas(yesterStock.lstgStCnt)}`; // 전날 종목의 상장주식수
+        hipr.innerText = `${numberWithCommas(yesterStock.hipr)}원`; // 전날의 최고가
+        lopr.innerText = `${numberWithCommas(yesterStock.lopr)}원`; // 전날의 최저가
 
         // 등락금액
         if (yesterStock.vs > 0) {
