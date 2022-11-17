@@ -1,20 +1,20 @@
 @charset "UTF-8";
-           
 
-  
+
+
 /* ---------------------------------로그인창--------------- */
-header .login_page{
+header .login_page {
     background-image: url(/YG.Ent/이미지/YG_로그인배경패턴14.png);
     background-size: contain;
 }
-header .login_page > div > span{
+header .login_page > div > span {
     padding-left: 180px;
-} 
+}
 /* ----------------------------------메인화면--------------- */
 .body > .MV {
     height: 90vh;
-}  
-header{
+}
+header {
     height: 5vh;
     padding: 0 10px;
 }
@@ -28,11 +28,11 @@ header a {
     /* left: 10%; */
     /* top: -14%; */
 }
-header .button{
+header .button {
     flex-direction: column;
     /* top: 19%; */
 }
-header .button span{
+header .button span {
     font-size: 12px;
     padding: 0;
     border: none;
@@ -41,7 +41,7 @@ header .button span{
 header .button > span {
     padding: 0px 11px;
 }
-header .button > div:first-child{
+header .button > div:first-child {
     height: 5vh;
     line-height: 5vh;
 }
@@ -56,19 +56,19 @@ header .button > div:first-child > span:first-child {
 header .button > div:first-child > span:last-child {
     padding: 0px 5px;
 }
-header .head_menu{
+header .head_menu {
     font-size: 30px;
 }
 header .button .language {
     right: 0%;
     top: 83%;
 }
-header .button .language span{
+header .button .language span {
     font-size: 12px;
     /* padding: 0px 8px; */
 }
 
-header .menu{
+header .menu {
     width: 100%;
 }
 header .menu ul {
@@ -78,26 +78,26 @@ header .menu span {
     font-size: 30px;
     padding: 20px 0 20px 76%;
 }
-header .gnb{
+header .gnb {
     width: 50%;
 }
-header .snb ul{
+header .snb ul {
     font-size: 18px;
     margin: 50px 0 0 15px;
     gap: 8px;
 }
-header .snb_m{
+header .snb_m {
     width: 50%;
 }
-.top{
+.top {
     height: 5vh;
 }
-.top h1{
+.top h1 {
     font-size: 24px;
     height: 5vh;
     line-height: 5vh;
 }
-.sec1_2 .proflie{
+.sec1_2 .proflie {
     height: 90vh;
 }
 .sec1_2 .proflie .back {
@@ -105,7 +105,7 @@ header .snb_m{
 }
 
 
-.swiper-button-next:after{
+.swiper-button-next:after {
     font-size: 1.5rem;
 }
 .swiper-button-prev:after {
@@ -123,35 +123,35 @@ header .login_page > div {
     width: 250px;
 }
 /* ------------------------홈페이지-------------------- */
-.homepage{
+.homepage {
     margin: 5vh 0 0 0;
 }
-.homepage .art_tab{
+.homepage .art_tab {
     height: 95vh;
 }
-.homepage .act_tab{
+.homepage .act_tab {
     height: 95vh;
 }
 /* ----------------------------------아티스트 페이지2--------------- */
 .sec1_1 {
     height: 95vh;
 }
-.sec1_2 .proflie .photo{
+.sec1_2 .proflie .photo {
     width: 100%;
     height: 50%;
     background-repeat: no-repeat;
     /* background-size: cover; */
 }
-.winner .sec1_2 .proflie .photo{
+.winner .sec1_2 .proflie .photo {
     background-size: contain;
     background-position: top;
 }
-.TREASURE .sec1_2 .proflie .photo{
+.TREASURE .sec1_2 .proflie .photo {
     background-size: contain;
     background-position: top;
 }
 
-.artist .sec1_2 .text_box1{
+.artist .sec1_2 .text_box1 {
     gap: 5px;
     padding: 10px 10px;
     width: 80%;
@@ -160,33 +160,33 @@ header .login_page > div {
     bottom: 34%;
     background-color: rgba(1, 2, 8, 0.2);
 }
-.TREASURE .artist .sec1_2 .text_box1{
+.TREASURE .artist .sec1_2 .text_box1 {
     height: 110px;
 }
-.artist .sec1_2 .text_box1 h5{
+.artist .sec1_2 .text_box1 h5 {
     font-size: 20px;
 }
-.artist .sec1_2 .text_box1 p{
+.artist .sec1_2 .text_box1 p {
     overflow: auto;
     font-size: 11px;
 }
-.blackpink .sec1_2 .proflie .photo{
+.blackpink .sec1_2 .proflie .photo {
     background-size: contain;
     /* background-position: center; */
     width: 100%;
     height: 100%;
 }
-.artist .sec1_2 .proflie .photo > div:last-child{
+.artist .sec1_2 .proflie .photo > div:last-child {
     top: 1%;
     left: 94%;
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
 }
-.artist .sec1_2 .proflie .photo > div:last-child a{
+.artist .sec1_2 .proflie .photo > div:last-child a {
     font-size: 18px;
 }
-.artist .sec1_2 .proflie .photo .text_box3{
+.artist .sec1_2 .proflie .photo .text_box3 {
     width: 80%;
     height: 30%;
     right: 10%;
@@ -195,10 +195,10 @@ header .login_page > div {
     padding: 8px 0 0 0;
     /* background-color: rgba(0, 0, 0, 1); */
 }
-.sec1_2 .proflie .photo .text_box3 .swiper-wrapper{
+.sec1_2 .proflie .photo .text_box3 .swiper-wrapper {
     gap: 0px;
 }
-.artist .sec1_2 .proflie .photo .text_box3 > p:first-child{
+.artist .sec1_2 .proflie .photo .text_box3 > p:first-child {
     width: 49%;
     height: 25%;
 }
@@ -206,29 +206,29 @@ header .login_page > div {
     width: 70%;
     font-size: 0.5rem;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list{
+.sec1_2 .proflie .photo .text_box3 .album_list {
     width: 90%;
     height: 60%;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .swiper{
+.sec1_2 .proflie .photo .text_box3 .album_list .swiper {
     text-align: center;
     width: 95%;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .swiper-wrapper{
+.sec1_2 .proflie .photo .text_box3 .album_list .swiper-wrapper {
     display: flex;
 }
-.text_box3 .album_list .swiper-button-next{
+.text_box3 .album_list .swiper-button-next {
     right: 47%;
     bottom: -10%;
 }
-.TREASURE .text_box3 .album_list .swiper-button-next{
+.TREASURE .text_box3 .album_list .swiper-button-next {
     top: unset;
     bottom: -5%;
 }
-.text_box3 .album_list .swiper-button-next:after{
+.text_box3 .album_list .swiper-button-next:after {
     font-size: 15px;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide img{
+.sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide img {
     width: 40%;
     height: 40%;
     margin: 0 auto;
@@ -237,36 +237,36 @@ header .login_page > div {
 .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div {
     flex-direction: column;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide section > div{
+.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide section > div {
     height: 30%;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div > section > div:last-child{
+.sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div > section > div:last-child {
     height: 70%;
     width: 50px;
     display: flex;
     width: 100%;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div::after{
+.sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div::after {
     display: none;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section{
+.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section {
     width: 80%;
     height: 50%;
     /* padding: 5px 0 0; */
     margin: 0 auto;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .album > .swiper-wrapper > .swiper-slide{
+.sec1_2 .proflie .photo .text_box3 .album_list .album > .swiper-wrapper > .swiper-slide {
     border-bottom: none;
-} 
-.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section > div > p{
+}
+.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section > div > p {
     font-size: 0.7rem;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section .list_silde p{
+.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section .list_silde p {
     text-align: center;
     font-size: 0.7rem;
 }
 
-.sec1_2 .proflie .box2{
+.sec1_2 .proflie .box2 {
     font-size: 10px;
     text-align: center;
     background-position: center center;
@@ -274,38 +274,38 @@ header .login_page > div {
     justify-content: center;
     align-items: center;
 }
-.sec1_2 .proflie .box2.on{
+.sec1_2 .proflie .box2.on {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.2);
 }
-.sec1_2 .proflie .box2:nth-child(4){
+.sec1_2 .proflie .box2:nth-child(4) {
     width: 14%;
 }
-.TREASURE .sec1_2 .proflie .box2:nth-child(9){
+.TREASURE .sec1_2 .proflie .box2:nth-child(9) {
     height: 30%;
 }
-.TREASURE .sec1_2 .proflie .box2:nth-child(10){
+.TREASURE .sec1_2 .proflie .box2:nth-child(10) {
     height: 30%;
 }
-.TREASURE .sec1_2 .proflie .box2:nth-child(11){
+.TREASURE .sec1_2 .proflie .box2:nth-child(11) {
     height: 30%;
 }
-.TREASURE .sec1_2 .proflie .box2:nth-child(12){
+.TREASURE .sec1_2 .proflie .box2:nth-child(12) {
     height: 30%;
 }
 /* ---------------------------------프로필--------------------------- */
-.sec1_2 .proflie .box2 .name{
+.sec1_2 .proflie .box2 .name {
     padding: 0 0 400% 0;
     opacity: 1;
 }
-.sec1_2 .proflie .box2 .name > p,.info, .in_sns{
+.sec1_2 .proflie .box2 .name > p, .info, .in_sns {
     display: none;
 }
 .sec1_2 .proflie .f_SOJUNGHWAN .name {
     padding: 144% 20% 0 0;
 }
 .sec1_2 .proflie .f_YOSHI .name {
-    padding:180% 6% 0 6%;
+    padding: 180% 6% 0 6%;
 }
 .sec1_2 .proflie .f_JUNKYU .name {
     padding: 180% 40% 0 0;
@@ -338,32 +338,32 @@ header .login_page > div {
     padding: 0 0 150% 20%;
 }
 /* --------------------------------프로필 동그라미 아이콘------------------- */
-.sec1_2 .proflie .box2 .name::after{
+.sec1_2 .proflie .box2 .name::after {
     display: none;
 }
-.winner .sec1_2 .proflie .box2 .name::after{
+.winner .sec1_2 .proflie .box2 .name::after {
     display: none;
 }
 /* ------------------------------------------굿즈----------------------------- */
-.select{
+.select {
     height: 95vh;
 }
-.select .inner_2 .sel_menu{
+.select .inner_2 .sel_menu {
     top: 14%;
     height: 78vh;
     background-color: #fff;
 }
-.select .inner_2 .sel_menu .new{
+.select .inner_2 .sel_menu .new {
     height: 100%;
 }
-.select .inner_2 .sel_menu > .b{
+.select .inner_2 .sel_menu > .b {
     /* height: 78vh; */
     height: 60vh;
 }
-.select .inner_2 > div:nth-child(3){
+.select .inner_2 > div:nth-child(3) {
     height: 5vh;
     width: 100%;
-    align-items:flex-start;
+    align-items: flex-start;
 }
 .select .inner_2 > div:nth-child(3) ul {
     width: 100%;
@@ -376,57 +376,59 @@ header .login_page > div {
     font-size: 0.5rem;
     padding: 5px;
 }
-.select .inner_2 > div:nth-child(3) input{
+.select .inner_2 > div:nth-child(3) input {
     height: 3vh;
 }
 .select .inner_2 > div:nth-child(3) span {
     font-size: 20px;
 }
-.select .inner_2 > div:nth-child(3) p:last-child{
+.select .inner_2 > div:nth-child(3) p:last-child {
     width: 100px;
     height: 3vh;
     line-height: 3vh;
     font-size: 15px;
 }
-.select .inner_2 > div:nth-child(1){
+.select .inner_2 > div:nth-child(1) {
     height: 4vh;
     line-height: 4vh;
 }
-.select .inner_2 > div:nth-child(1) p{
+.select .inner_2 > div:nth-child(1) p {
     font-size: 1.5rem;
     /* margin: 0 0 10px 5px; */
 }
-.select .inner_2 > div:nth-child(2){
+.select .inner_2 > div:nth-child(2) {
     height: 8vh;
 }
-.select .inner_2 > div:nth-child(2) span{
-    /* font-size: 20px; */
+.select .inner_2 > div:nth-child(2) span {
     font-size: 95%;
 }
-.select .inner_2 .sel_menu .b .shopping{
+.select .inner_2 > div:nth-child(2) input{
+    font-size: 12px;
+}
+.select .inner_2 .sel_menu .b .shopping {
     bottom: -31%;
 }
-.select .inner_2 .sel_menu .b .shopping > p{
+.select .inner_2 .sel_menu .b .shopping > p {
     font-size: 14px;
 }
-.select .inner_2 .sel_menu .b .shopping > span{
+.select .inner_2 .sel_menu .b .shopping > span {
     font-size: 20px;
     width: 30px;
     height: 30px;
     line-height: 30px;
 }
-.select .inner_2 .sel_menu .goodsgrid{
+.select .inner_2 .sel_menu .goodsgrid {
     height: 100%;
     /* height: 78vh; */
     padding: 5% 2px;
 }
-.select .sel_menu > div:nth-child(1) .yg_goods > div p:first-child{
+.select .sel_menu > div:nth-child(1) .yg_goods > div p:first-child {
     font-size: 0.7rem;
 }
-.select .sel_menu > div:nth-child(1) .yg_goods > div p:last-child{
+.select .sel_menu > div:nth-child(1) .yg_goods > div p:last-child {
     font-size: 0.5rem;
 }
-.select .sel_menu > div:nth-child(1) .swiper-slide .s_one .gleft > p:nth-child(1){
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_one .gleft > p:nth-child(1) {
     /* height: 130px;
     width: 100%;
     background-size: cover; */
@@ -436,88 +438,88 @@ header .login_page > div {
     background-size: contain;
     background-position: center;
 }
-.select .sel_menu > div:nth-child(1) .swiper-slide .s_two .gleft > p:nth-child(1){
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_two .gleft > p:nth-child(1) {
     height: 26.5vh;
     width: 100%;
     background-size: contain;
     background-position: center;
 }
-.select .sel_menu > div:nth-child(1) .swiper-slide .s_thr .gleft > p:nth-child(1){
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_thr .gleft > p:nth-child(1) {
     height: 26.5vh;
     width: 100%;
     background-size: contain;
     background-position: center;
 }
-.select .sel_menu > div:nth-child(1) .swiper-slide .s_one .gright > p:nth-child(1){
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_one .gright > p:nth-child(1) {
     height: 26.5vh;
     width: 100%;
     background-size: contain;
     background-position: center;
 }
-.select .sel_menu > div:nth-child(1) .swiper-slide .s_two .gright > p:nth-child(1){
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_two .gright > p:nth-child(1) {
     height: 26.5vh;
     width: 100%;
     background-size: contain;
     background-position: center;
 }
-.select .sel_menu > div:nth-child(1) .swiper-slide .s_thr .gright > p:nth-child(1){
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_thr .gright > p:nth-child(1) {
     height: 26.5vh;
     width: 100%;
     background-size: contain;
     background-position: center;
 }
-.select .sel_menu > div:nth-child(1) .slide > div:nth-child(2){
+.select .sel_menu > div:nth-child(1) .slide > div:nth-child(2) {
     font-size: 3em;
     width: 100%;
     height: 15vh;
     line-height: 15vh;
 }
-.select .sel_menu > div:nth-child(1) .slide > div:nth-child(2) p{
+.select .sel_menu > div:nth-child(1) .slide > div:nth-child(2) p {
     font-size: 1.5em;
     width: 90%;
     height: 100%;
 }
-.select .sel_menu > div:nth-child(1) .newf{
+.select .sel_menu > div:nth-child(1) .newf {
     flex-direction: column;
     height: 78vh;
 }
-.select .sel_menu > div:nth-child(1) .swiper-slide .gleft{
+.select .sel_menu > div:nth-child(1) .swiper-slide .gleft {
     width: 100%;
     height: 31.5vh;
 }
-.select .sel_menu > div:nth-child(1) .swiper-slide .gright{
+.select .sel_menu > div:nth-child(1) .swiper-slide .gright {
     width: 100%;
     height: 31.5vh;
 }
 .select .inner_2 > div:nth-child(2) ul {
     flex-wrap: wrap;
 }
-.select .sel_menu > div:nth-child(1) .swiper-slide .s_one .gleft > a:first-child p{
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_one .gleft > a:first-child p {
     background-repeat: repeat;
     background-size: contain;
     width: 100%;
 }
-.select .sel_menu > div:nth-child(1) .swiper-slide .s_two .gleft > a:first-child p{
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_two .gleft > a:first-child p {
     background-repeat: repeat;
     background-size: contain;
     width: 100%;
 }
-.select .sel_menu > div:nth-child(1) .swiper-slide .s_thr .gleft > a:first-child p{
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_thr .gleft > a:first-child p {
     background-repeat: repeat;
     background-size: contain;
     width: 100%;
 }
-.select .sel_menu > div:nth-child(1) .swiper-slide .s_one .gright > a:first-child p{
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_one .gright > a:first-child p {
     background-repeat: repeat;
     background-size: contain;
     width: 100%;
 }
-.select .sel_menu > div:nth-child(1) .swiper-slide .s_two .gright > a:first-child p{
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_two .gright > a:first-child p {
     background-repeat: repeat;
     background-size: contain;
     width: 100%;
 }
-.select .sel_menu > div:nth-child(1) .swiper-slide .s_thr .gright > a:first-child p{
+.select .sel_menu > div:nth-child(1) .swiper-slide .s_thr .gright > a:first-child p {
     background-repeat: repeat;
     background-size: contain;
     width: 100%;
@@ -535,98 +537,98 @@ header .login_page > div {
 .actors .sec1_2 .text_box1 h5 {
     font-size: 20px;
 }
-.actors .sec1_2 .text_box2{
+.actors .sec1_2 .text_box2 {
     display: none;
 }
-.actors.cha .sec1_2 .text_box1 h5{
+.actors.cha .sec1_2 .text_box1 h5 {
     color: #fff;
 }
-.actors.cha .sec1_2 .text_box1 p{
+.actors.cha .sec1_2 .text_box1 p {
     color: #fff;
 }
 .TREASURE .sec1_2 .text_box2 {
     height: 40%;
 }
-.sec1_2 .text_box2 .name > h1{
+.sec1_2 .text_box2 .name > h1 {
     font-size: 15px;
 }
-.TREASURE .sec1_2 .text_box2 .name > h1{
+.TREASURE .sec1_2 .text_box2 .name > h1 {
     font-size: 11px;
 }
-.actors .sec1_2 .proflie{
+.actors .sec1_2 .proflie {
     height: 90vh;
 }
-.actors .sec1_2 .proflie .back{
+.actors .sec1_2 .proflie .back {
     height: 90vh;
 }
-.actors .sec1_2 .proflie .box2{
+.actors .sec1_2 .proflie .box2 {
     border: 0;
 }
-.actors .sec1_2 .text_box1 p{
+.actors .sec1_2 .text_box1 p {
     font-size: 11px;
 }
-.actors .sec1_2 .proflie .photo .text_box3{
+.actors .sec1_2 .proflie .photo .text_box3 {
     width: 90%;
     height: 30%;
     bottom: 2%;
     color: black;
     background-color: rgba(255, 254, 254, 0.3);
 }
-.actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1){
+.actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1) {
     width: 95%;
 }
-.actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1) span:first-child{
+.actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(1) span:first-child {
     flex: 1;
     /* width: 14%; */
     text-align: center;
 }
-.actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(2) .swiper-slide > div > div{
+.actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(2) .swiper-slide > div > div {
     height: 15vh;
 }
-.actors .sec1_2 .proflie .hee_box_two:nth-child(1){
+.actors .sec1_2 .proflie .hee_box_two:nth-child(1) {
     margin: 28% 0 0 20%;
 }
-.actors .sec1_2 .proflie .photo .text_box3 .album_list{
+.actors .sec1_2 .proflie .photo .text_box3 .album_list {
     width: 100%;
     height: 80%;
 }
-.actors .text_box3 .album_list .swiper-button-next{
+.actors .text_box3 .album_list .swiper-button-next {
     right: -4%;
     top: unset;
     bottom: 40%;
     transform: rotate(270deg);
 }
-.actors .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div{
+.actors .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div {
     border-bottom: none;
 }
-.actors .text_box3 .album_list .swiper-button-prev{
+.actors .text_box3 .album_list .swiper-button-prev {
     left: -3%;
     top: unset;
     bottom: 40%;
 }
-.actors .text_box3 .album_list .swiper-button-prev:after{
+.actors .text_box3 .album_list .swiper-button-prev:after {
     display: block;
     font-size: 15px;
 }
-.actors .actors_right .proflie .photo{
+.actors .actors_right .proflie .photo {
     background-position: top;
 }
 /* ------------------------배우 : 차승원----------------------------- */
-.actors.cha .actors_right .proflie .photo{
+.actors.cha .actors_right .proflie .photo {
     background-position: top;
     background-image: url(/YG.Ent/이미지/배우/차승원_ph3.png);
     background-size: cover;
 }
 /* ------------------------오디션 페이지------------------------ */
-.audition{
+.audition {
     height: 95vh;
 }
-.audition > div:first-child{
+.audition > div:first-child {
     height: 4vh;
     line-height: 4vh;
     font-size: 1.5rem;
 }
-.audition .inner_3 .apply{
+.audition .inner_3 .apply {
     height: 91vh;
 }
 .audition .inner_3 .ap_left1 {
@@ -637,42 +639,42 @@ header .login_page > div {
     width: 80%;
     margin: 0;
 }
-.audition .inner_3 .no_left1::after{
+.audition .inner_3 .no_left1::after {
     display: none;
 }
 .audition .inner_3 .no_left1 .no_sns a {
     font-size: 20px;
 }
-.audition .inner_3 .no_left1 label{
+.audition .inner_3 .no_left1 label {
     margin: 15% 0 0;
     font-size: 20px;
 }
-.audition .inner_3 .ap_left1::after{
+.audition .inner_3 .ap_left1::after {
     display: none;
 }
-.audition .inner_3 .no_left1 .au_notice{
+.audition .inner_3 .no_left1 .au_notice {
     height: 40%;
 }
 .audition .inner_3 .no_left1 .au_notice > div:first-child span {
     font-size: 20px;
 }
-.audition .inner_3 .no_left1 .au_notice > div:first-child i{
+.audition .inner_3 .no_left1 .au_notice > div:first-child i {
     font-size: 20px;
 }
 .audition .inner_3 .ap_left1 div {
     height: 50%;
 }
-.audition .inner_3 .ap_left1 div > p:first-child{
+.audition .inner_3 .ap_left1 div > p:first-child {
     height: 166%;
 }
-.audition .inner_3 .ap_left1 div > p:nth-child(2){
+.audition .inner_3 .ap_left1 div > p:nth-child(2) {
     font-size: 20px;
 }
-.audition .inner_3 .ap_left1 p:nth-child(2){
+.audition .inner_3 .ap_left1 p:nth-child(2) {
     /* margin: 150px 10% 0 10%; */
     font-size: 20px;
 }
-.audition .inner_3 .ap_left1 > a:nth-child(3){
+.audition .inner_3 .ap_left1 > a:nth-child(3) {
     display: block;
     font-size: 20px;
     color: black;
@@ -682,55 +684,55 @@ header .login_page > div {
     border-radius: 15px;
     cursor: pointer;
 }
-.audition .inner_3 .ap_left1 > a:nth-child(3):hover{
+.audition .inner_3 .ap_left1 > a:nth-child(3):hover {
     background-color: black;
     color: #fff;
 }
-.audition .inner_3 .ap_left1 > a:nth-child(3) p{
+.audition .inner_3 .ap_left1 > a:nth-child(3) p {
     width: 100%;
     height: 50px;
     line-height: 50px;
     text-align: center;
 }
-.audition .inner_3 .ap_right1{
+.audition .inner_3 .ap_right1 {
     display: none;
 }
-.audition .inner_3 .no_right1{
+.audition .inner_3 .no_right1 {
     display: none;
 }
-.audition .inner_3 .notice{
+.audition .inner_3 .notice {
     height: 91vh;
 }
 /* ------------------------------------어바웃 와이지----------------------------- */
-.aboutyg{
+.aboutyg {
     height: 95vh;
 }
 .aboutyg .yg_slide {
     height: 80%;
 }
-.aboutyg > div:nth-child(1){
+.aboutyg > div:nth-child(1) {
     height: 4vh;
     line-height: 4vh;
     font-size: 1.5rem;
 }
-.aboutyg .ab_box{
+.aboutyg .ab_box {
     flex-direction: column;
     /* overflow: auto; */
 }
-.aboutyg .ab_box > .yg_sym{
+.aboutyg .ab_box > .yg_sym {
     width: 100%;
     height: 30%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.aboutyg .ab_box > .yg_sym > p:first-child{
+.aboutyg .ab_box > .yg_sym > p:first-child {
     /* width: 175px; */
     width: 50%;
     height: 70%;
     margin: 10px 0 0 10px;
 }
-.aboutyg .ab_box > .yg_sym > p:last-child{
+.aboutyg .ab_box > .yg_sym > p:last-child {
     /* width: 50%;
     height: 20%; */
     text-align: left;
@@ -742,67 +744,68 @@ header .login_page > div {
     height: 70%;
     padding: 5% 5%;
 }
-.aboutyg .ab_box .introduction .shapes > div{
+.aboutyg .ab_box .introduction .shapes > div {
     flex-direction: column;
     align-items: center;
 }
-.aboutyg .ab_box .introduction .shapes > div > div:nth-child(1){
+.aboutyg .ab_box .introduction .shapes > div > div:nth-child(1) {
     justify-content: center;
 }
-.aboutyg .ab_box .introduction .shapes > div > div:nth-child(1) > div:first-child{
+.aboutyg .ab_box .introduction .shapes > div > div:nth-child(1) > div:first-child {
     flex-direction: column;
     height: 30%;
-}.aboutyg .ab_box .introduction .shapes .shape{
+}
+.aboutyg .ab_box .introduction .shapes .shape {
     height: 70%;
 }
-.aboutyg .ab_box .introduction .shapes .arrow_size{
+.aboutyg .ab_box .introduction .shapes .arrow_size {
     width: 50%;
 }
-.aboutyg .ab_box .introduction .shapes div:nth-child(1) span:first-child{
+.aboutyg .ab_box .introduction .shapes div:nth-child(1) span:first-child {
     font-size: 14px;
 }
-.aboutyg .ab_box .introduction .shapes div:nth-child(1) span:last-child{
+.aboutyg .ab_box .introduction .shapes div:nth-child(1) span:last-child {
     font-size: 10px;
 }
-.aboutyg .ab_box .introduction .shapes div:nth-child(1) img{
+.aboutyg .ab_box .introduction .shapes div:nth-child(1) img {
     width: 40%;
     height: 100%;
 }
-.aboutyg .ab_box .introduction .shapes > div:nth-child(3){
+.aboutyg .ab_box .introduction .shapes > div:nth-child(3) {
     width: 100%;
 }
-.aboutyg .ab_box .introduction .shapes div:nth-child(3) img{
+.aboutyg .ab_box .introduction .shapes div:nth-child(3) img {
     width: 40%;
     height: 100%;
 }
-.aboutyg .ab_box .introduction .shapes > div:nth-child(5){
+.aboutyg .ab_box .introduction .shapes > div:nth-child(5) {
     width: 100%;
 }
-.aboutyg .ab_box .introduction .shapes div:nth-child(5) img{
+.aboutyg .ab_box .introduction .shapes div:nth-child(5) img {
     width: 40%;
     height: 100%;
 }
-.aboutyg .ab_box .introduction .shapes > div > div:first-child{
+.aboutyg .ab_box .introduction .shapes > div > div:first-child {
     height: 100%;
 }
-.aboutyg .ab_box .introduction .shapes > div:last-child > div:first-child{
+.aboutyg .ab_box .introduction .shapes > div:last-child > div:first-child {
     height: 30%;
 }
-.aboutyg .ab_box .introduction .shapes .arrow_size i{
+.aboutyg .ab_box .introduction .shapes .arrow_size i {
     transform: rotate(90deg);
     -webkit-text-stroke: 1px #fff;
     color: black;
     font-size: 1.5rem;
     margin: 0 0 0 0;
 }
-.aboutyg .ab_box .introduction .text_3{
+.aboutyg .ab_box .introduction .text_3 {
     display: none;
 }
-.aboutyg .ab_box .introduction > div:last-child{
+.aboutyg .ab_box .introduction > div:last-child {
     flex-direction: column;
     overflow: auto;
 }
-.aboutyg .ab_box .page2{
+.aboutyg .ab_box .page2 {
     width: 100%;
     height: 20%;
     padding: 20px 0 0 20px;
@@ -811,7 +814,7 @@ header .login_page > div {
     font-size: 2.1rem;
     height: 70%;
 }
-.aboutyg .ab_box .page2 > p:last-child{
+.aboutyg .ab_box .page2 > p:last-child {
     font-size: 1.1rem;
     height: 30%;
 }
@@ -820,40 +823,40 @@ header .login_page > div {
     height: 70%;
     font-size: 0.9rem;
 }
-.aboutyg .ab_box .history .sentence .text_small{
+.aboutyg .ab_box .history .sentence .text_small {
     margin: 0;
     font-size: 0.9rem;
 }
-.aboutyg .ab_box.ir{
+.aboutyg .ab_box.ir {
     width: 80%;
 }
-.aboutyg .ab_box.ir > div{
+.aboutyg .ab_box.ir > div {
     /* padding: 20px; */
     font-size: 14px;
 }
-.aboutyg .ab_box.ir > div > p:first-child{
+.aboutyg .ab_box.ir > div > p:first-child {
     font-size: 20px;
 }
-.aboutyg .ab_box.ir > div > div:nth-child(3){
+.aboutyg .ab_box.ir > div > div:nth-child(3) {
     flex-direction: column;
     overflow: auto;
     height: 78%;
 }
-.aboutyg .ab_box.ir > div > div:nth-child(3) .j_left{
+.aboutyg .ab_box.ir > div > div:nth-child(3) .j_left {
     width: 100%;
     border-bottom: 1px solid #fff;
 }
-.aboutyg .ab_box.ir > div > div:nth-child(3) .j_left > div > div{
+.aboutyg .ab_box.ir > div > div:nth-child(3) .j_left > div > div {
     margin-bottom: 10px;
 }
-.aboutyg .ab_box.ir > div > div:nth-child(3) .j_left > div > div > span{
+.aboutyg .ab_box.ir > div > div:nth-child(3) .j_left > div > div > span {
     font-size: 20px;
 }
-.aboutyg .ab_box.ir > div > div:nth-child(3) .j_right{
+.aboutyg .ab_box.ir > div > div:nth-child(3) .j_right {
     width: 100%;
     font-size: 15px;
 }
-.aboutyg .ab_box.ir > div > div:nth-child(3) .j_right #mrktCtg{
+.aboutyg .ab_box.ir > div > div:nth-child(3) .j_right #mrktCtg {
     font-size: 15px;
 }
 .aboutyg .ab_box .news {
@@ -867,70 +870,70 @@ header .login_page > div {
 .aboutyg .ab_box .news > div {
     gap: 5px;
 }
-.aboutyg .ab_box .news .news_box{
+.aboutyg .ab_box .news .news_box {
     width: 100%;
     height: 30%;
 }
-.aboutyg .ab_box .news .news_box > a{
+.aboutyg .ab_box .news .news_box > a {
     width: 10%;
 }
-.aboutyg .ab_box .news .news_box > div{
+.aboutyg .ab_box .news .news_box > div {
     width: 90%;
     font-size: 0.7rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.aboutyg .ab_box .news .news_box:nth-child(4){
+.aboutyg .ab_box .news .news_box:nth-child(4) {
     display: none;
 }
-.aboutyg .ab_box .news .news_box:nth-child(5){
+.aboutyg .ab_box .news .news_box:nth-child(5) {
     display: none;
 }
-.aboutyg .ab_box .news .news_box > div > a{
+.aboutyg .ab_box .news .news_box > div > a {
     height: 30%;
     /* margin: 7px 0; */
     width: 80%;
 }
-.aboutyg .ab_box .news .news_box > div > a > p{
+.aboutyg .ab_box .news .news_box > div > a > p {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
-.aboutyg .ab_box .news .news_box > div > div{
+.aboutyg .ab_box .news .news_box > div > div {
     flex-direction: column;
     width: 20%;
 }
-.aboutyg .ab_box .news .news_box > div > div > p{
+.aboutyg .ab_box .news .news_box > div > div > p {
     font-size: 0.7rem;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
-.aboutyg .ab_box .yg_notice{
+.aboutyg .ab_box .yg_notice {
     width: 100%;
     height: 50%;
 }
-.aboutyg .ab_box .yg_notice > p{
+.aboutyg .ab_box .yg_notice > p {
     font-size: 20px;
     margin-bottom: 5px;
 }
-.aboutyg .ab_box .yg_notice > div > .notice_but{
+.aboutyg .ab_box .yg_notice > div > .notice_but {
     height: 15%;
     font-size: 0.7rem;
 }
-.aboutyg .ab_box .yg_notice .notice_box a{
+.aboutyg .ab_box .yg_notice .notice_box a {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
-.aboutyg .ab_box .yg_notice .notice_box p:last-child{
+.aboutyg .ab_box .yg_notice .notice_box p:last-child {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
 /* ---------------------------풋터----------------------------- */
-footer{
+footer {
     padding: 0 20px;
     height: 15vh;
 }
@@ -943,7 +946,7 @@ footer div:first-child {
     width: 53%;
     height: 100%;
 }
-footer div:nth-child(2){
+footer div:nth-child(2) {
     width: 18%;
     height: 100%;
     /* flex-grow: 1; */
@@ -963,17 +966,17 @@ footer div:last-child {
     margin-left: -20px;
     bottom: 20%;
 } */
-footer span:nth-child(2){
+footer span:nth-child(2) {
     padding: 0;
 }
-footer span:nth-child(3){
+footer span:nth-child(3) {
     padding: 0;
 }
-#up{
+#up {
     font-size: 30px;
     bottom: 16%;
 }
-#up.on2{
+#up.on2 {
     opacity: 1;
     visibility: visible;
     bottom: 16%;

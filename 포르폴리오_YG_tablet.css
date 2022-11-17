@@ -1,17 +1,17 @@
 @charset "UTF-8";
-           
-  
+
+
 /* ----------------------------------로그인창--------------- */
-header .login_page > div{
+header .login_page > div {
     width: 300px;
     height: 194px;
     font-size: 16px;
-}  
-header .login_page > div > span{
+}
+header .login_page > div > span {
     padding-left: 230px;
 }
-header .login_page > div > div:last-child{
-    font-size: 13px; 
+header .login_page > div > div:last-child {
+    font-size: 13px;
 }
 /* -----------------홈페이지-------------- */
 /* .homepage{
@@ -20,44 +20,44 @@ header .login_page > div > div:last-child{
 } */
 /* ----------------------------------아티스트 페이지2--------------- */
 
-.sec1_2 .proflie .photo{
+.sec1_2 .proflie .photo {
     width: 100%;
 }
-.winner .sec1_2 .proflie .photo{
+.winner .sec1_2 .proflie .photo {
     background-size: cover;
 }
-.TREASURE .sec1_2 .proflie .photo{
+.TREASURE .sec1_2 .proflie .photo {
     background-size: cover;
 }
-.artist .sec1_2 .text_box1{
+.artist .sec1_2 .text_box1 {
     gap: 8px;
     padding: 15px 15px;
 }
-.artist .sec1_2 .text_box1 h5{
+.artist .sec1_2 .text_box1 h5 {
     font-size: 24px;
 }
 .artist .sec1_2 .proflie .photo > div:last-child {
     left: 44%;
 }
-.artist .sec1_2 .proflie .photo > div:last-child a{
+.artist .sec1_2 .proflie .photo > div:last-child a {
     font-size: 22px;
 }
-.sec1_2 .proflie .photo .text_box3 .swiper-wrapper{
+.sec1_2 .proflie .photo .text_box3 .swiper-wrapper {
     gap: 0;
 }
-.sec1_2 .proflie .photo .text_box3{
+.sec1_2 .proflie .photo .text_box3 {
     font-size: 0.7rem;
     right: 3%;
 }
-.winner .sec1_2 .proflie .photo .text_box3{
+.winner .sec1_2 .proflie .photo .text_box3 {
     right: 3%;
 }
-.artist .sec1_2 .proflie .photo .text_box3 > p:first-child{
+.artist .sec1_2 .proflie .photo .text_box3 > p:first-child {
     background-size: 100% 145%;
     width: 90%;
     height: 61px;
 }
-.winner .sec1_2 .proflie .photo .text_box3 > p:first-child{
+.winner .sec1_2 .proflie .photo .text_box3 > p:first-child {
     background-size: contain;
 }
 .TREASURE .sec1_2 .proflie .photo .text_box3 > p:first-child {
@@ -66,16 +66,16 @@ header .login_page > div > div:last-child{
 .artist .sec1_2 .proflie .photo .text_box3 > p:nth-child(2) {
     font-size: 0.7rem;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list{
+.sec1_2 .proflie .photo .text_box3 .album_list {
     width: 80%;
     height: 80%;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div{
+.sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div {
     /* flex-direction: column; */
     /* align-items: center; */
     border: none
 }
-.actors .proflie .photo .text_box3 .album_list .album > .swiper-wrapper > .swiper-slide{
+.actors .proflie .photo .text_box3 .album_list .album > .swiper-wrapper > .swiper-slide {
     border-bottom: 0
 }
 .sec1_2 .proflie .photo .text_box3 .album_list .album > .swiper-wrapper > .swiper-slide
@@ -87,29 +87,29 @@ header .login_page > div > div:last-child{
     position: absolute;
     bottom: -10%;
 } */
-.sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide:nth-child(3) > div::after{
+.sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide:nth-child(3) > div::after {
     bottom: -25%;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide img{
+.sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide img {
     border: none;
     width: 40%;
     /* height: 50%; */
     background-color: transparent;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section{
+.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section {
     width: 60%;
     padding: 0 10px;
 }
-.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section .list_silde p{
+.sec1_2 .proflie .photo .text_box3 .album_list .album .swiper-slide > div > section .list_silde p {
     text-align: center;
 }
-.sec1_2 .proflie .box2{
+.sec1_2 .proflie .box2 {
     font-size: 13px;
 }
-.sec1_2 .text_box2 .name .info{
+.sec1_2 .text_box2 .name .info {
     font-size: 11px;
 }
-.sec1_2 .text_box2 .f_ROSE .name .info{
+.sec1_2 .text_box2 .f_ROSE .name .info {
     font-size: 11px;
     width: 60%;
 }
@@ -131,7 +131,7 @@ header .login_page > div > div:last-child{
 .winner .sec1_2 .proflie .box2:nth-child(4) {
     /* background-position: 7% 40.7%; */
     width: 19%;
-} 
+}
 /* ----------------------------------프로필 위치--------------------------------- */
 
 /* .sec1_2 .proflie .f_LISA .name{
@@ -145,11 +145,11 @@ header .login_page > div > div:last-child{
 } */
 .sec1_2 .proflie .f_ROSE .name {
     padding: 60% 0 0 0;
-} 
+}
 
 
 /* ----------------------------------굿즈 페이지--------------- */
-.select .inner_2 .sel_menu{
+.select .inner_2 .sel_menu {
     font-size: 0.6rem;
 }
 .select .inner_2 > div:nth-child(3) p:first-child {
@@ -157,7 +157,7 @@ header .login_page > div > div:last-child{
     font-size: 2.25rem;
 }
 
-.select .inner_2 > div:nth-child(3) p:last-child{
+.select .inner_2 > div:nth-child(3) p:last-child {
     width: 109px;
     height: 37px;
     line-height: 37px;
@@ -166,46 +166,46 @@ header .login_page > div > div:last-child{
     right: -1%;
     bottom: 0%;
 }
-.select .inner_2 > div:nth-child(3) ul{
+.select .inner_2 > div:nth-child(3) ul {
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
     justify-content: flex-start;
 }
-.select .inner_2 .sel_menu .goodsgrid{
+.select .inner_2 .sel_menu .goodsgrid {
     /* height: 500px; */
     height: 100%;
     padding: 5% 0;
-} 
+}
 /* .select .inner_2 .sel_menu .goodsgrid .swiper-slide {
     height: calc((100% - 30px) / 2);
 } */
-.select .inner_2 .sel_menu > .b{
+.select .inner_2 .sel_menu > .b {
     height: 66vh;
 }
 
-.select .inner_2 .sel_menu .b .shopping{
+.select .inner_2 .sel_menu .b .shopping {
     bottom: -2%;
 }
-.select .inner_2 .sel_menu .b .shopping > span{
+.select .inner_2 .sel_menu .b .shopping > span {
     font-size: 22px;
     width: 30px;
     height: 30px;
     line-height: 30px;
 }
-.select .inner_2 .sel_menu .b .shopping > p{
+.select .inner_2 .sel_menu .b .shopping > p {
     font-size: 15px;
 }
-.select .sel_menu > div:nth-child(1) .yg_goods > div > p:last-child{
+.select .sel_menu > div:nth-child(1) .yg_goods > div > p:last-child {
     font-size: 0.8rem;
 }
-.select .sel_menu > div:nth-child(1) .yg_goods > div p:first-child{
+.select .sel_menu > div:nth-child(1) .yg_goods > div p:first-child {
     font-size: 0.9rem;
 }
 .select .sel_menu > div:nth-child(1) .yg_goods > div p:last-child {
     font-size: 0.7rem;
 }
-.select .inner_2 .sel_menu .g_pic > p:nth-child(2){
+.select .inner_2 .sel_menu .g_pic > p:nth-child(2) {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -216,11 +216,11 @@ header .login_page > div > div:last-child{
 .actors .sec1_2 .text_box1 h5 {
     font-size: 25px;
 }
-.actors .actors_left .proflie .photo{
+.actors .actors_left .proflie .photo {
     background-size: contain;
     background-position: center;
 }
-.actors .actors_right .proflie .photo{
+.actors .actors_right .proflie .photo {
     background-size: contain;
     background-position: center;
     width: 100%;
@@ -242,51 +242,51 @@ header .login_page > div > div:last-child{
     font-size: 0.8rem;
     width: 100%;
 }
-.actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(2) .swiper-slide > div > p{
+.actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(2) .swiper-slide > div > p {
     font-size: 1rem;
     width: 15%;
 }
-.actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(2) .swiper-slide > div > div{
+.actors .sec1_2 .proflie .photo .text_box3 > div:nth-child(2) .swiper-slide > div > div {
     font-size: 0.8rem;
     width: 100%;
 }
-.actors .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div{
+.actors .sec1_2 .proflie .photo .text_box3 .album_list .swiper-slide > div {
     gap: 10px;
 }
 /* ------------------------------오디션 페이지---------------------------- */
-.audition .inner_3 .apply{
+.audition .inner_3 .apply {
     height: 82vh;
 }
-.audition .inner_3 .ap_left1{
+.audition .inner_3 .ap_left1 {
     width: 40%;
 }
 .audition .inner_3 .ap_left1 div > p:nth-child(2) {
     font-size: 26px;
 }
-.audition .inner_3 .ap_right1{
+.audition .inner_3 .ap_right1 {
     font-size: 12px;
     padding: 20px;
     width: 40%;
 }
-.audition .inner_3 .no_left1{
+.audition .inner_3 .no_left1 {
     width: 40%;
 }
-.audition .inner_3 .no_left1 .au_notice{
+.audition .inner_3 .no_left1 .au_notice {
     font-size: 12px;
 }
-.audition .inner_3 .no_left1 textarea{
+.audition .inner_3 .no_left1 textarea {
     font-size: 12px;
 }
-.audition .inner_3 .no_right1{
+.audition .inner_3 .no_right1 {
     width: 40%;
 }
-.audition .inner_3 .no_right1 > div p:nth-child(1){
+.audition .inner_3 .no_right1 > div p:nth-child(1) {
     font-size: 2rem;
 }
-.audition .inner_3 .no_right1 > div p:nth-child(2){
+.audition .inner_3 .no_right1 > div p:nth-child(2) {
     font-size: 2rem;
 }
-.audition .inner_3 .no_right1 > div > div{
+.audition .inner_3 .no_right1 > div > div {
     word-break: keep-all;
     /* padding: 0 5%; */
 }
@@ -297,14 +297,14 @@ header .login_page > div > div:last-child{
     height: 20px;
     line-height: 20px;
 }
-.audition .inner_3 .ap_right1 .ap_head > p:nth-child(3){
+.audition .inner_3 .ap_right1 .ap_head > p:nth-child(3) {
     width: 20px;
     height: 20px;
 }
-.audition .inner_3 .ap_right1 .ins_page > p{
+.audition .inner_3 .ap_right1 .ins_page > p {
     height: 65%;
 }
-.audition .inner_3 .ap_left1 a:nth-child(4){
+.audition .inner_3 .ap_left1 a:nth-child(4) {
     display: none;
 }
 
@@ -312,12 +312,12 @@ header .login_page > div > div:last-child{
 .aboutyg .yg_slide {
     height: 80%;
 }
-.aboutyg .ab_box > .yg_sym > p:first-child{
+.aboutyg .ab_box > .yg_sym > p:first-child {
     background-size: contain;
     width: 90%;
     margin: 20% 5%;
 }
-.aboutyg .ab_box > .yg_sym > p:last-child{
+.aboutyg .ab_box > .yg_sym > p:last-child {
     width: 90%;
     font-size: 20px;
     margin: -40px 0 0 0;
@@ -330,16 +330,16 @@ header .login_page > div > div:last-child{
 .aboutyg .ab_box .introduction .shapes .arrow_size p {
     font-size: 14px;
 }
-.aboutyg .ab_box .introduction .shapes .arrow_size i{
+.aboutyg .ab_box .introduction .shapes .arrow_size i {
     font-size: 35px;
 }
 .aboutyg .ab_box .introduction .shapes > div div:nth-child(1) span:first-child {
     font-size: 22px;
 }
-.aboutyg .ab_box .introduction .shapes > div div:nth-child(1) span:last-child{
+.aboutyg .ab_box .introduction .shapes > div div:nth-child(1) span:last-child {
     font-size: 14px;
 }
-.aboutyg .ab_box .introduction .text_3{
+.aboutyg .ab_box .introduction .text_3 {
     width: 100%;
     overflow-y: auto;
     font-size: 14px;
@@ -347,17 +347,17 @@ header .login_page > div > div:last-child{
 .aboutyg .ab_box .page2 {
     padding: 20px;
 }
-.aboutyg .ab_box .page2 > p:first-child{
+.aboutyg .ab_box .page2 > p:first-child {
     font-size: 2.8rem;
     word-break: break-all;
 }
-.aboutyg .ab_box .page2 > p:last-child{
+.aboutyg .ab_box .page2 > p:last-child {
     font-size: 1.8rem;
 }
-.aboutyg .ab_box .history{
+.aboutyg .ab_box .history {
     font-size: 1rem;
 }
-.aboutyg .ab_box .history .sentence .text_small{
+.aboutyg .ab_box .history .sentence .text_small {
     margin: 0;
 }
 .aboutyg .ab_box .news {
@@ -367,20 +367,20 @@ header .login_page > div > div:last-child{
     font-size: 40px;
     margin: 0 0 10px 0;
 }
-.aboutyg .ab_box .yg_notice > div{
+.aboutyg .ab_box .yg_notice > div {
     height: 80%;
 }
-.aboutyg .ab_box .yg_notice > div > .notice_but{
+.aboutyg .ab_box .yg_notice > div > .notice_but {
     height: 10%;
 }
-.notice_list{
+.notice_list {
     height: 90%;
 }
-.notice_YG{
-    overflow-y:auto;
+.notice_YG {
+    overflow-y: auto;
     height: 100%;
 }
-#up{
+#up {
     font-size: 35px;
     bottom: 12%;
 }
@@ -390,12 +390,12 @@ header .login_page > div > div:last-child{
     bottom: 11%;
 } */
 /* --------------------풋터------------------------ */
-footer{
+footer {
     height: 10vh;
     padding: 0 30px;
     align-items: center;
 }
-footer div:nth-child(2){
+footer div:nth-child(2) {
     width: 18%;
     height: 10vh;
     line-height: 10vh;
@@ -405,26 +405,26 @@ footer div:nth-child(2) p {
     line-height: 10vh;
     text-align: center;
 }
-footer div:first-child{
+footer div:first-child {
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 55%;
     justify-content: center;
     font-size: 12px;
-    gap:0
+    gap: 0
 }
-footer div:first-child span{
+footer div:first-child span {
     line-height: 20px;
     word-break: break-all;
 }
-footer div:last-child{
+footer div:last-child {
     width: 19%;
 }
-footer span:nth-child(2){
+footer span:nth-child(2) {
     padding: 0;
 }
-footer span:nth-child(3){
+footer span:nth-child(3) {
     padding: 0;
 }
 /* ------------------------스와이퍼 수정하기--------------------- */
@@ -442,13 +442,13 @@ footer span:nth-child(3){
 .b .swiper-button-next:after {
     color: black;
 }
-.text_box3 .album_list .swiper-button-next{
+.text_box3 .album_list .swiper-button-next {
     /* bottom: -27px; */
     bottom: -4%;
 }
 .text_box3 .album_list .swiper-button-next:after {
     font-size: 22px;
 }
-.actors .text_box3 .album_list .swiper-button-next{
+.actors .text_box3 .album_list .swiper-button-next {
     bottom: -27px;
 }
