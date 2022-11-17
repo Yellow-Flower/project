@@ -739,6 +739,7 @@ header .login_page > div {
 .aboutyg .ab_box .introduction {
     width: 100%;
     height: 70%;
+    padding: 5% 5%;
 }
 .aboutyg .ab_box .introduction .shapes > div{
     flex-direction: column;
