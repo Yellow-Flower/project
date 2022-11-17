@@ -14,10 +14,6 @@ header .login_page > div > span{
 .body > .MV {
     height: 90vh;
 }  
-.body .MV video {
-    top: 30%;
-    width: 100%;
-}
 header{
     height: 5vh;
     padding: 0 10px;
@@ -411,9 +407,7 @@ header .login_page > div {
     bottom: -31%;
 }
 .select .inner_2 .sel_menu .b .shopping > p{
-    width: 82px;
-    height: 32px;
-    font-size: 15px;
+    font-size: 14px;
 }
 .select .inner_2 .sel_menu .b .shopping > span{
     font-size: 20px;

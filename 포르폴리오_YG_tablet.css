@@ -19,9 +19,7 @@ header .login_page > div > div:last-child{
     margin: 10vh 0 0 0;
 } */
 /* ----------------------------------아티스트 페이지2--------------- */
-.body .MV video{
-    width: 100%;
-}
+
 .sec1_2 .proflie .photo{
     width: 100%;
 }
@@ -190,10 +188,13 @@ header .login_page > div > div:last-child{
     bottom: -2%;
 }
 .select .inner_2 .sel_menu .b .shopping > span{
-    font-size: 28px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    font-size: 22px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+.select .inner_2 .sel_menu .b .shopping > p{
+    font-size: 15px;
 }
 .select .sel_menu > div:nth-child(1) .yg_goods > div > p:last-child{
     font-size: 0.8rem;
