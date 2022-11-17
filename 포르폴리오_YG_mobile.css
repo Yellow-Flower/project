@@ -1,7 +1,7 @@
 @charset "UTF-8";
            
 
- 
+  
 /* ---------------------------------로그인창--------------- */
 header .login_page{
     background-image: url(/YG.Ent/이미지/YG_로그인배경패턴14.png);
@@ -533,19 +533,22 @@ header .login_page > div {
 } */
 /* ------------------------배우 페이지------------------------ */
 .actors .text_box1 {
-    /* left: 72%;
-    bottom: 50%;
-    height: 250px; */
     bottom: 33%;
     width: 90%;
     height: 180px;
-    background-color: rgba(1, 2, 8, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 .actors .sec1_2 .text_box1 h5 {
     font-size: 20px;
 }
 .actors .sec1_2 .text_box2{
     display: none;
+}
+.actors.cha .sec1_2 .text_box1 h5{
+    color: #fff;
+}
+.actors.cha .sec1_2 .text_box1 p{
+    color: #fff;
 }
 .TREASURE .sec1_2 .text_box2 {
     height: 40%;
