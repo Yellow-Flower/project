@@ -1203,10 +1203,10 @@ header .snb_m .black:hover{
 }
 /* ----------------------배우 : 차승원-------------------------- */
 .actors.cha .actors_right .proflie .photo {
-    background-image: url(/YG.Ent/이미지/배우/차승원_new.jpg);
+    background-image: url(/YG.Ent/이미지/배우/차승원_ph3.png);
 }
 .actors.cha .sec1_2 .proflie .back{
-    background-color: rgb(40, 47, 75, 0.5);
+    background-color: rgb(28, 26, 29, 0.5);
 }
 .actors.cha .sec1_2 .text_box1 h5{
     color: #000;

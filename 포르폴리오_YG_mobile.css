@@ -614,7 +614,8 @@ header .login_page > div {
 /* ------------------------배우 : 차승원----------------------------- */
 .actors.cha .actors_right .proflie .photo{
     background-position: top;
-    background-image: url(/YG.Ent/이미지/배우/차승원_ph1.png);
+    background-image: url(/YG.Ent/이미지/배우/차승원_ph3.png);
+    background-size: cover;
 }
 /* ------------------------오디션 페이지------------------------ */
 .audition{
